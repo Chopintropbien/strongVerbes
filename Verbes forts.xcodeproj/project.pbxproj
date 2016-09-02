@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98B391BE1D757353001E1AA1 /* RevisionVerbes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B391BD1D757353001E1AA1 /* RevisionVerbes.swift */; };
+		98B391C01D75B90A001E1AA1 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 98B391BF1D75B90A001E1AA1 /* test.png */; };
+		98B79F981D70AD9300A3F94B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B79F971D70AD9300A3F94B /* AppDelegate.swift */; };
+		98B79F9A1D70AD9300A3F94B /* ChooseVerbes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B79F991D70AD9300A3F94B /* ChooseVerbes.swift */; };
+		98B79F9D1D70AD9300A3F94B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B79F9B1D70AD9300A3F94B /* Main.storyboard */; };
+		98B79F9F1D70AD9300A3F94B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B79F9E1D70AD9300A3F94B /* Assets.xcassets */; };
+		98B79FA21D70AD9300A3F94B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B79FA01D70AD9300A3F94B /* LaunchScreen.storyboard */; };
+		98B79FAD1D70AD9300A3F94B /* Verbes_fortsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B79FAC1D70AD9300A3F94B /* Verbes_fortsTests.swift */; };
+		98B79FB81D70AD9300A3F94B /* Verbes_fortsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B79FB71D70AD9300A3F94B /* Verbes_fortsUITests.swift */; };
+		98E172A61D740C5900131633 /* Verbes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E172A51D740C5900131633 /* Verbes.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98B79FA91D70AD9300A3F94B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98B79F8C1D70AD9300A3F94B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98B79F931D70AD9300A3F94B;
+			remoteInfo = "Verbes forts";
+		};
+		98B79FB41D70AD9300A3F94B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98B79F8C1D70AD9300A3F94B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98B79F931D70AD9300A3F94B;
+			remoteInfo = "Verbes forts";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		98B391BD1D757353001E1AA1 /* RevisionVerbes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevisionVerbes.swift; sourceTree = "<group>"; };
+		98B391BF1D75B90A001E1AA1 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		98B79F941D70AD9300A3F94B /* Verbes forts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Verbes forts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98B79F971D70AD9300A3F94B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98B79F991D70AD9300A3F94B /* ChooseVerbes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseVerbes.swift; sourceTree = "<group>"; };
+		98B79F9C1D70AD9300A3F94B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		98B79F9E1D70AD9300A3F94B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98B79FA11D70AD9300A3F94B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98B79FA31D70AD9300A3F94B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98B79FA81D70AD9300A3F94B /* Verbes fortsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Verbes fortsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98B79FAC1D70AD9300A3F94B /* Verbes_fortsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verbes_fortsTests.swift; sourceTree = "<group>"; };
+		98B79FAE1D70AD9300A3F94B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98B79FB31D70AD9300A3F94B /* Verbes fortsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Verbes fortsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98B79FB71D70AD9300A3F94B /* Verbes_fortsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verbes_fortsUITests.swift; sourceTree = "<group>"; };
+		98B79FB91D70AD9300A3F94B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98E172A51D740C5900131633 /* Verbes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Verbes.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98B79F911D70AD9300A3F94B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98B79FA51D70AD9300A3F94B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98B79FB01D70AD9300A3F94B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98B79F8B1D70AD9300A3F94B = {
+			isa = PBXGroup;
+			children = (
+				98B79F961D70AD9300A3F94B /* Verbes forts */,
+				98B79FAB1D70AD9300A3F94B /* Verbes fortsTests */,
+				98B79FB61D70AD9300A3F94B /* Verbes fortsUITests */,
+				98B79F951D70AD9300A3F94B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98B79F951D70AD9300A3F94B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98B79F941D70AD9300A3F94B /* Verbes forts.app */,
+				98B79FA81D70AD9300A3F94B /* Verbes fortsTests.xctest */,
+				98B79FB31D70AD9300A3F94B /* Verbes fortsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98B79F961D70AD9300A3F94B /* Verbes forts */ = {
+			isa = PBXGroup;
+			children = (
+				98B79F991D70AD9300A3F94B /* ChooseVerbes.swift */,
+				98B391BD1D757353001E1AA1 /* RevisionVerbes.swift */,
+				98E172A51D740C5900131633 /* Verbes.swift */,
+				98B79F9B1D70AD9300A3F94B /* Main.storyboard */,
+				98B79F9E1D70AD9300A3F94B /* Assets.xcassets */,
+				98B79FA01D70AD9300A3F94B /* LaunchScreen.storyboard */,
+				98B79FA31D70AD9300A3F94B /* Info.plist */,
+				98B79F971D70AD9300A3F94B /* AppDelegate.swift */,
+				98B391BF1D75B90A001E1AA1 /* test.png */,
+			);
+			path = "Verbes forts";
+			sourceTree = "<group>";
+		};
+		98B79FAB1D70AD9300A3F94B /* Verbes fortsTests */ = {
+			isa = PBXGroup;
+			children = (
+				98B79FAC1D70AD9300A3F94B /* Verbes_fortsTests.swift */,
+				98B79FAE1D70AD9300A3F94B /* Info.plist */,
+			);
+			path = "Verbes fortsTests";
+			sourceTree = "<group>";
+		};
+		98B79FB61D70AD9300A3F94B /* Verbes fortsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				98B79FB71D70AD9300A3F94B /* Verbes_fortsUITests.swift */,
+				98B79FB91D70AD9300A3F94B /* Info.plist */,
+			);
+			path = "Verbes fortsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98B79F931D70AD9300A3F94B /* Verbes forts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98B79FBC1D70AD9300A3F94B /* Build configuration list for PBXNativeTarget "Verbes forts" */;
+			buildPhases = (
+				98B79F901D70AD9300A3F94B /* Sources */,
+				98B79F911D70AD9300A3F94B /* Frameworks */,
+				98B79F921D70AD9300A3F94B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Verbes forts";
+			productName = "Verbes forts";
+			productReference = 98B79F941D70AD9300A3F94B /* Verbes forts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98B79FA71D70AD9300A3F94B /* Verbes fortsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98B79FBF1D70AD9300A3F94B /* Build configuration list for PBXNativeTarget "Verbes fortsTests" */;
+			buildPhases = (
+				98B79FA41D70AD9300A3F94B /* Sources */,
+				98B79FA51D70AD9300A3F94B /* Frameworks */,
+				98B79FA61D70AD9300A3F94B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98B79FAA1D70AD9300A3F94B /* PBXTargetDependency */,
+			);
+			name = "Verbes fortsTests";
+			productName = "Verbes fortsTests";
+			productReference = 98B79FA81D70AD9300A3F94B /* Verbes fortsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		98B79FB21D70AD9300A3F94B /* Verbes fortsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98B79FC21D70AD9300A3F94B /* Build configuration list for PBXNativeTarget "Verbes fortsUITests" */;
+			buildPhases = (
+				98B79FAF1D70AD9300A3F94B /* Sources */,
+				98B79FB01D70AD9300A3F94B /* Frameworks */,
+				98B79FB11D70AD9300A3F94B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98B79FB51D70AD9300A3F94B /* PBXTargetDependency */,
+			);
+			name = "Verbes fortsUITests";
+			productName = "Verbes fortsUITests";
+			productReference = 98B79FB31D70AD9300A3F94B /* Verbes fortsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98B79F8C1D70AD9300A3F94B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Lauriane Mollier";
+				TargetAttributes = {
+					98B79F931D70AD9300A3F94B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					98B79FA71D70AD9300A3F94B = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 98B79F931D70AD9300A3F94B;
+					};
+					98B79FB21D70AD9300A3F94B = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 98B79F931D70AD9300A3F94B;
+					};
+				};
+			};
+			buildConfigurationList = 98B79F8F1D70AD9300A3F94B /* Build configuration list for PBXProject "Verbes forts" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98B79F8B1D70AD9300A3F94B;
+			productRefGroup = 98B79F951D70AD9300A3F94B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98B79F931D70AD9300A3F94B /* Verbes forts */,
+				98B79FA71D70AD9300A3F94B /* Verbes fortsTests */,
+				98B79FB21D70AD9300A3F94B /* Verbes fortsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98B79F921D70AD9300A3F94B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98B79FA21D70AD9300A3F94B /* LaunchScreen.storyboard in Resources */,
+				98B79F9F1D70AD9300A3F94B /* Assets.xcassets in Resources */,
+				98B79F9D1D70AD9300A3F94B /* Main.storyboard in Resources */,
+				98B391C01D75B90A001E1AA1 /* test.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98B79FA61D70AD9300A3F94B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98B79FB11D70AD9300A3F94B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98B79F901D70AD9300A3F94B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98E172A61D740C5900131633 /* Verbes.swift in Sources */,
+				98B391BE1D757353001E1AA1 /* RevisionVerbes.swift in Sources */,
+				98B79F9A1D70AD9300A3F94B /* ChooseVerbes.swift in Sources */,
+				98B79F981D70AD9300A3F94B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98B79FA41D70AD9300A3F94B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98B79FAD1D70AD9300A3F94B /* Verbes_fortsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98B79FAF1D70AD9300A3F94B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98B79FB81D70AD9300A3F94B /* Verbes_fortsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98B79FAA1D70AD9300A3F94B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98B79F931D70AD9300A3F94B /* Verbes forts */;
+			targetProxy = 98B79FA91D70AD9300A3F94B /* PBXContainerItemProxy */;
+		};
+		98B79FB51D70AD9300A3F94B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98B79F931D70AD9300A3F94B /* Verbes forts */;
+			targetProxy = 98B79FB41D70AD9300A3F94B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		98B79F9B1D70AD9300A3F94B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98B79F9C1D70AD9300A3F94B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		98B79FA01D70AD9300A3F94B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98B79FA11D70AD9300A3F94B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98B79FBA1D70AD9300A3F94B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98B79FBB1D70AD9300A3F94B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98B79FBD1D70AD9300A3F94B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Verbes forts/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Meitopi.Verbes-forts";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98B79FBE1D70AD9300A3F94B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Verbes forts/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Meitopi.Verbes-forts";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		98B79FC01D70AD9300A3F94B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Verbes fortsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Meitopi.Verbes-fortsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Verbes forts.app/Verbes forts";
+			};
+			name = Debug;
+		};
+		98B79FC11D70AD9300A3F94B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Verbes fortsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Meitopi.Verbes-fortsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Verbes forts.app/Verbes forts";
+			};
+			name = Release;
+		};
+		98B79FC31D70AD9300A3F94B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Verbes fortsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Meitopi.Verbes-fortsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Verbes forts";
+			};
+			name = Debug;
+		};
+		98B79FC41D70AD9300A3F94B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Verbes fortsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Meitopi.Verbes-fortsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Verbes forts";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98B79F8F1D70AD9300A3F94B /* Build configuration list for PBXProject "Verbes forts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98B79FBA1D70AD9300A3F94B /* Debug */,
+				98B79FBB1D70AD9300A3F94B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98B79FBC1D70AD9300A3F94B /* Build configuration list for PBXNativeTarget "Verbes forts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98B79FBD1D70AD9300A3F94B /* Debug */,
+				98B79FBE1D70AD9300A3F94B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98B79FBF1D70AD9300A3F94B /* Build configuration list for PBXNativeTarget "Verbes fortsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98B79FC01D70AD9300A3F94B /* Debug */,
+				98B79FC11D70AD9300A3F94B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98B79FC21D70AD9300A3F94B /* Build configuration list for PBXNativeTarget "Verbes fortsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98B79FC31D70AD9300A3F94B /* Debug */,
+				98B79FC41D70AD9300A3F94B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98B79F8C1D70AD9300A3F94B /* Project object */;
+}
