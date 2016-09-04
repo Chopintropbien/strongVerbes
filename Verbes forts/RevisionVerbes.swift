@@ -8,11 +8,15 @@
 
 
 import UIKit
+import iAd
 
 
-class RevisionVerbes: UIViewController {
+class RevisionVerbes: UIViewController, ADBannerViewDelegate {
     
 
+    var advertisement = true
+    @IBOutlet weak var littleADBanner: ADBannerView!
+    
     // Text
 
     var verbes: [Verbe] = []
@@ -26,19 +30,12 @@ class RevisionVerbes: UIViewController {
     let changeVerbeHiddingduration: Double = 0.4
     
     @IBOutlet weak var headerLabel: UILabel!
-    
     @IBOutlet weak var translationLabel: UILabel!
-    
     @IBOutlet weak var infinitifLabel: UILabel!
-    
     @IBOutlet weak var presentLabel: UILabel!
-    
     @IBOutlet weak var preteritLabel: UILabel!
-    
     @IBOutlet weak var parfaitLabel: UILabel!
-    
     @IBOutlet weak var nextButton: UIButton!
-    
     
     
     @IBOutlet weak var superViewHiddingButton: UIView!
@@ -48,12 +45,19 @@ class RevisionVerbes: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        littleADBanner.hidden = true
+        littleADBanner.delegate = self
+        self.canDisplayBannerAds = true
+        
         if(!self.verbes.isEmpty){
             self.headerLabel.text = headerText
             self.initVerbe()
         }
+        if(advertisement){
+            
+        }
+        
     }
-    
     func initVerbe(){
         translationLabel.text = verbes[cursor].translation(Lang.fr)
         infinitifLabel.text = verbes[cursor].infinitf()
@@ -98,6 +102,17 @@ class RevisionVerbes: UIViewController {
                 
             }
         }
+    }
+    
+    
+    func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
+        littleADBanner.hidden = true
+    }
+    func bannerViewDidLoadAd(banner: ADBannerView!) {
+        littleADBanner.hidden = false
+    }
+    func bannerViewActionShouldBegin(banner: ADBannerView!, willLeaveApplication willLeave: Bool) -> Bool {
+        return true
     }
     
     
