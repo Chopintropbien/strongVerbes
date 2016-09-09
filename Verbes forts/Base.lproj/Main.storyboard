@@ -43,12 +43,12 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlq-HW-goc">
                                 <rect key="frame" x="28" y="510" width="102" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="S - 3">
+                                <state key="normal" title="S - 2">
                                     <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="getViewVerbes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ItG-GW-AXy"/>
-                                    <segue destination="UL2-1v-XTv" kind="show" identifier="si-sp-st" id="dyx-He-tGp"/>
+                                    <segue destination="UL2-1v-XTv" kind="show" identifier="schn-schr-schw-se" id="dyx-He-tGp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8c-b0-uEy">
@@ -231,89 +231,89 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnQ-3I-2px">
                                 <rect key="frame" x="138" y="463" width="103" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="L-M-N">
+                                <state key="normal" title="L-M">
                                     <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="getViewVerbes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xK8-VS-9XD"/>
-                                    <segue destination="UL2-1v-XTv" kind="show" identifier="l-m-n" id="ETI-Ip-gYq"/>
+                                    <segue destination="UL2-1v-XTv" kind="show" identifier="l-m" id="ETI-Ip-gYq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3v-yZ-Kj0">
                                 <rect key="frame" x="249" y="463" width="102" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="R">
+                                <state key="normal" title="N-P-Q">
                                     <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="getViewVerbes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k94-wC-Npo"/>
-                                    <segue destination="UL2-1v-XTv" kind="show" identifier="r" id="5Dv-TB-vII"/>
+                                    <segue destination="UL2-1v-XTv" kind="show" identifier="n-p-q" id="5Dv-TB-vII"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rp-Dt-llx">
                                 <rect key="frame" x="359" y="463" width="103" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="S - 1">
+                                <state key="normal" title="R">
                                     <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="getViewVerbes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z2S-3B-9kR"/>
-                                    <segue destination="UL2-1v-XTv" kind="show" identifier="sa-sche-schi-schl-schm" id="P4V-bR-e5C"/>
+                                    <segue destination="UL2-1v-XTv" kind="show" identifier="r" id="P4V-bR-e5C"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlX-zd-dIB">
                                 <rect key="frame" x="470" y="463" width="102" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="S - 2">
+                                <state key="normal" title="S - 1">
                                     <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="getViewVerbes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BCk-k2-5mr"/>
-                                    <segue destination="UL2-1v-XTv" kind="show" identifier="schn-schr-schw-se" id="goq-ZW-QL0"/>
+                                    <segue destination="UL2-1v-XTv" kind="show" identifier="sa-sche-schi-schl-schm" id="goq-ZW-QL0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EW0-zF-aRJ">
                                 <rect key="frame" x="138" y="510" width="103" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="T">
+                                <state key="normal" title="S - 3">
                                     <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="getViewVerbes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0vG-G9-zYs"/>
-                                    <segue destination="UL2-1v-XTv" kind="show" identifier="t" id="BlO-F4-ki2"/>
+                                    <segue destination="UL2-1v-XTv" kind="show" identifier="si-sp-st" id="BlO-F4-ki2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFj-fe-VXG">
                                 <rect key="frame" x="249" y="510" width="102" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="U-V">
+                                <state key="normal" title="T">
                                     <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="getViewVerbes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ZV-H9-Imd"/>
-                                    <segue destination="UL2-1v-XTv" kind="show" identifier="u-ü-v" id="D52-mz-hae"/>
+                                    <segue destination="UL2-1v-XTv" kind="show" identifier="t" id="D52-mz-hae"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTd-UP-usY">
                                 <rect key="frame" x="359" y="510" width="103" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="W">
+                                <state key="normal" title="U-V">
                                     <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="getViewVerbes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wFn-4h-7Kj"/>
-                                    <segue destination="UL2-1v-XTv" kind="show" identifier="w" id="KKP-Om-7oI"/>
+                                    <segue destination="UL2-1v-XTv" kind="show" identifier="u-ü-v" id="KKP-Om-7oI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLn-Bp-z5K">
                                 <rect key="frame" x="470" y="510" width="102" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Z">
+                                <state key="normal" title="W-Z">
                                     <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="getViewVerbes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ApY-zZ-9mX"/>
-                                    <segue destination="UL2-1v-XTv" kind="show" identifier="z" id="wb7-4t-3pZ"/>
+                                    <segue destination="UL2-1v-XTv" kind="show" identifier="w-z" id="wb7-4t-3pZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxj-3R-1jc">
@@ -562,18 +562,11 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="rkW-VF-DRI">
-                                <rect key="frame" x="60" y="526" width="480" height="66"/>
-                                <connections>
-                                    <outlet property="delegate" destination="UL2-1v-XTv" id="ola-v2-0gR"/>
-                                </connections>
-                            </adBannerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="q5E-Qa-OI6" firstAttribute="leading" secondItem="hqW-Lv-VHQ" secondAttribute="leadingMargin" constant="15" id="0O0-Tc-GBB"/>
                             <constraint firstItem="MEh-p8-JYU" firstAttribute="leading" secondItem="hqW-Lv-VHQ" secondAttribute="leadingMargin" constant="15" id="257-o3-EQR"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="rkW-VF-DRI" secondAttribute="trailing" constant="40" id="29Z-Sq-AlD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eih-aa-ssl" secondAttribute="trailing" constant="224" id="2VX-8f-n0E"/>
                             <constraint firstItem="MEh-p8-JYU" firstAttribute="width" secondItem="4xb-JW-nCn" secondAttribute="width" id="4el-wI-Nct"/>
                             <constraint firstItem="4xb-JW-nCn" firstAttribute="leading" secondItem="hqW-Lv-VHQ" secondAttribute="leadingMargin" constant="15" id="5YH-MH-v1x"/>
@@ -592,7 +585,6 @@
                             <constraint firstItem="Hlr-ja-4uj" firstAttribute="leading" secondItem="hqW-Lv-VHQ" secondAttribute="leadingMargin" constant="15" id="Hb0-aZ-mSu"/>
                             <constraint firstItem="MEh-p8-JYU" firstAttribute="top" secondItem="XRf-wj-mV8" secondAttribute="bottom" constant="15" id="IPA-AE-xYi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Hlr-ja-4uj" secondAttribute="trailing" constant="15" id="JoT-1c-DJ9"/>
-                            <constraint firstItem="9jd-Td-tSb" firstAttribute="top" secondItem="rkW-VF-DRI" secondAttribute="bottom" constant="8" id="KoZ-sy-7sa"/>
                             <constraint firstItem="4xb-JW-nCn" firstAttribute="top" secondItem="Zhf-Ol-fLH" secondAttribute="bottom" constant="47" id="LRB-Lu-ygL"/>
                             <constraint firstItem="XRf-wj-mV8" firstAttribute="height" secondItem="4xb-JW-nCn" secondAttribute="height" id="LRc-Y4-TtF"/>
                             <constraint firstItem="4xb-JW-nCn" firstAttribute="leading" secondItem="hqW-Lv-VHQ" secondAttribute="leadingMargin" constant="9" id="OOx-3I-ZdA"/>
@@ -633,7 +625,6 @@
                             <constraint firstItem="q5E-Qa-OI6" firstAttribute="width" secondItem="4xb-JW-nCn" secondAttribute="width" id="ntV-si-3Y5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="q5E-Qa-OI6" secondAttribute="trailing" constant="15" id="oN3-Mp-YQP"/>
                             <constraint firstItem="4xb-JW-nCn" firstAttribute="top" secondItem="Zhf-Ol-fLH" secondAttribute="bottom" constant="51" id="oNK-SN-y0f"/>
-                            <constraint firstItem="rkW-VF-DRI" firstAttribute="leading" secondItem="hqW-Lv-VHQ" secondAttribute="leadingMargin" constant="40" id="ouB-gn-hBK"/>
                             <constraint firstItem="Zhf-Ol-fLH" firstAttribute="top" secondItem="Qmh-pv-Rds" secondAttribute="bottom" constant="17" id="ryc-jF-mKh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4xb-JW-nCn" secondAttribute="trailing" constant="9" id="t5P-K4-rWq"/>
                             <constraint firstAttribute="leadingMargin" secondItem="4xb-JW-nCn" secondAttribute="leading" id="tQD-qY-ViR"/>
@@ -692,7 +683,6 @@
                         <outlet property="headerLabel" destination="Qmh-pv-Rds" id="gEN-Vl-iln"/>
                         <outlet property="hiddingButton" destination="73E-Xr-SCT" id="dF0-OM-lMJ"/>
                         <outlet property="infinitifLabel" destination="4xb-JW-nCn" id="ZMl-of-jR8"/>
-                        <outlet property="littleADBanner" destination="rkW-VF-DRI" id="PBR-PG-nn2"/>
                         <outlet property="nextButton" destination="eih-aa-ssl" id="nU5-c8-qU9"/>
                         <outlet property="parfaitLabel" destination="MEh-p8-JYU" id="RgY-wD-zhd"/>
                         <outlet property="presentLabel" destination="q5E-Qa-OI6" id="8fA-Fg-PPf"/>
@@ -723,6 +713,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="D52-mz-hae"/>
+        <segue reference="gtg-fB-eC7"/>
     </inferredMetricsTieBreakers>
 </document>

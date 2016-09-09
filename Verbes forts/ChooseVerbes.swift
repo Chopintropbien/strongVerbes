@@ -43,6 +43,17 @@ class ChooseVerbes: UIViewController {
                 rev.nextButtonText = "Suivant"
             }
             
+            func foldl(list:Array<String>, base:String) -> String {
+                var result = base
+                for item in list {
+                    result = result + item
+                }
+                return result
+            }
+            
+            print(verbesData.verbes.count)
+            print(foldl(verbesData.verbes.map({"\($0.infinitf()), \($0.present()), \($0.preterit()), \($0.parfait()) \n" }), base: ""))
+            
             if let id = segue.identifier{
                 switch id {
                 case LetterButton.A.rawValue:
@@ -60,9 +71,12 @@ class ChooseVerbes: UIViewController {
                 case LetterButton.HK.rawValue:
                     rev.verbes = verbesData.filterBy(LetterButton.HK)
                     setTextInLetterType(LetterButton.HK)
-                case LetterButton.LMN.rawValue:
-                    rev.verbes = verbesData.filterBy(LetterButton.LMN)
-                    setTextInLetterType(LetterButton.LMN)
+                case LetterButton.LM.rawValue:
+                    rev.verbes = verbesData.filterBy(LetterButton.LM)
+                    setTextInLetterType(LetterButton.LM)
+                case LetterButton.NPQ.rawValue:
+                    rev.verbes = verbesData.filterBy(LetterButton.NPQ)
+                    setTextInLetterType(LetterButton.NPQ)
                 case LetterButton.R.rawValue:
                     rev.verbes = verbesData.filterBy(LetterButton.R)
                     setTextInLetterType(LetterButton.R)
@@ -81,12 +95,10 @@ class ChooseVerbes: UIViewController {
                 case LetterButton.UV.rawValue:
                     rev.verbes = verbesData.filterBy(LetterButton.UV)
                     setTextInLetterType(LetterButton.UV)
-                case LetterButton.W.rawValue:
-                    rev.verbes = verbesData.filterBy(LetterButton.W)
-                    setTextInLetterType(LetterButton.W)
-                case LetterButton.Z.rawValue:
-                    rev.verbes = verbesData.filterBy(LetterButton.Z)
-                    setTextInLetterType(LetterButton.Z)
+                case LetterButton.WZ.rawValue:
+                    rev.verbes = verbesData.filterBy(LetterButton.WZ)
+                    setTextInLetterType(LetterButton.WZ)
+                
                 case Form.aiea.rawValue:
                     rev.verbes = verbesData.filterBy(Form.aiea)
                     setTextInFormType(Form.aiea)

@@ -14,8 +14,9 @@ import iAd
 class RevisionVerbes: UIViewController, ADBannerViewDelegate {
     
 
-    var advertisement = true
-    @IBOutlet weak var littleADBanner: ADBannerView!
+    var bannerView: ADBannerView!
+
+    var advertisement = false
     
     // Text
 
@@ -45,16 +46,23 @@ class RevisionVerbes: UIViewController, ADBannerViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        littleADBanner.hidden = true
-        littleADBanner.delegate = self
-        self.canDisplayBannerAds = true
+
+        
         
         if(!self.verbes.isEmpty){
             self.headerLabel.text = headerText
             self.initVerbe()
         }
         if(advertisement){
-            
+            self.canDisplayBannerAds = true
+            bannerView = ADBannerView(adType: .Banner)
+            bannerView.translatesAutoresizingMaskIntoConstraints = false
+            bannerView.delegate = self
+            bannerView.hidden = true
+            view.addSubview(bannerView)
+            let viewsDictionary = ["bannerView": bannerView]
+            view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[bannerView]|", options: [], metrics: nil, views: viewsDictionary))
+            view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[bannerView]|", options: [], metrics: nil, views: viewsDictionary))
         }
         
     }
@@ -99,23 +107,19 @@ class RevisionVerbes: UIViewController, ADBannerViewDelegate {
             dispatch_after(time, dispatch_get_main_queue()) {
                 // After *changeVerbeHiddingduration* seconds this line will be executed
                 self.initVerbe()
-                
             }
         }
     }
     
+    func bannerViewDidLoadAd(banner: ADBannerView!) {
+        bannerView.hidden = false
+    }
     
     func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
-        littleADBanner.hidden = true
-    }
-    func bannerViewDidLoadAd(banner: ADBannerView!) {
-        littleADBanner.hidden = false
-    }
-    func bannerViewActionShouldBegin(banner: ADBannerView!, willLeaveApplication willLeave: Bool) -> Bool {
-        return true
+        bannerView.hidden = true
     }
     
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
