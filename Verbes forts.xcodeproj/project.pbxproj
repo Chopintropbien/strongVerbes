@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9806ABD51D7AACAD006C01C0 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9806ABD41D7AACAD006C01C0 /* iAd.framework */; };
 		98B391BE1D757353001E1AA1 /* RevisionVerbes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B391BD1D757353001E1AA1 /* RevisionVerbes.swift */; };
-		98B391C01D75B90A001E1AA1 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 98B391BF1D75B90A001E1AA1 /* test.png */; };
 		98B79F981D70AD9300A3F94B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B79F971D70AD9300A3F94B /* AppDelegate.swift */; };
 		98B79F9A1D70AD9300A3F94B /* ChooseVerbes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B79F991D70AD9300A3F94B /* ChooseVerbes.swift */; };
 		98B79F9D1D70AD9300A3F94B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B79F9B1D70AD9300A3F94B /* Main.storyboard */; };
@@ -18,6 +17,217 @@
 		98B79FAD1D70AD9300A3F94B /* Verbes_fortsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B79FAC1D70AD9300A3F94B /* Verbes_fortsTests.swift */; };
 		98B79FB81D70AD9300A3F94B /* Verbes_fortsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B79FB71D70AD9300A3F94B /* Verbes_fortsUITests.swift */; };
 		98E172A61D740C5900131633 /* Verbes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E172A51D740C5900131633 /* Verbes.swift */; };
+		98F877901D83EFDE0048721B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F8778F1D83EFDE0048721B /* AVFoundation.framework */; };
+		98F8779B1D8536D70048721B /* anbieten.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877951D8536D70048721B /* anbieten.mp3 */; };
+		98F8779C1D8536D70048721B /* anfangen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877961D8536D70048721B /* anfangen.mp3 */; };
+		98F8779D1D8536D70048721B /* anhalten.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877971D8536D70048721B /* anhalten.mp3 */; };
+		98F8779E1D8536D70048721B /* ankommen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877981D8536D70048721B /* ankommen.mp3 */; };
+		98F8779F1D8536D70048721B /* anrufen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877991D8536D70048721B /* anrufen.mp3 */; };
+		98F877A01D8536D70048721B /* anziehen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8779A1D8536D70048721B /* anziehen.mp3 */; };
+		98F877C01D853F100048721B /* auffallen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877A11D853F0F0048721B /* auffallen.mp3 */; };
+		98F877C11D853F100048721B /* aufstehen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877A21D853F0F0048721B /* aufstehen.mp3 */; };
+		98F877C21D853F100048721B /* ausgeben.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877A31D853F0F0048721B /* ausgeben.mp3 */; };
+		98F877C31D853F100048721B /* ausleihen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877A41D853F0F0048721B /* ausleihen.mp3 */; };
+		98F877C41D853F100048721B /* aussehen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877A51D853F100048721B /* aussehen.mp3 */; };
+		98F877C51D853F100048721B /* backen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877A61D853F100048721B /* backen.mp3 */; };
+		98F877C61D853F100048721B /* befehlen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877A71D853F100048721B /* befehlen.mp3 */; };
+		98F877C71D853F100048721B /* beginnen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877A81D853F100048721B /* beginnen.mp3 */; };
+		98F877C81D853F100048721B /* begreifen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877A91D853F100048721B /* begreifen.mp3 */; };
+		98F877C91D853F100048721B /* beißen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877AA1D853F100048721B /* beißen.mp3 */; };
+		98F877CA1D853F100048721B /* bekommen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877AB1D853F100048721B /* bekommen.mp3 */; };
+		98F877CB1D853F100048721B /* bergen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877AC1D853F100048721B /* bergen.mp3 */; };
+		98F877CC1D853F100048721B /* bersten.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877AD1D853F100048721B /* bersten.mp3 */; };
+		98F877CD1D853F100048721B /* beschließen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877AE1D853F100048721B /* beschließen.mp3 */; };
+		98F877CE1D853F100048721B /* beschreiben.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877AF1D853F100048721B /* beschreiben.mp3 */; };
+		98F877CF1D853F100048721B /* betrügen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877B01D853F100048721B /* betrügen.mp3 */; };
+		98F877D01D853F100048721B /* bewegen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877B11D853F100048721B /* bewegen.mp3 */; };
+		98F877D11D853F100048721B /* biegen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877B21D853F100048721B /* biegen.mp3 */; };
+		98F877D21D853F100048721B /* bieten.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877B31D853F100048721B /* bieten.mp3 */; };
+		98F877D31D853F100048721B /* binden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877B41D853F100048721B /* binden.mp3 */; };
+		98F877D41D853F100048721B /* bitten.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877B51D853F100048721B /* bitten.mp3 */; };
+		98F877D51D853F100048721B /* blasen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877B61D853F100048721B /* blasen.mp3 */; };
+		98F877D61D853F100048721B /* bleiben.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877B71D853F100048721B /* bleiben.mp3 */; };
+		98F877D71D853F100048721B /* braten.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877B81D853F100048721B /* braten.mp3 */; };
+		98F877D81D853F100048721B /* brechen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877B91D853F100048721B /* brechen.mp3 */; };
+		98F877D91D853F100048721B /* brennen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877BA1D853F100048721B /* brennen.mp3 */; };
+		98F877DA1D853F100048721B /* bringen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877BB1D853F100048721B /* bringen.mp3 */; };
+		98F877DB1D853F100048721B /* denken.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877BC1D853F100048721B /* denken.mp3 */; };
+		98F877DC1D853F100048721B /* dreschen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877BD1D853F100048721B /* dreschen.mp3 */; };
+		98F877DD1D853F100048721B /* dringen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877BE1D853F100048721B /* dringen.mp3 */; };
+		98F877DE1D853F100048721B /* dürfen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877BF1D853F100048721B /* dürfen.mp3 */; };
+		98F877F21D8545370048721B /* einladen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877DF1D8545370048721B /* einladen.mp3 */; };
+		98F877F31D8545370048721B /* einschlafen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877E01D8545370048721B /* einschlafen.mp3 */; };
+		98F877F41D8545370048721B /* einsteigen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877E11D8545370048721B /* einsteigen.mp3 */; };
+		98F877F51D8545370048721B /* empfangen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877E21D8545370048721B /* empfangen.mp3 */; };
+		98F877F61D8545370048721B /* empfehlen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877E31D8545370048721B /* empfehlen.mp3 */; };
+		98F877F71D8545370048721B /* empfinden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877E41D8545370048721B /* empfinden.mp3 */; };
+		98F877F81D8545370048721B /* erhalten.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877E51D8545370048721B /* erhalten.mp3 */; };
+		98F877F91D8545370048721B /* erkiesen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877E61D8545370048721B /* erkiesen.mp3 */; };
+		98F877FA1D8545370048721B /* erklimmen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877E71D8545370048721B /* erklimmen.mp3 */; };
+		98F877FB1D8545370048721B /* erlöschen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877E81D8545370048721B /* erlöschen.mp3 */; };
+		98F877FC1D8545370048721B /* erschrecken.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877E91D8545370048721B /* erschrecken.mp3 */; };
+		98F877FD1D8545370048721B /* ertragen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877EA1D8545370048721B /* ertragen.mp3 */; };
+		98F877FE1D8545370048721B /* essen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877EB1D8545370048721B /* essen.mp3 */; };
+		98F877FF1D8545370048721B /* fahren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877EC1D8545370048721B /* fahren.mp3 */; };
+		98F878001D8545370048721B /* fallen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877ED1D8545370048721B /* fallen.mp3 */; };
+		98F878011D8545370048721B /* fangen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877EE1D8545370048721B /* fangen.mp3 */; };
+		98F878021D8545370048721B /* fechten.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877EF1D8545370048721B /* fechten.mp3 */; };
+		98F878031D8545370048721B /* fernsehen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877F01D8545370048721B /* fernsehen.mp3 */; };
+		98F878041D8545370048721B /* finden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877F11D8545370048721B /* finden.mp3 */; };
+		98F8783C1D86D2330048721B /* flechten.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878051D86D2330048721B /* flechten.mp3 */; };
+		98F8783D1D86D2330048721B /* fliegen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878061D86D2330048721B /* fliegen.mp3 */; };
+		98F8783E1D86D2330048721B /* fliehen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878071D86D2330048721B /* fliehen.mp3 */; };
+		98F8783F1D86D2330048721B /* fließen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878081D86D2330048721B /* fließen.mp3 */; };
+		98F878401D86D2330048721B /* fressen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878091D86D2330048721B /* fressen.mp3 */; };
+		98F878411D86D2330048721B /* frieren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8780A1D86D2330048721B /* frieren.mp3 */; };
+		98F878421D86D2330048721B /* gebären.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8780B1D86D2330048721B /* gebären.mp3 */; };
+		98F878431D86D2330048721B /* geben.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8780C1D86D2330048721B /* geben.mp3 */; };
+		98F878441D86D2330048721B /* gedeihen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8780D1D86D2330048721B /* gedeihen.mp3 */; };
+		98F878451D86D2330048721B /* gefallen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8780E1D86D2330048721B /* gefallen.mp3 */; };
+		98F878461D86D2330048721B /* gehen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8780F1D86D2330048721B /* gehen.mp3 */; };
+		98F878471D86D2330048721B /* gelingen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878101D86D2330048721B /* gelingen.mp3 */; };
+		98F878481D86D2330048721B /* gelten.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878111D86D2330048721B /* gelten.mp3 */; };
+		98F878491D86D2330048721B /* genesen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878121D86D2330048721B /* genesen.mp3 */; };
+		98F8784A1D86D2330048721B /* genießen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878131D86D2330048721B /* genießen.mp3 */; };
+		98F8784B1D86D2330048721B /* geschehen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878141D86D2330048721B /* geschehen.mp3 */; };
+		98F8784C1D86D2330048721B /* gewinnen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878151D86D2330048721B /* gewinnen.mp3 */; };
+		98F8784D1D86D2330048721B /* gießen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878161D86D2330048721B /* gießen.mp3 */; };
+		98F8784E1D86D2330048721B /* gleichen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878171D86D2330048721B /* gleichen.mp3 */; };
+		98F8784F1D86D2330048721B /* gleiten.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878181D86D2330048721B /* gleiten.mp3 */; };
+		98F878501D86D2330048721B /* glimmen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878191D86D2330048721B /* glimmen.mp3 */; };
+		98F878511D86D2330048721B /* graben.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8781A1D86D2330048721B /* graben.mp3 */; };
+		98F878521D86D2330048721B /* greifen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8781B1D86D2330048721B /* greifen.mp3 */; };
+		98F878531D86D2330048721B /* haben.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8781C1D86D2330048721B /* haben.mp3 */; };
+		98F878541D86D2330048721B /* halten.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8781D1D86D2330048721B /* halten.mp3 */; };
+		98F878551D86D2330048721B /* hängen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8781E1D86D2330048721B /* hängen.mp3 */; };
+		98F878561D86D2330048721B /* hauen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8781F1D86D2330048721B /* hauen.mp3 */; };
+		98F878571D86D2330048721B /* heben.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878201D86D2330048721B /* heben.mp3 */; };
+		98F878581D86D2330048721B /* heißen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878211D86D2330048721B /* heißen.mp3 */; };
+		98F878591D86D2330048721B /* helfen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878221D86D2330048721B /* helfen.mp3 */; };
+		98F8785A1D86D2330048721B /* kennen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878231D86D2330048721B /* kennen.mp3 */; };
+		98F8785B1D86D2330048721B /* klingen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878241D86D2330048721B /* klingen.mp3 */; };
+		98F8785C1D86D2330048721B /* kneifen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878251D86D2330048721B /* kneifen.mp3 */; };
+		98F8785D1D86D2330048721B /* kommen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878261D86D2330048721B /* kommen.mp3 */; };
+		98F8785E1D86D2330048721B /* laden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878271D86D2330048721B /* laden.mp3 */; };
+		98F8785F1D86D2330048721B /* lassen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878281D86D2330048721B /* lassen.mp3 */; };
+		98F878601D86D2330048721B /* laufen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878291D86D2330048721B /* laufen.mp3 */; };
+		98F878611D86D2330048721B /* leiden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8782A1D86D2330048721B /* leiden.mp3 */; };
+		98F878621D86D2330048721B /* leihen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8782B1D86D2330048721B /* leihen.mp3 */; };
+		98F878631D86D2330048721B /* lesen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8782C1D86D2330048721B /* lesen.mp3 */; };
+		98F878641D86D2330048721B /* liegen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8782D1D86D2330048721B /* liegen.mp3 */; };
+		98F878651D86D2330048721B /* lügen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8782E1D86D2330048721B /* lügen.mp3 */; };
+		98F878661D86D2330048721B /* mahlen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8782F1D86D2330048721B /* mahlen.mp3 */; };
+		98F878671D86D2330048721B /* meiden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878301D86D2330048721B /* meiden.mp3 */; };
+		98F878681D86D2330048721B /* melken.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878311D86D2330048721B /* melken.mp3 */; };
+		98F878691D86D2330048721B /* messen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878321D86D2330048721B /* messen.mp3 */; };
+		98F8786A1D86D2330048721B /* misslingen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878331D86D2330048721B /* misslingen.mp3 */; };
+		98F8786B1D86D2330048721B /* mithelfen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878341D86D2330048721B /* mithelfen.mp3 */; };
+		98F8786C1D86D2330048721B /* mitnehmen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878351D86D2330048721B /* mitnehmen.mp3 */; };
+		98F8786D1D86D2330048721B /* mögen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878361D86D2330048721B /* mögen.mp3 */; };
+		98F8786E1D86D2330048721B /* nehmen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878371D86D2330048721B /* nehmen.mp3 */; };
+		98F8786F1D86D2330048721B /* nennen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878381D86D2330048721B /* nennen.mp3 */; };
+		98F878701D86D2330048721B /* pfeifen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878391D86D2330048721B /* pfeifen.mp3 */; };
+		98F878711D86D2330048721B /* preisen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8783A1D86D2330048721B /* preisen.mp3 */; };
+		98F878721D86D2330048721B /* quellen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8783B1D86D2330048721B /* quellen.mp3 */; };
+		98F878AB1D86D2870048721B /* raten.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878731D86D2870048721B /* raten.mp3 */; };
+		98F878AC1D86D2870048721B /* reiben.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878741D86D2870048721B /* reiben.mp3 */; };
+		98F878AD1D86D2870048721B /* reißen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878751D86D2870048721B /* reißen.mp3 */; };
+		98F878AE1D86D2870048721B /* reiten.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878761D86D2870048721B /* reiten.mp3 */; };
+		98F878AF1D86D2870048721B /* rennen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878771D86D2870048721B /* rennen.mp3 */; };
+		98F878B01D86D2870048721B /* riechen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878781D86D2870048721B /* riechen.mp3 */; };
+		98F878B11D86D2870048721B /* ringen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878791D86D2870048721B /* ringen.mp3 */; };
+		98F878B21D86D2870048721B /* rinnen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8787A1D86D2870048721B /* rinnen.mp3 */; };
+		98F878B31D86D2870048721B /* rufen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8787B1D86D2870048721B /* rufen.mp3 */; };
+		98F878B41D86D2870048721B /* salzen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8787C1D86D2870048721B /* salzen.mp3 */; };
+		98F878B51D86D2870048721B /* saufen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8787D1D86D2870048721B /* saufen.mp3 */; };
+		98F878B61D86D2870048721B /* saugen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8787E1D86D2870048721B /* saugen.mp3 */; };
+		98F878B71D86D2870048721B /* schaffen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8787F1D86D2870048721B /* schaffen.mp3 */; };
+		98F878B81D86D2870048721B /* scheiden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878801D86D2870048721B /* scheiden.mp3 */; };
+		98F878B91D86D2870048721B /* scheinen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878811D86D2870048721B /* scheinen.mp3 */; };
+		98F878BA1D86D2870048721B /* scheißen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878821D86D2870048721B /* scheißen.mp3 */; };
+		98F878BB1D86D2870048721B /* schelten.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878831D86D2870048721B /* schelten.mp3 */; };
+		98F878BC1D86D2870048721B /* scheren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878841D86D2870048721B /* scheren.mp3 */; };
+		98F878BD1D86D2870048721B /* schieben.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878851D86D2870048721B /* schieben.mp3 */; };
+		98F878BE1D86D2870048721B /* schießen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878861D86D2870048721B /* schießen.mp3 */; };
+		98F878BF1D86D2870048721B /* schinden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878871D86D2870048721B /* schinden.mp3 */; };
+		98F878C01D86D2870048721B /* schlafen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878881D86D2870048721B /* schlafen.mp3 */; };
+		98F878C11D86D2870048721B /* schlagen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878891D86D2870048721B /* schlagen.mp3 */; };
+		98F878C21D86D2870048721B /* schleichen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8788A1D86D2870048721B /* schleichen.mp3 */; };
+		98F878C31D86D2870048721B /* schleifen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8788B1D86D2870048721B /* schleifen.mp3 */; };
+		98F878C41D86D2870048721B /* schließen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8788C1D86D2870048721B /* schließen.mp3 */; };
+		98F878C51D86D2870048721B /* schlingen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8788D1D86D2870048721B /* schlingen.mp3 */; };
+		98F878C61D86D2870048721B /* schmeißen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8788E1D86D2870048721B /* schmeißen.mp3 */; };
+		98F878C71D86D2870048721B /* schmelzen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8788F1D86D2870048721B /* schmelzen.mp3 */; };
+		98F878C81D86D2870048721B /* schneiden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878901D86D2870048721B /* schneiden.mp3 */; };
+		98F878C91D86D2870048721B /* schreiben.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878911D86D2870048721B /* schreiben.mp3 */; };
+		98F878CA1D86D2870048721B /* schreien.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878921D86D2870048721B /* schreien.mp3 */; };
+		98F878CB1D86D2870048721B /* schreiten.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878931D86D2870048721B /* schreiten.mp3 */; };
+		98F878CC1D86D2870048721B /* schweigen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878941D86D2870048721B /* schweigen.mp3 */; };
+		98F878CD1D86D2870048721B /* schwellen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878951D86D2870048721B /* schwellen.mp3 */; };
+		98F878CE1D86D2870048721B /* schwimmen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878961D86D2870048721B /* schwimmen.mp3 */; };
+		98F878CF1D86D2870048721B /* schwinden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878971D86D2870048721B /* schwinden.mp3 */; };
+		98F878D01D86D2870048721B /* schwingen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878981D86D2870048721B /* schwingen.mp3 */; };
+		98F878D11D86D2870048721B /* schwören.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878991D86D2870048721B /* schwören.mp3 */; };
+		98F878D21D86D2870048721B /* sehen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8789A1D86D2870048721B /* sehen.mp3 */; };
+		98F878D31D86D2870048721B /* sein.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8789B1D86D2870048721B /* sein.mp3 */; };
+		98F878D41D86D2870048721B /* senden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8789C1D86D2870048721B /* senden.mp3 */; };
+		98F878D51D86D2870048721B /* sieden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8789D1D86D2870048721B /* sieden.mp3 */; };
+		98F878D61D86D2870048721B /* singen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8789E1D86D2870048721B /* singen.mp3 */; };
+		98F878D71D86D2870048721B /* sinken.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8789F1D86D2870048721B /* sinken.mp3 */; };
+		98F878D81D86D2870048721B /* sinnen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878A01D86D2870048721B /* sinnen.mp3 */; };
+		98F878D91D86D2870048721B /* sitzen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878A11D86D2870048721B /* sitzen.mp3 */; };
+		98F878DA1D86D2870048721B /* speien.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878A21D86D2870048721B /* speien.mp3 */; };
+		98F878DB1D86D2870048721B /* spinnen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878A31D86D2870048721B /* spinnen.mp3 */; };
+		98F878DC1D86D2870048721B /* sprechen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878A41D86D2870048721B /* sprechen.mp3 */; };
+		98F878DD1D86D2870048721B /* sprießen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878A51D86D2870048721B /* sprießen.mp3 */; };
+		98F878DE1D86D2870048721B /* springen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878A61D86D2870048721B /* springen.mp3 */; };
+		98F878DF1D86D2870048721B /* stechen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878A71D86D2870048721B /* stechen.mp3 */; };
+		98F878E01D86D2870048721B /* stehen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878A81D86D2870048721B /* stehen.mp3 */; };
+		98F878E11D86D2870048721B /* stehlen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878A91D86D2870048721B /* stehlen.mp3 */; };
+		98F878E21D86D2870048721B /* steigen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878AA1D86D2870048721B /* steigen.mp3 */; };
+		98F8790D1D86DF590048721B /* sterben.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878E31D86DF590048721B /* sterben.mp3 */; };
+		98F8790E1D86DF590048721B /* stinken.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878E41D86DF590048721B /* stinken.mp3 */; };
+		98F8790F1D86DF590048721B /* stoßen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878E51D86DF590048721B /* stoßen.mp3 */; };
+		98F879101D86DF590048721B /* streichen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878E61D86DF590048721B /* streichen.mp3 */; };
+		98F879111D86DF590048721B /* streiten (sich).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878E71D86DF590048721B /* streiten (sich).mp3 */; };
+		98F879121D86DF590048721B /* tragen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878E81D86DF590048721B /* tragen.mp3 */; };
+		98F879131D86DF590048721B /* treffen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878E91D86DF590048721B /* treffen.mp3 */; };
+		98F879141D86DF590048721B /* treiben.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878EA1D86DF590048721B /* treiben.mp3 */; };
+		98F879151D86DF590048721B /* treten.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878EB1D86DF590048721B /* treten.mp3 */; };
+		98F879161D86DF590048721B /* trinken.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878EC1D86DF590048721B /* trinken.mp3 */; };
+		98F879171D86DF590048721B /* trügen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878ED1D86DF590048721B /* trügen.mp3 */; };
+		98F879181D86DF590048721B /* tun.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878EE1D86DF590048721B /* tun.mp3 */; };
+		98F879191D86DF590048721B /* übertreiben.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878EF1D86DF590048721B /* übertreiben.mp3 */; };
+		98F8791A1D86DF590048721B /* umsteigen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878F01D86DF590048721B /* umsteigen.mp3 */; };
+		98F8791B1D86DF590048721B /* verbieten.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878F11D86DF590048721B /* verbieten.mp3 */; };
+		98F8791C1D86DF590048721B /* verbringen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878F21D86DF590048721B /* verbringen.mp3 */; };
+		98F8791D1D86DF590048721B /* verderben.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878F31D86DF590048721B /* verderben.mp3 */; };
+		98F8791E1D86DF590048721B /* verdrießen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878F41D86DF590048721B /* verdrießen.mp3 */; };
+		98F8791F1D86DF590048721B /* vergehen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878F51D86DF590048721B /* vergehen.mp3 */; };
+		98F879201D86DF590048721B /* vergessen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878F61D86DF590048721B /* vergessen.mp3 */; };
+		98F879211D86DF590048721B /* vergleichen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878F71D86DF590048721B /* vergleichen.mp3 */; };
+		98F879221D86DF590048721B /* verlassen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878F81D86DF590048721B /* verlassen.mp3 */; };
+		98F879231D86DF590048721B /* verlieren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878F91D86DF590048721B /* verlieren.mp3 */; };
+		98F879241D86DF590048721B /* verschwinden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878FA1D86DF590048721B /* verschwinden.mp3 */; };
+		98F879251D86DF590048721B /* verstehen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878FB1D86DF590048721B /* verstehen.mp3 */; };
+		98F879261D86DF590048721B /* verzeihen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878FC1D86DF590048721B /* verzeihen.mp3 */; };
+		98F879271D86DF590048721B /* vorschlagen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878FD1D86DF590048721B /* vorschlagen.mp3 */; };
+		98F879281D86DF590048721B /* wachsen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878FE1D86DF590048721B /* wachsen.mp3 */; };
+		98F879291D86DF590048721B /* wägen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F878FF1D86DF590048721B /* wägen.mp3 */; };
+		98F8792A1D86DF590048721B /* waschen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F879001D86DF590048721B /* waschen.mp3 */; };
+		98F8792B1D86DF590048721B /* weichen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F879011D86DF590048721B /* weichen.mp3 */; };
+		98F8792C1D86DF590048721B /* weisen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F879021D86DF590048721B /* weisen.mp3 */; };
+		98F8792D1D86DF590048721B /* wenden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F879031D86DF590048721B /* wenden.mp3 */; };
+		98F8792E1D86DF590048721B /* werben.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F879041D86DF590048721B /* werben.mp3 */; };
+		98F8792F1D86DF590048721B /* werden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F879051D86DF590048721B /* werden.mp3 */; };
+		98F879301D86DF590048721B /* werfen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F879061D86DF590048721B /* werfen.mp3 */; };
+		98F879311D86DF590048721B /* wiegen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F879071D86DF590048721B /* wiegen.mp3 */; };
+		98F879321D86DF590048721B /* winden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F879081D86DF590048721B /* winden.mp3 */; };
+		98F879331D86DF590048721B /* wissen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F879091D86DF590048721B /* wissen.mp3 */; };
+		98F879341D86DF590048721B /* wringen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8790A1D86DF590048721B /* wringen.mp3 */; };
+		98F879351D86DF590048721B /* ziehen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8790B1D86DF590048721B /* ziehen.mp3 */; };
+		98F879361D86DF590048721B /* zwingen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F8790C1D86DF590048721B /* zwingen.mp3 */; };
+		98F879381D86E3DD0048721B /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F879371D86E3DD0048721B /* Lang.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +250,6 @@
 /* Begin PBXFileReference section */
 		9806ABD41D7AACAD006C01C0 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		98B391BD1D757353001E1AA1 /* RevisionVerbes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevisionVerbes.swift; sourceTree = "<group>"; };
-		98B391BF1D75B90A001E1AA1 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		98B79F941D70AD9300A3F94B /* Verbes forts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Verbes forts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B79F971D70AD9300A3F94B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98B79F991D70AD9300A3F94B /* ChooseVerbes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseVerbes.swift; sourceTree = "<group>"; };
@@ -55,6 +264,217 @@
 		98B79FB71D70AD9300A3F94B /* Verbes_fortsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verbes_fortsUITests.swift; sourceTree = "<group>"; };
 		98B79FB91D70AD9300A3F94B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98E172A51D740C5900131633 /* Verbes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Verbes.swift; sourceTree = "<group>"; };
+		98F8778F1D83EFDE0048721B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		98F877951D8536D70048721B /* anbieten.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = anbieten.mp3; sourceTree = "<group>"; };
+		98F877961D8536D70048721B /* anfangen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = anfangen.mp3; sourceTree = "<group>"; };
+		98F877971D8536D70048721B /* anhalten.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = anhalten.mp3; sourceTree = "<group>"; };
+		98F877981D8536D70048721B /* ankommen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ankommen.mp3; sourceTree = "<group>"; };
+		98F877991D8536D70048721B /* anrufen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = anrufen.mp3; sourceTree = "<group>"; };
+		98F8779A1D8536D70048721B /* anziehen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = anziehen.mp3; sourceTree = "<group>"; };
+		98F877A11D853F0F0048721B /* auffallen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = auffallen.mp3; sourceTree = "<group>"; };
+		98F877A21D853F0F0048721B /* aufstehen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = aufstehen.mp3; sourceTree = "<group>"; };
+		98F877A31D853F0F0048721B /* ausgeben.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ausgeben.mp3; sourceTree = "<group>"; };
+		98F877A41D853F0F0048721B /* ausleihen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ausleihen.mp3; sourceTree = "<group>"; };
+		98F877A51D853F100048721B /* aussehen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = aussehen.mp3; sourceTree = "<group>"; };
+		98F877A61D853F100048721B /* backen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backen.mp3; sourceTree = "<group>"; };
+		98F877A71D853F100048721B /* befehlen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = befehlen.mp3; sourceTree = "<group>"; };
+		98F877A81D853F100048721B /* beginnen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beginnen.mp3; sourceTree = "<group>"; };
+		98F877A91D853F100048721B /* begreifen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = begreifen.mp3; sourceTree = "<group>"; };
+		98F877AA1D853F100048721B /* beißen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "beißen.mp3"; sourceTree = "<group>"; };
+		98F877AB1D853F100048721B /* bekommen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bekommen.mp3; sourceTree = "<group>"; };
+		98F877AC1D853F100048721B /* bergen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bergen.mp3; sourceTree = "<group>"; };
+		98F877AD1D853F100048721B /* bersten.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bersten.mp3; sourceTree = "<group>"; };
+		98F877AE1D853F100048721B /* beschließen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "beschließen.mp3"; sourceTree = "<group>"; };
+		98F877AF1D853F100048721B /* beschreiben.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beschreiben.mp3; sourceTree = "<group>"; };
+		98F877B01D853F100048721B /* betrügen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "betrügen.mp3"; sourceTree = "<group>"; };
+		98F877B11D853F100048721B /* bewegen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bewegen.mp3; sourceTree = "<group>"; };
+		98F877B21D853F100048721B /* biegen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = biegen.mp3; sourceTree = "<group>"; };
+		98F877B31D853F100048721B /* bieten.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bieten.mp3; sourceTree = "<group>"; };
+		98F877B41D853F100048721B /* binden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = binden.mp3; sourceTree = "<group>"; };
+		98F877B51D853F100048721B /* bitten.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bitten.mp3; sourceTree = "<group>"; };
+		98F877B61D853F100048721B /* blasen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = blasen.mp3; sourceTree = "<group>"; };
+		98F877B71D853F100048721B /* bleiben.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bleiben.mp3; sourceTree = "<group>"; };
+		98F877B81D853F100048721B /* braten.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = braten.mp3; sourceTree = "<group>"; };
+		98F877B91D853F100048721B /* brechen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = brechen.mp3; sourceTree = "<group>"; };
+		98F877BA1D853F100048721B /* brennen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = brennen.mp3; sourceTree = "<group>"; };
+		98F877BB1D853F100048721B /* bringen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bringen.mp3; sourceTree = "<group>"; };
+		98F877BC1D853F100048721B /* denken.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = denken.mp3; sourceTree = "<group>"; };
+		98F877BD1D853F100048721B /* dreschen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dreschen.mp3; sourceTree = "<group>"; };
+		98F877BE1D853F100048721B /* dringen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dringen.mp3; sourceTree = "<group>"; };
+		98F877BF1D853F100048721B /* dürfen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "dürfen.mp3"; sourceTree = "<group>"; };
+		98F877DF1D8545370048721B /* einladen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = einladen.mp3; sourceTree = "<group>"; };
+		98F877E01D8545370048721B /* einschlafen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = einschlafen.mp3; sourceTree = "<group>"; };
+		98F877E11D8545370048721B /* einsteigen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = einsteigen.mp3; sourceTree = "<group>"; };
+		98F877E21D8545370048721B /* empfangen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = empfangen.mp3; sourceTree = "<group>"; };
+		98F877E31D8545370048721B /* empfehlen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = empfehlen.mp3; sourceTree = "<group>"; };
+		98F877E41D8545370048721B /* empfinden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = empfinden.mp3; sourceTree = "<group>"; };
+		98F877E51D8545370048721B /* erhalten.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = erhalten.mp3; sourceTree = "<group>"; };
+		98F877E61D8545370048721B /* erkiesen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = erkiesen.mp3; sourceTree = "<group>"; };
+		98F877E71D8545370048721B /* erklimmen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = erklimmen.mp3; sourceTree = "<group>"; };
+		98F877E81D8545370048721B /* erlöschen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "erlöschen.mp3"; sourceTree = "<group>"; };
+		98F877E91D8545370048721B /* erschrecken.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = erschrecken.mp3; sourceTree = "<group>"; };
+		98F877EA1D8545370048721B /* ertragen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ertragen.mp3; sourceTree = "<group>"; };
+		98F877EB1D8545370048721B /* essen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = essen.mp3; sourceTree = "<group>"; };
+		98F877EC1D8545370048721B /* fahren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fahren.mp3; sourceTree = "<group>"; };
+		98F877ED1D8545370048721B /* fallen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fallen.mp3; sourceTree = "<group>"; };
+		98F877EE1D8545370048721B /* fangen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fangen.mp3; sourceTree = "<group>"; };
+		98F877EF1D8545370048721B /* fechten.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fechten.mp3; sourceTree = "<group>"; };
+		98F877F01D8545370048721B /* fernsehen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fernsehen.mp3; sourceTree = "<group>"; };
+		98F877F11D8545370048721B /* finden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = finden.mp3; sourceTree = "<group>"; };
+		98F878051D86D2330048721B /* flechten.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = flechten.mp3; sourceTree = "<group>"; };
+		98F878061D86D2330048721B /* fliegen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fliegen.mp3; sourceTree = "<group>"; };
+		98F878071D86D2330048721B /* fliehen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fliehen.mp3; sourceTree = "<group>"; };
+		98F878081D86D2330048721B /* fließen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "fließen.mp3"; sourceTree = "<group>"; };
+		98F878091D86D2330048721B /* fressen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fressen.mp3; sourceTree = "<group>"; };
+		98F8780A1D86D2330048721B /* frieren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = frieren.mp3; sourceTree = "<group>"; };
+		98F8780B1D86D2330048721B /* gebären.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "gebären.mp3"; sourceTree = "<group>"; };
+		98F8780C1D86D2330048721B /* geben.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = geben.mp3; sourceTree = "<group>"; };
+		98F8780D1D86D2330048721B /* gedeihen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gedeihen.mp3; sourceTree = "<group>"; };
+		98F8780E1D86D2330048721B /* gefallen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gefallen.mp3; sourceTree = "<group>"; };
+		98F8780F1D86D2330048721B /* gehen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gehen.mp3; sourceTree = "<group>"; };
+		98F878101D86D2330048721B /* gelingen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gelingen.mp3; sourceTree = "<group>"; };
+		98F878111D86D2330048721B /* gelten.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gelten.mp3; sourceTree = "<group>"; };
+		98F878121D86D2330048721B /* genesen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = genesen.mp3; sourceTree = "<group>"; };
+		98F878131D86D2330048721B /* genießen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "genießen.mp3"; sourceTree = "<group>"; };
+		98F878141D86D2330048721B /* geschehen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = geschehen.mp3; sourceTree = "<group>"; };
+		98F878151D86D2330048721B /* gewinnen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gewinnen.mp3; sourceTree = "<group>"; };
+		98F878161D86D2330048721B /* gießen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "gießen.mp3"; sourceTree = "<group>"; };
+		98F878171D86D2330048721B /* gleichen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gleichen.mp3; sourceTree = "<group>"; };
+		98F878181D86D2330048721B /* gleiten.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gleiten.mp3; sourceTree = "<group>"; };
+		98F878191D86D2330048721B /* glimmen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = glimmen.mp3; sourceTree = "<group>"; };
+		98F8781A1D86D2330048721B /* graben.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = graben.mp3; sourceTree = "<group>"; };
+		98F8781B1D86D2330048721B /* greifen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = greifen.mp3; sourceTree = "<group>"; };
+		98F8781C1D86D2330048721B /* haben.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = haben.mp3; sourceTree = "<group>"; };
+		98F8781D1D86D2330048721B /* halten.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = halten.mp3; sourceTree = "<group>"; };
+		98F8781E1D86D2330048721B /* hängen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "hängen.mp3"; sourceTree = "<group>"; };
+		98F8781F1D86D2330048721B /* hauen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hauen.mp3; sourceTree = "<group>"; };
+		98F878201D86D2330048721B /* heben.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = heben.mp3; sourceTree = "<group>"; };
+		98F878211D86D2330048721B /* heißen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "heißen.mp3"; sourceTree = "<group>"; };
+		98F878221D86D2330048721B /* helfen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = helfen.mp3; sourceTree = "<group>"; };
+		98F878231D86D2330048721B /* kennen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kennen.mp3; sourceTree = "<group>"; };
+		98F878241D86D2330048721B /* klingen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = klingen.mp3; sourceTree = "<group>"; };
+		98F878251D86D2330048721B /* kneifen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kneifen.mp3; sourceTree = "<group>"; };
+		98F878261D86D2330048721B /* kommen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kommen.mp3; sourceTree = "<group>"; };
+		98F878271D86D2330048721B /* laden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = laden.mp3; sourceTree = "<group>"; };
+		98F878281D86D2330048721B /* lassen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lassen.mp3; sourceTree = "<group>"; };
+		98F878291D86D2330048721B /* laufen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = laufen.mp3; sourceTree = "<group>"; };
+		98F8782A1D86D2330048721B /* leiden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = leiden.mp3; sourceTree = "<group>"; };
+		98F8782B1D86D2330048721B /* leihen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = leihen.mp3; sourceTree = "<group>"; };
+		98F8782C1D86D2330048721B /* lesen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lesen.mp3; sourceTree = "<group>"; };
+		98F8782D1D86D2330048721B /* liegen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = liegen.mp3; sourceTree = "<group>"; };
+		98F8782E1D86D2330048721B /* lügen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "lügen.mp3"; sourceTree = "<group>"; };
+		98F8782F1D86D2330048721B /* mahlen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mahlen.mp3; sourceTree = "<group>"; };
+		98F878301D86D2330048721B /* meiden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meiden.mp3; sourceTree = "<group>"; };
+		98F878311D86D2330048721B /* melken.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = melken.mp3; sourceTree = "<group>"; };
+		98F878321D86D2330048721B /* messen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = messen.mp3; sourceTree = "<group>"; };
+		98F878331D86D2330048721B /* misslingen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = misslingen.mp3; sourceTree = "<group>"; };
+		98F878341D86D2330048721B /* mithelfen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mithelfen.mp3; sourceTree = "<group>"; };
+		98F878351D86D2330048721B /* mitnehmen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mitnehmen.mp3; sourceTree = "<group>"; };
+		98F878361D86D2330048721B /* mögen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "mögen.mp3"; sourceTree = "<group>"; };
+		98F878371D86D2330048721B /* nehmen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nehmen.mp3; sourceTree = "<group>"; };
+		98F878381D86D2330048721B /* nennen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nennen.mp3; sourceTree = "<group>"; };
+		98F878391D86D2330048721B /* pfeifen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pfeifen.mp3; sourceTree = "<group>"; };
+		98F8783A1D86D2330048721B /* preisen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = preisen.mp3; sourceTree = "<group>"; };
+		98F8783B1D86D2330048721B /* quellen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = quellen.mp3; sourceTree = "<group>"; };
+		98F878731D86D2870048721B /* raten.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = raten.mp3; sourceTree = "<group>"; };
+		98F878741D86D2870048721B /* reiben.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = reiben.mp3; sourceTree = "<group>"; };
+		98F878751D86D2870048721B /* reißen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "reißen.mp3"; sourceTree = "<group>"; };
+		98F878761D86D2870048721B /* reiten.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = reiten.mp3; sourceTree = "<group>"; };
+		98F878771D86D2870048721B /* rennen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rennen.mp3; sourceTree = "<group>"; };
+		98F878781D86D2870048721B /* riechen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = riechen.mp3; sourceTree = "<group>"; };
+		98F878791D86D2870048721B /* ringen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ringen.mp3; sourceTree = "<group>"; };
+		98F8787A1D86D2870048721B /* rinnen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rinnen.mp3; sourceTree = "<group>"; };
+		98F8787B1D86D2870048721B /* rufen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rufen.mp3; sourceTree = "<group>"; };
+		98F8787C1D86D2870048721B /* salzen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = salzen.mp3; sourceTree = "<group>"; };
+		98F8787D1D86D2870048721B /* saufen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = saufen.mp3; sourceTree = "<group>"; };
+		98F8787E1D86D2870048721B /* saugen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = saugen.mp3; sourceTree = "<group>"; };
+		98F8787F1D86D2870048721B /* schaffen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = schaffen.mp3; sourceTree = "<group>"; };
+		98F878801D86D2870048721B /* scheiden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = scheiden.mp3; sourceTree = "<group>"; };
+		98F878811D86D2870048721B /* scheinen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = scheinen.mp3; sourceTree = "<group>"; };
+		98F878821D86D2870048721B /* scheißen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "scheißen.mp3"; sourceTree = "<group>"; };
+		98F878831D86D2870048721B /* schelten.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = schelten.mp3; sourceTree = "<group>"; };
+		98F878841D86D2870048721B /* scheren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = scheren.mp3; sourceTree = "<group>"; };
+		98F878851D86D2870048721B /* schieben.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = schieben.mp3; sourceTree = "<group>"; };
+		98F878861D86D2870048721B /* schießen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "schießen.mp3"; sourceTree = "<group>"; };
+		98F878871D86D2870048721B /* schinden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = schinden.mp3; sourceTree = "<group>"; };
+		98F878881D86D2870048721B /* schlafen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = schlafen.mp3; sourceTree = "<group>"; };
+		98F878891D86D2870048721B /* schlagen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = schlagen.mp3; sourceTree = "<group>"; };
+		98F8788A1D86D2870048721B /* schleichen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = schleichen.mp3; sourceTree = "<group>"; };
+		98F8788B1D86D2870048721B /* schleifen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = schleifen.mp3; sourceTree = "<group>"; };
+		98F8788C1D86D2870048721B /* schließen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "schließen.mp3"; sourceTree = "<group>"; };
+		98F8788D1D86D2870048721B /* schlingen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = schlingen.mp3; sourceTree = "<group>"; };
+		98F8788E1D86D2870048721B /* schmeißen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "schmeißen.mp3"; sourceTree = "<group>"; };
+		98F8788F1D86D2870048721B /* schmelzen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = schmelzen.mp3; sourceTree = "<group>"; };
+		98F878901D86D2870048721B /* schneiden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = schneiden.mp3; sourceTree = "<group>"; };
+		98F878911D86D2870048721B /* schreiben.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = schreiben.mp3; sourceTree = "<group>"; };
+		98F878921D86D2870048721B /* schreien.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = schreien.mp3; sourceTree = "<group>"; };
+		98F878931D86D2870048721B /* schreiten.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = schreiten.mp3; sourceTree = "<group>"; };
+		98F878941D86D2870048721B /* schweigen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = schweigen.mp3; sourceTree = "<group>"; };
+		98F878951D86D2870048721B /* schwellen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = schwellen.mp3; sourceTree = "<group>"; };
+		98F878961D86D2870048721B /* schwimmen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = schwimmen.mp3; sourceTree = "<group>"; };
+		98F878971D86D2870048721B /* schwinden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = schwinden.mp3; sourceTree = "<group>"; };
+		98F878981D86D2870048721B /* schwingen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = schwingen.mp3; sourceTree = "<group>"; };
+		98F878991D86D2870048721B /* schwören.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "schwören.mp3"; sourceTree = "<group>"; };
+		98F8789A1D86D2870048721B /* sehen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sehen.mp3; sourceTree = "<group>"; };
+		98F8789B1D86D2870048721B /* sein.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sein.mp3; sourceTree = "<group>"; };
+		98F8789C1D86D2870048721B /* senden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = senden.mp3; sourceTree = "<group>"; };
+		98F8789D1D86D2870048721B /* sieden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sieden.mp3; sourceTree = "<group>"; };
+		98F8789E1D86D2870048721B /* singen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = singen.mp3; sourceTree = "<group>"; };
+		98F8789F1D86D2870048721B /* sinken.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sinken.mp3; sourceTree = "<group>"; };
+		98F878A01D86D2870048721B /* sinnen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sinnen.mp3; sourceTree = "<group>"; };
+		98F878A11D86D2870048721B /* sitzen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sitzen.mp3; sourceTree = "<group>"; };
+		98F878A21D86D2870048721B /* speien.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = speien.mp3; sourceTree = "<group>"; };
+		98F878A31D86D2870048721B /* spinnen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spinnen.mp3; sourceTree = "<group>"; };
+		98F878A41D86D2870048721B /* sprechen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sprechen.mp3; sourceTree = "<group>"; };
+		98F878A51D86D2870048721B /* sprießen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sprießen.mp3"; sourceTree = "<group>"; };
+		98F878A61D86D2870048721B /* springen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = springen.mp3; sourceTree = "<group>"; };
+		98F878A71D86D2870048721B /* stechen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stechen.mp3; sourceTree = "<group>"; };
+		98F878A81D86D2870048721B /* stehen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stehen.mp3; sourceTree = "<group>"; };
+		98F878A91D86D2870048721B /* stehlen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stehlen.mp3; sourceTree = "<group>"; };
+		98F878AA1D86D2870048721B /* steigen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = steigen.mp3; sourceTree = "<group>"; };
+		98F878E31D86DF590048721B /* sterben.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sterben.mp3; sourceTree = "<group>"; };
+		98F878E41D86DF590048721B /* stinken.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stinken.mp3; sourceTree = "<group>"; };
+		98F878E51D86DF590048721B /* stoßen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "stoßen.mp3"; sourceTree = "<group>"; };
+		98F878E61D86DF590048721B /* streichen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = streichen.mp3; sourceTree = "<group>"; };
+		98F878E71D86DF590048721B /* streiten (sich).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "streiten (sich).mp3"; sourceTree = "<group>"; };
+		98F878E81D86DF590048721B /* tragen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tragen.mp3; sourceTree = "<group>"; };
+		98F878E91D86DF590048721B /* treffen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = treffen.mp3; sourceTree = "<group>"; };
+		98F878EA1D86DF590048721B /* treiben.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = treiben.mp3; sourceTree = "<group>"; };
+		98F878EB1D86DF590048721B /* treten.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = treten.mp3; sourceTree = "<group>"; };
+		98F878EC1D86DF590048721B /* trinken.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trinken.mp3; sourceTree = "<group>"; };
+		98F878ED1D86DF590048721B /* trügen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "trügen.mp3"; sourceTree = "<group>"; };
+		98F878EE1D86DF590048721B /* tun.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tun.mp3; sourceTree = "<group>"; };
+		98F878EF1D86DF590048721B /* übertreiben.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "übertreiben.mp3"; sourceTree = "<group>"; };
+		98F878F01D86DF590048721B /* umsteigen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = umsteigen.mp3; sourceTree = "<group>"; };
+		98F878F11D86DF590048721B /* verbieten.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = verbieten.mp3; sourceTree = "<group>"; };
+		98F878F21D86DF590048721B /* verbringen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = verbringen.mp3; sourceTree = "<group>"; };
+		98F878F31D86DF590048721B /* verderben.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = verderben.mp3; sourceTree = "<group>"; };
+		98F878F41D86DF590048721B /* verdrießen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "verdrießen.mp3"; sourceTree = "<group>"; };
+		98F878F51D86DF590048721B /* vergehen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vergehen.mp3; sourceTree = "<group>"; };
+		98F878F61D86DF590048721B /* vergessen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vergessen.mp3; sourceTree = "<group>"; };
+		98F878F71D86DF590048721B /* vergleichen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vergleichen.mp3; sourceTree = "<group>"; };
+		98F878F81D86DF590048721B /* verlassen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = verlassen.mp3; sourceTree = "<group>"; };
+		98F878F91D86DF590048721B /* verlieren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = verlieren.mp3; sourceTree = "<group>"; };
+		98F878FA1D86DF590048721B /* verschwinden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = verschwinden.mp3; sourceTree = "<group>"; };
+		98F878FB1D86DF590048721B /* verstehen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = verstehen.mp3; sourceTree = "<group>"; };
+		98F878FC1D86DF590048721B /* verzeihen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = verzeihen.mp3; sourceTree = "<group>"; };
+		98F878FD1D86DF590048721B /* vorschlagen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vorschlagen.mp3; sourceTree = "<group>"; };
+		98F878FE1D86DF590048721B /* wachsen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wachsen.mp3; sourceTree = "<group>"; };
+		98F878FF1D86DF590048721B /* wägen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "wägen.mp3"; sourceTree = "<group>"; };
+		98F879001D86DF590048721B /* waschen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = waschen.mp3; sourceTree = "<group>"; };
+		98F879011D86DF590048721B /* weichen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = weichen.mp3; sourceTree = "<group>"; };
+		98F879021D86DF590048721B /* weisen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = weisen.mp3; sourceTree = "<group>"; };
+		98F879031D86DF590048721B /* wenden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wenden.mp3; sourceTree = "<group>"; };
+		98F879041D86DF590048721B /* werben.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = werben.mp3; sourceTree = "<group>"; };
+		98F879051D86DF590048721B /* werden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = werden.mp3; sourceTree = "<group>"; };
+		98F879061D86DF590048721B /* werfen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = werfen.mp3; sourceTree = "<group>"; };
+		98F879071D86DF590048721B /* wiegen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wiegen.mp3; sourceTree = "<group>"; };
+		98F879081D86DF590048721B /* winden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = winden.mp3; sourceTree = "<group>"; };
+		98F879091D86DF590048721B /* wissen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wissen.mp3; sourceTree = "<group>"; };
+		98F8790A1D86DF590048721B /* wringen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wringen.mp3; sourceTree = "<group>"; };
+		98F8790B1D86DF590048721B /* ziehen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ziehen.mp3; sourceTree = "<group>"; };
+		98F8790C1D86DF590048721B /* zwingen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zwingen.mp3; sourceTree = "<group>"; };
+		98F879371D86E3DD0048721B /* Lang.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lang.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +482,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98F877901D83EFDE0048721B /* AVFoundation.framework in Frameworks */,
 				9806ABD51D7AACAD006C01C0 /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +507,7 @@
 		98B79F8B1D70AD9300A3F94B = {
 			isa = PBXGroup;
 			children = (
+				98F8778F1D83EFDE0048721B /* AVFoundation.framework */,
 				9806ABD41D7AACAD006C01C0 /* iAd.framework */,
 				98B79F961D70AD9300A3F94B /* Verbes forts */,
 				98B79FAB1D70AD9300A3F94B /* Verbes fortsTests */,
@@ -107,6 +529,7 @@
 		98B79F961D70AD9300A3F94B /* Verbes forts */ = {
 			isa = PBXGroup;
 			children = (
+				98F8778E1D83EEE20048721B /* Supporting files */,
 				98B79F991D70AD9300A3F94B /* ChooseVerbes.swift */,
 				98B391BD1D757353001E1AA1 /* RevisionVerbes.swift */,
 				98E172A51D740C5900131633 /* Verbes.swift */,
@@ -115,7 +538,7 @@
 				98B79FA01D70AD9300A3F94B /* LaunchScreen.storyboard */,
 				98B79FA31D70AD9300A3F94B /* Info.plist */,
 				98B79F971D70AD9300A3F94B /* AppDelegate.swift */,
-				98B391BF1D75B90A001E1AA1 /* test.png */,
+				98F879371D86E3DD0048721B /* Lang.swift */,
 			);
 			path = "Verbes forts";
 			sourceTree = "<group>";
@@ -136,6 +559,230 @@
 				98B79FB91D70AD9300A3F94B /* Info.plist */,
 			);
 			path = "Verbes fortsUITests";
+			sourceTree = "<group>";
+		};
+		98F8778E1D83EEE20048721B /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				98F877911D83F0960048721B /* Verbes audio */,
+			);
+			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+		98F877911D83F0960048721B /* Verbes audio */ = {
+			isa = PBXGroup;
+			children = (
+				98F877951D8536D70048721B /* anbieten.mp3 */,
+				98F877961D8536D70048721B /* anfangen.mp3 */,
+				98F877971D8536D70048721B /* anhalten.mp3 */,
+				98F877981D8536D70048721B /* ankommen.mp3 */,
+				98F877991D8536D70048721B /* anrufen.mp3 */,
+				98F8779A1D8536D70048721B /* anziehen.mp3 */,
+				98F877A11D853F0F0048721B /* auffallen.mp3 */,
+				98F877A21D853F0F0048721B /* aufstehen.mp3 */,
+				98F877A31D853F0F0048721B /* ausgeben.mp3 */,
+				98F877A41D853F0F0048721B /* ausleihen.mp3 */,
+				98F877A51D853F100048721B /* aussehen.mp3 */,
+				98F877A61D853F100048721B /* backen.mp3 */,
+				98F877A71D853F100048721B /* befehlen.mp3 */,
+				98F877A81D853F100048721B /* beginnen.mp3 */,
+				98F877A91D853F100048721B /* begreifen.mp3 */,
+				98F877AA1D853F100048721B /* beißen.mp3 */,
+				98F877AB1D853F100048721B /* bekommen.mp3 */,
+				98F877AC1D853F100048721B /* bergen.mp3 */,
+				98F877AD1D853F100048721B /* bersten.mp3 */,
+				98F877AE1D853F100048721B /* beschließen.mp3 */,
+				98F877AF1D853F100048721B /* beschreiben.mp3 */,
+				98F877B01D853F100048721B /* betrügen.mp3 */,
+				98F877B11D853F100048721B /* bewegen.mp3 */,
+				98F877B21D853F100048721B /* biegen.mp3 */,
+				98F877B31D853F100048721B /* bieten.mp3 */,
+				98F877B41D853F100048721B /* binden.mp3 */,
+				98F877B51D853F100048721B /* bitten.mp3 */,
+				98F877B61D853F100048721B /* blasen.mp3 */,
+				98F877B71D853F100048721B /* bleiben.mp3 */,
+				98F877B81D853F100048721B /* braten.mp3 */,
+				98F877B91D853F100048721B /* brechen.mp3 */,
+				98F877BA1D853F100048721B /* brennen.mp3 */,
+				98F877BB1D853F100048721B /* bringen.mp3 */,
+				98F877BC1D853F100048721B /* denken.mp3 */,
+				98F877BD1D853F100048721B /* dreschen.mp3 */,
+				98F877BE1D853F100048721B /* dringen.mp3 */,
+				98F877BF1D853F100048721B /* dürfen.mp3 */,
+				98F877DF1D8545370048721B /* einladen.mp3 */,
+				98F877E01D8545370048721B /* einschlafen.mp3 */,
+				98F877E11D8545370048721B /* einsteigen.mp3 */,
+				98F877E21D8545370048721B /* empfangen.mp3 */,
+				98F877E31D8545370048721B /* empfehlen.mp3 */,
+				98F877E41D8545370048721B /* empfinden.mp3 */,
+				98F877E51D8545370048721B /* erhalten.mp3 */,
+				98F877E61D8545370048721B /* erkiesen.mp3 */,
+				98F877E71D8545370048721B /* erklimmen.mp3 */,
+				98F877E81D8545370048721B /* erlöschen.mp3 */,
+				98F877E91D8545370048721B /* erschrecken.mp3 */,
+				98F877EA1D8545370048721B /* ertragen.mp3 */,
+				98F877EB1D8545370048721B /* essen.mp3 */,
+				98F877EC1D8545370048721B /* fahren.mp3 */,
+				98F877ED1D8545370048721B /* fallen.mp3 */,
+				98F877EE1D8545370048721B /* fangen.mp3 */,
+				98F877EF1D8545370048721B /* fechten.mp3 */,
+				98F877F01D8545370048721B /* fernsehen.mp3 */,
+				98F877F11D8545370048721B /* finden.mp3 */,
+				98F878051D86D2330048721B /* flechten.mp3 */,
+				98F878061D86D2330048721B /* fliegen.mp3 */,
+				98F878071D86D2330048721B /* fliehen.mp3 */,
+				98F878081D86D2330048721B /* fließen.mp3 */,
+				98F878091D86D2330048721B /* fressen.mp3 */,
+				98F8780A1D86D2330048721B /* frieren.mp3 */,
+				98F8780B1D86D2330048721B /* gebären.mp3 */,
+				98F8780C1D86D2330048721B /* geben.mp3 */,
+				98F8780D1D86D2330048721B /* gedeihen.mp3 */,
+				98F8780E1D86D2330048721B /* gefallen.mp3 */,
+				98F8780F1D86D2330048721B /* gehen.mp3 */,
+				98F878101D86D2330048721B /* gelingen.mp3 */,
+				98F878111D86D2330048721B /* gelten.mp3 */,
+				98F878121D86D2330048721B /* genesen.mp3 */,
+				98F878131D86D2330048721B /* genießen.mp3 */,
+				98F878141D86D2330048721B /* geschehen.mp3 */,
+				98F878151D86D2330048721B /* gewinnen.mp3 */,
+				98F878161D86D2330048721B /* gießen.mp3 */,
+				98F878171D86D2330048721B /* gleichen.mp3 */,
+				98F878181D86D2330048721B /* gleiten.mp3 */,
+				98F878191D86D2330048721B /* glimmen.mp3 */,
+				98F8781A1D86D2330048721B /* graben.mp3 */,
+				98F8781B1D86D2330048721B /* greifen.mp3 */,
+				98F8781C1D86D2330048721B /* haben.mp3 */,
+				98F8781D1D86D2330048721B /* halten.mp3 */,
+				98F8781E1D86D2330048721B /* hängen.mp3 */,
+				98F8781F1D86D2330048721B /* hauen.mp3 */,
+				98F878201D86D2330048721B /* heben.mp3 */,
+				98F878211D86D2330048721B /* heißen.mp3 */,
+				98F878221D86D2330048721B /* helfen.mp3 */,
+				98F878231D86D2330048721B /* kennen.mp3 */,
+				98F878241D86D2330048721B /* klingen.mp3 */,
+				98F878251D86D2330048721B /* kneifen.mp3 */,
+				98F878261D86D2330048721B /* kommen.mp3 */,
+				98F878271D86D2330048721B /* laden.mp3 */,
+				98F878281D86D2330048721B /* lassen.mp3 */,
+				98F878291D86D2330048721B /* laufen.mp3 */,
+				98F8782A1D86D2330048721B /* leiden.mp3 */,
+				98F8782B1D86D2330048721B /* leihen.mp3 */,
+				98F8782C1D86D2330048721B /* lesen.mp3 */,
+				98F8782D1D86D2330048721B /* liegen.mp3 */,
+				98F8782E1D86D2330048721B /* lügen.mp3 */,
+				98F8782F1D86D2330048721B /* mahlen.mp3 */,
+				98F878301D86D2330048721B /* meiden.mp3 */,
+				98F878311D86D2330048721B /* melken.mp3 */,
+				98F878321D86D2330048721B /* messen.mp3 */,
+				98F878331D86D2330048721B /* misslingen.mp3 */,
+				98F878341D86D2330048721B /* mithelfen.mp3 */,
+				98F878351D86D2330048721B /* mitnehmen.mp3 */,
+				98F878361D86D2330048721B /* mögen.mp3 */,
+				98F878371D86D2330048721B /* nehmen.mp3 */,
+				98F878381D86D2330048721B /* nennen.mp3 */,
+				98F878391D86D2330048721B /* pfeifen.mp3 */,
+				98F8783A1D86D2330048721B /* preisen.mp3 */,
+				98F8783B1D86D2330048721B /* quellen.mp3 */,
+				98F878731D86D2870048721B /* raten.mp3 */,
+				98F878741D86D2870048721B /* reiben.mp3 */,
+				98F878751D86D2870048721B /* reißen.mp3 */,
+				98F878761D86D2870048721B /* reiten.mp3 */,
+				98F878771D86D2870048721B /* rennen.mp3 */,
+				98F878781D86D2870048721B /* riechen.mp3 */,
+				98F878791D86D2870048721B /* ringen.mp3 */,
+				98F8787A1D86D2870048721B /* rinnen.mp3 */,
+				98F8787B1D86D2870048721B /* rufen.mp3 */,
+				98F8787C1D86D2870048721B /* salzen.mp3 */,
+				98F8787D1D86D2870048721B /* saufen.mp3 */,
+				98F8787E1D86D2870048721B /* saugen.mp3 */,
+				98F8787F1D86D2870048721B /* schaffen.mp3 */,
+				98F878801D86D2870048721B /* scheiden.mp3 */,
+				98F878811D86D2870048721B /* scheinen.mp3 */,
+				98F878821D86D2870048721B /* scheißen.mp3 */,
+				98F878831D86D2870048721B /* schelten.mp3 */,
+				98F878841D86D2870048721B /* scheren.mp3 */,
+				98F878851D86D2870048721B /* schieben.mp3 */,
+				98F878861D86D2870048721B /* schießen.mp3 */,
+				98F878871D86D2870048721B /* schinden.mp3 */,
+				98F878881D86D2870048721B /* schlafen.mp3 */,
+				98F878891D86D2870048721B /* schlagen.mp3 */,
+				98F8788A1D86D2870048721B /* schleichen.mp3 */,
+				98F8788B1D86D2870048721B /* schleifen.mp3 */,
+				98F8788C1D86D2870048721B /* schließen.mp3 */,
+				98F8788D1D86D2870048721B /* schlingen.mp3 */,
+				98F8788E1D86D2870048721B /* schmeißen.mp3 */,
+				98F8788F1D86D2870048721B /* schmelzen.mp3 */,
+				98F878901D86D2870048721B /* schneiden.mp3 */,
+				98F878911D86D2870048721B /* schreiben.mp3 */,
+				98F878921D86D2870048721B /* schreien.mp3 */,
+				98F878931D86D2870048721B /* schreiten.mp3 */,
+				98F878941D86D2870048721B /* schweigen.mp3 */,
+				98F878951D86D2870048721B /* schwellen.mp3 */,
+				98F878961D86D2870048721B /* schwimmen.mp3 */,
+				98F878971D86D2870048721B /* schwinden.mp3 */,
+				98F878981D86D2870048721B /* schwingen.mp3 */,
+				98F878991D86D2870048721B /* schwören.mp3 */,
+				98F8789A1D86D2870048721B /* sehen.mp3 */,
+				98F8789B1D86D2870048721B /* sein.mp3 */,
+				98F8789C1D86D2870048721B /* senden.mp3 */,
+				98F8789D1D86D2870048721B /* sieden.mp3 */,
+				98F8789E1D86D2870048721B /* singen.mp3 */,
+				98F8789F1D86D2870048721B /* sinken.mp3 */,
+				98F878A01D86D2870048721B /* sinnen.mp3 */,
+				98F878A11D86D2870048721B /* sitzen.mp3 */,
+				98F878A21D86D2870048721B /* speien.mp3 */,
+				98F878A31D86D2870048721B /* spinnen.mp3 */,
+				98F878A41D86D2870048721B /* sprechen.mp3 */,
+				98F878A51D86D2870048721B /* sprießen.mp3 */,
+				98F878A61D86D2870048721B /* springen.mp3 */,
+				98F878A71D86D2870048721B /* stechen.mp3 */,
+				98F878A81D86D2870048721B /* stehen.mp3 */,
+				98F878A91D86D2870048721B /* stehlen.mp3 */,
+				98F878AA1D86D2870048721B /* steigen.mp3 */,
+				98F878E31D86DF590048721B /* sterben.mp3 */,
+				98F878E41D86DF590048721B /* stinken.mp3 */,
+				98F878E51D86DF590048721B /* stoßen.mp3 */,
+				98F878E61D86DF590048721B /* streichen.mp3 */,
+				98F878E71D86DF590048721B /* streiten (sich).mp3 */,
+				98F878E81D86DF590048721B /* tragen.mp3 */,
+				98F878E91D86DF590048721B /* treffen.mp3 */,
+				98F878EA1D86DF590048721B /* treiben.mp3 */,
+				98F878EB1D86DF590048721B /* treten.mp3 */,
+				98F878EC1D86DF590048721B /* trinken.mp3 */,
+				98F878ED1D86DF590048721B /* trügen.mp3 */,
+				98F878EE1D86DF590048721B /* tun.mp3 */,
+				98F878EF1D86DF590048721B /* übertreiben.mp3 */,
+				98F878F01D86DF590048721B /* umsteigen.mp3 */,
+				98F878F11D86DF590048721B /* verbieten.mp3 */,
+				98F878F21D86DF590048721B /* verbringen.mp3 */,
+				98F878F31D86DF590048721B /* verderben.mp3 */,
+				98F878F41D86DF590048721B /* verdrießen.mp3 */,
+				98F878F51D86DF590048721B /* vergehen.mp3 */,
+				98F878F61D86DF590048721B /* vergessen.mp3 */,
+				98F878F71D86DF590048721B /* vergleichen.mp3 */,
+				98F878F81D86DF590048721B /* verlassen.mp3 */,
+				98F878F91D86DF590048721B /* verlieren.mp3 */,
+				98F878FA1D86DF590048721B /* verschwinden.mp3 */,
+				98F878FB1D86DF590048721B /* verstehen.mp3 */,
+				98F878FC1D86DF590048721B /* verzeihen.mp3 */,
+				98F878FD1D86DF590048721B /* vorschlagen.mp3 */,
+				98F878FE1D86DF590048721B /* wachsen.mp3 */,
+				98F878FF1D86DF590048721B /* wägen.mp3 */,
+				98F879001D86DF590048721B /* waschen.mp3 */,
+				98F879011D86DF590048721B /* weichen.mp3 */,
+				98F879021D86DF590048721B /* weisen.mp3 */,
+				98F879031D86DF590048721B /* wenden.mp3 */,
+				98F879041D86DF590048721B /* werben.mp3 */,
+				98F879051D86DF590048721B /* werden.mp3 */,
+				98F879061D86DF590048721B /* werfen.mp3 */,
+				98F879071D86DF590048721B /* wiegen.mp3 */,
+				98F879081D86DF590048721B /* winden.mp3 */,
+				98F879091D86DF590048721B /* wissen.mp3 */,
+				98F8790A1D86DF590048721B /* wringen.mp3 */,
+				98F8790B1D86DF590048721B /* ziehen.mp3 */,
+				98F8790C1D86DF590048721B /* zwingen.mp3 */,
+			);
+			name = "Verbes audio";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,10 +890,218 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98F878421D86D2330048721B /* gebären.mp3 in Resources */,
+				98F878611D86D2330048721B /* leiden.mp3 in Resources */,
+				98F8779C1D8536D70048721B /* anfangen.mp3 in Resources */,
+				98F8779B1D8536D70048721B /* anbieten.mp3 in Resources */,
+				98F879171D86DF590048721B /* trügen.mp3 in Resources */,
+				98F878001D8545370048721B /* fallen.mp3 in Resources */,
+				98F878431D86D2330048721B /* geben.mp3 in Resources */,
 				98B79FA21D70AD9300A3F94B /* LaunchScreen.storyboard in Resources */,
+				98F879121D86DF590048721B /* tragen.mp3 in Resources */,
+				98F879111D86DF590048721B /* streiten (sich).mp3 in Resources */,
+				98F878B61D86D2870048721B /* saugen.mp3 in Resources */,
+				98F878B71D86D2870048721B /* schaffen.mp3 in Resources */,
+				98F879181D86DF590048721B /* tun.mp3 in Resources */,
+				98F878601D86D2330048721B /* laufen.mp3 in Resources */,
+				98F8791A1D86DF590048721B /* umsteigen.mp3 in Resources */,
+				98F879281D86DF590048721B /* wachsen.mp3 in Resources */,
+				98F877FF1D8545370048721B /* fahren.mp3 in Resources */,
+				98F878BE1D86D2870048721B /* schießen.mp3 in Resources */,
+				98F878CB1D86D2870048721B /* schreiten.mp3 in Resources */,
+				98F877C21D853F100048721B /* ausgeben.mp3 in Resources */,
+				98F8784E1D86D2330048721B /* gleichen.mp3 in Resources */,
+				98F877D71D853F100048721B /* braten.mp3 in Resources */,
+				98F8784B1D86D2330048721B /* geschehen.mp3 in Resources */,
+				98F878BD1D86D2870048721B /* schieben.mp3 in Resources */,
+				98F878B91D86D2870048721B /* scheinen.mp3 in Resources */,
+				98F877FE1D8545370048721B /* essen.mp3 in Resources */,
+				98F878C11D86D2870048721B /* schlagen.mp3 in Resources */,
+				98F8779E1D8536D70048721B /* ankommen.mp3 in Resources */,
+				98F8779F1D8536D70048721B /* anrufen.mp3 in Resources */,
+				98F8785F1D86D2330048721B /* lassen.mp3 in Resources */,
+				98F878CA1D86D2870048721B /* schreien.mp3 in Resources */,
+				98F878BF1D86D2870048721B /* schinden.mp3 in Resources */,
+				98F879201D86DF590048721B /* vergessen.mp3 in Resources */,
+				98F877A01D8536D70048721B /* anziehen.mp3 in Resources */,
+				98F878671D86D2330048721B /* meiden.mp3 in Resources */,
+				98F878B31D86D2870048721B /* rufen.mp3 in Resources */,
+				98F878711D86D2330048721B /* preisen.mp3 in Resources */,
+				98F878C51D86D2870048721B /* schlingen.mp3 in Resources */,
+				98F877CA1D853F100048721B /* bekommen.mp3 in Resources */,
+				98F878021D8545370048721B /* fechten.mp3 in Resources */,
+				98F8784F1D86D2330048721B /* gleiten.mp3 in Resources */,
+				98F878B11D86D2870048721B /* ringen.mp3 in Resources */,
+				98F877DE1D853F100048721B /* dürfen.mp3 in Resources */,
+				98F878631D86D2330048721B /* lesen.mp3 in Resources */,
+				98F877D31D853F100048721B /* binden.mp3 in Resources */,
+				98F8790F1D86DF590048721B /* stoßen.mp3 in Resources */,
+				98F878CF1D86D2870048721B /* schwinden.mp3 in Resources */,
+				98F879331D86DF590048721B /* wissen.mp3 in Resources */,
+				98F879101D86DF590048721B /* streichen.mp3 in Resources */,
+				98F878551D86D2330048721B /* hängen.mp3 in Resources */,
+				98F878B41D86D2870048721B /* salzen.mp3 in Resources */,
+				98F878D41D86D2870048721B /* senden.mp3 in Resources */,
+				98F877F61D8545370048721B /* empfehlen.mp3 in Resources */,
+				98F8792B1D86DF590048721B /* weichen.mp3 in Resources */,
+				98F879341D86DF590048721B /* wringen.mp3 in Resources */,
+				98F879361D86DF590048721B /* zwingen.mp3 in Resources */,
+				98F878661D86D2330048721B /* mahlen.mp3 in Resources */,
+				98F877D81D853F100048721B /* brechen.mp3 in Resources */,
+				98F877FD1D8545370048721B /* ertragen.mp3 in Resources */,
+				98F8785C1D86D2330048721B /* kneifen.mp3 in Resources */,
+				98F878D61D86D2870048721B /* singen.mp3 in Resources */,
+				98F878D71D86D2870048721B /* sinken.mp3 in Resources */,
+				98F878511D86D2330048721B /* graben.mp3 in Resources */,
+				98F878D51D86D2870048721B /* sieden.mp3 in Resources */,
+				98F877F81D8545370048721B /* erhalten.mp3 in Resources */,
+				98F878AD1D86D2870048721B /* reißen.mp3 in Resources */,
+				98F879321D86DF590048721B /* winden.mp3 in Resources */,
+				98F878501D86D2330048721B /* glimmen.mp3 in Resources */,
+				98F878BA1D86D2870048721B /* scheißen.mp3 in Resources */,
+				98F878D81D86D2870048721B /* sinnen.mp3 in Resources */,
+				98F877C01D853F100048721B /* auffallen.mp3 in Resources */,
+				98F877DA1D853F100048721B /* bringen.mp3 in Resources */,
+				98F8791B1D86DF590048721B /* verbieten.mp3 in Resources */,
+				98F8785A1D86D2330048721B /* kennen.mp3 in Resources */,
+				98F877FB1D8545370048721B /* erlöschen.mp3 in Resources */,
+				98F879311D86DF590048721B /* wiegen.mp3 in Resources */,
+				98F878AE1D86D2870048721B /* reiten.mp3 in Resources */,
 				98B79F9F1D70AD9300A3F94B /* Assets.xcassets in Resources */,
 				98B79F9D1D70AD9300A3F94B /* Main.storyboard in Resources */,
-				98B391C01D75B90A001E1AA1 /* test.png in Resources */,
+				98F879191D86DF590048721B /* übertreiben.mp3 in Resources */,
+				98F878AB1D86D2870048721B /* raten.mp3 in Resources */,
+				98F877F51D8545370048721B /* empfangen.mp3 in Resources */,
+				98F8792D1D86DF590048721B /* wenden.mp3 in Resources */,
+				98F878571D86D2330048721B /* heben.mp3 in Resources */,
+				98F877C71D853F100048721B /* beginnen.mp3 in Resources */,
+				98F8786B1D86D2330048721B /* mithelfen.mp3 in Resources */,
+				98F877D41D853F100048721B /* bitten.mp3 in Resources */,
+				98F878C31D86D2870048721B /* schleifen.mp3 in Resources */,
+				98F878DA1D86D2870048721B /* speien.mp3 in Resources */,
+				98F878E21D86D2870048721B /* steigen.mp3 in Resources */,
+				98F878B51D86D2870048721B /* saufen.mp3 in Resources */,
+				98F879251D86DF590048721B /* verstehen.mp3 in Resources */,
+				98F8785B1D86D2330048721B /* klingen.mp3 in Resources */,
+				98F879261D86DF590048721B /* verzeihen.mp3 in Resources */,
+				98F878681D86D2330048721B /* melken.mp3 in Resources */,
+				98F878621D86D2330048721B /* leihen.mp3 in Resources */,
+				98F878441D86D2330048721B /* gedeihen.mp3 in Resources */,
+				98F8783F1D86D2330048721B /* fließen.mp3 in Resources */,
+				98F877DC1D853F100048721B /* dreschen.mp3 in Resources */,
+				98F879211D86DF590048721B /* vergleichen.mp3 in Resources */,
+				98F8785E1D86D2330048721B /* laden.mp3 in Resources */,
+				98F878491D86D2330048721B /* genesen.mp3 in Resources */,
+				98F877C41D853F100048721B /* aussehen.mp3 in Resources */,
+				98F8786C1D86D2330048721B /* mitnehmen.mp3 in Resources */,
+				98F877C61D853F100048721B /* befehlen.mp3 in Resources */,
+				98F878591D86D2330048721B /* helfen.mp3 in Resources */,
+				98F878561D86D2330048721B /* hauen.mp3 in Resources */,
+				98F878C91D86D2870048721B /* schreiben.mp3 in Resources */,
+				98F8786E1D86D2330048721B /* nehmen.mp3 in Resources */,
+				98F8779D1D8536D70048721B /* anhalten.mp3 in Resources */,
+				98F878D11D86D2870048721B /* schwören.mp3 in Resources */,
+				98F878521D86D2330048721B /* greifen.mp3 in Resources */,
+				98F878031D8545370048721B /* fernsehen.mp3 in Resources */,
+				98F878401D86D2330048721B /* fressen.mp3 in Resources */,
+				98F878E11D86D2870048721B /* stehlen.mp3 in Resources */,
+				98F878041D8545370048721B /* finden.mp3 in Resources */,
+				98F8791D1D86DF590048721B /* verderben.mp3 in Resources */,
+				98F8792E1D86DF590048721B /* werben.mp3 in Resources */,
+				98F8783E1D86D2330048721B /* fliehen.mp3 in Resources */,
+				98F877F21D8545370048721B /* einladen.mp3 in Resources */,
+				98F8791E1D86DF590048721B /* verdrießen.mp3 in Resources */,
+				98F877CC1D853F100048721B /* bersten.mp3 in Resources */,
+				98F8786A1D86D2330048721B /* misslingen.mp3 in Resources */,
+				98F877CE1D853F100048721B /* beschreiben.mp3 in Resources */,
+				98F879221D86DF590048721B /* verlassen.mp3 in Resources */,
+				98F8792C1D86DF590048721B /* weisen.mp3 in Resources */,
+				98F878451D86D2330048721B /* gefallen.mp3 in Resources */,
+				98F877CB1D853F100048721B /* bergen.mp3 in Resources */,
+				98F878DB1D86D2870048721B /* spinnen.mp3 in Resources */,
+				98F878641D86D2330048721B /* liegen.mp3 in Resources */,
+				98F877D11D853F100048721B /* biegen.mp3 in Resources */,
+				98F877F41D8545370048721B /* einsteigen.mp3 in Resources */,
+				98F878C01D86D2870048721B /* schlafen.mp3 in Resources */,
+				98F878651D86D2330048721B /* lügen.mp3 in Resources */,
+				98F878D21D86D2870048721B /* sehen.mp3 in Resources */,
+				98F878DF1D86D2870048721B /* stechen.mp3 in Resources */,
+				98F878581D86D2330048721B /* heißen.mp3 in Resources */,
+				98F878531D86D2330048721B /* haben.mp3 in Resources */,
+				98F878D91D86D2870048721B /* sitzen.mp3 in Resources */,
+				98F879131D86DF590048721B /* treffen.mp3 in Resources */,
+				98F877C91D853F100048721B /* beißen.mp3 in Resources */,
+				98F878B21D86D2870048721B /* rinnen.mp3 in Resources */,
+				98F878C21D86D2870048721B /* schleichen.mp3 in Resources */,
+				98F878CE1D86D2870048721B /* schwimmen.mp3 in Resources */,
+				98F878CD1D86D2870048721B /* schwellen.mp3 in Resources */,
+				98F879231D86DF590048721B /* verlieren.mp3 in Resources */,
+				98F877F31D8545370048721B /* einschlafen.mp3 in Resources */,
+				98F8784C1D86D2330048721B /* gewinnen.mp3 in Resources */,
+				98F878DD1D86D2870048721B /* sprießen.mp3 in Resources */,
+				98F879151D86DF590048721B /* treten.mp3 in Resources */,
+				98F8792F1D86DF590048721B /* werden.mp3 in Resources */,
+				98F8785D1D86D2330048721B /* kommen.mp3 in Resources */,
+				98F877C81D853F100048721B /* begreifen.mp3 in Resources */,
+				98F878481D86D2330048721B /* gelten.mp3 in Resources */,
+				98F877C51D853F100048721B /* backen.mp3 in Resources */,
+				98F877FA1D8545370048721B /* erklimmen.mp3 in Resources */,
+				98F879291D86DF590048721B /* wägen.mp3 in Resources */,
+				98F879241D86DF590048721B /* verschwinden.mp3 in Resources */,
+				98F8786D1D86D2330048721B /* mögen.mp3 in Resources */,
+				98F879271D86DF590048721B /* vorschlagen.mp3 in Resources */,
+				98F877C11D853F100048721B /* aufstehen.mp3 in Resources */,
+				98F878541D86D2330048721B /* halten.mp3 in Resources */,
+				98F877FC1D8545370048721B /* erschrecken.mp3 in Resources */,
+				98F8784D1D86D2330048721B /* gießen.mp3 in Resources */,
+				98F879161D86DF590048721B /* trinken.mp3 in Resources */,
+				98F878AF1D86D2870048721B /* rennen.mp3 in Resources */,
+				98F8786F1D86D2330048721B /* nennen.mp3 in Resources */,
+				98F8783C1D86D2330048721B /* flechten.mp3 in Resources */,
+				98F878461D86D2330048721B /* gehen.mp3 in Resources */,
+				98F878691D86D2330048721B /* messen.mp3 in Resources */,
+				98F878C71D86D2870048721B /* schmelzen.mp3 in Resources */,
+				98F878D31D86D2870048721B /* sein.mp3 in Resources */,
+				98F879351D86DF590048721B /* ziehen.mp3 in Resources */,
+				98F878011D8545370048721B /* fangen.mp3 in Resources */,
+				98F8792A1D86DF590048721B /* waschen.mp3 in Resources */,
+				98F877F71D8545370048721B /* empfinden.mp3 in Resources */,
+				98F8790D1D86DF590048721B /* sterben.mp3 in Resources */,
+				98F878B81D86D2870048721B /* scheiden.mp3 in Resources */,
+				98F8791F1D86DF590048721B /* vergehen.mp3 in Resources */,
+				98F8783D1D86D2330048721B /* fliegen.mp3 in Resources */,
+				98F878411D86D2330048721B /* frieren.mp3 in Resources */,
+				98F877CF1D853F100048721B /* betrügen.mp3 in Resources */,
+				98F878C81D86D2870048721B /* schneiden.mp3 in Resources */,
+				98F877D91D853F100048721B /* brennen.mp3 in Resources */,
+				98F878DC1D86D2870048721B /* sprechen.mp3 in Resources */,
+				98F878BB1D86D2870048721B /* schelten.mp3 in Resources */,
+				98F877DD1D853F100048721B /* dringen.mp3 in Resources */,
+				98F8784A1D86D2330048721B /* genießen.mp3 in Resources */,
+				98F878701D86D2330048721B /* pfeifen.mp3 in Resources */,
+				98F879301D86DF590048721B /* werfen.mp3 in Resources */,
+				98F879141D86DF590048721B /* treiben.mp3 in Resources */,
+				98F8790E1D86DF590048721B /* stinken.mp3 in Resources */,
+				98F878D01D86D2870048721B /* schwingen.mp3 in Resources */,
+				98F877CD1D853F100048721B /* beschließen.mp3 in Resources */,
+				98F878E01D86D2870048721B /* stehen.mp3 in Resources */,
+				98F878721D86D2330048721B /* quellen.mp3 in Resources */,
+				98F877C31D853F100048721B /* ausleihen.mp3 in Resources */,
+				98F877D51D853F100048721B /* blasen.mp3 in Resources */,
+				98F878C61D86D2870048721B /* schmeißen.mp3 in Resources */,
+				98F877D61D853F100048721B /* bleiben.mp3 in Resources */,
+				98F878471D86D2330048721B /* gelingen.mp3 in Resources */,
+				98F877F91D8545370048721B /* erkiesen.mp3 in Resources */,
+				98F877DB1D853F100048721B /* denken.mp3 in Resources */,
+				98F878CC1D86D2870048721B /* schweigen.mp3 in Resources */,
+				98F877D01D853F100048721B /* bewegen.mp3 in Resources */,
+				98F878B01D86D2870048721B /* riechen.mp3 in Resources */,
+				98F878DE1D86D2870048721B /* springen.mp3 in Resources */,
+				98F8791C1D86DF590048721B /* verbringen.mp3 in Resources */,
+				98F878C41D86D2870048721B /* schließen.mp3 in Resources */,
+				98F878AC1D86D2870048721B /* reiben.mp3 in Resources */,
+				98F878BC1D86D2870048721B /* scheren.mp3 in Resources */,
+				98F877D21D853F100048721B /* bieten.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +1126,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98F879381D86E3DD0048721B /* Lang.swift in Sources */,
 				98E172A61D740C5900131633 /* Verbes.swift in Sources */,
 				98B391BE1D757353001E1AA1 /* RevisionVerbes.swift in Sources */,
 				98B79F9A1D70AD9300A3F94B /* ChooseVerbes.swift in Sources */,
@@ -426,7 +1282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = EQPGG2M7LV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -442,7 +1298,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = EQPGG2M7LV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

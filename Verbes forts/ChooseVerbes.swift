@@ -11,10 +11,33 @@ import UIKit
 
 
 class ChooseVerbes: UIViewController {
-        
+    
+    let words = DisplayWords(lang: langSetting)
+    
+    @IBOutlet weak var randomOrderButton: UIButton!
+    @IBOutlet weak var formOrderLabel: UILabel!
+    @IBOutlet weak var alphabeticOrderLabel: UILabel!
+    
+    @IBOutlet weak var unclassable: UIButton!
+    @IBOutlet weak var weakIregular: UIButton!
+    
+    
+    
     @IBAction func getViewVerbes(sender: UIButton){
         
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = words.titleChooseVerbes()
+        self.randomOrderButton.setTitle(words.randomOrder(), forState: .Normal)
+        self.formOrderLabel.text = words.formOrderLabel()
+        self.alphabeticOrderLabel.text = words.alphabeticOrderLabel()
+        
+        unclassable.setTitle(words.unclassable(), forState: .Normal)
+        weakIregular.setTitle(words.weakIregularMasculin(), forState: .Normal)
+    }
+    
     
     private let verbesData = Verbes()
 
@@ -22,27 +45,31 @@ class ChooseVerbes: UIViewController {
         if let rev = segue.destinationViewController as? RevisionVerbes{
             
             let nbVerbeRandom = 15
-            let headerTextRandom = "Essayer de vous souvenir de ses " + String(nbVerbeRandom) + " mots"
-            let unclassable = "inclassable"
-            let weakIregular = "faible irrégulière"
+            let headerTextRandom: String = words.headerTextRandom(nbVerbeRandom)
+            let unclassable: String = words.unclassable()
+            let weakIregular: String = words.weakIregularFeminin()
             
-            func setTextInFormType(form: Form){
-                rev.headerText = "Voici les verbes forts allemand de la forme " + form.rawValue
-                setStaticButton()
-            }
-            func setTextInLetterType(letter: LetterButton){
-                rev.headerText = "Voici les verbes forts allemand commençant par " + letter.rawValue.uppercaseString
-                setStaticButton()
-            }
+            
             func setTextInStringType(form: String){
-                rev.headerText = "Voici les verbes forts allemand de forme " + form
+                rev.headerText = words.hereVerbesWithForm(form)
                 setStaticButton()
             }
-            
-            func setStaticButton(){
-                rev.nextButtonText = "Suivant"
+            func setTextInFormType(form: Form){
+                setTextInStringType(form.rawValue)
             }
             
+            func setTextInLetterType(letter: LetterButton){
+                rev.headerText = words.hereVerbesWhoBeginBuy(letter)
+                setStaticButton()
+            }
+
+            func setStaticButton(){
+                rev.nextButtonText = words.next()
+            }
+            
+            
+            
+            /* print all the verbes
             func foldl(list:Array<String>, base:String) -> String {
                 var result = base
                 for item in list {
@@ -52,7 +79,9 @@ class ChooseVerbes: UIViewController {
             }
             
             print(verbesData.verbes.count)
-            print(foldl(verbesData.verbes.map({"\($0.infinitf()), \($0.present()), \($0.preterit()), \($0.parfait()) \n" }), base: ""))
+            print(foldl(verbesData.verbes.map({"\($0.infinitf()), \($0.present()), \($0.preterit()), \($0.parfait()) \n" }), base: "")) */
+ 
+ 
             
             if let id = segue.identifier{
                 switch id {
@@ -152,10 +181,7 @@ class ChooseVerbes: UIViewController {
     
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

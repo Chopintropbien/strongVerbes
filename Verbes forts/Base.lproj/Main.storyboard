@@ -130,6 +130,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gM-eS-rb8">
                                 <rect key="frame" x="212" y="285" width="176" height="27"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title=" i– a – u">
                                     <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -467,6 +468,13 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Les vebes forts" id="lcB-v0-Tab"/>
+                    <connections>
+                        <outlet property="alphabeticOrderLabel" destination="dg2-Ue-vEr" id="bbF-sW-SI1"/>
+                        <outlet property="formOrderLabel" destination="u2D-Pz-3sJ" id="RYf-b6-qGl"/>
+                        <outlet property="randomOrderButton" destination="vxj-3R-1jc" id="WSJ-Xj-xgc"/>
+                        <outlet property="unclassable" destination="Tvt-fz-qJ5" id="pvY-Bg-ia1"/>
+                        <outlet property="weakIregular" destination="EYf-Tf-n8e" id="yuG-AJ-4ez"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

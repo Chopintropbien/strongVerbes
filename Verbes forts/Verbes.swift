@@ -41,9 +41,11 @@ enum LetterButton: String{
     case WZ = "w-z"
 }
 
-enum Lang{
-    case fr
-    case en
+enum Level{
+    case A2
+    case B1
+    case B2
+    case C1
 }
 
 
@@ -100,15 +102,15 @@ struct Verbes{
          Verbe(form: Form.eiii, verbe: ("begreifen", "er begreift", "er begriff", "er hat begriffen"), translations: [(Lang.fr, "comprendre, saisir"), (Lang.en, "to understand sth.")]),
          Verbe(form: Form.eiii, verbe: ("beißen", "er beißt", "er biss", "er hat gebissen"), translations: [(Lang.fr, "mordre"), (Lang.en, "to bite")]),
          Verbe(form: Form.undefine, verbe: ("bekommen", "er bekommt", "er bekam", "er hat bekommen"), translations: [(Lang.fr, "recevoir"), (Lang.en, "to receive sth.")]),
-         Verbe(form: Form.eao, verbe: ("bergen", "er birst / berstet", "er barst", "er hat geborsten"), translations: [(Lang.fr, "mettre en sûreté"), (Lang.en, "to burst")]),
-          Verbe(form: Form.eao, verbe: ("bersten", "er birgt", "er barg", "er hat geborgen"), translations: [(Lang.fr, "sauver, cacher"), (Lang.en, "to salvage")]),
-         Verbe(form: Form.ieoo, verbe: ("beschließen", "er beschließt", "er beschloss", "er hat beschlossen"), translations: [(Lang.fr, "décider"), (Lang.en, "")]),
-         Verbe(form: Form.eiieie, verbe: ("beschreiben", "er beschreibt", "er beschrieb", "er hat beschrieben"), translations: [(Lang.fr, "décrire"), (Lang.en, "")]),
-         Verbe(form: Form.undefine, verbe: ("betrügen", "er betrügt", "er betrog", "er hat betrogen"), translations: [(Lang.fr, "tromper quelqu’un"), (Lang.en, "")]),
-//         Verbe(form: Form.undefine, verbe: ("bewegen", "er bewegt", "er bewog", "er hat bewogen"), translations: [(Lang.fr, ""), (Lang.en, "to induce")]),
+         Verbe(form: Form.eao, verbe: ("bergen", "er birst/berstet", "er barst", "er hat geborsten"), translations: [(Lang.fr, "mettre en sûreté"), (Lang.en, "to salvage")]),
+          Verbe(form: Form.eao, verbe: ("bersten", "er birgt", "er barg", "er hat geborgen"), translations: [(Lang.fr, "éclater"), (Lang.en, "to burst")]),
+         Verbe(form: Form.ieoo, verbe: ("beschließen", "er beschließt", "er beschloss", "er hat beschlossen"), translations: [(Lang.fr, "décider"), (Lang.en, "to decide")]),
+         Verbe(form: Form.eiieie, verbe: ("beschreiben", "er beschreibt", "er beschrieb", "er hat beschrieben"), translations: [(Lang.fr, "décrire"), (Lang.en, "to describe")]),
+         Verbe(form: Form.undefine, verbe: ("betrügen", "er betrügt", "er betrog", "er hat betrogen"), translations: [(Lang.fr, "tromper quelqu’un"), (Lang.en, "to cheat")]),
+////         Verbe(form: Form.undefine, verbe: ("bewegen", "er bewegt", "er bewog", "er hat bewogen"), translations: [(Lang.fr, "se bouger"), (Lang.en, "to induce")]),
          Verbe(form: Form.undefine, verbe: ("bewegen", "er bewegt", "er bewog", "er ist bewogen"), translations: [(Lang.fr, "se bouger"), (Lang.en, "to move")]),
-         
-         Verbe(form: Form.ieoo, verbe: ("biegen", "biegt", "er bog", "er hat gebogen"), translations: [(Lang.fr, "courber, plier"), (Lang.en, "to bend, turn")]),
+         //Attentin
+         Verbe(form: Form.ieoo, verbe: ("biegen", "er biegt", "er bog", "er hat gebogen"), translations: [(Lang.fr, "courber, plier"), (Lang.en, "to bend, turn")]),
          Verbe(form: Form.ieoo, verbe: ("bieten", "er bietet", "er bot", "er hat geboten"), translations: [(Lang.fr, "offrir, proposer"), (Lang.en, "to offer")]),
          Verbe(form: Form.undefine, verbe: ("binden", "er bindet", "er band", "er hat gebunden"), translations: [(Lang.fr, "lier, attacher"), (Lang.en, "to bind, tie")]),
          Verbe(form: Form.iau, verbe: ("bitten", "er bittet", "er bat", "er hat gebeten"), translations: [(Lang.fr, "prier, demander"), (Lang.en, "to ask, request")]),
@@ -146,7 +148,6 @@ struct Verbes{
          Verbe(form: Form.aiea, verbe: ("fallen", "er fällt", "er fiel", "er ist gefallen"), translations: [(Lang.fr, "tomber"), (Lang.en, "to fall")]),
          Verbe(form: Form.aiea, verbe: ("fangen", "er fängt", "er fing", "er hat gefangen"), translations: [(Lang.fr, "attraper"), (Lang.en, "to catch")]),
          Verbe(form: Form.eae, verbe: ("fernsehen", "er sieht … fern", "er sah … fern", "er hat … ferngesehen"), translations: [(Lang.fr, "regarder la télé"), (Lang.en, "to ")]),
-         Verbe(form: Form.iau, verbe: ("finden", "er findet", "er fand", "er hat gefunden"), translations: [(Lang.fr, "trouver"), (Lang.en, "to find")]),
          Verbe(form: Form.undefine, verbe: ("fechten", "er ficht", "er focht", "er hat gefochten"), translations: [(Lang.fr, "se battre"), (Lang.en, "to fight, fence")]),
          Verbe(form: Form.iau, verbe: ("finden", "er findet", "er fand", "er hat gefunden"), translations: [(Lang.fr, "trouver"), (Lang.en, "to find")]),
          Verbe(form: Form.undefine, verbe: ("flechten", "er flicht", "er flocht", "er hat geflochten"), translations: [(Lang.fr, "tresser"), (Lang.en, "to braid, plait")]),
@@ -230,7 +231,7 @@ struct Verbes{
          Verbe(form: Form.eiieie, verbe: ("reiben", "er reibt", "er rieb", "er hat gerieben"), translations: [(Lang.fr, "râper"), (Lang.en, "to rub")]),
          Verbe(form: Form.eiii, verbe: ("reißen", "er reißt", "er riss", "er hat gerissen"), translations: [(Lang.fr, "déchirer, arracher"), (Lang.en, "to rip, tear")]),
          Verbe(form: Form.eiii, verbe: ("reiten", "er reitet", "er ritt", "er ist geritten"), translations: [(Lang.fr, "faire du cheval"), (Lang.en, "to ride (a horse)")]),
-         Verbe(form: Form.undefine, verbe: ("rennen", "er rennt", "er rannte", "er hat/ist gerannt"), translations: [(Lang.fr, "courir"), (Lang.en, "to run")]),
+         Verbe(form: Form.undefine, verbe: ("rennen", "er rennt", "er rannte", "er hat gerannt"), translations: [(Lang.fr, "courir"), (Lang.en, "to run")]),
          Verbe(form: Form.ieoo, verbe: ("riechen", "er riecht", "er roch", "er hat gerochen"), translations: [(Lang.fr, "sentir (une odeur)"), (Lang.en, "to smell")]),
          Verbe(form: Form.iau, verbe: ("ringen", "er ringt", "er rang", "er hat gerungen"), translations: [(Lang.fr, "se débattre"), (Lang.en, "to wrestle")]),
          Verbe(form: Form.iao, verbe: ("rinnen", "er rinnt", "er rann", "er hat geronnen"), translations: [(Lang.fr, "couler"), (Lang.en, "to flow, trickle")]),
@@ -320,7 +321,7 @@ struct Verbes{
          Verbe(form: Form.aiea, verbe: ("verlassen", "er verlässt", "er verließ", "er hat verlassen"), translations: [(Lang.fr, "quitter, abandonner"), (Lang.en, "to leave")]),
          Verbe(form: Form.ieoo, verbe: ("verlieren", "er verliert", "er verlor", "er hat verloren"), translations: [(Lang.fr, "perdre"), (Lang.en, "to lose")]),
          Verbe(form: Form.iau, verbe: ("verschwinden", "er verschwindet", "er verschwand ", "er ist verschwunden"), translations: [(Lang.fr, "disparaître"), (Lang.en, "to disappear")]),
-         Verbe(form: Form.eiieie, verbe: ("verzeihen", "er verzeiht", "er verzieh", "er hat verziehen"), translations: [(Lang.fr, "pardonner"), (Lang.en, "to excuse")]),
+         Verbe(form: Form.eiieie, verbe: ("verzeihen" , "er verzeiht", "er verzieh", "er hat verziehen"), translations: [(Lang.fr, "pardonner"), (Lang.en, "to excuse")]),
          Verbe(form: Form.undefine, verbe: ("verstehen", "er versteht", "er verstand", "er hat verstanden"), translations: [(Lang.fr, "comprendre"), (Lang.en, "to understand")]),
          Verbe(form: Form.aua, verbe: ("vorschlagen", "er schlägt … vor", "er schlug … vor", "er hat vorgeschlagen"), translations: [(Lang.fr, "proposer"), (Lang.en, "to suggest")]),
          

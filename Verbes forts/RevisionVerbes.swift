@@ -9,6 +9,7 @@
 
 import UIKit
 import iAd
+import AVFoundation
 
 
 class RevisionVerbes: UIViewController, ADBannerViewDelegate {
@@ -44,11 +45,15 @@ class RevisionVerbes: UIViewController, ADBannerViewDelegate {
     @IBOutlet weak var hiddingButton: UIButton!
     var contraintsHiddingButton: [NSLayoutConstraint] = []
     
+    var formatAudio = "mp3"
+    var nameAudioFile = String()
+    var audioURL = NSURL()
+    var audioPlayer = AVAudioPlayer()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-        
         if(!self.verbes.isEmpty){
             self.headerLabel.text = headerText
             self.initVerbe()
@@ -81,27 +86,44 @@ class RevisionVerbes: UIViewController, ADBannerViewDelegate {
             self.hiddingButton.hidden = true
             }, completion: nil)
         
+        playAudio()
+    }
+    
+    func playAudio(){
+        nameAudioFile = verbes[cursor].infinitf()
+        audioURL = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource(nameAudioFile, ofType: formatAudio)!)
+        audioPlayer = try! AVAudioPlayer(contentsOfURL: audioURL, fileTypeHint: nil)
+        audioPlayer.play()
     }
 
+
     @IBAction func showNextVerbe() {
+        /* stop lecture */
+        audioPlayer.stop()
+        
+        /* display the next verbe in the list */
+        
+        // Don't display the "Next" button if it will be the last verbe
         if(cursor == verbes.count - 2){
             self.nextButton.hidden = true
         }
         if(cursor < verbes.count - 1) {
             cursor += 1
             
-            var changeVerbeDuration = changeVerbeHiddingduration
+            
+            var changeVerbeDuration = changeVerbeHiddingduration // delay for display the next verbes: don't have to be before the animation to hide the new verbe
             if(self.hiddingButton.hidden == true){
+                // do the animation to hide the new verbe
                 let transitionOptions = UIViewAnimationOptions.TransitionCurlDown
                 UIView.transitionWithView(superViewHiddingButton, duration: replaceHiddingduration, options: transitionOptions, animations: {
                     self.hiddingButton.hidden = false
                     }, completion: nil)
-                
             }
-            else{
+            else{ // will display the new verbe right away
                 changeVerbeDuration = 0
             }
-                
+            
+            // display the new verbe
             let delay = changeVerbeDuration * Double(NSEC_PER_SEC)
             let time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
             dispatch_after(time, dispatch_get_main_queue()) {
