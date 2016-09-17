@@ -48,7 +48,7 @@ class RevisionVerbes: UIViewController, ADBannerViewDelegate {
     var formatAudio = "mp3"
     var nameAudioFile = String()
     var audioURL = NSURL()
-    var audioPlayer = AVAudioPlayer()
+    var audioPlayer = try! AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("anbieten", ofType: "mp3")!), fileTypeHint: nil) // Grrrrrrr!!!!! Pourquoi???? audioPlayer.stop()
     var sounds = true
     
     

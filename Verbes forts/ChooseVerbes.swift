@@ -82,6 +82,11 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
                 rev.headerText = words.hereVerbesWhoBeginBuy(letter)
                 setStaticButton()
             }
+            
+            func setTextRandom(){
+                rev.headerText = headerTextRandom
+                setStaticButton()
+            }
 
             func setStaticButton(){
                 rev.nextButtonText = words.next()
@@ -187,7 +192,7 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
                         let randomIndex = Int(arc4random_uniform(UInt32(verbesData.verbes.count)))
                         rev.verbes.append(verbesData.verbes[randomIndex])
                     }
-                    rev.headerText = headerTextRandom
+                    setTextRandom()
                 default:
                     rev.verbes = []
                 }
