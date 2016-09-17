@@ -16,6 +16,10 @@
 		98B79FA21D70AD9300A3F94B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B79FA01D70AD9300A3F94B /* LaunchScreen.storyboard */; };
 		98B79FAD1D70AD9300A3F94B /* Verbes_fortsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B79FAC1D70AD9300A3F94B /* Verbes_fortsTests.swift */; };
 		98B79FB81D70AD9300A3F94B /* Verbes_fortsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B79FB71D70AD9300A3F94B /* Verbes_fortsUITests.swift */; };
+		98D4DE351D8B2BF300F41E87 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D4DE341D8B2BF300F41E87 /* ENSideMenu.swift */; };
+		98D4DE371D8B2C1100F41E87 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D4DE361D8B2C1100F41E87 /* ENSideMenuNavigationController.swift */; };
+		98D4DE391D8B2C2C00F41E87 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D4DE381D8B2C2C00F41E87 /* MyNavigationController.swift */; };
+		98D4DE3B1D8B2D5400F41E87 /* ChooseLangMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D4DE3A1D8B2D5400F41E87 /* ChooseLangMenu.swift */; };
 		98E172A61D740C5900131633 /* Verbes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E172A51D740C5900131633 /* Verbes.swift */; };
 		98F877901D83EFDE0048721B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F8778F1D83EFDE0048721B /* AVFoundation.framework */; };
 		98F8779B1D8536D70048721B /* anbieten.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98F877951D8536D70048721B /* anbieten.mp3 */; };
@@ -263,6 +267,10 @@
 		98B79FB31D70AD9300A3F94B /* Verbes fortsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Verbes fortsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B79FB71D70AD9300A3F94B /* Verbes_fortsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verbes_fortsUITests.swift; sourceTree = "<group>"; };
 		98B79FB91D70AD9300A3F94B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98D4DE341D8B2BF300F41E87 /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenu.swift; sourceTree = "<group>"; };
+		98D4DE361D8B2C1100F41E87 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
+		98D4DE381D8B2C2C00F41E87 /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
+		98D4DE3A1D8B2D5400F41E87 /* ChooseLangMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseLangMenu.swift; sourceTree = "<group>"; };
 		98E172A51D740C5900131633 /* Verbes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Verbes.swift; sourceTree = "<group>"; };
 		98F8778F1D83EFDE0048721B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		98F877951D8536D70048721B /* anbieten.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = anbieten.mp3; sourceTree = "<group>"; };
@@ -529,6 +537,7 @@
 		98B79F961D70AD9300A3F94B /* Verbes forts */ = {
 			isa = PBXGroup;
 			children = (
+				98D4DE331D8B2BCE00F41E87 /* Library */,
 				98F8778E1D83EEE20048721B /* Supporting files */,
 				98B79F991D70AD9300A3F94B /* ChooseVerbes.swift */,
 				98B391BD1D757353001E1AA1 /* RevisionVerbes.swift */,
@@ -539,6 +548,8 @@
 				98B79FA31D70AD9300A3F94B /* Info.plist */,
 				98B79F971D70AD9300A3F94B /* AppDelegate.swift */,
 				98F879371D86E3DD0048721B /* Lang.swift */,
+				98D4DE381D8B2C2C00F41E87 /* MyNavigationController.swift */,
+				98D4DE3A1D8B2D5400F41E87 /* ChooseLangMenu.swift */,
 			);
 			path = "Verbes forts";
 			sourceTree = "<group>";
@@ -559,6 +570,15 @@
 				98B79FB91D70AD9300A3F94B /* Info.plist */,
 			);
 			path = "Verbes fortsUITests";
+			sourceTree = "<group>";
+		};
+		98D4DE331D8B2BCE00F41E87 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				98D4DE341D8B2BF300F41E87 /* ENSideMenu.swift */,
+				98D4DE361D8B2C1100F41E87 /* ENSideMenuNavigationController.swift */,
+			);
+			name = Library;
 			sourceTree = "<group>";
 		};
 		98F8778E1D83EEE20048721B /* Supporting files */ = {
@@ -1126,8 +1146,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98D4DE351D8B2BF300F41E87 /* ENSideMenu.swift in Sources */,
+				98D4DE391D8B2C2C00F41E87 /* MyNavigationController.swift in Sources */,
 				98F879381D86E3DD0048721B /* Lang.swift in Sources */,
 				98E172A61D740C5900131633 /* Verbes.swift in Sources */,
+				98D4DE3B1D8B2D5400F41E87 /* ChooseLangMenu.swift in Sources */,
+				98D4DE371D8B2C1100F41E87 /* ENSideMenuNavigationController.swift in Sources */,
 				98B391BE1D757353001E1AA1 /* RevisionVerbes.swift in Sources */,
 				98B79F9A1D70AD9300A3F94B /* ChooseVerbes.swift in Sources */,
 				98B79F981D70AD9300A3F94B /* AppDelegate.swift in Sources */,
@@ -1274,6 +1298,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Verbes forts/Info.plist";
@@ -1282,6 +1307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = EQPGG2M7LV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1290,6 +1316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Verbes forts/Info.plist";

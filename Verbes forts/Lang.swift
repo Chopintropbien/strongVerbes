@@ -8,11 +8,11 @@
 
 import Foundation
 
-let langSetting = Lang.en
+var langSetting = Lang.fr
 
-enum Lang{
-    case fr
-    case en
+enum Lang: String{
+    case fr = "Français"
+    case en = "English"
 }
 
 class DisplayWords{

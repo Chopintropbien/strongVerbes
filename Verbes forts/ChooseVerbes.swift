@@ -10,7 +10,7 @@ import UIKit
 
 
 
-class ChooseVerbes: UIViewController {
+class ChooseVerbes: UIViewController, ENSideMenuDelegate {
     
     let words = DisplayWords(lang: langSetting)
     
@@ -20,6 +20,23 @@ class ChooseVerbes: UIViewController {
     
     @IBOutlet weak var unclassable: UIButton!
     @IBOutlet weak var weakIregular: UIButton!
+    
+    private var sounds = true
+    @IBAction func changeSound(sender: UIBarButtonItem) {
+        if(self.sounds){
+            sender.title = "🔕"
+            sounds = false
+        }
+        else{
+            sender.title = "🔔"
+            sounds = true
+        }
+        
+    }
+    
+    @IBAction func showLanguageMenu(sender: UIBarButtonItem) {
+        toggleSideMenuView()
+    }
     
     
     
@@ -43,6 +60,9 @@ class ChooseVerbes: UIViewController {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let rev = segue.destinationViewController as? RevisionVerbes{
+            
+            // set sounds
+            rev.sounds = self.sounds
             
             let nbVerbeRandom = 15
             let headerTextRandom: String = words.headerTextRandom(nbVerbeRandom)
@@ -69,17 +89,17 @@ class ChooseVerbes: UIViewController {
             
             
             
-            /* print all the verbes
-            func foldl(list:Array<String>, base:String) -> String {
-                var result = base
-                for item in list {
-                    result = result + item
-                }
-                return result
-            }
-            
-            print(verbesData.verbes.count)
-            print(foldl(verbesData.verbes.map({"\($0.infinitf()), \($0.present()), \($0.preterit()), \($0.parfait()) \n" }), base: "")) */
+////             print all the verbes
+//            func foldl(list:Array<String>, base:String) -> String {
+//                var result = base
+//                for item in list {
+//                    result = result + item
+//                }
+//                return result
+//            }
+//            
+//            print(verbesData.verbes.count)
+//            print(foldl(verbesData.verbes.map({"\($0.infinitf()), \($0.translation(Lang.fr))\n" }), base: ""))
  
  
             

@@ -125,7 +125,7 @@ struct Verbes{
          Verbe(form: Form.weak, verbe: ("denken", "er denkt", "er dachte", "er hat gedacht"), translations: [(Lang.fr, "penser"), (Lang.en, "to think")]),
          Verbe(form: Form.undefine, verbe: ("dreschen", "er drischt", "er drosch", "er hat gedroschen"), translations: [(Lang.fr, "parler en l'air"), (Lang.en, "to thresh")]),
          Verbe(form: Form.iau, verbe: ("dringen", "er dringt", "er drang", "er hat gedrungen"), translations: [(Lang.fr, "insister"), (Lang.en, "to persist")]),
-         Verbe(form: Form.undefine, verbe: ("dürfen", "er darf", "er durfte", "er hat durfte"), translations: [(Lang.fr, "penser"), (Lang.en, "to may, to be allowed")]),
+         Verbe(form: Form.undefine, verbe: ("dürfen", "er darf", "er durfte", "er hat durfte"), translations: [(Lang.fr, "pouvoir"), (Lang.en, "to may, to be allowed")]),
          
          
 

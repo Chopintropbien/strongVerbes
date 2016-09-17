@@ -23,8 +23,8 @@ class RevisionVerbes: UIViewController, ADBannerViewDelegate {
 
     var verbes: [Verbe] = []
     var cursor: Int = 0
-    var nextButtonText: String = "Suivant"
-    var headerText: String = "Voici les verbes forts allemand de la forme a-e-a"
+    var nextButtonText: String = ""
+    var headerText: String = ""
     
     // Action duration
     let removeHiddingduration: Double = 1.2
@@ -49,6 +49,7 @@ class RevisionVerbes: UIViewController, ADBannerViewDelegate {
     var nameAudioFile = String()
     var audioURL = NSURL()
     var audioPlayer = AVAudioPlayer()
+    var sounds = true
     
     
     override func viewDidLoad() {
@@ -56,6 +57,7 @@ class RevisionVerbes: UIViewController, ADBannerViewDelegate {
 
         if(!self.verbes.isEmpty){
             self.headerLabel.text = headerText
+            self.nextButton.setTitle(nextButtonText, forState: .Normal)
             self.initVerbe()
         }
         if(advertisement){
@@ -71,8 +73,9 @@ class RevisionVerbes: UIViewController, ADBannerViewDelegate {
         }
         
     }
+//    🔔🔕
     func initVerbe(){
-        translationLabel.text = verbes[cursor].translation(Lang.fr)
+        translationLabel.text = verbes[cursor].translation(langSetting)
         infinitifLabel.text = verbes[cursor].infinitf()
         presentLabel.text = verbes[cursor].present()
         preteritLabel.text = verbes[cursor].preterit()
@@ -86,7 +89,7 @@ class RevisionVerbes: UIViewController, ADBannerViewDelegate {
             self.hiddingButton.hidden = true
             }, completion: nil)
         
-        playAudio()
+        if(sounds) { playAudio() }
     }
     
     func playAudio(){
@@ -94,6 +97,12 @@ class RevisionVerbes: UIViewController, ADBannerViewDelegate {
         audioURL = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource(nameAudioFile, ofType: formatAudio)!)
         audioPlayer = try! AVAudioPlayer(contentsOfURL: audioURL, fileTypeHint: nil)
         audioPlayer.play()
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+        }
+        catch {
+            // report for an error
+        }
     }
 
 

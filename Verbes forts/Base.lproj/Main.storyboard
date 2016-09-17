@@ -9,7 +9,7 @@
         <!--Les vebes forts-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ChooseVerbes" customModule="Verbes_forts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChooseVerbes" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ChooseVerbes" customModule="Verbes_forts" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -130,7 +130,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gM-eS-rb8">
                                 <rect key="frame" x="212" y="285" width="176" height="27"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title=" i– a – u">
                                     <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -467,7 +466,18 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Les vebes forts" id="lcB-v0-Tab"/>
+                    <navigationItem key="navigationItem" title="Les vebes forts" id="lcB-v0-Tab">
+                        <barButtonItem key="leftBarButtonItem" title="Language" id="UCd-g2-mYw">
+                            <connections>
+                                <action selector="showLanguageMenu:" destination="BYZ-38-t0r" id="I9r-q5-zll"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="🔔" style="plain" id="fgi-d4-0SO">
+                            <connections>
+                                <action selector="changeSound:" destination="BYZ-38-t0r" id="hs6-Vt-KGQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="alphabeticOrderLabel" destination="dg2-Ue-vEr" id="bbF-sW-SI1"/>
                         <outlet property="formOrderLabel" destination="u2D-Pz-3sJ" id="RYf-b6-qGl"/>
@@ -478,7 +488,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="909" y="1133"/>
+            <point key="canvasLocation" x="877" y="1133"/>
         </scene>
         <!--Revision Verbes-->
         <scene sceneID="JwB-6T-NVC">
@@ -703,10 +713,10 @@
             </objects>
             <point key="canvasLocation" x="1690" y="1133"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--My Navigation Controller-->
         <scene sceneID="vC5-XU-ljw">
             <objects>
-                <navigationController id="ZOU-WQ-dJC" sceneMemberID="viewController">
+                <navigationController id="ZOU-WQ-dJC" customClass="MyNavigationController" customModule="Verbes_forts" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vbO-E9-HwP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -718,6 +728,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f6u-cu-LaV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="70" y="1133"/>
+        </scene>
+        <!--Choose Lang Menu-->
+        <scene sceneID="eJV-m1-w8d">
+            <objects>
+                <tableViewController id="WNh-nm-JsH" customClass="ChooseLangMenu" customModule="Verbes_forts" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ICc-By-KJm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="baD-kp-bIm">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="95M-uG-RTe">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="95M-uG-RTe" id="W3D-n2-vkJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Français " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPY-VK-ptP">
+                                                    <rect key="frame" x="8" y="11" width="584" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="leadingMargin" secondItem="dPY-VK-ptP" secondAttribute="leading" id="8SQ-GE-V0m"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="dPY-VK-ptP" secondAttribute="trailing" id="CiQ-JQ-OuM"/>
+                                                <constraint firstItem="dPY-VK-ptP" firstAttribute="top" secondItem="W3D-n2-vkJ" secondAttribute="topMargin" constant="3" id="Hcg-Rw-C5H"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="dPY-VK-ptP" secondAttribute="bottom" constant="3" id="cpP-BQ-Vmc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="WNh-nm-JsH" id="kkq-ze-2m6"/>
+                            <outlet property="delegate" destination="WNh-nm-JsH" id="XeS-Gv-fGO"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sSt-uP-iUU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70" y="1978"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
