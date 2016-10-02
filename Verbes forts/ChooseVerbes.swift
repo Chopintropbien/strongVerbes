@@ -12,7 +12,8 @@ import UIKit
 
 class ChooseVerbes: UIViewController, ENSideMenuDelegate {
     
-    let words = DisplayWords(lang: langSetting)
+    var level: Level = Level.All
+    
     
     @IBOutlet weak var randomOrderButton: UIButton!
     @IBOutlet weak var formOrderLabel: UILabel!
@@ -21,23 +22,9 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
     @IBOutlet weak var unclassable: UIButton!
     @IBOutlet weak var weakIregular: UIButton!
     
-    private var sounds = true
-    @IBAction func changeSound(sender: UIBarButtonItem) {
-        if(self.sounds){
-            sender.title = "🔕"
-            sounds = false
-        }
-        else{
-            sender.title = "🔔"
-            sounds = true
-        }
-        
-    }
-    
     @IBAction func showLanguageMenu(sender: UIBarButtonItem) {
         toggleSideMenuView()
     }
-    
     
     
     @IBAction func getViewVerbes(sender: UIButton){
@@ -46,13 +33,13 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = words.titleChooseVerbes()
-        self.randomOrderButton.setTitle(words.randomOrder(), forState: .Normal)
-        self.formOrderLabel.text = words.formOrderLabel()
-        self.alphabeticOrderLabel.text = words.alphabeticOrderLabel()
+        self.title = displaidWords.titleChooseVerbes()
+        self.randomOrderButton.setTitle(displaidWords.randomOrder(), forState: .Normal)
+        self.formOrderLabel.text = displaidWords.formOrderLabel()
+        self.alphabeticOrderLabel.text = displaidWords.alphabeticOrderLabel()
         
-        unclassable.setTitle(words.unclassable(), forState: .Normal)
-        weakIregular.setTitle(words.weakIregularMasculin(), forState: .Normal)
+        unclassable.setTitle(displaidWords.unclassable(), forState: .Normal)
+        weakIregular.setTitle(displaidWords.weakIregularMasculin(), forState: .Normal)
     }
     
     
@@ -61,17 +48,14 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let rev = segue.destinationViewController as? RevisionVerbes{
             
-            // set sounds
-            rev.sounds = self.sounds
-            
             let nbVerbeRandom = 15
-            let headerTextRandom: String = words.headerTextRandom(nbVerbeRandom)
-            let unclassable: String = words.unclassable()
-            let weakIregular: String = words.weakIregularFeminin()
+            let headerTextRandom: String = displaidWords.headerTextRandom(nbVerbeRandom)
+            let unclassable: String = displaidWords.unclassable()
+            let weakIregular: String = displaidWords.weakIregularFeminin()
             
             
             func setTextInStringType(form: String){
-                rev.headerText = words.hereVerbesWithForm(form)
+                rev.headerText = displaidWords.hereVerbesWithForm(form)
                 setStaticButton()
             }
             func setTextInFormType(form: Form){
@@ -79,7 +63,7 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
             }
             
             func setTextInLetterType(letter: LetterButton){
-                rev.headerText = words.hereVerbesWhoBeginBuy(letter)
+                rev.headerText = displaidWords.hereVerbesWhoBeginBuy(letter)
                 setStaticButton()
             }
             
@@ -89,102 +73,113 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
             }
 
             func setStaticButton(){
-                rev.nextButtonText = words.next()
+                rev.nextButtonText = displaidWords.next()
             }
             
             
             
-////             print all the verbes
-//            func foldl(list:Array<String>, base:String) -> String {
-//                var result = base
-//                for item in list {
-//                    result = result + item
-//                }
-//                return result
-//            }
-//            
-//            print(verbesData.verbes.count)
-//            print(foldl(verbesData.verbes.map({"\($0.infinitf()), \($0.translation(Lang.fr))\n" }), base: ""))
+//             print all the verbes
+            func foldl(list:Array<String>, base:String) -> String {
+                var result = base
+                for item in list {
+                    result = result + item
+                }
+                return result
+            }
+            
+            print(verbesData.verbes.count)
+            print(foldl(verbesData.verbes.filter({$0.level == Level.needToAngerister}).map({"\($0.infinitf()), \($0.present()), \($0.preterit()), \($0.parfait())\n" }), base: ""))
  
  
+            
+            // TODO:: Mieux faire les choses
+            
+            // sort verbes by letter and by level
+            func filterVerbeByLetter(letter: LetterButton) -> [Verbe]{
+                return verbesData.filterBy(letter, level: level)
+            }
+            // sort verbes by form and by level
+            func filterVerbeByForm(form: Form) -> [Verbe]{
+                return verbesData.filterBy(form, level: level)
+            }
             
             if let id = segue.identifier{
                 switch id {
                 case LetterButton.A.rawValue:
-                    rev.verbes = verbesData.filterBy(LetterButton.A)
+                    rev.verbes = filterVerbeByLetter(LetterButton.A)
                     setTextInLetterType(LetterButton.A)
                 case LetterButton.B.rawValue:
-                    rev.verbes = verbesData.filterBy(LetterButton.B)
+                    rev.verbes = filterVerbeByLetter(LetterButton.B)
                     setTextInLetterType(LetterButton.B)
                 case LetterButton.DE.rawValue:
-                    rev.verbes = verbesData.filterBy(LetterButton.DE)
+                    rev.verbes = filterVerbeByLetter(LetterButton.DE)
                     setTextInLetterType(LetterButton.DE)
                 case LetterButton.F.rawValue:
-                    rev.verbes = verbesData.filterBy(LetterButton.G)
+                    rev.verbes = filterVerbeByLetter(LetterButton.G)
                     setTextInLetterType(LetterButton.G)
                 case LetterButton.HK.rawValue:
-                    rev.verbes = verbesData.filterBy(LetterButton.HK)
+                    rev.verbes = filterVerbeByLetter(LetterButton.HK)
                     setTextInLetterType(LetterButton.HK)
                 case LetterButton.LM.rawValue:
-                    rev.verbes = verbesData.filterBy(LetterButton.LM)
+                    rev.verbes = filterVerbeByLetter(LetterButton.LM)
                     setTextInLetterType(LetterButton.LM)
                 case LetterButton.NPQ.rawValue:
-                    rev.verbes = verbesData.filterBy(LetterButton.NPQ)
+                    rev.verbes = filterVerbeByLetter(LetterButton.NPQ)
                     setTextInLetterType(LetterButton.NPQ)
                 case LetterButton.R.rawValue:
-                    rev.verbes = verbesData.filterBy(LetterButton.R)
+                    rev.verbes = filterVerbeByLetter(LetterButton.R)
                     setTextInLetterType(LetterButton.R)
                 case LetterButton.S1.rawValue:
-                    rev.verbes = verbesData.filterBy(LetterButton.S1)
+                    rev.verbes = filterVerbeByLetter(LetterButton.S1)
                     setTextInLetterType(LetterButton.S1)
                 case LetterButton.S2.rawValue:
-                    rev.verbes = verbesData.filterBy(LetterButton.S2)
+                    rev.verbes = filterVerbeByLetter(LetterButton.S2)
                     setTextInLetterType(LetterButton.S2)
                 case LetterButton.S3.rawValue:
-                    rev.verbes = verbesData.filterBy(LetterButton.S3)
+                    rev.verbes = filterVerbeByLetter(LetterButton.S3)
                     setTextInLetterType(LetterButton.S3)
                 case LetterButton.T.rawValue:
-                    rev.verbes = verbesData.filterBy(LetterButton.T)
+                    rev.verbes = filterVerbeByLetter(LetterButton.T)
                     setTextInLetterType(LetterButton.T)
                 case LetterButton.UV.rawValue:
-                    rev.verbes = verbesData.filterBy(LetterButton.UV)
+                    rev.verbes = filterVerbeByLetter(LetterButton.UV)
                     setTextInLetterType(LetterButton.UV)
                 case LetterButton.WZ.rawValue:
-                    rev.verbes = verbesData.filterBy(LetterButton.WZ)
+                    rev.verbes = filterVerbeByLetter(LetterButton.WZ)
                     setTextInLetterType(LetterButton.WZ)
                 
                 case Form.aiea.rawValue:
-                    rev.verbes = verbesData.filterBy(Form.aiea)
+                    rev.verbes = filterVerbeByForm(Form.aiea)
                     setTextInFormType(Form.aiea)
                 case Form.aua.rawValue:
-                    rev.verbes = verbesData.filterBy(Form.aua)
+                    rev.verbes = filterVerbeByForm(Form.aua)
                     setTextInFormType(Form.aua)
                 case Form.eae.rawValue:
-                    rev.verbes = verbesData.filterBy(Form.eae)
+                    rev.verbes = filterVerbeByForm(Form.eae)
                     setTextInFormType(Form.eae)
                 case Form.eao.rawValue:
-                    rev.verbes = verbesData.filterBy(Form.eao)
+                    rev.verbes = filterVerbeByForm(Form.eao)
                     setTextInFormType(Form.eao)
                 case Form.eiieie.rawValue:
-                    rev.verbes = verbesData.filterBy(Form.eiieie)
+                    rev.verbes = filterVerbeByForm(Form.eiieie)
                     setTextInFormType(Form.eiieie)
                 case Form.eiii.rawValue:
-                    rev.verbes = verbesData.filterBy(Form.eiii)
+                    rev.verbes = filterVerbeByForm(Form.eiii)
                     setTextInFormType(Form.eiii)
                 case Form.iao.rawValue:
-                    rev.verbes = verbesData.filterBy(Form.iao)
+                    rev.verbes = filterVerbeByForm(Form.iao)
                     setTextInFormType(Form.iao)
                 case Form.iau.rawValue:
-                    rev.verbes = verbesData.filterBy(Form.iau)
+                    rev.verbes = filterVerbeByForm(Form.iau)
                     setTextInFormType(Form.iao)
                 case Form.ieoo.rawValue:
-                    rev.verbes = verbesData.filterBy(Form.ieoo)
+                    rev.verbes = filterVerbeByForm(Form.ieoo)
                     setTextInFormType(Form.ieoo)
                 case Form.undefine.rawValue:
-                    rev.verbes = verbesData.filterBy(Form.undefine)
+                    rev.verbes = filterVerbeByForm(Form.undefine)
                     setTextInStringType(unclassable)
                 case Form.weak.rawValue:
-                    rev.verbes = verbesData.filterBy(Form.weak)
+                    rev.verbes = filterVerbeByForm(Form.weak)
                     setTextInStringType(weakIregular)
                 case "random":
                     rev.verbes = []

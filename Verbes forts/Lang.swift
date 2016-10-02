@@ -8,7 +8,6 @@
 
 import Foundation
 
-var langSetting = Lang.fr
 
 enum Lang: String{
     case fr = "Français"
@@ -61,6 +60,27 @@ class DisplayWords{
         }
     }
     
+    /*ChooseLevel*/
+    func selectLevel()-> String {
+        switch lang {
+        case Lang.fr:
+            return "Choisissez votre niveau d'apprentissage"
+        case Lang.en:
+            return "Choose your level"
+        }
+    }
+    
+    func allLevel()-> String {
+        switch lang {
+        case Lang.fr:
+            return "Tous les niveaux"
+        case Lang.en:
+            return "All level"
+        }
+    }
+    
+    
+    
     /*ChooseVerbes*/
     
     func titleChooseVerbes()-> String {
@@ -68,7 +88,7 @@ class DisplayWords{
         case Lang.fr:
             return "Les vebes forts"
         case Lang.en:
-            return "German irregular verbs"
+            return "Irregulars verbs"
         }
     }
     
@@ -119,7 +139,7 @@ class DisplayWords{
     func hereVerbesWithForm(form: String) -> String{
         switch lang {
         case Lang.fr:
-            return "Voici les verbes forts allemand de forme " + form + " mots"
+            return "Voici les verbes forts allemand de forme " + form
         case Lang.en:
             return "Here are german irregular verbs who works like: " + form
         }

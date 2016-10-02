@@ -83,14 +83,14 @@ class ChooseLangMenu: UITableViewController {
         var destViewController : UIViewController
         switch (indexPath.row) {
         case 0:
-            langSetting = Lang.fr
+            changeLang(Lang.fr)
         case 1:
-            langSetting = Lang.en
+            changeLang(Lang.en)
         default:
-            langSetting = Lang.en
+            changeLang(Lang.en)
         }
         
-        destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ChooseVerbes")
+        destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ChooseLevel")
         
         sideMenuController()?.setContentViewController(destViewController)
     }

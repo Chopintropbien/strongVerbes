@@ -45,21 +45,47 @@ class RevisionVerbes: UIViewController, ADBannerViewDelegate {
     @IBOutlet weak var hiddingButton: UIButton!
     var contraintsHiddingButton: [NSLayoutConstraint] = []
     
+    
+
+    @IBOutlet weak var soundButton: UIBarButtonItem!
+    @IBAction func changeSound(sender: UIBarButtonItem) {
+        if(sounds){
+            sender.title = "🔕"
+            sounds = false
+        }
+        else{
+            sender.title = "🔔"
+            sounds = true
+        }
+    }
+    
     var formatAudio = "mp3"
     var nameAudioFile = String()
     var audioURL = NSURL()
     var audioPlayer = try! AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("anbieten", ofType: "mp3")!), fileTypeHint: nil) // Grrrrrrr!!!!! Pourquoi???? audioPlayer.stop()
-    var sounds = true
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // display the correct sounds button
+        if(sounds){ soundButton.title = "🔔"}
+        else{ soundButton.title = "🔕"}
+        
+        // display the first verbe
         if(!self.verbes.isEmpty){
             self.headerLabel.text = headerText
             self.nextButton.setTitle(nextButtonText, forState: .Normal)
             self.initVerbe()
         }
+        else if(self.verbes.count == 1){ // if just one verbes, don't dysplay the next button
+            self.nextButton.hidden = true
+        }
+        else{ // if no verbes
+            //TODO: 
+        }
+        
+        // dysplay advertisment
         if(advertisement){
             self.canDisplayBannerAds = true
             bannerView = ADBannerView(adType: .Banner)
@@ -75,7 +101,7 @@ class RevisionVerbes: UIViewController, ADBannerViewDelegate {
     }
 //    🔔🔕
     func initVerbe(){
-        translationLabel.text = verbes[cursor].translation(langSetting)
+        translationLabel.text = verbes[cursor].translation(getLang())
         infinitifLabel.text = verbes[cursor].infinitf()
         presentLabel.text = verbes[cursor].present()
         preteritLabel.text = verbes[cursor].preterit()
