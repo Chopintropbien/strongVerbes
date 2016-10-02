@@ -189,7 +189,7 @@
                                 </state>
                                 <connections>
                                     <action selector="getViewVerbes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nCN-wu-jEb"/>
-                                    <segue destination="UL2-1v-XTv" kind="show" identifier="ie-o-o" id="ZH4-Em-29p"/>
+                                    <segue destination="UL2-1v-XTv" kind="show" identifier="ie(e)-o-o" id="ZH4-Em-29p"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tvt-fz-qJ5">
@@ -941,7 +941,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="BlO-F4-ki2"/>
+        <segue reference="ZH4-Em-29p"/>
         <segue reference="Jb4-Qc-FFT"/>
     </inferredMetricsTieBreakers>
 </document>
