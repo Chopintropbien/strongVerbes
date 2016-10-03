@@ -14,6 +14,7 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
     
     var level: Level = Level.All
     
+    @IBOutlet weak var iaoButton: UIButton!
     
     @IBOutlet weak var randomOrderButton: UIButton!
     @IBOutlet weak var formOrderLabel: UILabel!
@@ -40,6 +41,11 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
         
         unclassable.setTitle(displaidWords.unclassable(), forState: .Normal)
         weakIregular.setTitle(displaidWords.weakIregularMasculin(), forState: .Normal)
+        
+        // desactivate this button for B1-2 because a lack of verb in this cathegory
+        if(level == Level.B1 || level == Level.B2){
+            iaoButton.enabled = false 
+        }
     }
     
     
@@ -87,8 +93,11 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
                 return result
             }
             
-            print(verbesData.verbes.count)
-            print(foldl(verbesData.verbes.filter({$0.level == Level.needToAngerister}).map({"\($0.infinitf()), \($0.present()), \($0.preterit()), \($0.parfait())\n" }), base: ""))
+            
+            verbesData.witchCategoriesAreNotAvalable()
+            
+//            print(verbesData.verbes.count)
+//            print(foldl(verbesData.verbes.map({"\($0.infinitf()), \($0.present()), \($0.preterit()), \($0.parfait())\n" }), base: ""))
  
  
             

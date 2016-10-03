@@ -40,8 +40,6 @@ class ChooseLevel: UIViewController, ENSideMenuDelegate {
                     cv.level = Level.B2
                 case Level.C1.rawValue:
                     cv.level = Level.C1
-                case Level.C2.rawValue:
-                    cv.level = Level.C2
                 default:
                     cv.level = Level.All
                 }

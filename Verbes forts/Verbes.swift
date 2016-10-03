@@ -20,7 +20,8 @@ enum Form: String { // 11
     case ieoo = "ie(e)-o-o"
     case undefine = "undefine"
     case weak = "weak"
-    case toChange = "toChange"
+    
+    static let allValues = [aiea, aua, eae, eao, eiieie, eiii, iao, iau, ieoo, undefine, weak]
 }
 
 // c'est pas beau du tout, mais d'un coté ils n'accepte pas
@@ -40,6 +41,8 @@ enum LetterButton: String{
     case T = "t"
     case UV = "u-ü-v"
     case WZ = "w-z"
+    
+    static let allValues = [A, B, DE, F, G, HK, LM, NPQ, R, S1, S2, S3, T, UV, WZ]
 }
 
 enum Level: String{
@@ -47,10 +50,9 @@ enum Level: String{
     case B1 = "B1"
     case B2 = "B2"
     case C1 = "C1"
-    case C2 = "C2"
     case All = "All"
-    case waiting = "waiting"
-    case needToAngerister = "needToAngerister"
+    
+    static let allValues = [A2, B1, B2, C1, All]
 }
 
 
@@ -101,7 +103,7 @@ struct Verbes{
             //         Verbe(level: Level.C1, form: Form.toChange, verbe: ("untertreichen", "er untertreicht", "er ", "er hat "), translations: [(Lang.fr, ""), (Lang.en, "")]),
 
             
-            Verbe(level: Level.C1, form: Form.ieoo, verbe: ("abschließen", "er … schließt", "er schloss … ab", "er hat abgeschlossen"), translations: [(Lang.fr, "finir"), (Lang.en, "to finish")]),
+            Verbe(level: Level.C1, form: Form.ieoo, verbe: ("abschließen", "er schließt … ab", "er schloss … ab", "er hat abgeschlossen"), translations: [(Lang.fr, "finir"), (Lang.en, "to finish")]),
             Verbe(level: Level.C1, form: Form.eao, verbe: ("abnehmen", "er nimmt … ab", "er nahm … ab", "er hat abgenommen"), translations: [(Lang.fr, "mincir"), (Lang.en, "to reduce weight")]),
             Verbe(level: Level.C1, form: Form.aiea, verbe: ("abraten", "er rät … ab", "er riet … ab", "er hat abgeraten"), translations: [(Lang.fr, "déconseiller"), (Lang.en, "to disadvise")]),
             Verbe(level: Level.C1, form: Form.ieoo, verbe: ("anbieten", "er bietet … an", "er bot … an", "er hat … angeboten"), translations: [(Lang.fr, "offrir, proposer"), (Lang.en, "to offer")]),
@@ -122,7 +124,7 @@ struct Verbes{
             Verbe(level: Level.B2, form: Form.aua, verbe: ("aufwachsen", "er wachst … auf", "er wuchs … auf", "er ist aufgewachsen"), translations: [(Lang.fr, "grandir"), (Lang.en, "to grow up")]),
             Verbe(level: Level.C1, form: Form.aiea, verbe: ("ausfallen", "er fällt … aus", "er fiel … aus", "er ist ausgefallen"), translations: [(Lang.fr, "être annulé"), (Lang.en, "to be canceled")]), //TODO: ???
             Verbe(level: Level.B2, form: Form.eae, verbe: ("ausgeben", "er gibt … aus", "er gab … aus", "er hat … ausgegeben"), translations: [(Lang.fr, "dépenser"), (Lang.en, "to spend sth.")]),
-            Verbe(level: Level.C1, form: Form.weak, verbe: ("auskennen", "er kennt … aus", "er kannte … aus", "er hat ausgekannt"), translations: [(Lang.fr, "reconnaître"), (Lang.en, "to recognize")]),
+            Verbe(level: Level.C1, form: Form.weak, verbe: ("auskennen (sich)", "er kennt sich … aus", "er kannte sich … aus", "er hat sich ausgekannt"), translations: [(Lang.fr, "se reconnaître"), (Lang.en, "to recognize")]),
             Verbe(level: Level.C1, form: Form.undefine, verbe: ("auskommen", "er kommt … aus", "er kam … aus", "er ist ausgekommen"), translations: [(Lang.fr, "s'en tirer"), (Lang.en, "to get along")]), //TODO: ???
             Verbe(level: Level.B2, form: Form.eiieie, verbe: ("ausleihen", "er leiht … aus", "er lieh … aus", "er hat ausgeliehen"), translations: [(Lang.fr, "prêter"), (Lang.en, "to borrow sth.")]),
             Verbe(level: Level.B2, form: Form.aiea, verbe: ("ausschlafen", "er schläft … aus", "er schlief … aus", "er hat ausgeschlafen"), translations: [(Lang.fr, "faire la grasse matinée"), (Lang.en, "to sleep late")]),
@@ -529,6 +531,27 @@ struct Verbes{
         }
         else{
             return sortedVerbes.filter({$0.level == level})
+        }
+    }
+    
+    
+    
+    
+    // develop
+    func witchCategoriesAreNotAvalable(){
+        print(verbes.count)
+        for level in Level.allValues{
+            for form in Form.allValues{
+                if (filterBy(form, level: level).count == 0){
+                    print("\(form)  \(level) \n")
+                }
+            }
+            
+            for letter in LetterButton.allValues{
+                if (filterBy(letter, level: level).count == 0){
+                    print("\(letter)  \(level) \n")
+                }
+            }
         }
     }
   
