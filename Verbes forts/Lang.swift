@@ -12,6 +12,7 @@ import Foundation
 enum Lang: String{
     case fr = "Français"
     case en = "English"
+    case es = "Español"
 }
 
 class DisplayWords{
@@ -30,15 +31,19 @@ class DisplayWords{
             return "inclassable"
         case Lang.en:
             return "unclassifiable"
+        case Lang.es:
+            return ""
         }
     }
-    
+
     func weakIregularMasculin()-> String {
         switch lang {
         case Lang.fr:
             return "faible irrégulier"
         case Lang.en:
             return "weak-irregular"
+        case Lang.es:
+            return ""
         }
     }
     
@@ -48,6 +53,8 @@ class DisplayWords{
             return "faible irrégulière"
         case Lang.en:
             return "weak-irregular"
+        case Lang.es:
+            return ""
         }
     }
     
@@ -57,6 +64,8 @@ class DisplayWords{
             return "Suivant"
         case Lang.en:
             return "Next"
+        case Lang.es:
+            return ""
         }
     }
     
@@ -67,6 +76,8 @@ class DisplayWords{
             return "Choisissez votre niveau d'apprentissage"
         case Lang.en:
             return "Choose your level"
+        case Lang.es:
+            return ""
         }
     }
     
@@ -76,6 +87,8 @@ class DisplayWords{
             return "Tous les niveaux"
         case Lang.en:
             return "All level"
+        case Lang.es:
+            return ""
         }
     }
     
@@ -89,6 +102,8 @@ class DisplayWords{
             return "Les vebes forts"
         case Lang.en:
             return "Irregulars verbs"
+        case Lang.es:
+            return ""
         }
     }
     
@@ -99,6 +114,8 @@ class DisplayWords{
             return "Ordre aléatoire"
         case Lang.en:
             return "Random order"
+        case Lang.es:
+            return ""
         }
     }
     
@@ -108,6 +125,8 @@ class DisplayWords{
             return "Classés celon la forme:"
         case Lang.en:
             return "Classified by form"
+        case Lang.es:
+            return ""
         }
     }
     
@@ -117,6 +136,8 @@ class DisplayWords{
             return "Classés par ordre alphabétique"
         case Lang.en:
             return "Classified by alphabetical order"
+        case Lang.es:
+            return ""
         }
     }
     
@@ -133,6 +154,8 @@ class DisplayWords{
             return "Essayer de vous souvenir de ses " + String(numberVerbe) + " verbes"
         case Lang.en:
             return "Try to remember this " + String(numberVerbe) + " verbes"
+        case Lang.es:
+            return ""
         }
     }
     
@@ -142,6 +165,8 @@ class DisplayWords{
             return "Voici les verbes forts allemand de forme " + form
         case Lang.en:
             return "Here are german irregular verbs who works like: " + form
+        case Lang.es:
+            return ""
         }
     }
     
@@ -151,6 +176,8 @@ class DisplayWords{
             return "Voici les verbes forts allemand commençant par " + letter.rawValue.uppercaseString
         case Lang.en:
             return "Here are german irregular verbs who begins buy: " + letter.rawValue.uppercaseString
+        case Lang.es:
+            return ""
         }
     }
     

@@ -40,12 +40,13 @@ class RevisionVerbes: UIViewController, ADBannerViewDelegate {
     @IBOutlet weak var nextButton: UIButton!
     
     
+    @IBOutlet weak var revealedImage: UIImageView!
+    @IBOutlet weak var hiddingImage: UIImageView!
+    
     @IBOutlet weak var superViewHiddingButton: UIView!
     
     @IBOutlet weak var hiddingButton: UIButton!
-    var contraintsHiddingButton: [NSLayoutConstraint] = []
-    
-    
+
 
     @IBOutlet weak var soundButton: UIBarButtonItem!
     @IBAction func changeSound(sender: UIBarButtonItem) {
@@ -81,9 +82,64 @@ class RevisionVerbes: UIViewController, ADBannerViewDelegate {
         else if(self.verbes.count == 1){ // if just one verbes, don't dysplay the next button
             self.nextButton.hidden = true
         }
-        else{ // if no verbes
-            //TODO: 
-        }
+        
+        let screenWidth = self.view.bounds.width
+        
+        // explanation
+        let headerLabelMarginTop = height(169)
+        let headerLabelHeight = height(98)
+        headerLabel.frame = CGRectMake(0, headerLabelMarginTop, screenWidth, headerLabelHeight)
+        
+        // Translation
+        let translationLabelMarginTop = height(18)
+        let translationLabelHeight = height(98)
+        let translationLabelY = translationLabelMarginTop + headerLabelHeight + headerLabelMarginTop
+        translationLabel.frame = CGRectMake(0, translationLabelY, screenWidth, translationLabelHeight)
+        translationLabel.textColor = gray
+        translationLabel.font = UIFont(name: "Avenir-Heavy", size: 35)
+        
+        
+        
+
+        // Images and button for return the carte
+        let revealedImageMarginTop = height(10)
+        let revealedImageY = translationLabelY + revealedImageMarginTop + translationLabelHeight
+        let revealedImageMarginRight = width(60)
+        let revealedImageWidth =  screenWidth - 2*revealedImageMarginRight
+        let revealedImageHeight = revealedImageWidth/640*739
+        revealedImage.frame = CGRectMake(revealedImageMarginRight , revealedImageY, revealedImageWidth, revealedImageHeight)
+        
+        superViewHiddingButton.frame = revealedImage.frame
+        hiddingImage.frame = CGRectMake(0, 0, superViewHiddingButton.bounds.width, superViewHiddingButton.bounds.height)
+        hiddingButton.frame = hiddingImage.frame
+        
+        
+        // nextButton
+        let nextButtonMarginRight = width(40)
+        let nextButtonMarginTop = height(40)
+        let nextButtonY = nextButtonMarginTop + revealedImageY + revealedImageHeight
+        let nextButtonHeight = height(120)
+        nextButton.frame = CGRectMake(nextButtonMarginRight, nextButtonY, screenWidth - nextButtonMarginRight*2, nextButtonHeight)
+        nextButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        nextButton.titleLabel!.font = UIFont(name: "Avenir-Heavy", size: 16)
+        nextButton.backgroundColor = pink
+        nextButton.layer.cornerRadius = 4
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
         
         // dysplay advertisment
         if(advertisement){
@@ -109,10 +165,10 @@ class RevisionVerbes: UIViewController, ADBannerViewDelegate {
     }
     
     @IBAction func showVerbe() {
-        contraintsHiddingButton = self.hiddingButton.constraints
         let transitionOptions = UIViewAnimationOptions.TransitionCurlUp
         UIView.transitionWithView(superViewHiddingButton, duration: removeHiddingduration, options: transitionOptions, animations: {
             self.hiddingButton.hidden = true
+            self.hiddingImage.hidden = true
             }, completion: nil)
         
         if(sounds) { playAudio() }
@@ -152,6 +208,7 @@ class RevisionVerbes: UIViewController, ADBannerViewDelegate {
                 let transitionOptions = UIViewAnimationOptions.TransitionCurlDown
                 UIView.transitionWithView(superViewHiddingButton, duration: replaceHiddingduration, options: transitionOptions, animations: {
                     self.hiddingButton.hidden = false
+                    self.hiddingImage.hidden = false
                     }, completion: nil)
             }
             else{ // will display the new verbe right away
@@ -174,6 +231,21 @@ class RevisionVerbes: UIViewController, ADBannerViewDelegate {
     
     func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
         bannerView.hidden = true
+    }
+    
+    
+    // helper function for computer the proportions
+    private func height(h: Double) -> CGFloat{
+        let screenHeight = self.view.bounds.height
+        let designHeight: CGFloat = 1334.0
+        
+        return screenHeight * (CGFloat(h)/designHeight)
+    }
+    private func width(w: Double) -> CGFloat{
+        let screenWidth = self.view.bounds.width
+        let designWidth: CGFloat = 750.0
+        
+        return screenWidth * (CGFloat(w)/designWidth)
     }
     
 

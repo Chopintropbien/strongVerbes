@@ -334,6 +334,9 @@
 		98ED57F01DA29888003FF40C /* zurückziehen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98ED56BB1DA29888003FF40C /* zurückziehen.mp3 */; };
 		98ED57F11DA29888003FF40C /* zwingen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98ED56BC1DA29888003FF40C /* zwingen.mp3 */; };
 		98ED57F31DA2C237003FF40C /* herausfinden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98ED57F21DA2C237003FF40C /* herausfinden.mp3 */; };
+		98ED57F51DA51C80003FF40C /* LevelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ED57F41DA51C80003FF40C /* LevelButton.swift */; };
+		98ED57F71DA8F75E003FF40C /* CategoryVerbeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ED57F61DA8F75E003FF40C /* CategoryVerbeButton.swift */; };
+		98ED57FB1DA9289B003FF40C /* BasicLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ED57FA1DA9289B003FF40C /* BasicLabel.swift */; };
 		98F877901D83EFDE0048721B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F8778F1D83EFDE0048721B /* AVFoundation.framework */; };
 		98F879381D86E3DD0048721B /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F879371D86E3DD0048721B /* Lang.swift */; };
 /* End PBXBuildFile section */
@@ -689,6 +692,9 @@
 		98ED56BB1DA29888003FF40C /* zurückziehen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "zurückziehen.mp3"; sourceTree = "<group>"; };
 		98ED56BC1DA29888003FF40C /* zwingen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zwingen.mp3; sourceTree = "<group>"; };
 		98ED57F21DA2C237003FF40C /* herausfinden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = herausfinden.mp3; sourceTree = "<group>"; };
+		98ED57F41DA51C80003FF40C /* LevelButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelButton.swift; sourceTree = "<group>"; };
+		98ED57F61DA8F75E003FF40C /* CategoryVerbeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryVerbeButton.swift; sourceTree = "<group>"; };
+		98ED57FA1DA9289B003FF40C /* BasicLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicLabel.swift; sourceTree = "<group>"; };
 		98F8778F1D83EFDE0048721B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		98F879371D86E3DD0048721B /* Lang.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lang.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -745,9 +751,9 @@
 		98B79F961D70AD9300A3F94B /* Verbes forts */ = {
 			isa = PBXGroup;
 			children = (
-				983E2D521D9A59B000D26E05 /* GlobalSettings.swift */,
 				98D4DE331D8B2BCE00F41E87 /* Library */,
-				98F8778E1D83EEE20048721B /* Supporting files */,
+				983E2D521D9A59B000D26E05 /* GlobalSettings.swift */,
+				983E2D501D9A514600D26E05 /* ChooseLevel.swift */,
 				98B79F991D70AD9300A3F94B /* ChooseVerbes.swift */,
 				98B391BD1D757353001E1AA1 /* RevisionVerbes.swift */,
 				98E172A51D740C5900131633 /* Verbes.swift */,
@@ -759,7 +765,9 @@
 				98F879371D86E3DD0048721B /* Lang.swift */,
 				98D4DE381D8B2C2C00F41E87 /* MyNavigationController.swift */,
 				98D4DE3A1D8B2D5400F41E87 /* ChooseLangMenu.swift */,
-				983E2D501D9A514600D26E05 /* ChooseLevel.swift */,
+				98ED57F41DA51C80003FF40C /* LevelButton.swift */,
+				98ED57F61DA8F75E003FF40C /* CategoryVerbeButton.swift */,
+				98ED57FA1DA9289B003FF40C /* BasicLabel.swift */,
 			);
 			path = "Verbes forts";
 			sourceTree = "<group>";
@@ -785,6 +793,7 @@
 		98D4DE331D8B2BCE00F41E87 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				98F8778E1D83EEE20048721B /* Supporting files */,
 				98D4DE341D8B2BF300F41E87 /* ENSideMenu.swift */,
 				98D4DE361D8B2C1100F41E87 /* ENSideMenuNavigationController.swift */,
 			);
@@ -1564,6 +1573,9 @@
 				983E2D511D9A514600D26E05 /* ChooseLevel.swift in Sources */,
 				98D4DE391D8B2C2C00F41E87 /* MyNavigationController.swift in Sources */,
 				98F879381D86E3DD0048721B /* Lang.swift in Sources */,
+				98ED57F51DA51C80003FF40C /* LevelButton.swift in Sources */,
+				98ED57FB1DA9289B003FF40C /* BasicLabel.swift in Sources */,
+				98ED57F71DA8F75E003FF40C /* CategoryVerbeButton.swift in Sources */,
 				98E172A61D740C5900131633 /* Verbes.swift in Sources */,
 				98D4DE3B1D8B2D5400F41E87 /* ChooseLangMenu.swift in Sources */,
 				98D4DE371D8B2C1100F41E87 /* ENSideMenuNavigationController.swift in Sources */,
