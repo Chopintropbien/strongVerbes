@@ -8,16 +8,10 @@
 
 
 import UIKit
-import iAd
 import AVFoundation
 
 
-class RevisionVerbes: UIViewController, ADBannerViewDelegate {
-    
-
-    var bannerView: ADBannerView!
-
-    var advertisement = false
+class RevisionVerbes: UIViewController {
     
     // Text
 
@@ -39,7 +33,15 @@ class RevisionVerbes: UIViewController, ADBannerViewDelegate {
     @IBOutlet weak var parfaitLabel: UILabel!
     @IBOutlet weak var nextButton: UIButton!
     
+    // set the max size of label : Importante for func sizeInfinitifLabel
+    var screenWidth:CGFloat = 0
+    var screenHeight:CGFloat = 0
+    var verbeWidth:CGFloat = 0
+    var infinitifLabelY:CGFloat = 0
+    var infinitifLabelheight:CGFloat = 0
     
+
+
     @IBOutlet weak var revealedImage: UIImageView!
     @IBOutlet weak var hiddingImage: UIImageView!
     
@@ -83,12 +85,14 @@ class RevisionVerbes: UIViewController, ADBannerViewDelegate {
             self.nextButton.hidden = true
         }
         
-        let screenWidth = self.view.bounds.width
+        screenWidth = self.view.bounds.width
+        screenHeight = self.view.bounds.height
         
         // explanation
-        let headerLabelMarginTop = height(169)
+        let headerLabelMarginTop = height(190)
         let headerLabelHeight = height(98)
-        headerLabel.frame = CGRectMake(0, headerLabelMarginTop, screenWidth, headerLabelHeight)
+        let headerLabelMarginRight = width(100)
+        headerLabel.frame = CGRectMake(headerLabelMarginRight, headerLabelMarginTop, screenWidth - headerLabelMarginRight*2, headerLabelHeight)
         
         // Translation
         let translationLabelMarginTop = height(18)
@@ -96,22 +100,66 @@ class RevisionVerbes: UIViewController, ADBannerViewDelegate {
         let translationLabelY = translationLabelMarginTop + headerLabelHeight + headerLabelMarginTop
         translationLabel.frame = CGRectMake(0, translationLabelY, screenWidth, translationLabelHeight)
         translationLabel.textColor = gray
-        translationLabel.font = UIFont(name: "Avenir-Heavy", size: 35)
+        translationLabel.font = UIFont(name: "Avenir-Heavy", size: 32)
         
         
         
 
         // Images and button for return the carte
-        let revealedImageMarginTop = height(10)
+        let revealedImageMarginTop = height(20)
         let revealedImageY = translationLabelY + revealedImageMarginTop + translationLabelHeight
-        let revealedImageMarginRight = width(60)
+        let revealedImageMarginRight = width(70)
         let revealedImageWidth =  screenWidth - 2*revealedImageMarginRight
         let revealedImageHeight = revealedImageWidth/640*739
-        revealedImage.frame = CGRectMake(revealedImageMarginRight , revealedImageY, revealedImageWidth, revealedImageHeight)
+        revealedImage.frame = CGRectMake(revealedImageMarginRight, revealedImageY, revealedImageWidth, revealedImageHeight)
         
         superViewHiddingButton.frame = revealedImage.frame
         hiddingImage.frame = CGRectMake(0, 0, superViewHiddingButton.bounds.width, superViewHiddingButton.bounds.height)
         hiddingButton.frame = hiddingImage.frame
+        
+        // German verbe
+        
+        
+        let verbeInsideImgWidth = width(60)
+        let verbeMarginRight = verbeInsideImgWidth + revealedImageMarginRight
+        verbeWidth = revealedImageWidth - verbeInsideImgWidth*2
+        let verbeHeight = height(70)
+        let verbeMarginTop = height(30)
+        
+        
+        // infinitif
+        infinitifLabelY = height(110) + revealedImageY
+        infinitifLabelheight = height(100)
+        resizeInfinitifLabel()
+        infinitifLabel.textColor = UIColor.whiteColor()
+        infinitifLabel.font = UIFont(name: "Avenir-Black", size: 27)
+        infinitifLabel.textAlignment = .Center
+        infinitifLabel.layer.cornerRadius = 14
+        infinitifLabel.layer.borderWidth = 2
+        infinitifLabel.layer.borderColor = UIColor.whiteColor().CGColor
+        
+        // present
+        let presentLabelMarginTop = height(45)
+        let presentLabelY = infinitifLabelY + infinitifLabelheight + presentLabelMarginTop
+        presentLabel.frame = CGRectMake(verbeMarginRight, presentLabelY, verbeWidth, verbeHeight)
+        presentLabel.textColor = cream
+        presentLabel.font = UIFont(name: "Avenir-Heavy", size: 22)
+        presentLabel.textAlignment = .Center
+        
+        // preterit
+        let preteritLabelY = presentLabelY + verbeHeight + verbeMarginTop
+        preteritLabel.frame = CGRectMake(verbeMarginRight, preteritLabelY, verbeWidth, verbeHeight)
+        preteritLabel.textColor = presentLabel.textColor
+        preteritLabel.font = presentLabel.font
+        presentLabel.textAlignment = presentLabel.textAlignment
+        
+        
+        // parfait
+        let parfaitLabelY = preteritLabelY + verbeHeight + verbeMarginTop
+        parfaitLabel.frame = CGRectMake(verbeMarginRight, parfaitLabelY, verbeWidth, verbeHeight)
+        parfaitLabel.textColor = presentLabel.textColor
+        parfaitLabel.font = presentLabel.font
+        parfaitLabel.textAlignment = presentLabel.textAlignment
         
         
         // nextButton
@@ -121,39 +169,20 @@ class RevisionVerbes: UIViewController, ADBannerViewDelegate {
         let nextButtonHeight = height(120)
         nextButton.frame = CGRectMake(nextButtonMarginRight, nextButtonY, screenWidth - nextButtonMarginRight*2, nextButtonHeight)
         nextButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
-        nextButton.titleLabel!.font = UIFont(name: "Avenir-Heavy", size: 16)
+        nextButton.titleLabel!.font = UIFont(name: "Avenir-Heavy", size: 18)
         nextButton.backgroundColor = pink
         nextButton.layer.cornerRadius = 4
         
+    
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+    }
+    
+    private func resizeInfinitifLabel(){
+        infinitifLabel.sizeToFit()
+        var newWidth = infinitifLabel.bounds.width + width(120)
+        if(newWidth > verbeWidth) {newWidth = verbeWidth}
+        infinitifLabel.frame = CGRectMake((screenWidth - newWidth)/2, infinitifLabelY, newWidth, infinitifLabelheight)
 
-        
-        // dysplay advertisment
-        if(advertisement){
-            self.canDisplayBannerAds = true
-            bannerView = ADBannerView(adType: .Banner)
-            bannerView.translatesAutoresizingMaskIntoConstraints = false
-            bannerView.delegate = self
-            bannerView.hidden = true
-            view.addSubview(bannerView)
-            let viewsDictionary = ["bannerView": bannerView]
-            view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[bannerView]|", options: [], metrics: nil, views: viewsDictionary))
-            view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[bannerView]|", options: [], metrics: nil, views: viewsDictionary))
-        }
-        
     }
 //    🔔🔕
     func initVerbe(){
@@ -162,6 +191,9 @@ class RevisionVerbes: UIViewController, ADBannerViewDelegate {
         presentLabel.text = verbes[cursor].present()
         preteritLabel.text = verbes[cursor].preterit()
         parfaitLabel.text = verbes[cursor].parfait()
+        
+        // resize infinitifLabel
+        resizeInfinitifLabel()
     }
     
     @IBAction func showVerbe() {
@@ -224,25 +256,16 @@ class RevisionVerbes: UIViewController, ADBannerViewDelegate {
             }
         }
     }
-    
-    func bannerViewDidLoadAd(banner: ADBannerView!) {
-        bannerView.hidden = false
-    }
-    
-    func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
-        bannerView.hidden = true
-    }
+
     
     
     // helper function for computer the proportions
     private func height(h: Double) -> CGFloat{
-        let screenHeight = self.view.bounds.height
         let designHeight: CGFloat = 1334.0
         
         return screenHeight * (CGFloat(h)/designHeight)
     }
     private func width(w: Double) -> CGFloat{
-        let screenWidth = self.view.bounds.width
         let designWidth: CGFloat = 750.0
         
         return screenWidth * (CGFloat(w)/designWidth)
