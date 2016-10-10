@@ -69,11 +69,22 @@ class DisplayWords{
         }
     }
     
+    func select()-> String {
+        switch lang {
+        case Lang.fr:
+            return "SELECT" //"SELECTIONNER" -> to big
+        case Lang.en:
+            return "SELECT"
+        case Lang.es:
+            return ""
+        }
+    }
+    
     /*ChooseLevel*/
     func selectLevel()-> String {
         switch lang {
         case Lang.fr:
-            return "Choisissez votre niveau d'apprentissage"
+            return "Choisissez votre niveau"
         case Lang.en:
             return "Choose your level"
         case Lang.es:
@@ -84,13 +95,60 @@ class DisplayWords{
     func allLevel()-> String {
         switch lang {
         case Lang.fr:
-            return "Tous les niveaux"
+            return "Tous"
         case Lang.en:
-            return "All level"
+            return "All"
         case Lang.es:
             return ""
         }
     }
+    
+    
+    func A2LevelExplaination()-> String {
+        switch lang {
+        case Lang.fr:
+            return "Niveau Elémentaire"
+        case Lang.en:
+            return "Basic Level"
+        case Lang.es:
+            return ""
+        }
+    }
+    
+    func B1B2LevelExplaination()-> String {
+        switch lang {
+        case Lang.fr:
+            return "Niveau Intermédiare"
+        case Lang.en:
+            return "Intermediate Level"
+        case Lang.es:
+            return ""
+        }
+    }
+    
+    func C1LevelExplaination()-> String {
+        switch lang {
+        case Lang.fr:
+            return "Niveau avancé"
+        case Lang.en:
+            return "Advanced Level"
+        case Lang.es:
+            return ""
+        }
+    }
+    
+    func allLevelExplaination()-> String {
+        switch lang {
+        case Lang.fr:
+            return "Tous niveaux"
+        case Lang.en:
+            return "Every Level"
+        case Lang.es:
+            return ""
+        }
+    }
+    
+    
     
     
     
@@ -99,16 +157,27 @@ class DisplayWords{
     func titleChooseVerbes()-> String {
         switch lang {
         case Lang.fr:
-            return "Les vebes forts"
+            return "Les verbes forts"
         case Lang.en:
-            return "Irregulars verbs"
+            return "Irregular verbs"
+        case Lang.es:
+            return ""
+        }
+    }
+    
+    func randomOrderButton()-> String {
+        switch lang {
+        case Lang.fr:
+            return "Aléatoire"
+        case Lang.en:
+            return "Random"
         case Lang.es:
             return ""
         }
     }
     
     
-    func randomOrder()-> String {
+    func randomOrderLabel()-> String {
         switch lang {
         case Lang.fr:
             return "Ordre aléatoire"
@@ -151,7 +220,7 @@ class DisplayWords{
     func headerTextRandom(numberVerbe: Int) -> String{
         switch lang {
         case Lang.fr:
-            return "Essayer de vous souvenir de ses " + String(numberVerbe) + " verbes"
+            return "Essayer de vous souvenir de ces " + String(numberVerbe) + " verbes"
         case Lang.en:
             return "Try to remember this " + String(numberVerbe) + " verbes"
         case Lang.es:

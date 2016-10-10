@@ -22,10 +22,12 @@ class ChooseLevel: UIViewController, ENSideMenuDelegate {
     @IBOutlet weak var C1LevelButton: LevelButton!
     
     override func viewDidLoad() {
+        placeElement()
+        
+        // Set text in the choosed language
         self.title = displaidWords.titleChooseVerbes()
         selectLevelLabel.text = displaidWords.selectLevel()
-        allLevelButton.setTitle(displaidWords.allLevel(), forState: .Normal)
-        placeElement()
+        allLevelButton.setTitle(displaidWords.allLevel(), forState: .Normal)        
     }
     
     

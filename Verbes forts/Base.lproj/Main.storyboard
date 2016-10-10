@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ZOU-WQ-dJC">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ZOU-WQ-dJC">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Les vebes forts-->
+        <!--Les verbes forts-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="ChooseVerbes" id="BYZ-38-t0r" customClass="ChooseVerbes" customModule="Verbes_forts" sceneMemberID="viewController">
@@ -13,7 +13,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vxj-3R-1jc" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vxj-3R-1jc" customClass="CategoryVerbeButtonPink" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="16" y="105" width="288" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
@@ -46,7 +46,7 @@
                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EYf-Tf-n8e" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EYf-Tf-n8e" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="174" y="289" width="100" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -58,7 +58,7 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="weak" id="4yo-tS-Wn9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Tvt-fz-qJ5" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Tvt-fz-qJ5" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="65" y="289" width="70" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -70,7 +70,7 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="undefine" id="gtg-fB-eC7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nJh-IG-vX6" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nJh-IG-vX6" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="232" y="245" width="68" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -82,7 +82,7 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="ie(e)-o-o" id="ZH4-Em-29p"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4gM-eS-rb8" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4gM-eS-rb8" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="163" y="245" width="43" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -94,7 +94,7 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="i-a-u" id="SJw-xf-1L7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CfN-Rk-8uw" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CfN-Rk-8uw" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="77" y="245" width="46" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -106,7 +106,7 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="i-a-o" id="Z9R-6q-k50"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jhi-ky-nHT" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jhi-ky-nHT" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="53" y="199" width="47" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -118,7 +118,7 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="e-a-o" id="8Ym-G1-ALn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WfL-Dg-6MP" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WfL-Dg-6MP" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="133" y="199" width="55" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -130,7 +130,7 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="ei-ie-ie" id="u0A-Di-0ev"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GGp-Xg-hp5" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GGp-Xg-hp5" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="232" y="199" width="45" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -142,7 +142,7 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="ei-i-i" id="S0s-PN-Yl0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="z8c-b0-uEy" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="z8c-b0-uEy" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="44" y="164" width="64" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -154,7 +154,7 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="a–ie(i)–a" id="Ecl-LV-ghZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uaP-3b-7dh" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uaP-3b-7dh" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="243" y="164" width="46" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -166,7 +166,7 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="e-a-e" id="nlx-AM-gun"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="R0T-CJ-TOy" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="R0T-CJ-TOy" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="137" y="164" width="46" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -176,7 +176,7 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="a-u-a" id="8yj-we-gFr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nLn-Bp-z5K" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nLn-Bp-z5K" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="271" y="511" width="33" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -188,7 +188,7 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="w-z" id="wb7-4t-3pZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mTd-UP-usY" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mTd-UP-usY" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="209" y="511" width="30" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -200,7 +200,7 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="u-ü-v" id="KKP-Om-7oI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KFj-fe-VXG" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KFj-fe-VXG" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="132" y="511" width="48" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -212,7 +212,7 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="t" id="D52-mz-hae"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EW0-zF-aRJ" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EW0-zF-aRJ" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="82" y="511" width="36" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -224,7 +224,7 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="si-so-sp-st" id="BlO-F4-ki2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rlq-HW-goc" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rlq-HW-goc" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="31" y="511" width="35" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -236,7 +236,7 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="schn-schr-schw-se" id="dyx-He-tGp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zpL-Fc-9Ny" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zpL-Fc-9Ny" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="31" y="454" width="35" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -248,7 +248,7 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="h-k" id="TB2-84-3OO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SV8-nn-TzZ" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SV8-nn-TzZ" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="31" y="407" width="35" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -260,7 +260,7 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="a" id="8PT-Ls-Xlh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gdE-fc-g5i" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gdE-fc-g5i" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="78" y="407" width="36" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -272,7 +272,7 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="b" id="uQD-Qz-xWf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EnQ-3I-2px" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EnQ-3I-2px" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="78" y="454" width="36" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -284,7 +284,7 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="l-m" id="ETI-Ip-gYq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UlX-zd-dIB" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UlX-zd-dIB" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="267" y="454" width="33" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -296,7 +296,7 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="sa-sche-schi-schl-schm" id="goq-ZW-QL0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xpc-md-9oX" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xpc-md-9oX" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="267" y="407" width="33" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -308,7 +308,7 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="g" id="01k-Iv-cOy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2rp-Dt-llx" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2rp-Dt-llx" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="209" y="454" width="30" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -320,7 +320,7 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="r" id="P4V-bR-e5C"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d3v-yZ-Kj0" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d3v-yZ-Kj0" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="135" y="454" width="48" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -332,7 +332,7 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="n-p-q" id="5Dv-TB-vII"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0qv-Jk-Z73" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0qv-Jk-Z73" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="137" y="414" width="48" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -344,7 +344,7 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="d-e" id="qSN-L1-wYe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IDf-pA-2vn" customClass="CategoryVerbeButton" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IDf-pA-2vn" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="210" y="407" width="30" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -359,7 +359,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Les vebes forts" id="lcB-v0-Tab">
+                    <navigationItem key="navigationItem" title="Les verbes forts" id="lcB-v0-Tab">
                         <barButtonItem key="rightBarButtonItem" title="Language" id="UCd-g2-mYw">
                             <connections>
                                 <action selector="showLanguageMenu:" destination="BYZ-38-t0r" id="I9r-q5-zll"/>
@@ -538,7 +538,7 @@
             </objects>
             <point key="canvasLocation" x="-565.33333333333337" y="1072.573333333333"/>
         </scene>
-        <!--Les vebes forts-->
+        <!--Les verbes forts-->
         <scene sceneID="hGs-HZ-UTX">
             <objects>
                 <viewController storyboardIdentifier="ChooseLevel" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ujR-zL-ANU" customClass="ChooseLevel" customModule="Verbes_forts" customModuleProvider="target" sceneMemberID="viewController">
@@ -619,7 +619,7 @@
                         <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.90260022100000004" green="0.16145703259999999" blue="0.1705301203" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Les vebes forts" id="kKd-wN-Whq">
+                    <navigationItem key="navigationItem" title="Les verbes forts" id="kKd-wN-Whq">
                         <barButtonItem key="rightBarButtonItem" title="Language" id="3vy-hY-kL2">
                             <connections>
                                 <action selector="showLanguageMenu:" destination="ujR-zL-ANU" id="krq-y9-nye"/>

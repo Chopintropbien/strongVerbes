@@ -17,6 +17,7 @@ class BasicLabel: UILabel {
         self.font = UIFont(name: "Avenir-Black", size: 16)
         self.textColor = fontColor
         self.textAlignment = .Center
+
     }
     
 }

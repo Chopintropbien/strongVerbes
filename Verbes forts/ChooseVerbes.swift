@@ -62,9 +62,11 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // set text in the choosed language
         self.title = displaidWords.titleChooseVerbes()
-    
-        self.randomOrderButton.setTitle(displaidWords.randomOrder(), forState: .Normal)
+        self.randomOrderButton.setTitle(displaidWords.randomOrderButton(), forState: .Normal)
+        self.randomOrderLabel.text = displaidWords.randomOrderLabel()
         self.formOrderLabel.text = displaidWords.formOrderLabel()
         self.alphabeticOrderLabel.text = displaidWords.alphabeticOrderLabel()
         
@@ -78,23 +80,25 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
         
         // 1th label
         let labelHeight = height(65)
-        let randomOrderLabelMarginTop = height(170)
+        let randomOrderLabelMarginTop = height(180)
         randomOrderLabel.frame = CGRectMake(0, randomOrderLabelMarginTop, screenWidth, labelHeight)
         
         // Random Button
-        let buttonHeight = height(65)
-        let randomOrderButtonMarginTop = height(45)
+        let buttonHeight = height(70)
+        let randomOrderButtonMarginTop = height(25)
         let randomOrderButtonY = randomOrderLabelMarginTop + randomOrderButtonMarginTop + labelHeight
-        randomOrderButton.frame = CGRectMake(width(238), randomOrderButtonY, width(275), buttonHeight)
+        randomOrderButton.frame = CGRectMake(width(245), randomOrderButtonY, width(275), buttonHeight + height(25))
+        randomOrderButton.backgroundColor = pink
+        randomOrderButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         
         // 2th label
-        let formOrderLabelMarginTop = height(65)
+        let formOrderLabelMarginTop = height(45)
         let formOrderLabelY = randomOrderButtonY + buttonHeight + formOrderLabelMarginTop
         formOrderLabel.frame = CGRectMake(0, formOrderLabelY, screenWidth, labelHeight)
         
         
         // All the form button
-        let row1MarginTop = height(45)
+        let row1MarginTop = height(25)
         let marginBottomBetweenTwo = height(14)
         
         let formWidth = width(203)
@@ -149,8 +153,6 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
         // All the letter button
         let letterWidth = width(165)
         let letterMarginToBorder = width(25)
-//        let row1FormMarginTop = height(45)
-//        let letterMarginBottomBetweenTwo = height(14)
         let letterMarginRightBetweenTwo = (screenWidth - letterWidth*4 - letterMarginToBorder*2)/3.0
         
         
@@ -185,15 +187,6 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
         TButton.frame = CGRectMake(column1LetterY + letterbigMarginToBorder, row4LetterY, letterWidth, buttonHeight)
         UVButton.frame = CGRectMake(column2LetterY + letterbigMarginToBorder, row4LetterY, letterWidth, buttonHeight)
         WZButton.frame = CGRectMake(column3LetterY + letterbigMarginToBorder, row4LetterY, letterWidth, buttonHeight)
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
         
         

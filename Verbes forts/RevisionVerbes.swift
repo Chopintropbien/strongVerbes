@@ -39,6 +39,9 @@ class RevisionVerbes: UIViewController {
     var verbeWidth:CGFloat = 0
     var infinitifLabelY:CGFloat = 0
     var infinitifLabelheight:CGFloat = 0
+    var revealedImageMarginRight:CGFloat = 0
+    var revealedImageWidth: CGFloat = 0
+    
     
 
 
@@ -108,9 +111,9 @@ class RevisionVerbes: UIViewController {
         // Images and button for return the carte
         let revealedImageMarginTop = height(20)
         let revealedImageY = translationLabelY + revealedImageMarginTop + translationLabelHeight
-        let revealedImageMarginRight = width(70)
-        let revealedImageWidth =  screenWidth - 2*revealedImageMarginRight
-        let revealedImageHeight = revealedImageWidth/640*739
+        let revealedImageHeight = height(700)
+        revealedImageWidth =  revealedImageHeight*640/739
+        revealedImageMarginRight = (screenWidth - revealedImageWidth)/2 - 1
         revealedImage.frame = CGRectMake(revealedImageMarginRight, revealedImageY, revealedImageWidth, revealedImageHeight)
         
         superViewHiddingButton.frame = revealedImage.frame
@@ -181,7 +184,9 @@ class RevisionVerbes: UIViewController {
         infinitifLabel.sizeToFit()
         var newWidth = infinitifLabel.bounds.width + width(120)
         if(newWidth > verbeWidth) {newWidth = verbeWidth}
-        infinitifLabel.frame = CGRectMake((screenWidth - newWidth)/2, infinitifLabelY, newWidth, infinitifLabelheight)
+        
+        let x = (revealedImageWidth - newWidth)/2 + revealedImageMarginRight
+        infinitifLabel.frame = CGRectMake(x, infinitifLabelY, newWidth, infinitifLabelheight)
 
     }
 //    🔔🔕
@@ -232,8 +237,6 @@ class RevisionVerbes: UIViewController {
         }
         if(cursor < verbes.count - 1) {
             cursor += 1
-            
-            
             var changeVerbeDuration = changeVerbeHiddingduration // delay for display the next verbes: don't have to be before the animation to hide the new verbe
             if(self.hiddingButton.hidden == true){
                 // do the animation to hide the new verbe

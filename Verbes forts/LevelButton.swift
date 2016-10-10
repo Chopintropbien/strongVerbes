@@ -11,15 +11,23 @@ import UIKit
 
 @IBDesignable
 class LevelButton: UIButton {
-
+    let basicBackgroundColor: UIColor = UIColor.whiteColor()
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         
 //        let buttonHeigth = self.bounds.size.height
         let buttonWidth = self.bounds.size.width
         
-        self.layer.borderColor = UIColor(white: 0, alpha: 1).CGColor
-        self.backgroundColor = UIColor.whiteColor()
+
+        self.backgroundColor = basicBackgroundColor
+        self.layer.masksToBounds = true
+        self.layer.cornerRadius = 15
+        self.layer.borderWidth = 1
+        self.layer.borderColor = lightGray.CGColor
+        self.layer.shadowOpacity = 0.5
+        self.layer.shadowColor = UIColor.whiteColor().CGColor
+//        self.layer.shadowRadius = 20
         
         
         // Level
@@ -39,15 +47,15 @@ class LevelButton: UIButton {
         let levelExplainLabel = UILabel(frame: CGRectMake(0, marginTopLevelLabel + heightLevelLabel + height(9), buttonWidth, height(30)))
         switch levelLabel.text! {
         case "A2":
-            levelExplainLabel.text = "Basic Level"
+            levelExplainLabel.text = displaidWords.A2LevelExplaination()
         case "B1":
-            levelExplainLabel.text = "Intermediate Level"
+            levelExplainLabel.text = displaidWords.B1B2LevelExplaination()
         case "B2":
-            levelExplainLabel.text = "Intermediate Level"
+            levelExplainLabel.text = displaidWords.B1B2LevelExplaination()
         case "C1":
-            levelExplainLabel.text = "Advanced Level"
+            levelExplainLabel.text = displaidWords.C1LevelExplaination()
         default:
-            levelExplainLabel.text = "Every Level"
+            levelExplainLabel.text = displaidWords.allLevelExplaination()
         }
         levelExplainLabel.font = UIFont(name: "Avenir-Heavy", size: height(25))
         levelExplainLabel.textAlignment = .Center
@@ -57,9 +65,9 @@ class LevelButton: UIButton {
         
         
         // Selected Button
-        let selectedLabel = UILabel(frame: CGRectMake(width(47), height(175), buttonWidth-2*width(47), height(44)))
+        let selectedLabel = UILabel(frame: CGRectMake(width(47), height(165), buttonWidth-2*width(47), height(44)))
         selectedLabel.backgroundColor = pink
-        selectedLabel.text = "Select"
+        selectedLabel.text = displaidWords.select()
         selectedLabel.textColor = UIColor.whiteColor()
         selectedLabel.textAlignment = .Center
         selectedLabel.font = UIFont(name: "Avenir-Heavy", size: height(28))
@@ -72,6 +80,8 @@ class LevelButton: UIButton {
         
         selectedLabel.layer.shadowOffset = CGSize.init(width: 4, height: 4)
         self.addSubview(selectedLabel)
+        
+        
     }
     
     
@@ -88,6 +98,7 @@ class LevelButton: UIButton {
         
         return buttonWidth * (CGFloat(w)/designWidth)
     }
+
     
     
 
