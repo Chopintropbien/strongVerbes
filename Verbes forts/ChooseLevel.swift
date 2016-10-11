@@ -27,11 +27,11 @@ class ChooseLevel: UIViewController, ENSideMenuDelegate {
         // Set text in the choosed language
         self.title = displaidWords.titleChooseVerbes()
         selectLevelLabel.text = displaidWords.selectLevel()
-        allLevelButton.setTitle(displaidWords.allLevel(), forState: .Normal)        
+        allLevelButton.setTitle(displaidWords.allLevel(), for: UIControlState())        
     }
     
     
-    @IBAction func showLanguageMenu(sender: UIBarButtonItem) {
+    @IBAction func showLanguageMenu(_ sender: UIBarButtonItem) {
         toggleSideMenuView()
     }
     
@@ -46,10 +46,10 @@ class ChooseLevel: UIViewController, ENSideMenuDelegate {
         let designWidth: CGFloat = 750.0
         
         // helper function for computer the proportions
-        func height(h: Double) -> CGFloat{
+        func height(_ h: Double) -> CGFloat{
             return screenHeight * (CGFloat(h)/designHeight)
         }
-        func width(w: Double) -> CGFloat{
+        func width(_ w: Double) -> CGFloat{
             return screenWidth * (CGFloat(w)/designWidth)
         }
 
@@ -62,22 +62,22 @@ class ChooseLevel: UIViewController, ENSideMenuDelegate {
         let marginBetween = width(52)
         
 
-        A2LevelButton.layer.frame = CGRectMake(marginRight, marginTop, buttonWidth, buttonHeight)
-        B1LevelButton.layer.frame = CGRectMake(marginRight + buttonWidth + marginBetween, marginTop, buttonWidth, buttonHeight)
-        B2LevelButton.layer.frame = CGRectMake(marginRight, marginTop + buttonHeight + marginBetween, buttonWidth, buttonHeight)
-        C1LevelButton.layer.frame = CGRectMake(marginRight + buttonWidth + marginBetween, marginTop + buttonHeight + marginBetween, buttonWidth, buttonHeight)
-        allLevelButton.layer.frame = CGRectMake(screenWidth/2 - buttonWidth/2, marginTop + buttonHeight*2 + marginBetween*2, buttonWidth, buttonHeight)
+        A2LevelButton.layer.frame = CGRect(x: marginRight, y: marginTop, width: buttonWidth, height: buttonHeight)
+        B1LevelButton.layer.frame = CGRect(x: marginRight + buttonWidth + marginBetween, y: marginTop, width: buttonWidth, height: buttonHeight)
+        B2LevelButton.layer.frame = CGRect(x: marginRight, y: marginTop + buttonHeight + marginBetween, width: buttonWidth, height: buttonHeight)
+        C1LevelButton.layer.frame = CGRect(x: marginRight + buttonWidth + marginBetween, y: marginTop + buttonHeight + marginBetween, width: buttonWidth, height: buttonHeight)
+        allLevelButton.layer.frame = CGRect(x: screenWidth/2 - buttonWidth/2, y: marginTop + buttonHeight*2 + marginBetween*2, width: buttonWidth, height: buttonHeight)
         
         
         
-        selectLevelLabel.layer.frame = CGRectMake(0, (marginTop + navigationBarHeight)/2, screenWidth, height(50))
+        selectLevelLabel.layer.frame = CGRect(x: 0, y: (marginTop + navigationBarHeight)/2, width: screenWidth, height: height(50))
     }
     
     
     
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let cv = segue.destinationViewController as? ChooseVerbes{
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let cv = segue.destination as? ChooseVerbes{
             if let id = segue.identifier{
                 switch id {
                 case Level.A2.rawValue:

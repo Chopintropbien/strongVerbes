@@ -10,20 +10,47 @@ import UIKit
 
 class ChooseLangMenu: UITableViewController {
     
-    var selectedMenuItem : Int = 0
+    fileprivate var selectedMenuItem : Int
+    
+    required init?(coder aDecoder: NSCoder) {
+        selectedMenuItem = 0
+        super.init(coder: aDecoder)
+    }
+    override init(style: UITableViewStyle) {
+        selectedMenuItem = 0
+        super.init(style: style)
+    }
+    init(){
+        switch Global.getLang() {
+        case Lang.en:
+            selectedMenuItem = 0
+        case Lang.fr:
+            selectedMenuItem = 1
+        default:
+            selectedMenuItem = 0
+        }
+        
+        super.init(style: UITableViewStyle.plain)
+    }
+    
+    
+    
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Customize apperance of table view
         tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0) //
-        tableView.separatorStyle = .None
-        tableView.backgroundColor = UIColor.clearColor()
+        tableView.separatorStyle = .singleLine
+        tableView.backgroundColor = UIColor.clear
         tableView.scrollsToTop = false
         
         // Preserve selection between presentations
         self.clearsSelectionOnViewWillAppear = false
         
-        tableView.selectRowAtIndexPath(NSIndexPath(forRow: selectedMenuItem, inSection: 0), animated: false, scrollPosition: .Middle)
+        tableView.selectRow(at: IndexPath(row: selectedMenuItem, section: 0), animated: false, scrollPosition: .middle)
     }
     
     override func didReceiveMemoryWarning() {
@@ -34,35 +61,35 @@ class ChooseLangMenu: UITableViewController {
     // MARK: - Table view data source
     
     // Return the number of sections.
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     // Return the number of rows in the section.
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
     }
     
     // initiat table view
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var cell = tableView.dequeueReusableCellWithIdentifier("CELL")
+        var cell = tableView.dequeueReusableCell(withIdentifier: "CELL")
         
         if (cell == nil) {
-            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "CELL")
-            cell!.backgroundColor = UIColor.clearColor()
-            cell!.textLabel?.textColor = UIColor.darkGrayColor()
-            let selectedBackgroundView = UIView(frame: CGRectMake(0, 0, cell!.frame.size.width, cell!.frame.size.height))
-            selectedBackgroundView.backgroundColor = UIColor.grayColor().colorWithAlphaComponent(0.2)
+            cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "CELL")
+            cell!.backgroundColor = UIColor.clear
+            cell!.textLabel?.textColor = UIColor.darkGray
+            let selectedBackgroundView = UIView(frame: CGRect(x: 0, y: 0, width: cell!.frame.size.width, height: cell!.frame.size.height))
+            selectedBackgroundView.backgroundColor = UIColor.gray.withAlphaComponent(0.2)
             cell!.selectedBackgroundView = selectedBackgroundView
         }
         
         
-        switch(indexPath.row){
+        switch((indexPath as NSIndexPath).row){
         case 0:
-            cell!.textLabel?.text = Lang.fr.rawValue
-        case 1:
             cell!.textLabel?.text = Lang.en.rawValue
+        case 1:
+            cell!.textLabel?.text = Lang.fr.rawValue
         default: cell!.textLabel?.text = "Undefine"
         }
         
@@ -70,27 +97,27 @@ class ChooseLangMenu: UITableViewController {
     }
     
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50.0
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        selectedMenuItem = indexPath.row
+        selectedMenuItem = (indexPath as NSIndexPath).row
         
         //Present new view controller
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
         var destViewController : UIViewController
-        switch (indexPath.row) {
+        switch ((indexPath as NSIndexPath).row) {
         case 0:
-            changeLang(Lang.fr)
+            Global.changeLang(Lang.en)
         case 1:
-            changeLang(Lang.en)
+            Global.changeLang(Lang.fr)
         default:
-            changeLang(Lang.en)
+            Global.changeLang(Lang.en)
         }
         
-        destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ChooseLevel")
+        destViewController = mainStoryboard.instantiateViewController(withIdentifier: "ChooseLevel")
         
         sideMenuController()?.setContentViewController(destViewController)
     }

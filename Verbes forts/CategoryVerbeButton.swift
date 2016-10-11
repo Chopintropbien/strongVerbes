@@ -16,15 +16,15 @@ class CategoryVerbeButton: UIButton {
         super.layoutSubviews()
         
         self.titleLabel!.font = UIFont(name: "Avenir-Heavy", size: 14)
-        self.titleLabel!.textAlignment = .Center
-        self.contentVerticalAlignment = .Center
+        self.titleLabel!.textAlignment = .center
+        self.contentVerticalAlignment = .center
         
         self.layer.masksToBounds = true
         self.layer.cornerRadius = 6
         self.layer.borderWidth = 1
-        self.layer.borderColor = lightGray.CGColor
+        self.layer.borderColor = lightGray.cgColor
         self.layer.shadowOpacity = 0.5
-        self.layer.shadowColor = UIColor.grayColor().CGColor
+        self.layer.shadowColor = UIColor.gray.cgColor
         self.layer.shadowRadius = 20
         
  
@@ -36,7 +36,7 @@ class CategoryVerbeButtonPink: CategoryVerbeButton{
     override func layoutSubviews() {
         super.layoutSubviews()
         self.backgroundColor = pink
-        self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        self.setTitleColor(UIColor.white, for: UIControlState())
         
     }
 }
@@ -45,7 +45,7 @@ class CategoryVerbeButtonPink: CategoryVerbeButton{
 class CategoryVerbeButtonWhite: CategoryVerbeButton {
     override func layoutSubviews(){
         super.layoutSubviews()
-        self.backgroundColor = UIColor.whiteColor()
-        self.setTitleColor(gray, forState: .Normal)
+        self.backgroundColor = UIColor.white
+        self.setTitleColor(gray, for: UIControlState())
     }
 }

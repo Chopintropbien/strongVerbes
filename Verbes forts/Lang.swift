@@ -13,11 +13,12 @@ enum Lang: String{
     case fr = "Français"
     case en = "English"
     case es = "Español"
+    case ru = "Russe"
 }
 
 class DisplayWords{
     
-    private let lang: Lang
+    fileprivate let lang: Lang
     
     init(lang: Lang){
         self.lang = lang
@@ -33,7 +34,10 @@ class DisplayWords{
             return "unclassifiable"
         case Lang.es:
             return ""
+        case Lang.ru:
+            return ""
         }
+        
     }
 
     func weakIregularMasculin()-> String {
@@ -43,6 +47,8 @@ class DisplayWords{
         case Lang.en:
             return "weak-irregular"
         case Lang.es:
+            return ""
+        case Lang.ru:
             return ""
         }
     }
@@ -55,6 +61,8 @@ class DisplayWords{
             return "weak-irregular"
         case Lang.es:
             return ""
+        case Lang.ru:
+            return ""
         }
     }
     
@@ -66,6 +74,8 @@ class DisplayWords{
             return "Next"
         case Lang.es:
             return ""
+        case Lang.ru:
+            return ""
         }
     }
     
@@ -76,6 +86,8 @@ class DisplayWords{
         case Lang.en:
             return "SELECT"
         case Lang.es:
+            return ""
+        case Lang.ru:
             return ""
         }
     }
@@ -89,6 +101,8 @@ class DisplayWords{
             return "Choose your level"
         case Lang.es:
             return ""
+        case Lang.ru:
+            return ""
         }
     }
     
@@ -99,6 +113,8 @@ class DisplayWords{
         case Lang.en:
             return "All"
         case Lang.es:
+            return ""
+        case Lang.ru:
             return ""
         }
     }
@@ -112,6 +128,8 @@ class DisplayWords{
             return "Basic Level"
         case Lang.es:
             return ""
+        case Lang.ru:
+            return ""
         }
     }
     
@@ -122,6 +140,8 @@ class DisplayWords{
         case Lang.en:
             return "Intermediate Level"
         case Lang.es:
+            return ""
+        case Lang.ru:
             return ""
         }
     }
@@ -134,6 +154,8 @@ class DisplayWords{
             return "Advanced Level"
         case Lang.es:
             return ""
+        case Lang.ru:
+            return ""
         }
     }
     
@@ -144,6 +166,8 @@ class DisplayWords{
         case Lang.en:
             return "Every Level"
         case Lang.es:
+            return ""
+        case Lang.ru:
             return ""
         }
     }
@@ -162,6 +186,8 @@ class DisplayWords{
             return "Irregular verbs"
         case Lang.es:
             return ""
+        case Lang.ru:
+            return ""
         }
     }
     
@@ -172,6 +198,8 @@ class DisplayWords{
         case Lang.en:
             return "Random"
         case Lang.es:
+            return ""
+        case Lang.ru:
             return ""
         }
     }
@@ -185,6 +213,8 @@ class DisplayWords{
             return "Random order"
         case Lang.es:
             return ""
+        case Lang.ru:
+            return ""
         }
     }
     
@@ -195,6 +225,8 @@ class DisplayWords{
         case Lang.en:
             return "Classified by form"
         case Lang.es:
+            return ""
+        case Lang.ru:
             return ""
         }
     }
@@ -207,6 +239,8 @@ class DisplayWords{
             return "Classified by alphabetical order"
         case Lang.es:
             return ""
+        case Lang.ru:
+            return ""
         }
     }
     
@@ -217,7 +251,7 @@ class DisplayWords{
     
     /*ChooseVerbes*/
     
-    func headerTextRandom(numberVerbe: Int) -> String{
+    func headerTextRandom(_ numberVerbe: Int) -> String{
         switch lang {
         case Lang.fr:
             return "Essayer de vous souvenir de ces " + String(numberVerbe) + " verbes"
@@ -225,10 +259,12 @@ class DisplayWords{
             return "Try to remember this " + String(numberVerbe) + " verbes"
         case Lang.es:
             return ""
+        case Lang.ru:
+            return ""
         }
     }
     
-    func hereVerbesWithForm(form: String) -> String{
+    func hereVerbesWithForm(_ form: String) -> String{
         switch lang {
         case Lang.fr:
             return "Voici les verbes forts allemand de forme " + form
@@ -236,16 +272,20 @@ class DisplayWords{
             return "Here are german irregular verbs who works like: " + form
         case Lang.es:
             return ""
+        case Lang.ru:
+            return ""
         }
     }
     
-    func hereVerbesWhoBeginBuy(letter: LetterButton) -> String{
+    func hereVerbesWhoBeginBuy(_ letter: LetterButton) -> String{
         switch lang {
         case Lang.fr:
-            return "Voici les verbes forts allemand commençant par " + letter.rawValue.uppercaseString
+            return "Voici les verbes forts allemand commençant par " + letter.rawValue.uppercased()
         case Lang.en:
-            return "Here are german irregular verbs who begins buy: " + letter.rawValue.uppercaseString
+            return "Here are german irregular verbs who begins buy: " + letter.rawValue.uppercased()
         case Lang.es:
+            return ""
+        case Lang.ru:
             return ""
         }
     }

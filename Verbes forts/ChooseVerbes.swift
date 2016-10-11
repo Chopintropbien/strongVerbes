@@ -52,11 +52,11 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
     @IBOutlet weak var UVButton: UIButton!
     @IBOutlet weak var WZButton: UIButton!
     
-    @IBAction func showLanguageMenu(sender: UIBarButtonItem) {
+    @IBAction func showLanguageMenu(_ sender: UIBarButtonItem) {
         toggleSideMenuView()
     }
 
-    @IBAction func getViewVerbes(sender: UIButton){
+    @IBAction func getViewVerbes(_ sender: UIButton){
         
     }
     
@@ -65,13 +65,13 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
         
         // set text in the choosed language
         self.title = displaidWords.titleChooseVerbes()
-        self.randomOrderButton.setTitle(displaidWords.randomOrderButton(), forState: .Normal)
+        self.randomOrderButton.setTitle(displaidWords.randomOrderButton(), for: UIControlState())
         self.randomOrderLabel.text = displaidWords.randomOrderLabel()
         self.formOrderLabel.text = displaidWords.formOrderLabel()
         self.alphabeticOrderLabel.text = displaidWords.alphabeticOrderLabel()
         
-        unclassable.setTitle(displaidWords.unclassable(), forState: .Normal)
-        weakIregular.setTitle(displaidWords.weakIregularMasculin(), forState: .Normal)
+        unclassable.setTitle(displaidWords.unclassable(), for: UIControlState())
+        weakIregular.setTitle(displaidWords.weakIregularMasculin(), for: UIControlState())
         
 
         
@@ -81,20 +81,20 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
         // 1th label
         let labelHeight = height(65)
         let randomOrderLabelMarginTop = height(180)
-        randomOrderLabel.frame = CGRectMake(0, randomOrderLabelMarginTop, screenWidth, labelHeight)
+        randomOrderLabel.frame = CGRect(x: 0, y: randomOrderLabelMarginTop, width: screenWidth, height: labelHeight)
         
         // Random Button
         let buttonHeight = height(70)
         let randomOrderButtonMarginTop = height(25)
         let randomOrderButtonY = randomOrderLabelMarginTop + randomOrderButtonMarginTop + labelHeight
-        randomOrderButton.frame = CGRectMake(width(245), randomOrderButtonY, width(275), buttonHeight + height(25))
+        randomOrderButton.frame = CGRect(x: width(245), y: randomOrderButtonY, width: width(275), height: buttonHeight + height(25))
         randomOrderButton.backgroundColor = pink
-        randomOrderButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        randomOrderButton.setTitleColor(UIColor.white, for: UIControlState())
         
         // 2th label
         let formOrderLabelMarginTop = height(45)
         let formOrderLabelY = randomOrderButtonY + buttonHeight + formOrderLabelMarginTop
-        formOrderLabel.frame = CGRectMake(0, formOrderLabelY, screenWidth, labelHeight)
+        formOrderLabel.frame = CGRect(x: 0, y: formOrderLabelY, width: screenWidth, height: labelHeight)
         
         
         // All the form button
@@ -116,38 +116,38 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
         let column3FormY = column2FormY + formWidth + formMarginRightBetweenTwo
         
         
-        aieaButton.frame = CGRectMake(column1FormY, row1FormY, formWidth, buttonHeight)
-        auaButton.frame = CGRectMake(column2FormY, row1FormY, formWidth, buttonHeight)
-        eaeButton.frame = CGRectMake(column3FormY, row1FormY, formWidth, buttonHeight)
+        aieaButton.frame = CGRect(x: column1FormY, y: row1FormY, width: formWidth, height: buttonHeight)
+        auaButton.frame = CGRect(x: column2FormY, y: row1FormY, width: formWidth, height: buttonHeight)
+        eaeButton.frame = CGRect(x: column3FormY, y: row1FormY, width: formWidth, height: buttonHeight)
         
-        eaoButton.frame = CGRectMake(column1FormY, row2FormY, formWidth, buttonHeight)
-        eiieieButton.frame = CGRectMake(column2FormY, row2FormY, formWidth, buttonHeight)
-        eiiiButton.frame = CGRectMake(column3FormY, row2FormY, formWidth, buttonHeight)
+        eaoButton.frame = CGRect(x: column1FormY, y: row2FormY, width: formWidth, height: buttonHeight)
+        eiieieButton.frame = CGRect(x: column2FormY, y: row2FormY, width: formWidth, height: buttonHeight)
+        eiiiButton.frame = CGRect(x: column3FormY, y: row2FormY, width: formWidth, height: buttonHeight)
         
         
         // desactivate this button for B1-2 because a lack of verb in this cathegory
         if(level == Level.B1 || level == Level.B2){
-            iaoButton.hidden = true
-            iauButton.frame = CGRectMake(column1FormY + width(116), row3FormY, formWidth, buttonHeight)
-            eiooButton.frame = CGRectMake(column2FormY + width(116), row3FormY, formWidth, buttonHeight)
+            iaoButton.isHidden = true
+            iauButton.frame = CGRect(x: column1FormY + width(116), y: row3FormY, width: formWidth, height: buttonHeight)
+            eiooButton.frame = CGRect(x: column2FormY + width(116), y: row3FormY, width: formWidth, height: buttonHeight)
         }
         else{
-            iaoButton.frame = CGRectMake(column1FormY, row3FormY, formWidth, buttonHeight)
-            iauButton.frame = CGRectMake(column2FormY, row3FormY, formWidth, buttonHeight)
-            eiooButton.frame = CGRectMake(column3FormY, row3FormY, formWidth, buttonHeight)
+            iaoButton.frame = CGRect(x: column1FormY, y: row3FormY, width: formWidth, height: buttonHeight)
+            iauButton.frame = CGRect(x: column2FormY, y: row3FormY, width: formWidth, height: buttonHeight)
+            eiooButton.frame = CGRect(x: column3FormY, y: row3FormY, width: formWidth, height: buttonHeight)
         }
         
         // special enplacement for "unclassable" and "weakIregular"
         let formBigWidth = width(250)
         let formbigMarginToBorder = width(116)
-        unclassable.frame = CGRectMake(formbigMarginToBorder, row4FormY, formBigWidth, buttonHeight)
-        weakIregular.frame = CGRectMake(formbigMarginToBorder + formBigWidth + formMarginRightBetweenTwo, row4FormY, formBigWidth, buttonHeight)
+        unclassable.frame = CGRect(x: formbigMarginToBorder, y: row4FormY, width: formBigWidth, height: buttonHeight)
+        weakIregular.frame = CGRect(x: formbigMarginToBorder + formBigWidth + formMarginRightBetweenTwo, y: row4FormY, width: formBigWidth, height: buttonHeight)
         
         
         
         // 3th label
         let alphabeticOrderLabelLabelY = row4FormY + buttonHeight + formOrderLabelMarginTop
-        alphabeticOrderLabel.frame = CGRectMake(0, alphabeticOrderLabelLabelY, screenWidth, labelHeight)
+        alphabeticOrderLabel.frame = CGRect(x: 0, y: alphabeticOrderLabelLabelY, width: screenWidth, height: labelHeight)
         
         
         // All the letter button
@@ -168,25 +168,25 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
         let column4LetterY = column3LetterY + letterWidth + letterMarginRightBetweenTwo
         
         
-        AButton.frame = CGRectMake(column1LetterY, row1LetterY, letterWidth, buttonHeight)
-        BButton.frame = CGRectMake(column2LetterY, row1LetterY, letterWidth, buttonHeight)
-        DEButton.frame = CGRectMake(column3LetterY, row1LetterY, letterWidth, buttonHeight)
-        FButton.frame = CGRectMake(column4LetterY, row1LetterY, letterWidth, buttonHeight)
+        AButton.frame = CGRect(x: column1LetterY, y: row1LetterY, width: letterWidth, height: buttonHeight)
+        BButton.frame = CGRect(x: column2LetterY, y: row1LetterY, width: letterWidth, height: buttonHeight)
+        DEButton.frame = CGRect(x: column3LetterY, y: row1LetterY, width: letterWidth, height: buttonHeight)
+        FButton.frame = CGRect(x: column4LetterY, y: row1LetterY, width: letterWidth, height: buttonHeight)
         
-        GButton.frame = CGRectMake(column1LetterY, row2LetterY, letterWidth, buttonHeight)
-        HKButton.frame = CGRectMake(column2LetterY, row2LetterY, letterWidth, buttonHeight)
-        LMButton.frame = CGRectMake(column3LetterY, row2LetterY, letterWidth, buttonHeight)
-        NPQButton.frame = CGRectMake(column4LetterY, row2LetterY, letterWidth, buttonHeight)
+        GButton.frame = CGRect(x: column1LetterY, y: row2LetterY, width: letterWidth, height: buttonHeight)
+        HKButton.frame = CGRect(x: column2LetterY, y: row2LetterY, width: letterWidth, height: buttonHeight)
+        LMButton.frame = CGRect(x: column3LetterY, y: row2LetterY, width: letterWidth, height: buttonHeight)
+        NPQButton.frame = CGRect(x: column4LetterY, y: row2LetterY, width: letterWidth, height: buttonHeight)
         
-        RButton.frame = CGRectMake(column1LetterY, row3LetterY, letterWidth, buttonHeight)
-        S1Button.frame = CGRectMake(column2LetterY, row3LetterY, letterWidth, buttonHeight)
-        S2Button.frame = CGRectMake(column3LetterY, row3LetterY, letterWidth, buttonHeight)
-        S3Button.frame = CGRectMake(column4LetterY, row3LetterY, letterWidth, buttonHeight)
+        RButton.frame = CGRect(x: column1LetterY, y: row3LetterY, width: letterWidth, height: buttonHeight)
+        S1Button.frame = CGRect(x: column2LetterY, y: row3LetterY, width: letterWidth, height: buttonHeight)
+        S2Button.frame = CGRect(x: column3LetterY, y: row3LetterY, width: letterWidth, height: buttonHeight)
+        S3Button.frame = CGRect(x: column4LetterY, y: row3LetterY, width: letterWidth, height: buttonHeight)
         
         let letterbigMarginToBorder = width(90)
-        TButton.frame = CGRectMake(column1LetterY + letterbigMarginToBorder, row4LetterY, letterWidth, buttonHeight)
-        UVButton.frame = CGRectMake(column2LetterY + letterbigMarginToBorder, row4LetterY, letterWidth, buttonHeight)
-        WZButton.frame = CGRectMake(column3LetterY + letterbigMarginToBorder, row4LetterY, letterWidth, buttonHeight)
+        TButton.frame = CGRect(x: column1LetterY + letterbigMarginToBorder, y: row4LetterY, width: letterWidth, height: buttonHeight)
+        UVButton.frame = CGRect(x: column2LetterY + letterbigMarginToBorder, y: row4LetterY, width: letterWidth, height: buttonHeight)
+        WZButton.frame = CGRect(x: column3LetterY + letterbigMarginToBorder, y: row4LetterY, width: letterWidth, height: buttonHeight)
         
         
         
@@ -196,10 +196,10 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
     }
     
     
-    private let verbesData = Verbes()
+    fileprivate let verbesData = Verbes()
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let rev = segue.destinationViewController as? RevisionVerbes{
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let rev = segue.destination as? RevisionVerbes{
             
             let nbVerbeRandom = 15
             let headerTextRandom: String = displaidWords.headerTextRandom(nbVerbeRandom)
@@ -207,15 +207,15 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
             let weakIregular: String = displaidWords.weakIregularFeminin()
             
             
-            func setTextInStringType(form: String){
+            func setTextInStringType(_ form: String){
                 rev.headerText = displaidWords.hereVerbesWithForm(form)
                 setStaticButton()
             }
-            func setTextInFormType(form: Form){
+            func setTextInFormType(_ form: Form){
                 setTextInStringType(form.rawValue)
             }
             
-            func setTextInLetterType(letter: LetterButton){
+            func setTextInLetterType(_ letter: LetterButton){
                 rev.headerText = displaidWords.hereVerbesWhoBeginBuy(letter)
                 setStaticButton()
             }
@@ -232,7 +232,7 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
             
             
 //             print all the verbes
-            func foldl(list:Array<String>, base:String) -> String {
+            func foldl(_ list:Array<String>, base:String) -> String {
                 var result = base
                 for item in list {
                     result = result + item
@@ -243,19 +243,34 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
             
             verbesData.witchCategoriesAreNotAvalable()
             
-//            print(verbesData.verbes.count)
-            print(foldl(verbesData.verbes.map({"\($0.infinitf()), \($0.present()), \($0.preterit()), \($0.parfait())\n" }), base: ""))
+            print(verbesData.verbes.count)
+            print(foldl(verbesData.verbes.map({
+                let a = "Verbe(level: Level." + $0.level.rawValue
+                + ", form: Form." + $0.form.rawValue
+                + ", verbe: (\"" + $0.infinitf()
+                + "\", \"er " + $0.present()
+                + "\", \"er " + $0.preterit()
+                let b = "\", \"er " + $0.parfait()
+                + "\"), translations: [(Lang.fr, \""+$0.translation(Lang.fr)
+                + "\"), (Lang.en, \"" + $0.translation(Lang.en)
+                + "\"), (Lang.es, \"" + $0.translation(Lang.es)
+                + "\"), (Lang.ru, \""+$0.translation(Lang.ru)+"\")]),\n\n"
+                
+                return a + b
+            }), base: ""))
+            
+//                "\($0.infinitf()), \($0.present()), \($0.preterit()), \($0.parfait())\n" }), base: ""))
  
  
             
             // TODO:: Mieux faire les choses
             
             // sort verbes by letter and by level
-            func filterVerbeByLetter(letter: LetterButton) -> [Verbe]{
+            func filterVerbeByLetter(_ letter: LetterButton) -> [Verbe]{
                 return verbesData.filterBy(letter, level: level)
             }
             // sort verbes by form and by level
-            func filterVerbeByForm(form: Form) -> [Verbe]{
+            func filterVerbeByForm(_ form: Form) -> [Verbe]{
                 return verbesData.filterBy(form, level: level)
             }
             
@@ -354,13 +369,13 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
 
     
     // helper function for computer the proportions
-    private func height(h: Double) -> CGFloat{
+    fileprivate func height(_ h: Double) -> CGFloat{
         let screenHeight = self.view.bounds.height
         let designHeight: CGFloat = 1334.0
         
         return screenHeight * (CGFloat(h)/designHeight)
     }
-    private func width(w: Double) -> CGFloat{
+    fileprivate func width(_ w: Double) -> CGFloat{
         let screenWidth = self.view.bounds.width
         let designWidth: CGFloat = 750.0
         
