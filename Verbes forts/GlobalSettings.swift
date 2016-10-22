@@ -9,11 +9,7 @@
 import Foundation
 import UIKit
 
-
-
 var sounds = true
-var displaidWords = DisplayWords()
-
 
 
 let pink = UIColor(red: 246/255.0, green: 47/255.0, blue: 94/255.0, alpha: 1)

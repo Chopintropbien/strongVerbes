@@ -15,7 +15,7 @@ enum Lang: String{
     case en = "en"
     case es = "es"
     case ru = "ru"
-
+    
     static let allValues = [DeviceLanguage, fr, en, es, ru]
 }
 
@@ -34,8 +34,9 @@ func GetLanguage() -> Lang {
 }
 
 class Localisator {
-   
+    
     // MARK: - Private properties
+    fileprivate let defaultLang = Lang.fr
     
     fileprivate let userDefaults = UserDefaults.standard
     fileprivate var availableLanguagesArray = Lang.allValues
@@ -46,24 +47,24 @@ class Localisator {
     
     // MARK: - Public properties
     
-    var currentLanguage: Lang  = Lang.en
+    var currentLanguage: Lang  = Lang.DeviceLanguage
     
     // MARK: - Public computed properties
     
     let saveInUserDefaults = true
-//    var saveInUserDefaults:Bool {
-//        get {
-//            return (userDefaults.object(forKey: kSaveLanguageDefaultKey) != nil)
-//        }
-//        set {
-//            if newValue {
-//                userDefaults.set(currentLanguage, forKey: kSaveLanguageDefaultKey)
-//            } else {
-//                userDefaults.removeObject(forKey: kSaveLanguageDefaultKey)
-//            }
-//            userDefaults.synchronize()
-//        }
-//    }
+    //    var saveInUserDefaults:Bool {
+    //        get {
+    //            return (userDefaults.object(forKey: kSaveLanguageDefaultKey) != nil)
+    //        }
+    //        set {
+    //            if newValue {
+    //                userDefaults.set(currentLanguage, forKey: kSaveLanguageDefaultKey)
+    //            } else {
+    //                userDefaults.removeObject(forKey: kSaveLanguageDefaultKey)
+    //            }
+    //            userDefaults.synchronize()
+    //        }
+    //    }
     
     
     // MARK: - Singleton method
@@ -79,8 +80,16 @@ class Localisator {
     init() {
         if let languageSaved = userDefaults.object(forKey: kSaveLanguageDefaultKey) as? String {
             if languageSaved != "DeviceLanguage" {
-                self.loadDictionaryForLanguage(Lang(rawValue: languageSaved)!)
+                let l = Lang(rawValue: languageSaved)!
+                self.loadDictionaryForLanguage(l)
+                currentLanguage = l
             }
+        }
+        else if let defaultLang = Lang(rawValue: NSLocale.current.languageCode!){
+           currentLanguage = defaultLang
+        }
+        else{
+            currentLanguage = defaultLang
         }
     }
     
@@ -90,7 +99,7 @@ class Localisator {
         return availableLanguagesArray
     }
     
- 
+    
     // MARK: - Private instance methods
     
     fileprivate func loadDictionaryForLanguage(_ newLanguage: Lang) -> Bool {
@@ -135,7 +144,7 @@ class Localisator {
         else if loadDictionaryForLanguage(newLanguage) {
             NotificationCenter.default.post(name: Notification.Name(rawValue: kNotificationLanguageChanged), object: nil)
             if saveInUserDefaults {
-                userDefaults.set(currentLanguage.hashValue, forKey: kSaveLanguageDefaultKey)
+                userDefaults.setValue(newLanguage.rawValue, forKey: kSaveLanguageDefaultKey)
                 userDefaults.synchronize()
             }
             return true

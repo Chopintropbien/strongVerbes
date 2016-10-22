@@ -47,15 +47,15 @@ class LevelButton: UIButton {
         let levelExplainLabel = UILabel(frame: CGRect(x: 0, y: marginTopLevelLabel + heightLevelLabel + height(9), width: buttonWidth, height: height(30)))
         switch levelLabel.text! {
         case "A2":
-            levelExplainLabel.text = displaidWords.A2LevelExplaination()
+            levelExplainLabel.text = Localization("Basic Level")
         case "B1":
-            levelExplainLabel.text = displaidWords.B1B2LevelExplaination()
+            levelExplainLabel.text = Localization("Intermediate Level")
         case "B2":
-            levelExplainLabel.text = displaidWords.B1B2LevelExplaination()
+            levelExplainLabel.text = Localization("Intermediate Level")
         case "C1":
-            levelExplainLabel.text = displaidWords.C1LevelExplaination()
+            levelExplainLabel.text = Localization("Advanced Level")
         default:
-            levelExplainLabel.text = displaidWords.allLevelExplaination()
+            levelExplainLabel.text = Localization("Every Level")
         }
         levelExplainLabel.font = UIFont(name: "Avenir-Heavy", size: height(25))
         levelExplainLabel.textAlignment = .center
@@ -67,7 +67,7 @@ class LevelButton: UIButton {
         // Selected Button
         let selectedLabel = UILabel(frame: CGRect(x: width(47), y: height(165), width: buttonWidth-2*width(47), height: height(44)))
         selectedLabel.backgroundColor = pink
-        selectedLabel.text = displaidWords.select()
+        selectedLabel.text = Localization("SELECT")
         selectedLabel.textColor = UIColor.white
         selectedLabel.textAlignment = .center
         selectedLabel.font = UIFont(name: "Avenir-Heavy", size: height(28))

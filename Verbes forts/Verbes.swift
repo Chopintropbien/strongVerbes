@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import AVFoundation
 
 enum Form: String { // 11
     case aiea = "a–ie(i)–a"
@@ -91,7 +92,7 @@ class Verbe{
 
 
 struct Verbes{
-
+    
     internal let verbes : [Verbe] =
         [
             
@@ -130,7 +131,7 @@ struct Verbes{
             
             Verbe(level: Level.B1, form: Form.undefine, verbe: ("aufstehen", "er steht auf", "er stand … auf", "er ist aufgestanden"), translations: [(Lang.fr, "se lever"), (Lang.en, "to get up"), (Lang.es, "levantar(se)"), (Lang.ru, "вставать")]),
             
-            Verbe(level: Level.C1, form: Form.eae, verbe: ("auftreten", "er tritt … auf", "er trat … auf", "er ist aufgetreten"), translations: [(Lang.fr, "appara”tre"), (Lang.en, "to appear"), (Lang.es, "aparecer"), (Lang.ru, "наступать/появляться")]),
+            Verbe(level: Level.C1, form: Form.eae, verbe: ("auftreten", "er tritt … auf", "er trat … auf", "er ist aufgetreten"), translations: [(Lang.fr, "apparaître"), (Lang.en, "to appear"), (Lang.es, "aparecer"), (Lang.ru, "наступать/появляться")]),
             
             Verbe(level: Level.B2, form: Form.aua, verbe: ("aufwachsen", "er wachst … auf", "er wuchs … auf", "er ist aufgewachsen"), translations: [(Lang.fr, "grandir"), (Lang.en, "to grow up"), (Lang.es, "crecer"), (Lang.ru, "взрослеть")]),
             
@@ -138,7 +139,7 @@ struct Verbes{
             
             Verbe(level: Level.B2, form: Form.eae, verbe: ("ausgeben", "er gibt … aus", "er gab … aus", "er hat … ausgegeben"), translations: [(Lang.fr, "dépenser"), (Lang.en, "to spend sth."), (Lang.es, "gastar"), (Lang.ru, "тратить")]),
             
-            Verbe(level: Level.C1, form: Form.weak, verbe: ("auskennen (sich)", "er kennt sich … aus", "er kannte sich … aus", "er hat sich ausgekannt"), translations: [(Lang.fr, "se reconna”tre"), (Lang.en, "to recognize"), (Lang.es, "conocer"), (Lang.ru, "хорошо разбираться")]),
+            Verbe(level: Level.C1, form: Form.weak, verbe: ("auskennen (sich)", "er kennt sich … aus", "er kannte sich … aus", "er hat sich ausgekannt"), translations: [(Lang.fr, "se reconnaître"), (Lang.en, "to recognize"), (Lang.es, "conocer"), (Lang.ru, "хорошо разбираться")]),
             
             Verbe(level: Level.C1, form: Form.undefine, verbe: ("auskommen", "er kommt … aus", "er kam … aus", "er ist ausgekommen"), translations: [(Lang.fr, "s'en tirer"), (Lang.en, "to get along"), (Lang.es, "entenderse/sustentar"), (Lang.ru, "лалить")]),
             
@@ -148,7 +149,7 @@ struct Verbes{
             
             Verbe(level: Level.B2, form: Form.eae, verbe: ("aussehen", "er sieht … aus", "er sah … aus", "er hat ausgesehen"), translations: [(Lang.fr, "avoir l'air"), (Lang.en, "to look"), (Lang.es, "parecer(se)"), (Lang.ru, "выглядеть")]),
             
-            Verbe(level: Level.C1, form: Form.eao, verbe: ("aussterben", "er strebt … aus", "er starb … aus", "er ist ausgestorben"), translations: [(Lang.fr, "dispara”tre"), (Lang.en, "to die off"), (Lang.es, "desaparecer"), (Lang.ru, "вымирать")]),
+            Verbe(level: Level.C1, form: Form.eao, verbe: ("aussterben", "er strebt … aus", "er starb … aus", "er ist ausgestorben"), translations: [(Lang.fr, "disparaître"), (Lang.en, "to die off"), (Lang.es, "desaparecer"), (Lang.ru, "вымирать")]),
             
             Verbe(level: Level.B1, form: Form.ieoo, verbe: ("ausziehen", "er zieht … aus", "er zog … aus", "er hat ausgezogen"), translations: [(Lang.fr, "enlever"), (Lang.en, "to take sth. off"), (Lang.es, "mudar(se)"), (Lang.ru, "снимать")]),
             
@@ -286,15 +287,15 @@ struct Verbes{
             
             Verbe(level: Level.B2, form: Form.aiea, verbe: ("erhalten", "er erhält", "er erhielt", "er hat erhalten"), translations: [(Lang.fr, "obtenir"), (Lang.en, "to get sth."), (Lang.es, "obtener"), (Lang.ru, "содержать")]),
             
-            Verbe(level: Level.B1, form: Form.undefine, verbe: ("erkennen", "er erkennt", "er erkannte", "er hat erkannt"), translations: [(Lang.fr, "reconna”tre"), (Lang.en, "to recognize"), (Lang.es, "reconocer"), (Lang.ru, "узнавать")]),
+            Verbe(level: Level.B1, form: Form.undefine, verbe: ("erkennen", "er erkennt", "er erkannte", "er hat erkannt"), translations: [(Lang.fr, "reconnaître"), (Lang.en, "to recognize"), (Lang.es, "reconocer"), (Lang.ru, "узнавать")]),
             
             Verbe(level: Level.C1, form: Form.ieoo, verbe: ("erkiesen", "er erkiest", "er erkor", "er hat erkoren"), translations: [(Lang.fr, "choisir qqn"), (Lang.en, "to choose, elect"), (Lang.es, "elegir"), (Lang.ru, "избирать")]),
             
             Verbe(level: Level.C1, form: Form.undefine, verbe: ("erklimmen", "er erklimmt", "er erklomm", "er hat erklommen"), translations: [(Lang.fr, "gravir"), (Lang.en, "to scale (climb)"), (Lang.es, "escalar"), (Lang.ru, "взбиратся")]),
             
-            Verbe(level: Level.C1, form: Form.undefine, verbe: ("erläschen", "er erlischt", "er erlosch", "er ist erloschen"), translations: [(Lang.fr, "s'éteindre"), (Lang.en, "to go out (of light)"), (Lang.es, "extinguir/caducar"), (Lang.ru, "гаснуть")]),
+            Verbe(level: Level.C1, form: Form.undefine, verbe: ("erlöschen", "er erlischt", "er erlosch", "er ist erloschen"), translations: [(Lang.fr, "s'éteindre"), (Lang.en, "to go out (of light)"), (Lang.es, "extinguir/caducar"), (Lang.ru, "гаснуть")]),
             
-            Verbe(level: Level.B1, form: Form.eiieie, verbe: ("erscheinen", "er erscheint", "er erschien", "er ist erschienen"), translations: [(Lang.fr, "para”tre"), (Lang.en, "to appear"), (Lang.es, "aparecer"), (Lang.ru, "появляться")]),
+            Verbe(level: Level.B1, form: Form.eiieie, verbe: ("erscheinen", "er erscheint", "er erschien", "er ist erschienen"), translations: [(Lang.fr, "paraître"), (Lang.en, "to appear"), (Lang.es, "aparecer"), (Lang.ru, "появляться")]),
             
             Verbe(level: Level.B2, form: Form.eao, verbe: ("erschrecken", "er erschrickt", "er erschrak", "er ist erschrocken"), translations: [(Lang.fr, "prendre peur"), (Lang.en, "to be startled"), (Lang.es, "asustar(se)"), (Lang.ru, "запугивать")]),
             
@@ -336,7 +337,7 @@ struct Verbes{
             
             Verbe(level: Level.A2, form: Form.eae, verbe: ("geben", "er gibt", "er gab", "er hat gegeben"), translations: [(Lang.fr, "donner"), (Lang.en, "to give"), (Lang.es, "dar"), (Lang.ru, "давать")]),
             
-            Verbe(level: Level.C1, form: Form.eiieie, verbe: ("gedeihen", "er gedeiht", "er gedieh", "er ist gediehen"), translations: [(Lang.fr, "cro”tre"), (Lang.en, "to thrive"), (Lang.es, "prosperar"), (Lang.ru, "расти/процветать")]),
+            Verbe(level: Level.C1, form: Form.eiieie, verbe: ("gedeihen", "er gedeiht", "er gedieh", "er ist gediehen"), translations: [(Lang.fr, "croître"), (Lang.en, "to thrive"), (Lang.es, "prosperar"), (Lang.ru, "расти/процветать")]),
             
             Verbe(level: Level.B1, form: Form.aiea, verbe: ("gefallen", "er gefällt", "er gefiel", "er hat gefallen"), translations: [(Lang.fr, "plaire"), (Lang.en, "to like"), (Lang.es, "gustar"), (Lang.ru, "нравиться")]),
             
@@ -390,7 +391,7 @@ struct Verbes{
             
             Verbe(level: Level.B2, form: Form.eiieie, verbe: ("hinweisen", "er weist … hin", "er wies … hin", "er hat hingewiesen"), translations: [(Lang.fr, "indiquer"), (Lang.en, "to indicate"), (Lang.es, "indicar"), (Lang.ru, " указывать (обратить внимание)")]),
             
-            Verbe(level: Level.A2, form: Form.weak, verbe: ("kennen", "er kennt", "er kannte", "er hat gekannt"), translations: [(Lang.fr, "conna”tre"), (Lang.en, "to know"), (Lang.es, "conocer"), (Lang.ru, "знать/быть знакомым")]),
+            Verbe(level: Level.A2, form: Form.weak, verbe: ("kennen", "er kennt", "er kannte", "er hat gekannt"), translations: [(Lang.fr, "connaître"), (Lang.en, "to know"), (Lang.es, "conocer"), (Lang.ru, "знать/быть знакомым")]),
             
             Verbe(level: Level.C1, form: Form.undefine, verbe: ("klarkommen", "er kommt … klar", "er kam klar", "er ist klargekommen"), translations: [(Lang.fr, "s'en sortir"), (Lang.en, "to get on"), (Lang.es, "entenderse con alguien"), (Lang.ru, "преодолевать")]),
             
@@ -398,7 +399,7 @@ struct Verbes{
             
             Verbe(level: Level.C1, form: Form.eiii, verbe: ("kneifen", "er kneift", "er kniff", "er hat gekniffen"), translations: [(Lang.fr, "pincer"), (Lang.en, "to pinch"), (Lang.es, "pellizcar"), (Lang.ru, "щипать")]),
             
-            Verbe(level: Level.A2, form: Form.weak, verbe: ("kännen", "er kann", "er konnte", "er hat gekonnt"), translations: [(Lang.fr, "pouvoir"), (Lang.en, "to can"), (Lang.es, "poder"), (Lang.ru, "мочь")]),
+            Verbe(level: Level.A2, form: Form.weak, verbe: ("können", "er kann", "er konnte", "er hat gekonnt"), translations: [(Lang.fr, "pouvoir"), (Lang.en, "to can"), (Lang.es, "poder"), (Lang.ru, "мочь")]),
             
             Verbe(level: Level.A2, form: Form.undefine, verbe: ("kommen", "er kommt", "er kam", "er ist gekommen"), translations: [(Lang.fr, "venir"), (Lang.en, "to come"), (Lang.es, "venir"), (Lang.ru, "приходить")]),
             
@@ -432,7 +433,7 @@ struct Verbes{
             
             Verbe(level: Level.B1, form: Form.eao, verbe: ("mitnehmen", "er nimmt … mit", "er nahm … mit", "er hat … mitgenommen"), translations: [(Lang.fr, "emporter"), (Lang.en, "to take"), (Lang.es, "llevarse"), (Lang.ru, "брать")]),
             
-            Verbe(level: Level.A2, form: Form.weak, verbe: ("mägen", "er mag", "er mochte", "er hat gemocht"), translations: [(Lang.fr, "aimer"), (Lang.en, "to like"), (Lang.es, "querer/gustar"), (Lang.ru, "любить/испытывать расположение")]),
+            Verbe(level: Level.A2, form: Form.weak, verbe: ("mögen", "er mag", "er mochte", "er hat gemocht"), translations: [(Lang.fr, "aimer"), (Lang.en, "to like"), (Lang.es, "querer/gustar"), (Lang.ru, "любить/испытывать расположение")]),
             
             Verbe(level: Level.A2, form: Form.weak, verbe: ("müssen", "er muss", "er musste", "er hat gemusst"), translations: [(Lang.fr, "devoir"), (Lang.en, "to have to"), (Lang.es, "deber"), (Lang.ru, "долженствовать")]),
             
@@ -526,7 +527,7 @@ struct Verbes{
             
             Verbe(level: Level.C1, form: Form.iau, verbe: ("schwingen", "er schwingt", "er schwang", "er hat geschwungen"), translations: [(Lang.fr, "pulser/vibrer"), (Lang.en, "to swing"), (Lang.es, "balancear"), (Lang.ru, "махать/размахивать")]),
             
-            Verbe(level: Level.C1, form: Form.undefine, verbe: ("schwären", "er schwärt", "er schwor", "er hat geschworen"), translations: [(Lang.fr, "jurer (la vérité)"), (Lang.en, "to swear"), (Lang.es, "jurar"), (Lang.ru, "клясться")]),
+            Verbe(level: Level.C1, form: Form.undefine, verbe: ("schwören", "er schwärt", "er schwor", "er hat geschworen"), translations: [(Lang.fr, "jurer (la vérité)"), (Lang.en, "to swear"), (Lang.es, "jurar"), (Lang.ru, "клясться")]),
             
             Verbe(level: Level.A2, form: Form.eae, verbe: ("sehen", "er sieht", "er sah", "er hat gesehen"), translations: [(Lang.fr, "voir"), (Lang.en, "to see"), (Lang.es, "ver"), (Lang.ru, "видеть/смотреть")]),
             
@@ -634,7 +635,7 @@ struct Verbes{
             
             Verbe(level: Level.B1, form: Form.eiieie, verbe: ("verschieben", "er verschiebt", "er verschob", "er hat verschoben"), translations: [(Lang.fr, "reporter"), (Lang.en, "to delay"), (Lang.es, "aplazar"), (Lang.ru, "переносить")]),
             
-            Verbe(level: Level.B1, form: Form.iau, verbe: ("verschwinden", "er verschwindet", "er verschwand ", "er ist verschwunden"), translations: [(Lang.fr, "dispara”tre"), (Lang.en, "to disappear"), (Lang.es, "desaparecer"), (Lang.ru, "исчезать")]),
+            Verbe(level: Level.B1, form: Form.iau, verbe: ("verschwinden", "er verschwindet", "er verschwand ", "er ist verschwunden"), translations: [(Lang.fr, "disparaître"), (Lang.en, "to disappear"), (Lang.es, "desaparecer"), (Lang.ru, "исчезать")]),
             
             Verbe(level: Level.B2, form: Form.eao, verbe: ("verbergen", "er verbirgt", "er verbarg", "er hat verborgen"), translations: [(Lang.fr, "cacher"), (Lang.en, "to hide"), (Lang.es, "ocultar"), (Lang.ru, "прятать")]),
             
@@ -750,7 +751,7 @@ struct Verbes{
     
     
     
-    // develop
+    // develop => a mettre dans les teste
     func witchCategoriesAreNotAvalable(){
         print(verbes.count)
         for level in Level.allValues{
@@ -767,20 +768,27 @@ struct Verbes{
             }
         }
     }
-  
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    func testAllAudio(){
+        
+        for v in verbes {
+            do {
+                var formatAudio = "mp3"
+                let nameAudioFile = v.infinitf()
+                print(v.infinitf())
+                let audioURL = URL(fileURLWithPath: Bundle.main.path(forResource: nameAudioFile, ofType: formatAudio)!)
+                let audioPlayer = try! AVAudioPlayer(contentsOf: audioURL, fileTypeHint: nil)
+                
+                try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            }
+            catch {
+                print(v.infinitf())
+            }
+        }
+        
+    }
     
 }
 

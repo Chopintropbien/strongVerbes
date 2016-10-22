@@ -1,0 +1,66 @@
+/* verbes */
+" verbes" = " verbos";
+
+/* Niveau avancé */
+"Advanced Level" = "Nivel avanzado";
+
+/* Tous (niveau) */
+"All" = "Todo";
+
+/* Niveau Elémentaire */
+"Basic Level" = "Nivel inicial";
+
+/* Choisissez votre niveau */
+"Choose your level" = "Elige tu nivel";
+
+/* Classés par ordre alphabétique */
+"Classified by alphabetical order" = "Clasificado por orden alfabético";
+
+/* Classés celon la forme: */
+"Classified by form" = "Clasificado por forma";
+
+/* Tous niveaux */
+"Every Level" = "Todos los niveles";
+
+/* Voici les verbes forts allemand de forme */
+"Here are german irregular verbs by form: unclassifiable" = "Aquí encontraras verbos irregulares en alemán según su forma: sin clasificar";
+
+/* Voici les verbes forts allemand de forme */
+"Here are german irregular verbs by form: weak-irregular" = "Aquí encontraras los verbos irregulares en alemán según su forma: poco irregular";
+
+/* Voici les verbes forts allemand commençant par */
+"Here are german irregular verbs who begins buy: " = "Aquí tienes los verbos irregulares en alemán que empiezan por la letra: ";
+
+/* Voici les verbes forts allemand de forme */
+"Here are german irregular verbs by form: " = "Aquí encontraras los verbos irregulares en alemán según su forma: ";
+
+/* Niveau Intermédiare */
+"Intermediate Level" = "Nivel intermedio";
+
+/* Les verbes forts */
+"Irregular verbs" = "Verbos irregulares";
+
+/* Suivant button */
+"Next" = "Siguiente";
+
+/* Aléatoire */
+"Random" = "Aleatorio";
+
+/* Ordre aléatoire */
+"Random order" = "Orden aleatorio";
+
+/* SELECT (en majuscule) */
+"SELECT" = "ELIJE";
+
+/* Essayer de vous souvenir de ces */
+"Try to remember this " = "Intenta memorizar los siguientes ";
+
+/* inclassable button */
+"unclassifiable" = "sin clasificar";
+
+/* faible irrégulière catégorie */
+"weak-irregular-feminin" = "poco irregular";
+
+/* faible irrégulier button */
+"weak-irregular-masculin" = "poco irregular";
+

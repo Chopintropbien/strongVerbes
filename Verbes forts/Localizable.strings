@@ -1,0 +1,66 @@
+/* verbes */
+" verbes" = " слов";
+
+/* Niveau avancé */
+"Advanced Level" = "Продвинутый";
+
+/* Tous (niveau) */
+"All" = "Все";
+
+/* Niveau Elémentaire */
+"Basic Level" = "Начинающий";
+
+/* Choisissez votre niveau */
+"Choose your level" = "Выберите Ваш уровень";
+
+/* Classés par ordre alphabétique */
+"Classified by alphabetical order" = "Сортировка по алфавиту";
+
+/* Classés celon la forme: */
+"Classified by form" = "Сортировка по форме";
+
+/* Tous niveaux */
+"Every Level" = "Слова всех уровней";
+
+/* Voici les verbes forts allemand de forme */
+"Here are german irregular verbs by form: unclassifiable" = "Это немецкие глаголы, не поддающиеся классификации";
+
+/* Voici les verbes forts allemand de forme */
+"Here are german irregular verbs by form: weak-irregular" = "Это смешанные немецкие глаголы";
+
+/* Voici les verbes forts allemand commençant par */
+"Here are german irregular verbs who begins buy: " = "Это неправильные глаголы на букву: ";
+
+/* Voici les verbes forts allemand de forme */
+"Here are german irregular verbs who works like: " = "Это неправильные глаголы с изменяющейся корневой гласной: ";
+
+/* Niveau Intermédiare */
+"Intermediate Level" = "Средний";
+
+/* Les verbes forts */
+"Irregular verbs" = "Неправильные глаголы";
+
+/* Suivant button */
+"Next" = "Далее";
+
+/* Aléatoire */
+"Random" = "Случайно";
+
+/* Ordre aléatoire */
+"Random order" = "Случайный порядок";
+
+/* SELECT (en majuscule) */
+"SELECT" = "ВЫБРАТЬ";
+
+/* Essayer de vous souvenir de ces */
+"Try to remember this " = "Попробуйте запомнить эти ";
+
+/* inclassable button */
+"unclassifiable" = "Другие";
+
+/* faible irrégulière catégorie */
+"weak-irregular-feminin" = "Смешанные";
+
+/* faible irrégulier button */
+"weak-irregular-masculin" = "Смешанные";
+

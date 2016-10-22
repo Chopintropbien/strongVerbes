@@ -25,9 +25,9 @@ class ChooseLevel: UIViewController, ENSideMenuDelegate {
         placeElement()
         
         // Set text in the choosed language
-        self.title = displaidWords.titleChooseVerbes()
-        selectLevelLabel.text = displaidWords.selectLevel()
-        allLevelButton.setTitle(displaidWords.allLevel(), for: UIControlState())        
+        self.title = Localization("Irregular verbs")
+        selectLevelLabel.text = Localization("Choose your level")
+        allLevelButton.setTitle(Localization("All"), for: UIControlState())
     }
     
     

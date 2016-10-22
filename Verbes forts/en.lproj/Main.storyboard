@@ -167,8 +167,8 @@
                                     <segue destination="UL2-1v-XTv" kind="push" identifier="e-a-e" id="nlx-AM-gun"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="R0T-CJ-TOy" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="137" minY="164" width="69" height="27"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="R0T-CJ-TOy" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <frame key="frameInset" minX="137" minY="164" width="46" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="a – u - a"/>
@@ -396,7 +396,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="467.5" y="1072.5"/>
+            <point key="canvasLocation" x="467.73333333333335" y="1072.573333333333"/>
         </scene>
         <!--Revision Verbes-->
         <scene sceneID="JwB-6T-NVC">
@@ -645,7 +645,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="KKP-Om-7oI"/>
         <segue reference="l31-Ws-EjS"/>
-        <segue reference="5Dv-TB-vII"/>
     </inferredMetricsTieBreakers>
 </document>

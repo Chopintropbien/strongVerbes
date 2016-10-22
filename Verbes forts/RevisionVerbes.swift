@@ -73,6 +73,8 @@ class RevisionVerbes: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // display the correct sounds button
         if(sounds){ soundButton.title = "🔔"}
@@ -94,7 +96,7 @@ class RevisionVerbes: UIViewController {
         // explanation
         let headerLabelMarginTop = height(190)
         let headerLabelHeight = height(98)
-        let headerLabelMarginRight = width(80)
+        let headerLabelMarginRight = width(100)
         headerLabel.frame = CGRect(x: headerLabelMarginRight, y: headerLabelMarginTop, width: screenWidth - headerLabelMarginRight*2, height: headerLabelHeight)
         
         // Translation
@@ -211,12 +213,15 @@ class RevisionVerbes: UIViewController {
         if(sounds) { playAudio() }
     }
     
+    // TODO: securiser
     func playAudio(){
-        nameAudioFile = verbes[cursor].infinitf()
-        audioURL = URL(fileURLWithPath: Bundle.main.path(forResource: nameAudioFile, ofType: formatAudio)!)
-        audioPlayer = try! AVAudioPlayer(contentsOf: audioURL, fileTypeHint: nil)
-        audioPlayer.play()
+        
         do {
+            nameAudioFile = verbes[cursor].infinitf()
+            audioURL = URL(fileURLWithPath: Bundle.main.path(forResource: nameAudioFile, ofType: formatAudio)!)
+            audioPlayer = try! AVAudioPlayer(contentsOf: audioURL, fileTypeHint: nil)
+            audioPlayer.play()
+        
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
         }
         catch {

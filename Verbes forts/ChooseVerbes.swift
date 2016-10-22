@@ -52,9 +52,7 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
     @IBOutlet weak var UVButton: UIButton!
     @IBOutlet weak var WZButton: UIButton!
     
-//    @IBAction func showLanguageMenu(_ sender: UIBarButtonItem) {
-//        toggleSideMenuView()
-//    }
+
 
     @IBAction func getViewVerbes(_ sender: UIButton){
         
@@ -64,14 +62,14 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
         super.viewDidLoad()
         
         // set text in the choosed language
-        self.title = displaidWords.titleChooseVerbes()
-        self.randomOrderButton.setTitle(displaidWords.randomOrderButton(), for: UIControlState())
-        self.randomOrderLabel.text = displaidWords.randomOrderLabel()
-        self.formOrderLabel.text = displaidWords.formOrderLabel()
-        self.alphabeticOrderLabel.text = displaidWords.alphabeticOrderLabel()
+        self.title = Localization("Irregular verbs")
+        self.randomOrderButton.setTitle(Localization("Random"), for: UIControlState())
+        self.randomOrderLabel.text = Localization("Random order")
+        self.formOrderLabel.text = Localization("Classified by form")
+        self.alphabeticOrderLabel.text = Localization("Classified by alphabetical order")
         
-        unclassable.setTitle(displaidWords.unclassable(), for: UIControlState())
-        weakIregular.setTitle(displaidWords.weakIregularMasculin(), for: UIControlState())
+        unclassable.setTitle(Localization("unclassifiable"), for: UIControlState())
+        weakIregular.setTitle(Localization("weak-irregular-masculin"), for: UIControlState())
         
 
         
@@ -202,20 +200,21 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
         if let rev = segue.destination as? RevisionVerbes{
             
             let nbVerbeRandom = 15
-            let headerTextRandom: String = displaidWords.headerTextRandom(nbVerbeRandom)
-            let unclassable: String = displaidWords.unclassable()
-            let weakIregular: String = displaidWords.weakIregularFeminin()
+            let headerTextRandom: String = Localization("Try to remember this ") + String(nbVerbeRandom) + Localization(" verbes")
+            let unclassable: String =  Localization("unclassifiable")
+            let weakIregular: String = Localization("weak-irregular-feminin")
             
             
             func setTextInStringType(_ form: String){
                 switch form {
                 case Form.weak.rawValue:
-                    rev.headerText = displaidWords.hereVerbesWithFormWeak()
+                    rev.headerText = Localization("Here are german irregular verbs by form: weak-irregular")
                 case Form.undefine.rawValue:
-                    rev.headerText = displaidWords.hereVerbesWithFormUndefine()
+                    rev.headerText = Localization("Here are german irregular verbs by form: unclassifiable") + form
                 default:
-                    rev.headerText = displaidWords.hereVerbesWithForm(form)
+                    rev.headerText = Localization("Here are german irregular verbs by form: ") + form
                 }
+                
                 
                 setStaticButton()
             }
@@ -224,7 +223,7 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
             }
             
             func setTextInLetterType(_ letter: LetterButton){
-                rev.headerText = displaidWords.hereVerbesWhoBeginBuy(letter)
+                rev.headerText = Localization("Here are german irregular verbs who begins buy: ") + letter.rawValue.uppercased()
                 setStaticButton()
             }
             
@@ -234,7 +233,7 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
             }
 
             func setStaticButton(){
-                rev.nextButtonText = displaidWords.next()
+                rev.nextButtonText = Localization("Next")
             }
             
             
@@ -250,7 +249,8 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
             
             
 //            verbesData.witchCategoriesAreNotAvalable()
-//            
+//            verbesData.testAllAudio()
+//
 //            print(verbesData.verbes.count)
 //            print(foldl(verbesData.verbes.map({
 //                let a = "Verbe(level: Level." + $0.level.rawValue
@@ -294,6 +294,9 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
                     rev.verbes = filterVerbeByLetter(LetterButton.DE)
                     setTextInLetterType(LetterButton.DE)
                 case LetterButton.F.rawValue:
+                    rev.verbes = filterVerbeByLetter(LetterButton.F)
+                    setTextInLetterType(LetterButton.F)
+                case LetterButton.G.rawValue:
                     rev.verbes = filterVerbeByLetter(LetterButton.G)
                     setTextInLetterType(LetterButton.G)
                 case LetterButton.HK.rawValue:

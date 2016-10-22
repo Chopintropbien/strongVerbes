@@ -26,8 +26,7 @@ class CategoryVerbeButton: UIButton {
         self.layer.shadowOpacity = 0.5
         self.layer.shadowColor = UIColor.gray.cgColor
         self.layer.shadowRadius = 20
-        
- 
+
     }
 }
 

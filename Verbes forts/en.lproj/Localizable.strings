@@ -1,0 +1,66 @@
+/* verbes */
+" verbes" = " verbes";
+
+/* Niveau avancé */
+"Advanced Level" = "Advanced Level";
+
+/* Tous (niveau) */
+"All" = "All";
+
+/* Niveau Elémentaire */
+"Basic Level" = "Basic Level ";
+
+/* Choisissez votre niveau */
+"Choose your level" = "Choose your level";
+
+/* Classés par ordre alphabétique */
+"Classified by alphabetical order" = "Classified by alphabetical order";
+
+/* Classés celon la forme: */
+"Classified by form" = "Classified by form";
+
+/* Tous niveaux */
+"Every Level" = "Every Level";
+
+/* Voici les verbes forts allemand de forme */
+"Here are german irregular verbs by form: unclassifiable" = "Here are german irregular verbs by form: unclassifiable";
+
+/* Voici les verbes forts allemand de forme */
+"Here are german irregular verbs by form: weak-irregular" = "Here are german irregular verbs by form: weak-irregular";
+
+/* Voici les verbes forts allemand commençant par */
+"Here are german irregular verbs who begins buy: " = "Here are german irregular verbs who begins buy: ";
+
+/* Voici les verbes forts allemand de forme */
+"Here are german irregular verbs by form: " = "Here are german irregular verbs by form: ";
+
+/* Niveau Intermédiare */
+"Intermediate Level" = "Intermediate Level";
+
+/* Les verbes forts */
+"Irregular verbs" = "Irregular verbs";
+
+/* Suivant button */
+"Next" = "Next";
+
+/* Aléatoire */
+"Random" = "Random";
+
+/* Ordre aléatoire */
+"Random order" = "Random order";
+
+/* SELECT (en majuscule) */
+"SELECT" = "SELECT";
+
+/* Essayer de vous souvenir de ces */
+"Try to remember this " = "ry to remember this ";
+
+/* inclassable button */
+"unclassifiable" = "unclassifiable";
+
+/* faible irrégulière catégorie */
+"weak-irregular-feminin" = "weak-irregular";
+
+/* faible irrégulier button */
+"weak-irregular-masculin" = "weak-irregular";
+
