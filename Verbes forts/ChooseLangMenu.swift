@@ -21,15 +21,18 @@ class ChooseLangMenu: UITableViewController {
         super.init(style: style)
     }
     init(){
-        switch Global.getLang() {
+        switch GetLanguage() {
         case Lang.en:
             selectedMenuItem = 0
         case Lang.fr:
             selectedMenuItem = 1
+        case Lang.es:
+            selectedMenuItem = 2
+        case Lang.ru:
+            selectedMenuItem = 3
         default:
             selectedMenuItem = 0
         }
-        
         super.init(style: UITableViewStyle.plain)
     }
     
@@ -67,7 +70,7 @@ class ChooseLangMenu: UITableViewController {
     
     // Return the number of rows in the section.
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 4
     }
     
     // initiat table view
@@ -87,9 +90,13 @@ class ChooseLangMenu: UITableViewController {
         
         switch((indexPath as NSIndexPath).row){
         case 0:
-            cell!.textLabel?.text = Lang.en.rawValue
+            cell!.textLabel?.text = "English"
         case 1:
-            cell!.textLabel?.text = Lang.fr.rawValue
+            cell!.textLabel?.text = "Français"
+        case 2:
+            cell!.textLabel?.text = "Español"
+        case 3:
+            cell!.textLabel?.text = "Русский"
         default: cell!.textLabel?.text = "Undefine"
         }
         
@@ -108,18 +115,24 @@ class ChooseLangMenu: UITableViewController {
         //Present new view controller
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
         var destViewController : UIViewController
+        
         switch ((indexPath as NSIndexPath).row) {
         case 0:
-            Global.changeLang(Lang.en)
+            SetLanguage(Lang.en)
         case 1:
-            Global.changeLang(Lang.fr)
+            SetLanguage(Lang.fr)
+        case 2:
+            SetLanguage(Lang.es)
+        case 3:
+            SetLanguage(Lang.ru)
         default:
-            Global.changeLang(Lang.en)
+            SetLanguage(Lang.en)
         }
         
-        destViewController = mainStoryboard.instantiateViewController(withIdentifier: "ChooseLevel")
         
+        destViewController = mainStoryboard.instantiateViewController(withIdentifier: "ChooseLevel")
         sideMenuController()?.setContentViewController(destViewController)
+        
     }
     
     

@@ -11,29 +11,8 @@ import UIKit
 
 
 
-struct Global{
-    static fileprivate let langKey = "lang"
-    static fileprivate let defaultLang = Lang.fr
-    
-    static func changeLang(_ l: Lang){
-        UserDefaults.standard.set(l.rawValue, forKey: langKey)
-        UserDefaults.standard.synchronize()
-        displaidWords = DisplayWords(lang: l)
-    }
-    
-    static func getLang() -> Lang{
-        if let key = UserDefaults.standard.string(forKey: langKey){
-            print("coucou: \(key)")
-            return Lang(rawValue: key)!
-        }
-        else{
-            return defaultLang
-        }
-    }
-}
-
 var sounds = true
-var displaidWords = DisplayWords(lang: Global.getLang())
+var displaidWords = DisplayWords()
 
 
 

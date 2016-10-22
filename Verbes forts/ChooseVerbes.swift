@@ -52,9 +52,9 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
     @IBOutlet weak var UVButton: UIButton!
     @IBOutlet weak var WZButton: UIButton!
     
-    @IBAction func showLanguageMenu(_ sender: UIBarButtonItem) {
-        toggleSideMenuView()
-    }
+//    @IBAction func showLanguageMenu(_ sender: UIBarButtonItem) {
+//        toggleSideMenuView()
+//    }
 
     @IBAction func getViewVerbes(_ sender: UIButton){
         
@@ -208,7 +208,15 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
             
             
             func setTextInStringType(_ form: String){
-                rev.headerText = displaidWords.hereVerbesWithForm(form)
+                switch form {
+                case Form.weak.rawValue:
+                    rev.headerText = displaidWords.hereVerbesWithFormWeak()
+                case Form.undefine.rawValue:
+                    rev.headerText = displaidWords.hereVerbesWithFormUndefine()
+                default:
+                    rev.headerText = displaidWords.hereVerbesWithForm(form)
+                }
+                
                 setStaticButton()
             }
             func setTextInFormType(_ form: Form){
@@ -241,23 +249,23 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
             }
             
             
-            verbesData.witchCategoriesAreNotAvalable()
-            
-            print(verbesData.verbes.count)
-            print(foldl(verbesData.verbes.map({
-                let a = "Verbe(level: Level." + $0.level.rawValue
-                + ", form: Form." + $0.form.rawValue
-                + ", verbe: (\"" + $0.infinitf()
-                + "\", \"er " + $0.present()
-                + "\", \"er " + $0.preterit()
-                let b = "\", \"er " + $0.parfait()
-                + "\"), translations: [(Lang.fr, \""+$0.translation(Lang.fr)
-                + "\"), (Lang.en, \"" + $0.translation(Lang.en)
-                + "\"), (Lang.es, \"" + $0.translation(Lang.es)
-                + "\"), (Lang.ru, \""+$0.translation(Lang.ru)+"\")]),\n\n"
-                
-                return a + b
-            }), base: ""))
+//            verbesData.witchCategoriesAreNotAvalable()
+//            
+//            print(verbesData.verbes.count)
+//            print(foldl(verbesData.verbes.map({
+//                let a = "Verbe(level: Level." + $0.level.rawValue
+//                + ", form: Form." + $0.form.rawValue
+//                + ", verbe: (\"" + $0.infinitf()
+//                + "\", \"er " + $0.present()
+//                + "\", \"er " + $0.preterit()
+//                let b = "\", \"er " + $0.parfait()
+//                + "\"), translations: [(Lang.fr, \""+$0.translation(Lang.fr)
+//                + "\"), (Lang.en, \"" + $0.translation(Lang.en)
+//                + "\"), (Lang.es, \"" + $0.translation(Lang.es)
+//                + "\"), (Lang.ru, \""+$0.translation(Lang.ru)+"\")]),\n\n"
+//                
+//                return a + b
+//            }), base: ""))
             
 //                "\($0.infinitf()), \($0.present()), \($0.preterit()), \($0.parfait())\n" }), base: ""))
  

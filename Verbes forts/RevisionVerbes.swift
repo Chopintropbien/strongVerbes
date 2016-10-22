@@ -94,7 +94,7 @@ class RevisionVerbes: UIViewController {
         // explanation
         let headerLabelMarginTop = height(190)
         let headerLabelHeight = height(98)
-        let headerLabelMarginRight = width(100)
+        let headerLabelMarginRight = width(80)
         headerLabel.frame = CGRect(x: headerLabelMarginRight, y: headerLabelMarginTop, width: screenWidth - headerLabelMarginRight*2, height: headerLabelHeight)
         
         // Translation
@@ -191,7 +191,7 @@ class RevisionVerbes: UIViewController {
     }
 //    🔔🔕
     func initVerbe(){
-        translationLabel.text = verbes[cursor].translation(Global.getLang())
+        translationLabel.text = verbes[cursor].translation(GetLanguage())
         infinitifLabel.text = verbes[cursor].infinitf()
         presentLabel.text = verbes[cursor].present()
         preteritLabel.text = verbes[cursor].preterit()
