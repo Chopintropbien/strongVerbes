@@ -1793,7 +1793,7 @@
 				INFOPLIST_FILE = "Verbes forts/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = EQPGG2M7LV;
+				PRODUCT_BUNDLE_IDENTIFIER = "Irregular-german-verbs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1815,7 +1815,7 @@
 				INFOPLIST_FILE = "Verbes forts/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = EQPGG2M7LV;
+				PRODUCT_BUNDLE_IDENTIFIER = "Irregular-german-verbs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;

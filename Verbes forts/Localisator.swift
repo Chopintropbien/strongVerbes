@@ -36,7 +36,7 @@ func GetLanguage() -> Lang {
 class Localisator {
     
     // MARK: - Private properties
-    fileprivate let defaultLang = Lang.fr
+    fileprivate let defaultLang = Lang.en
     
     fileprivate let userDefaults = UserDefaults.standard
     fileprivate var availableLanguagesArray = Lang.allValues

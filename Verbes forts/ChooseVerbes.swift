@@ -205,25 +205,21 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
             let weakIregular: String = Localization("weak-irregular-feminin")
             
             
-            func setTextInStringType(_ form: String){
+            func setTextInStringType(_ form: Form){
                 switch form {
-                case Form.weak.rawValue:
+                case Form.weak:
                     rev.headerText = Localization("Here are german irregular verbs by form: weak-irregular")
-                case Form.undefine.rawValue:
-                    rev.headerText = Localization("Here are german irregular verbs by form: unclassifiable") + form
+                case Form.undefine:
+                    rev.headerText = Localization("Here are german irregular verbs by form: unclassifiable")
                 default:
-                    rev.headerText = Localization("Here are german irregular verbs by form: ") + form
+                    rev.headerText = Localization("Here are german irregular verbs by form: ") + form.rawValue
                 }
-                
                 
                 setStaticButton()
             }
-            func setTextInFormType(_ form: Form){
-                setTextInStringType(form.rawValue)
-            }
             
             func setTextInLetterType(_ letter: LetterButton){
-                rev.headerText = Localization("Here are german irregular verbs who begins buy: ") + letter.rawValue.uppercased()
+                rev.headerText = Localization("Here are german irregular verbs who begins by: ") + letter.rawValue.uppercased()
                 setStaticButton()
             }
             
@@ -332,37 +328,37 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
                 
                 case Form.aiea.rawValue:
                     rev.verbes = filterVerbeByForm(Form.aiea)
-                    setTextInFormType(Form.aiea)
+                    setTextInStringType(Form.aiea)
                 case Form.aua.rawValue:
                     rev.verbes = filterVerbeByForm(Form.aua)
-                    setTextInFormType(Form.aua)
+                    setTextInStringType(Form.aua)
                 case Form.eae.rawValue:
                     rev.verbes = filterVerbeByForm(Form.eae)
-                    setTextInFormType(Form.eae)
+                    setTextInStringType(Form.eae)
                 case Form.eao.rawValue:
                     rev.verbes = filterVerbeByForm(Form.eao)
-                    setTextInFormType(Form.eao)
+                    setTextInStringType(Form.eao)
                 case Form.eiieie.rawValue:
                     rev.verbes = filterVerbeByForm(Form.eiieie)
-                    setTextInFormType(Form.eiieie)
+                    setTextInStringType(Form.eiieie)
                 case Form.eiii.rawValue:
                     rev.verbes = filterVerbeByForm(Form.eiii)
-                    setTextInFormType(Form.eiii)
+                    setTextInStringType(Form.eiii)
                 case Form.iao.rawValue:
                     rev.verbes = filterVerbeByForm(Form.iao)
-                    setTextInFormType(Form.iao)
+                    setTextInStringType(Form.iao)
                 case Form.iau.rawValue:
                     rev.verbes = filterVerbeByForm(Form.iau)
-                    setTextInFormType(Form.iao)
+                    setTextInStringType(Form.iao)
                 case Form.ieoo.rawValue:
                     rev.verbes = filterVerbeByForm(Form.ieoo)
-                    setTextInFormType(Form.ieoo)
+                    setTextInStringType(Form.ieoo)
                 case Form.undefine.rawValue:
                     rev.verbes = filterVerbeByForm(Form.undefine)
-                    setTextInStringType(unclassable)
+                    setTextInStringType(Form.undefine)
                 case Form.weak.rawValue:
                     rev.verbes = filterVerbeByForm(Form.weak)
-                    setTextInStringType(weakIregular)
+                    setTextInStringType(Form.weak)
                 case "random":
                     rev.verbes = []
                     for _ in 1...nbVerbeRandom{
