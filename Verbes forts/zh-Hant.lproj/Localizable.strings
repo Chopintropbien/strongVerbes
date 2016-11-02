@@ -1,0 +1,66 @@
+/* verbes */
+" verbes" = "個動詞";
+
+/* Niveau avancé */
+"Advanced Level" = "高級階級";
+
+/* Tous (niveau) */
+"All" = "全部";
+
+/* Niveau Elémentaire */
+"Basic Level" = "基礎階級";
+
+/* Choisissez votre niveau */
+"Choose your level" = "選擇級別";
+
+/* Classés par ordre alphabétique */
+"Classified by alphabetical order" = "選擇首要字母";
+
+/* Classés celon la forme: */
+"Classified by form" = "選擇其中字母";
+
+/* Tous niveaux */
+"Every Level" = "每個級別";
+
+/* Voici les verbes forts allemand de forme */
+"Here are german irregular verbs by form: unclassifiable" = "現在是德文不規則動詞: 不分類";
+
+/* Voici les verbes forts allemand de forme */
+"Here are german irregular verbs by form: weak-irregular" = "現在是德文不規則動詞: 弱變化";
+
+/* Voici les verbes forts allemand commençant par */
+"Here are german irregular verbs who begins by: " = "A現在是德文不規則動詞開頭字母為: ";
+
+/* Voici les verbes forts allemand de forme */
+"Here are german irregular verbs by form: " = "現在是德文不規則動詞: 含有";
+
+/* Niveau Intermédiare */
+"Intermediate Level" = "中等階級";
+
+/* Les verbes forts */
+"Irregular verbs" = "不規則動詞";
+
+/* Suivant button */
+"Next" = "下一頁";
+
+/* Aléatoire */
+"Random" = "隨機";
+
+/* Ordre aléatoire */
+"Random order" = "隨機選擇";
+
+/* SELECT (en majuscule) */
+"SELECT" = "選擇";
+
+/* Essayer de vous souvenir de ces */
+"Try to remember this " = "試著記憶";
+
+/* inclassable button */
+"unclassifiable" = "不分類";
+
+/* faible irrégulière catégorie */
+"weak-irregular-feminin" = "弱變化的不規則動詞";
+
+/* faible irrégulier button */
+"weak-irregular-masculin" = "弱變化的不規則動詞";
+

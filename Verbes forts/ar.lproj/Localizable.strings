@@ -1,0 +1,66 @@
+/* verbes */
+" verbes" = "حاول تذكُر ال";
+
+/* Niveau avancé */
+"Advanced Level" = "المرحلة المتقدمة";
+
+/* Tous (niveau) */
+"All" = "الكل";
+
+/* Niveau Elémentaire */
+"Basic Level" = "المرحلة الاساسية";
+
+/* Choisissez votre niveau */
+"Choose your level" = "اختر مستواك";
+
+/* Classés par ordre alphabétique */
+"Classified by alphabetical order" = "التصنيف حسب الترتيب الابجدى";
+
+/* Classés celon la forme: */
+"Classified by form" = "التصنيف حسب الشكل";
+
+/* Tous niveaux */
+"Every Level" = "جميع المستويات";
+
+/* Voici les verbes forts allemand de forme */
+"Here are german irregular verbs by form: unclassifiable" = "هذا هو شكل مجموعة الافعال الشاذة المختلطة";
+
+/* Voici les verbes forts allemand de forme */
+"Here are german irregular verbs by form: weak-irregular" = "هذا هو شكل مجموعة الافعال الشاذة الضعيفة";
+
+/* Voici les verbes forts allemand commençant par */
+"Here are german irregular verbs who begins by: " = " هذه هى مجموعة الافعال الشاذة التى تبدء بحرف";
+
+/* Voici les verbes forts allemand de forme */
+"Here are german irregular verbs by form: " = " هذا هو شكل مجموعة الافعال الشاذة مع الحروف";
+
+/* Niveau Intermédiare */
+"Intermediate Level" = "المرحلة المتوسطة";
+
+/* Les verbes forts */
+"Irregular verbs" = "الافعال الشاذة";
+
+/* Suivant button */
+"Next" = "التالى";
+
+/* Aléatoire */
+"Random" = "عشوائى";
+
+/* Ordre aléatoire */
+"Random order" = "ترتيب عشوائى";
+
+/* SELECT (en majuscule) */
+"SELECT" = "اختر";
+
+/* Essayer de vous souvenir de ces */
+"Try to remember this " = "فعل ";
+
+/* inclassable button */
+"unclassifiable" = "مختلط";
+
+/* faible irrégulière catégorie */
+"weak-irregular-feminin" = "شاذ ضعيف";
+
+/* faible irrégulier button */
+"weak-irregular-masculin" = "شاذ ضعيف";
+

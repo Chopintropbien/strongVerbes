@@ -80,18 +80,23 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
         let labelHeight = height(65)
         let randomOrderLabelMarginTop = height(180)
         randomOrderLabel.frame = CGRect(x: 0, y: randomOrderLabelMarginTop, width: screenWidth, height: labelHeight)
+    
         
         // Random Button
         let buttonHeight = height(70)
         let randomOrderButtonMarginTop = height(25)
         let randomOrderButtonY = randomOrderLabelMarginTop + randomOrderButtonMarginTop + labelHeight
-        randomOrderButton.frame = CGRect(x: width(245), y: randomOrderButtonY, width: width(275), height: buttonHeight + height(25))
+        
+        let randomOrderButtonWidth = width(275)
+        let randomOrderButtonX = (screenWidth - randomOrderButtonWidth)*0.5
+        let randomOrderButtonHeight = buttonHeight + height(25)
+        randomOrderButton.frame = CGRect(x: randomOrderButtonX, y: randomOrderButtonY, width: randomOrderButtonWidth, height: randomOrderButtonHeight)
         randomOrderButton.backgroundColor = pink
         randomOrderButton.setTitleColor(UIColor.white, for: UIControlState())
         
         // 2th label
         let formOrderLabelMarginTop = height(45)
-        let formOrderLabelY = randomOrderButtonY + buttonHeight + formOrderLabelMarginTop
+        let formOrderLabelY = randomOrderButtonY + randomOrderButtonHeight + formOrderLabelMarginTop
         formOrderLabel.frame = CGRect(x: 0, y: formOrderLabelY, width: screenWidth, height: labelHeight)
         
         
@@ -211,15 +216,27 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
                     rev.headerText = Localization("Here are german irregular verbs by form: weak-irregular")
                 case Form.undefine:
                     rev.headerText = Localization("Here are german irregular verbs by form: unclassifiable")
+                    
                 default:
-                    rev.headerText = Localization("Here are german irregular verbs by form: ") + form.rawValue
+                    if(GetLanguage() == Lang.ar){
+                       rev.headerText = form.rawValue + Localization("Here are german irregular verbs by form: ")
+                    }
+                    else{
+                        rev.headerText = Localization("Here are german irregular verbs by form: ") + form.rawValue
+                    }
                 }
                 
                 setStaticButton()
             }
             
             func setTextInLetterType(_ letter: LetterButton){
-                rev.headerText = Localization("Here are german irregular verbs who begins by: ") + letter.rawValue.uppercased()
+                if(GetLanguage() == Lang.ar){
+                    rev.headerText = letter.rawValue.uppercased() + Localization("Here are german irregular verbs who begins by: ")
+                }
+                else{
+                  rev.headerText = Localization("Here are german irregular verbs who begins by: ") + letter.rawValue.uppercased()
+                }
+                
                 setStaticButton()
             }
             
@@ -230,40 +247,84 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
 
             func setStaticButton(){
                 rev.nextButtonText = Localization("Next")
-            }
-            
-            
-            
-//             print all the verbes
-            func foldl(_ list:Array<String>, base:String) -> String {
-                var result = base
-                for item in list {
-                    result = result + item
+                if(rev.verbes.count == 1){ // if just one verbes, don't dysplay the next button
+                    rev.nextButtonHidden = true
                 }
-                return result
+                
             }
             
+            
+            
+            //             print all the verbes
+            
+            func foldl(_ list:Array<String>, base:String) -> String {
+                
+                var result = base
+                
+                for item in list {
+                    
+                    result = result + item
+                    
+                }
+                
+                return result
+                
+            }
+            
+            
+            
+//            verbesData.printVerbes()
             
 //            verbesData.witchCategoriesAreNotAvalable()
+            
 //            verbesData.testAllAudio()
-//
+            
+            
+                
 //            print(verbesData.verbes.count)
+            
 //            print(foldl(verbesData.verbes.map({
-//                let a = "Verbe(level: Level." + $0.level.rawValue
-//                + ", form: Form." + $0.form.rawValue
-//                + ", verbe: (\"" + $0.infinitf()
-//                + "\", \"er " + $0.present()
-//                + "\", \"er " + $0.preterit()
-//                let b = "\", \"er " + $0.parfait()
-//                + "\"), translations: [(Lang.fr, \""+$0.translation(Lang.fr)
-//                + "\"), (Lang.en, \"" + $0.translation(Lang.en)
-//                + "\"), (Lang.es, \"" + $0.translation(Lang.es)
-//                + "\"), (Lang.ru, \""+$0.translation(Lang.ru)+"\")]),\n\n"
 //                
+//                let form = $0.form
+//                
+//                var formS = ""
+//                switch(form){
+//                case Form.aiea:
+//                    formS = "aiea"
+//                case Form.aua:
+//                    formS = "aua"
+//                case Form.eae:
+//                    formS = "eae"
+//                case Form.eao:
+//                    formS = "eao"
+//                case Form.eiieie:
+//                    formS = "eiieie"
+//                case Form.eiii:
+//                    formS = "eiii"
+//                case Form.iao:
+//                    formS = "iao"
+//                case Form.iau:
+//                    formS = "iau"
+//                case Form.ieoo:
+//                    formS = "ieoo"
+//                case Form.undefine:
+//                    formS = "undefine"
+//                case Form.weak:
+//                    formS = "weak"
+//                }
+//   
+//                let a = $0.level.rawValue
+//                    + "," + formS
+//                    + "," + $0.infinitf()
+//                    + ",er " + $0.present()
+//                    + ",er " + $0.preterit()
+//                let b = ",er " + $0.parfait()
+//                    + ","+$0.translation(Lang.fr)
+//                    + "," + $0.translation(Lang.en)
+//                    + "," + $0.translation(Lang.es)
+//                    + ","+$0.translation(Lang.ru) + ",\n"
 //                return a + b
 //            }), base: ""))
-            
-//                "\($0.infinitf()), \($0.present()), \($0.preterit()), \($0.parfait())\n" }), base: ""))
  
  
             
@@ -349,7 +410,7 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
                     setTextInStringType(Form.iao)
                 case Form.iau.rawValue:
                     rev.verbes = filterVerbeByForm(Form.iau)
-                    setTextInStringType(Form.iao)
+                    setTextInStringType(Form.iau)
                 case Form.ieoo.rawValue:
                     rev.verbes = filterVerbeByForm(Form.ieoo)
                     setTextInStringType(Form.ieoo)

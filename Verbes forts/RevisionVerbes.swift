@@ -19,6 +19,7 @@ class RevisionVerbes: UIViewController {
     var cursor: Int = 0
     var nextButtonText: String = ""
     var headerText: String = ""
+    var nextButtonHidden = false
     
     // Action duration
     let removeHiddingduration: Double = 1.2
@@ -86,7 +87,8 @@ class RevisionVerbes: UIViewController {
             self.nextButton.setTitle(nextButtonText, for: UIControlState())
             self.initVerbe()
         }
-        else if(self.verbes.count == 1){ // if just one verbes, don't dysplay the next button
+        // if just one verbes, don't dysplay the next button
+        if(nextButtonHidden){
             self.nextButton.isHidden = true
         }
         

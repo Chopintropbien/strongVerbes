@@ -15,8 +15,12 @@ enum Lang: String{
     case en = "en"
     case es = "es"
     case ru = "ru"
+    case zh = "zh-Hans" // chinees trad
+    case ar = "ar"
+    case it = "it"
+    case ja = "ja"
     
-    static let allValues = [DeviceLanguage, fr, en, es, ru]
+    static let allValues = [DeviceLanguage, fr, en, es, ru, zh, ar, it, ja]
 }
 
 let kNotificationLanguageChanged: String = "kNotificationLanguageChanged";
@@ -78,6 +82,7 @@ class Localisator {
     
     // MARK: - Init method
     init() {
+        print(NSLocale.current.languageCode!)
         if let languageSaved = userDefaults.object(forKey: kSaveLanguageDefaultKey) as? String {
             if languageSaved != "DeviceLanguage" {
                 let l = Lang(rawValue: languageSaved)!
