@@ -257,19 +257,19 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
             
             //             print all the verbes
             
-            func foldl(_ list:Array<String>, base:String) -> String {
-                
-                var result = base
-                
-                for item in list {
-                    
-                    result = result + item
-                    
-                }
-                
-                return result
-                
-            }
+//            func foldl(_ list:Array<String>, base:String) -> String {
+//                
+//                var result = base
+//                
+//                for item in list {
+//                    
+//                    result = result + item
+//                    
+//                }
+//                
+//                return result
+//                
+//            }
             
             
             

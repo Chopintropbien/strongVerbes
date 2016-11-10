@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="ZOU-WQ-dJC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="ZOU-WQ-dJC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <deployment version="4112" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vxj-3R-1jc" customClass="CategoryVerbeButtonPink" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="16" minY="105" width="288" height="25"/>
+                                <rect key="frame" x="16" y="105" width="288" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Ordre aléatoire">
@@ -27,28 +30,28 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classés celon la forme" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u2D-Pz-3sJ" customClass="BasicLabel" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="16" minY="135" width="288" height="21"/>
+                                <rect key="frame" x="16" y="135" width="288" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classés par ordre alphabétique" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dg2-Ue-vEr" customClass="BasicLabel" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="16" minY="346" width="288" height="21"/>
+                                <rect key="frame" x="16" y="346" width="288" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ordre aléatoire" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n1o-oK-XOV" customClass="BasicLabel" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="16" minY="76" width="288" height="21"/>
+                                <rect key="frame" x="16" y="76" width="288" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EYf-Tf-n8e" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="174" minY="289" width="100" height="27"/>
+                                <rect key="frame" x="174" y="289" width="100" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="Faibles irréguliers">
@@ -60,7 +63,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Tvt-fz-qJ5" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="65" minY="289" width="70" height="27"/>
+                                <rect key="frame" x="65" y="289" width="70" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="Inclassables">
@@ -72,7 +75,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nJh-IG-vX6" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="232" minY="245" width="68" height="27"/>
+                                <rect key="frame" x="232" y="245" width="68" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="ie (e) - o - o">
@@ -84,7 +87,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4gM-eS-rb8" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="163" minY="245" width="43" height="27"/>
+                                <rect key="frame" x="163" y="245" width="43" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title=" i– a – u">
@@ -96,7 +99,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CfN-Rk-8uw" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="77" minY="245" width="46" height="27"/>
+                                <rect key="frame" x="77" y="245" width="46" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title=" i – a – o">
@@ -108,7 +111,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jhi-ky-nHT" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="53" minY="199" width="47" height="27"/>
+                                <rect key="frame" x="53" y="199" width="47" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="e – a – o">
@@ -120,7 +123,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WfL-Dg-6MP" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="133" minY="199" width="55" height="27"/>
+                                <rect key="frame" x="133" y="199" width="55" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="ei – ie – ie">
@@ -132,7 +135,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GGp-Xg-hp5" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="232" minY="199" width="45" height="27"/>
+                                <rect key="frame" x="232" y="199" width="45" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title=" ei – i – i">
@@ -144,7 +147,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="z8c-b0-uEy" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="44" minY="164" width="64" height="27"/>
+                                <rect key="frame" x="44" y="164" width="64" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="a – ie (i) – a">
@@ -156,7 +159,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uaP-3b-7dh" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="243" minY="164" width="46" height="27"/>
+                                <rect key="frame" x="243" y="164" width="46" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="e – a - e">
@@ -168,7 +171,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="R0T-CJ-TOy" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="137" minY="164" width="46" height="27"/>
+                                <rect key="frame" x="137" y="164" width="46" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="a – u - a"/>
@@ -178,7 +181,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nLn-Bp-z5K" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="271" minY="511" width="33" height="32"/>
+                                <rect key="frame" x="271" y="511" width="33" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="W-Z">
@@ -190,7 +193,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mTd-UP-usY" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="209" minY="511" width="30" height="32"/>
+                                <rect key="frame" x="209" y="511" width="30" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="U-V">
@@ -202,7 +205,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KFj-fe-VXG" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="132" minY="511" width="48" height="32"/>
+                                <rect key="frame" x="132" y="511" width="48" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="T">
@@ -214,7 +217,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EW0-zF-aRJ" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="82" minY="511" width="36" height="32"/>
+                                <rect key="frame" x="82" y="511" width="36" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="S - 3">
@@ -226,7 +229,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rlq-HW-goc" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="31" minY="511" width="35" height="32"/>
+                                <rect key="frame" x="31" y="511" width="35" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="S - 2">
@@ -238,7 +241,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zpL-Fc-9Ny" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="31" minY="454" width="35" height="32"/>
+                                <rect key="frame" x="31" y="454" width="35" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="H-K">
@@ -250,7 +253,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SV8-nn-TzZ" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="31" minY="407" width="35" height="32"/>
+                                <rect key="frame" x="31" y="407" width="35" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="A">
@@ -262,7 +265,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gdE-fc-g5i" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="78" minY="407" width="36" height="32"/>
+                                <rect key="frame" x="78" y="407" width="36" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="B">
@@ -274,7 +277,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EnQ-3I-2px" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="78" minY="454" width="36" height="32"/>
+                                <rect key="frame" x="78" y="454" width="36" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="L-M">
@@ -286,7 +289,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UlX-zd-dIB" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="267" minY="454" width="33" height="32"/>
+                                <rect key="frame" x="267" y="454" width="33" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="S - 1">
@@ -298,7 +301,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xpc-md-9oX" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="267" minY="407" width="33" height="32"/>
+                                <rect key="frame" x="267" y="407" width="33" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="G">
@@ -310,7 +313,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2rp-Dt-llx" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="209" minY="454" width="30" height="32"/>
+                                <rect key="frame" x="209" y="454" width="30" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="R">
@@ -322,7 +325,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d3v-yZ-Kj0" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="135" minY="454" width="48" height="32"/>
+                                <rect key="frame" x="135" y="454" width="48" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="N-P-Q">
@@ -334,7 +337,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0qv-Jk-Z73" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="137" minY="414" width="48" height="32"/>
+                                <rect key="frame" x="137" y="414" width="48" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="D-E">
@@ -346,7 +349,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IDf-pA-2vn" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="210" minY="407" width="30" height="32"/>
+                                <rect key="frame" x="210" y="407" width="30" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="F">
@@ -407,18 +410,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="revealed" id="kY2-Xn-E96">
-                                <frame key="frameInset" minX="31" minY="194" maxX="31" maxY="102"/>
+                                <rect key="frame" x="31" y="194" width="313" height="371"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voici les verbes forts allemand de la forme a-e-a" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" id="Qmh-pv-Rds" customClass="BasicLabel" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="16" minY="96" width="288" height="18"/>
+                                <rect key="frame" x="16" y="96" width="288" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Essen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" id="4xb-JW-nCn">
-                                <frame key="frameInset" minX="31" minY="194" width="258" height="45"/>
+                                <rect key="frame" x="31" y="194" width="258" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="0.0" y="1" width="1" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -426,7 +429,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Er ass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" id="XRf-wj-mV8">
-                                <frame key="frameInset" minX="31" minY="324" width="258" height="45"/>
+                                <rect key="frame" x="31" y="324" width="258" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="0.0" y="1" width="1" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -434,7 +437,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="er hat gegessen " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" id="MEh-p8-JYU">
-                                <frame key="frameInset" minX="31" minY="389" width="258" height="45"/>
+                                <rect key="frame" x="31" y="389" width="258" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="0.0" y="1" width="1" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -442,7 +445,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Er isst " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" id="q5E-Qa-OI6">
-                                <frame key="frameInset" minX="31" minY="259" width="258" height="45"/>
+                                <rect key="frame" x="31" y="259" width="258" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="0.0" y="1" width="1" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -450,7 +453,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eih-aa-ssl">
-                                <frame key="frameInset" minX="127" minY="474" width="67" height="65"/>
+                                <rect key="frame" x="127" y="474" width="67" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Suivant"/>
@@ -459,22 +462,22 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="24" id="Zhf-Ol-fLH">
-                                <frame key="frameInset" minX="-10" minY="122" width="322" height="39"/>
+                                <rect key="frame" x="-10" y="122" width="322" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="Hlr-ja-4uj">
-                                <frame key="frameInset" minX="31" minY="191" width="258" height="311"/>
+                                <rect key="frame" x="31" y="191" width="258" height="311"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Note_PNG" id="JV7-d6-2rw">
-                                        <frame key="frameInset" minX="8" maxY="8"/>
+                                        <rect key="frame" x="8" y="0.0" width="250" height="303"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pxA-ck-XOA">
-                                        <frame key="frameInset" minX="8" maxY="8"/>
+                                        <rect key="frame" x="8" y="0.0" width="250" height="303"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <state key="normal">
                                             <color key="titleColor" red="0.90260022100000004" green="0.16145703259999999" blue="0.1705301203" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -542,7 +545,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Oui-km-a8A" customClass="LevelButton" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="25" minY="292" width="129" height="108"/>
+                                <rect key="frame" x="25" y="292" width="129" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="B2">
@@ -554,7 +557,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bpy-Xt-mNO" customClass="LevelButton" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="196" minY="298" width="100" height="95"/>
+                                <rect key="frame" x="196" y="298" width="100" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="C1">
@@ -566,7 +569,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nC8-Fa-WLl" customClass="LevelButton" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="187" minY="170" width="94" height="94"/>
+                                <rect key="frame" x="187" y="170" width="94" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="B1">
@@ -578,7 +581,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bem-Gl-IwK" customClass="LevelButton" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="25" minY="170" width="108" height="94"/>
+                                <rect key="frame" x="25" y="170" width="108" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
@@ -591,7 +594,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Qas-Dv-3Hi" customClass="LevelButton" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="95" minY="420" width="120" height="97"/>
+                                <rect key="frame" x="95" y="420" width="120" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Tous niveaux">
@@ -603,7 +606,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="38" text="Choisissez votre niveau d'apprentissage" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" id="vWc-H0-u6c" customClass="BasicLabel" customModule="Verbes_forts" customModuleProvider="target">
-                                <frame key="frameInset" minX="20" minY="99" width="276" height="35"/>
+                                <rect key="frame" x="20" y="99" width="276" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <edgeInsets key="layoutMargins" top="0.0" left="8" bottom="8" right="8"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>

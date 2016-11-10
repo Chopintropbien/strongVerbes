@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9806ABD51D7AACAD006C01C0 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9806ABD41D7AACAD006C01C0 /* iAd.framework */; };
+		98169E511DCD0EE200A1CD09 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98169E4F1DCD0DB300A1CD09 /* iAd.framework */; };
 		981FFA9C1DBBD2E800B63C07 /* Localisator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981FFA9B1DBBD2E800B63C07 /* Localisator.swift */; };
 		981FFAC91DBBE03B00B63C07 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 981FFAC71DBBE03B00B63C07 /* Localizable.strings */; };
 		981FFAD11DBBE1D600B63C07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 981FFACF1DBBE1D600B63C07 /* InfoPlist.strings */; };
@@ -16,7 +16,6 @@
 		98B391BE1D757353001E1AA1 /* RevisionVerbes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B391BD1D757353001E1AA1 /* RevisionVerbes.swift */; };
 		98B79F981D70AD9300A3F94B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B79F971D70AD9300A3F94B /* AppDelegate.swift */; };
 		98B79F9A1D70AD9300A3F94B /* ChooseVerbes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B79F991D70AD9300A3F94B /* ChooseVerbes.swift */; };
-		98B79F9D1D70AD9300A3F94B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B79F9B1D70AD9300A3F94B /* Main.storyboard */; };
 		98B79F9F1D70AD9300A3F94B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B79F9E1D70AD9300A3F94B /* Assets.xcassets */; };
 		98B79FA21D70AD9300A3F94B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B79FA01D70AD9300A3F94B /* LaunchScreen.storyboard */; };
 		98B79FAD1D70AD9300A3F94B /* Verbes_fortsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B79FAC1D70AD9300A3F94B /* Verbes_fortsTests.swift */; };
@@ -340,7 +339,7 @@
 		98ED57F51DA51C80003FF40C /* LevelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ED57F41DA51C80003FF40C /* LevelButton.swift */; };
 		98ED57F71DA8F75E003FF40C /* CategoryVerbeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ED57F61DA8F75E003FF40C /* CategoryVerbeButton.swift */; };
 		98ED57FB1DA9289B003FF40C /* BasicLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ED57FA1DA9289B003FF40C /* BasicLabel.swift */; };
-		98F877901D83EFDE0048721B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F8778F1D83EFDE0048721B /* AVFoundation.framework */; };
+		98F877901D83EFDE0048721B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F8778F1D83EFDE0048721B /* AVFoundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -369,11 +368,8 @@
 		9800FFFD1DC7D94F00615E70 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9800FFFE1DC7D94F00615E70 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9800FFFF1DC7D97B00615E70 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9806ABD41D7AACAD006C01C0 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		98169E4F1DCD0DB300A1CD09 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		981FFA9B1DBBD2E800B63C07 /* Localisator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localisator.swift; sourceTree = "<group>"; };
-		981FFAC21DBBDFB600B63C07 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = fr; path = fr.lproj/Main.storyboard; sourceTree = "<group>"; };
-		981FFAC31DBBDFB600B63C07 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/Main.storyboard; sourceTree = "<group>"; };
-		981FFAC41DBBDFB600B63C07 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = es; path = es.lproj/Main.storyboard; sourceTree = "<group>"; };
 		981FFAC61DBBDFC200B63C07 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		981FFAC81DBBE03B00B63C07 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		981FFACA1DBBE06400B63C07 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -727,8 +723,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98169E511DCD0EE200A1CD09 /* iAd.framework in Frameworks */,
 				98F877901D83EFDE0048721B /* AVFoundation.framework in Frameworks */,
-				9806ABD51D7AACAD006C01C0 /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -749,15 +745,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98169E4E1DCD0DB300A1CD09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98169E4F1DCD0DB300A1CD09 /* iAd.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		98B79F8B1D70AD9300A3F94B = {
 			isa = PBXGroup;
 			children = (
 				98F8778F1D83EFDE0048721B /* AVFoundation.framework */,
-				9806ABD41D7AACAD006C01C0 /* iAd.framework */,
 				98B79F961D70AD9300A3F94B /* Verbes forts */,
 				98B79FAB1D70AD9300A3F94B /* Verbes fortsTests */,
 				98B79FB61D70AD9300A3F94B /* Verbes fortsUITests */,
 				98B79F951D70AD9300A3F94B /* Products */,
+				98169E4E1DCD0DB300A1CD09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1235,7 +1239,7 @@
 				};
 			};
 			buildConfigurationList = 98B79F8F1D70AD9300A3F94B /* Build configuration list for PBXProject "Verbes forts" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -1550,7 +1554,6 @@
 				98ED57701DA29888003FF40C /* reiben.mp3 in Resources */,
 				98ED571E1DA29888003FF40C /* erkiesen.mp3 in Resources */,
 				98ED57BC1DA29888003FF40C /* unternehmen.mp3 in Resources */,
-				98B79F9D1D70AD9300A3F94B /* Main.storyboard in Resources */,
 				98ED57961DA29888003FF40C /* sehen.mp3 in Resources */,
 				98ED56C61DA29888003FF40C /* annehmen.mp3 in Resources */,
 				98ED56BF1DA29888003FF40C /* anbieten.mp3 in Resources */,
@@ -1690,9 +1693,6 @@
 		98B79F9B1D70AD9300A3F94B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				981FFAC21DBBDFB600B63C07 /* fr */,
-				981FFAC31DBBDFB600B63C07 /* ru */,
-				981FFAC41DBBDFB600B63C07 /* es */,
 				981FFAD61DBBEACD00B63C07 /* en */,
 			);
 			name = Main.storyboard;
@@ -1751,7 +1751,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1796,7 +1796,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
