@@ -13,6 +13,7 @@
 		981FFAD11DBBE1D600B63C07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 981FFACF1DBBE1D600B63C07 /* InfoPlist.strings */; };
 		983E2D511D9A514600D26E05 /* ChooseLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983E2D501D9A514600D26E05 /* ChooseLevel.swift */; };
 		983E2D531D9A59B000D26E05 /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983E2D521D9A59B000D26E05 /* GlobalSettings.swift */; };
+		98999E871DE32EB400C50B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98999E861DE32EB400C50B56 /* Main.storyboard */; };
 		98B391BE1D757353001E1AA1 /* RevisionVerbes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B391BD1D757353001E1AA1 /* RevisionVerbes.swift */; };
 		98B79F981D70AD9300A3F94B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B79F971D70AD9300A3F94B /* AppDelegate.swift */; };
 		98B79F9A1D70AD9300A3F94B /* ChooseVerbes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B79F991D70AD9300A3F94B /* ChooseVerbes.swift */; };
@@ -379,11 +380,11 @@
 		981FFAD31DBBE21400B63C07 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		981FFAD41DBBE25D00B63C07 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		981FFAD51DBBE26600B63C07 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		981FFAD61DBBEACD00B63C07 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 		983E2D501D9A514600D26E05 /* ChooseLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseLevel.swift; sourceTree = "<group>"; };
 		983E2D521D9A59B000D26E05 /* GlobalSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
 		985EF2231DCA98C100772655 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		985EF2241DCA98C100772655 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		98999E861DE32EB400C50B56 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		98B391BD1D757353001E1AA1 /* RevisionVerbes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevisionVerbes.swift; sourceTree = "<group>"; };
 		98B79F941D70AD9300A3F94B /* Verbes forts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Verbes forts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B79F971D70AD9300A3F94B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -784,9 +785,9 @@
 				983E2D521D9A59B000D26E05 /* GlobalSettings.swift */,
 				983E2D501D9A514600D26E05 /* ChooseLevel.swift */,
 				98B79F991D70AD9300A3F94B /* ChooseVerbes.swift */,
+				98999E861DE32EB400C50B56 /* Main.storyboard */,
 				98B391BD1D757353001E1AA1 /* RevisionVerbes.swift */,
 				98E172A51D740C5900131633 /* Verbes.swift */,
-				98B79F9B1D70AD9300A3F94B /* Main.storyboard */,
 				98B79F9E1D70AD9300A3F94B /* Assets.xcassets */,
 				98B79FA01D70AD9300A3F94B /* LaunchScreen.storyboard */,
 				98B79FA31D70AD9300A3F94B /* Info.plist */,
@@ -1349,6 +1350,7 @@
 				98ED57211DA29888003FF40C /* erscheinen.mp3 in Resources */,
 				98ED57611DA29888003FF40C /* melken.mp3 in Resources */,
 				98ED57971DA29888003FF40C /* sein.mp3 in Resources */,
+				98999E871DE32EB400C50B56 /* Main.storyboard in Resources */,
 				98ED57C11DA29888003FF40C /* verbringen.mp3 in Resources */,
 				98ED57581DA29888003FF40C /* lassen.mp3 in Resources */,
 				98ED56F61DA29888003FF40C /* blasen.mp3 in Resources */,
@@ -1688,14 +1690,6 @@
 				985EF2231DCA98C100772655 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		98B79F9B1D70AD9300A3F94B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				981FFAD61DBBEACD00B63C07 /* en */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		98B79FA01D70AD9300A3F94B /* LaunchScreen.storyboard */ = {

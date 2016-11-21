@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vDD-2c-dTx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Les verbes forts-->
+        <scene sceneID="KrX-he-937">
+            <objects>
+                <viewController storyboardIdentifier="ChooseVerbes" id="Yxc-Ok-vvi" customClass="ChooseVerbes" customModule="Verbes_forts" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7BM-p9-dqi"/>
+                        <viewControllerLayoutGuide type="bottom" id="GXh-tI-0i6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6BT-Z6-fw5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWE-41-ARL" customClass="CategoryVerbeButtonPink" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="16" y="105" width="288" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Ordre aléatoire">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="zJv-eR-fJ8"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="random" id="Uwh-mj-Jig"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Classés celon la forme" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ypg-5B-E5U" customClass="BasicLabel" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="16" y="135" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Classés par ordre alphabétique" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TH1-k5-e6g" customClass="BasicLabel" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="16" y="346" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ordre aléatoire" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTO-NC-xVR" customClass="BasicLabel" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="16" y="76" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9a0-ho-6GV" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="174" y="289" width="100" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Faibles irréguliers">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="ifL-07-FG0"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="weak" id="qTP-7f-b76"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXn-Wv-zXQ" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="65" y="289" width="70" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Inclassables">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="lpo-Eu-hoE"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="undefine" id="OVB-2w-F0z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZK-cY-bEa" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="232" y="245" width="68" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="ie (e) - o - o">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="X5k-Fr-9BS"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="ie(e)-o-o" id="koA-5W-fPl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJf-kK-NMb" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="163" y="245" width="43" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title=" i– a – u">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="Xjs-rt-fKg"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="i-a-u" id="oob-W9-daI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KhF-dh-qvX" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="77" y="245" width="46" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title=" i – a – o">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="sqe-ft-3Cs"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="i-a-o" id="WEC-t9-omu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qe4-iu-RLm" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="53" y="199" width="47" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="e – a – o">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="ICX-nz-e8C"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="e-a-o" id="vVI-EL-vLS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGe-tr-qsB" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="133" y="199" width="55" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="ei – ie – ie">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="F4C-Ua-Yvi"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="ei-ie-ie" id="Aut-E2-uQ1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeN-fT-7zs" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="232" y="199" width="45" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title=" ei – i – i">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="yyh-fK-KHv"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="ei-i-i" id="Ojc-6A-eL5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0m-bf-Rh8" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="44" y="164" width="64" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="a – ie (i) – a">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="0sY-Ab-6Ic"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="a–ie(i)–a" id="TWS-Z6-ZlQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eur-Br-avM" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="243" y="164" width="46" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="e – a - e">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="FMD-99-OKX"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="e-a-e" id="Xun-dk-Aj8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4b-jp-Ecc" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="137" y="164" width="46" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="a – u - a"/>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="bXy-33-YOj"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="a-u-a" id="E98-ye-M3t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tc-HG-6tT" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="271" y="511" width="33" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="W-Z">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="LLe-MD-T5u"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="w-z" id="8V9-nZ-Yyu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OsG-wB-Bd5" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="209" y="511" width="30" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="U-V">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="WgI-lM-fa4"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="u-ü-v" id="sXg-Oz-2Lh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkH-rL-2Et" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="132" y="511" width="48" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="T">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="YSL-Yq-Qhv"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="t" id="oIk-Wh-nwE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajj-gl-00f" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="82" y="511" width="36" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="S - 3">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="YjT-ZO-WWR"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="si-so-sp-st" id="1rx-if-2HX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eF9-cF-WkK" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="31" y="511" width="35" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="S - 2">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="FbQ-gi-qMA"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="schn-schr-schw-se" id="jsa-3d-6Gy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOg-bt-6qd" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="31" y="454" width="35" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="H-K">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="wPf-GN-poT"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="h-k" id="oR4-NL-Yrt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UxX-9p-RGn" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="31" y="407" width="35" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="A">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="G9d-QP-uZS"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="a" id="23I-7x-LWg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etI-Dg-l2k" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="78" y="407" width="36" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="B">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="p6X-4D-Qcb"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="b" id="CSV-dD-LAi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLG-Xp-vcG" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="78" y="454" width="36" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="L-M">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="SRG-Cg-n3U"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="l-m" id="a7g-za-vGK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gz-yS-K5j" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="267" y="454" width="33" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="S - 1">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="A85-MO-whY"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="sa-sche-schi-schl-schm" id="3KQ-Eg-MId"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pl6-zv-gtG" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="267" y="407" width="33" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="G">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="Ktg-DR-f4G"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="g" id="Ha6-6V-Awy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIj-tL-RmN" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="209" y="454" width="30" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="R">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="Aqa-do-qtg"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="r" id="Iwp-yS-aag"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I9m-em-kxZ" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="135" y="454" width="48" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="N-P-Q">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="kMY-64-H5s"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="n-p-q" id="88l-Zv-lbv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHk-aM-wxT" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="137" y="414" width="48" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="D-E">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="KRV-eD-m1F"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="d-e" id="5y1-it-h16"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozc-MR-TFE" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="210" y="407" width="30" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="F">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getViewVerbes:" destination="Yxc-Ok-vvi" eventType="touchUpInside" id="wa9-DP-nrW"/>
+                                    <segue destination="NWz-Re-UIZ" kind="push" identifier="f" id="hvd-gx-1vT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Les verbes forts" id="c7w-r9-8Rc"/>
+                    <connections>
+                        <outlet property="AButton" destination="UxX-9p-RGn" id="EFg-Xg-MGB"/>
+                        <outlet property="BButton" destination="etI-Dg-l2k" id="2Em-Sq-L7H"/>
+                        <outlet property="DEButton" destination="CHk-aM-wxT" id="0qh-ve-fDK"/>
+                        <outlet property="FButton" destination="ozc-MR-TFE" id="v0U-7R-dqh"/>
+                        <outlet property="GButton" destination="Pl6-zv-gtG" id="nda-3r-F8d"/>
+                        <outlet property="HKButton" destination="dOg-bt-6qd" id="bHh-pw-yMu"/>
+                        <outlet property="LMButton" destination="bLG-Xp-vcG" id="Ac0-be-oOn"/>
+                        <outlet property="NPQButton" destination="I9m-em-kxZ" id="TII-a5-9bq"/>
+                        <outlet property="RButton" destination="OIj-tL-RmN" id="kEe-N1-B6b"/>
+                        <outlet property="S1Button" destination="1gz-yS-K5j" id="Xnf-ic-Ee9"/>
+                        <outlet property="S2Button" destination="eF9-cF-WkK" id="ubi-f1-uYt"/>
+                        <outlet property="S3Button" destination="Ajj-gl-00f" id="BQR-w0-xJ7"/>
+                        <outlet property="TButton" destination="jkH-rL-2Et" id="eES-7Y-kre"/>
+                        <outlet property="UVButton" destination="OsG-wB-Bd5" id="ks5-Q4-oiT"/>
+                        <outlet property="WZButton" destination="1tc-HG-6tT" id="5SI-jb-AWJ"/>
+                        <outlet property="aieaButton" destination="G0m-bf-Rh8" id="Zip-wQ-LrU"/>
+                        <outlet property="alphabeticOrderLabel" destination="TH1-k5-e6g" id="N7Z-9s-9Pq"/>
+                        <outlet property="auaButton" destination="B4b-jp-Ecc" id="C9m-el-sq5"/>
+                        <outlet property="eaeButton" destination="eur-Br-avM" id="inq-4c-liM"/>
+                        <outlet property="eaoButton" destination="qe4-iu-RLm" id="ehp-I7-GCH"/>
+                        <outlet property="eiieieButton" destination="pGe-tr-qsB" id="tcg-ff-Rg7"/>
+                        <outlet property="eiiiButton" destination="PeN-fT-7zs" id="4Yh-vY-bb6"/>
+                        <outlet property="eiooButton" destination="YZK-cY-bEa" id="nFe-EI-ter"/>
+                        <outlet property="formOrderLabel" destination="Ypg-5B-E5U" id="Ogq-UL-7r5"/>
+                        <outlet property="iaoButton" destination="KhF-dh-qvX" id="MJo-Lb-E7m"/>
+                        <outlet property="iauButton" destination="rJf-kK-NMb" id="eL4-DS-dLj"/>
+                        <outlet property="randomOrderButton" destination="sWE-41-ARL" id="13A-8X-YZm"/>
+                        <outlet property="randomOrderLabel" destination="mTO-NC-xVR" id="zfg-QT-yRb"/>
+                        <outlet property="unclassable" destination="aXn-Wv-zXQ" id="5tK-aC-Uzf"/>
+                        <outlet property="weakIregular" destination="9a0-ho-6GV" id="1m3-0P-oMV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OU8-2s-fMG" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="922"/>
+        </scene>
+        <!--Revision Verbes-->
+        <scene sceneID="cFC-Rp-LQ8">
+            <objects>
+                <viewController storyboardIdentifier="RevisionVerbes" id="NWz-Re-UIZ" customClass="RevisionVerbes" customModule="Verbes_forts" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zHB-h6-Fvx"/>
+                        <viewControllerLayoutGuide type="bottom" id="qIr-in-w5F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V3W-td-1HN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="revealed" translatesAutoresizingMaskIntoConstraints="NO" id="HTa-z2-w9j">
+                                <rect key="frame" x="31" y="194" width="313" height="371"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Voici les verbes forts allemand de la forme a-e-a" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="LLa-ik-bSu" customClass="BasicLabel" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="16" y="96" width="288" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Essen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eZe-DN-hZW">
+                                <rect key="frame" x="31" y="194" width="258" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.0" y="1" width="1" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Er ass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fcq-Wq-YQm">
+                                <rect key="frame" x="31" y="324" width="258" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.0" y="1" width="1" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="er hat gegessen " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K1H-DR-jk5">
+                                <rect key="frame" x="31" y="389" width="258" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.0" y="1" width="1" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Er isst " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aS0-ni-RLm">
+                                <rect key="frame" x="31" y="259" width="258" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.0" y="1" width="1" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24S-WN-bp4">
+                                <rect key="frame" x="127" y="474" width="67" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Suivant"/>
+                                <connections>
+                                    <action selector="showNextVerbe" destination="NWz-Re-UIZ" eventType="touchUpInside" id="yRQ-XS-J9y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Manger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="Pim-VV-H76">
+                                <rect key="frame" x="-10" y="122" width="322" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JsF-Ca-Yqh">
+                                <rect key="frame" x="31" y="191" width="258" height="311"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Note_PNG" translatesAutoresizingMaskIntoConstraints="NO" id="6jd-Dx-7Kj">
+                                        <rect key="frame" x="8" y="0.0" width="250" height="303"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa2-eD-6Er">
+                                        <rect key="frame" x="8" y="0.0" width="250" height="303"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.90260022100000004" green="0.16145703259999999" blue="0.1705301203" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showVerbe" destination="NWz-Re-UIZ" eventType="touchUpInside" id="LmT-0S-ZIW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="dla-lC-sxV"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="M14-i0-OQC">
+                        <barButtonItem key="rightBarButtonItem" title="🔔" id="Ie4-Xo-jdJ">
+                            <connections>
+                                <action selector="changeSound:" destination="NWz-Re-UIZ" id="D7K-xU-pKt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="headerLabel" destination="LLa-ik-bSu" id="czs-Op-JPK"/>
+                        <outlet property="hiddingButton" destination="Qa2-eD-6Er" id="Im7-7G-Dpd"/>
+                        <outlet property="hiddingImage" destination="6jd-Dx-7Kj" id="fBO-lK-vUM"/>
+                        <outlet property="infinitifLabel" destination="eZe-DN-hZW" id="cfU-I6-zcN"/>
+                        <outlet property="nextButton" destination="24S-WN-bp4" id="Ffv-u3-KG1"/>
+                        <outlet property="parfaitLabel" destination="K1H-DR-jk5" id="Swh-gD-dCX"/>
+                        <outlet property="presentLabel" destination="aS0-ni-RLm" id="bmG-Df-0OT"/>
+                        <outlet property="preteritLabel" destination="fcq-Wq-YQm" id="zC9-lS-jJY"/>
+                        <outlet property="revealedImage" destination="HTa-z2-w9j" id="a57-vz-AaI"/>
+                        <outlet property="soundButton" destination="Ie4-Xo-jdJ" id="5of-rA-sEZ"/>
+                        <outlet property="superViewHiddingButton" destination="JsF-Ca-Yqh" id="Z19-yF-1Hq"/>
+                        <outlet property="translationLabel" destination="Pim-VV-H76" id="fW8-Aj-p2d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s09-VB-BeF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1494" y="922"/>
+        </scene>
+        <!--My Navigation Controller-->
+        <scene sceneID="jM1-sq-kue">
+            <objects>
+                <navigationController id="vDD-2c-dTx" customClass="MyNavigationController" customModule="Verbes_forts" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vsl-fo-ZVK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Tmd-tX-WiS" kind="relationship" relationship="rootViewController" id="hR1-ng-TrN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Fy-L2-2aT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-954" y="922"/>
+        </scene>
+        <!--Les verbes forts-->
+        <scene sceneID="igh-FL-rF0">
+            <objects>
+                <viewController storyboardIdentifier="ChooseLevel" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tmd-tX-WiS" customClass="ChooseLevel" customModule="Verbes_forts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OGZ-6P-mfY"/>
+                        <viewControllerLayoutGuide type="bottom" id="zC6-bs-j8g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="udu-s3-Q4e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGe-KK-bM6" customClass="LevelButton" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="25" y="292" width="129" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="B2">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Yxc-Ok-vvi" kind="push" identifier="B2" id="mVz-GI-n76"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUp-4M-Weh" customClass="LevelButton" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="196" y="298" width="100" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="C1">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Yxc-Ok-vvi" kind="push" identifier="C1" id="gud-Tr-Cp4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1J-U8-rH2" customClass="LevelButton" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="187" y="170" width="94" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="B1">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Yxc-Ok-vvi" kind="push" identifier="B1" id="sy4-h5-soc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQW-yZ-Haf" customClass="LevelButton" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="25" y="170" width="108" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="A2">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Yxc-Ok-vvi" kind="push" identifier="A2" id="GkX-we-4Zy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3c-Ke-ZL6" customClass="LevelButton" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="95" y="420" width="120" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Tous niveaux">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Yxc-Ok-vvi" kind="push" identifier="All" id="tti-z7-aoJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="38" text="Choisissez votre niveau d'apprentissage" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="3Nc-4p-IwV" customClass="BasicLabel" customModule="Verbes_forts" customModuleProvider="target">
+                                <rect key="frame" x="20" y="99" width="276" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <edgeInsets key="layoutMargins" top="0.0" left="8" bottom="8" right="8"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.90260022100000004" green="0.16145703259999999" blue="0.1705301203" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Les verbes forts" id="yg8-V5-2n2">
+                        <barButtonItem key="rightBarButtonItem" title="Language" id="sng-ra-7RY">
+                            <connections>
+                                <action selector="showLanguageMenu:" destination="Tmd-tX-WiS" id="GkI-eo-Khb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="A2LevelButton" destination="cQW-yZ-Haf" id="hP5-Fs-DJU"/>
+                        <outlet property="B1LevelButton" destination="N1J-U8-rH2" id="Uyd-GE-9bu"/>
+                        <outlet property="B2LevelButton" destination="qGe-KK-bM6" id="tDn-6H-Qlh"/>
+                        <outlet property="C1LevelButton" destination="zUp-4M-Weh" id="tfm-u5-R4y"/>
+                        <outlet property="allLevelButton" destination="p3c-Ke-ZL6" id="Qb0-bM-E4f"/>
+                        <outlet property="selectLevelLabel" destination="3Nc-4p-IwV" id="9jj-CZ-HJy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WGM-pt-BKc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-217" y="922"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Note_PNG" width="621" height="717"/>
+        <image name="revealed" width="621" height="717"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="tti-z7-aoJ"/>
+        <segue reference="vVI-EL-vLS"/>
+    </inferredMetricsTieBreakers>
+</document>
