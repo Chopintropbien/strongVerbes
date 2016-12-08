@@ -40,7 +40,7 @@ class CategoryVerbeButtonPink: CategoryVerbeButton{
     }
 }
 
-
+@IBDesignable
 class CategoryVerbeButtonWhite: CategoryVerbeButton {
     override func layoutSubviews(){
         super.layoutSubviews()

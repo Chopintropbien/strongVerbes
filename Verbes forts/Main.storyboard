@@ -408,7 +408,7 @@
         <!--Revision Verbes-->
         <scene sceneID="cFC-Rp-LQ8">
             <objects>
-                <viewController storyboardIdentifier="RevisionVerbes" id="NWz-Re-UIZ" customClass="RevisionVerbes" customModule="Verbes_forts" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RevisionVerbes" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NWz-Re-UIZ" customClass="RevisionVerbes" customModule="Verbes_forts" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zHB-h6-Fvx"/>
                         <viewControllerLayoutGuide type="bottom" id="qIr-in-w5F"/>
@@ -496,12 +496,22 @@
                                     </button>
                                 </subviews>
                             </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vol-Cv-MSz">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <connections>
+                                    <segue destination="GPK-XN-cKr" kind="embed" identifier="askInAppPurschaseSegue" id="pfz-OZ-6TR"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qIr-in-w5F" firstAttribute="top" secondItem="Vol-Cv-MSz" secondAttribute="bottom" id="0pd-E2-HOM"/>
+                            <constraint firstItem="Vol-Cv-MSz" firstAttribute="top" secondItem="zHB-h6-Fvx" secondAttribute="bottom" id="BhL-S6-pak"/>
+                            <constraint firstItem="Vol-Cv-MSz" firstAttribute="leading" secondItem="V3W-td-1HN" secondAttribute="leading" id="jxG-TM-Sgc"/>
+                            <constraint firstAttribute="trailing" secondItem="Vol-Cv-MSz" secondAttribute="trailing" id="yiW-Om-gb8"/>
+                        </constraints>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem title="Item" id="dla-lC-sxV"/>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="M14-i0-OQC">
                         <barButtonItem key="rightBarButtonItem" title="🔔" id="Ie4-Xo-jdJ">
                             <connections>
@@ -510,6 +520,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="askInAppPurschaseView" destination="Vol-Cv-MSz" id="Twl-4M-noV"/>
                         <outlet property="headerLabel" destination="LLa-ik-bSu" id="czs-Op-JPK"/>
                         <outlet property="hiddingButton" destination="Qa2-eD-6Er" id="Im7-7G-Dpd"/>
                         <outlet property="hiddingImage" destination="6jd-Dx-7Kj" id="fBO-lK-vUM"/>
@@ -526,7 +537,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s09-VB-BeF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1494" y="922"/>
+            <point key="canvasLocation" x="1493.5999999999999" y="921.58920539730138"/>
         </scene>
         <!--My Navigation Controller-->
         <scene sceneID="jM1-sq-kue">
@@ -649,6 +660,68 @@
             </objects>
             <point key="canvasLocation" x="-217" y="922"/>
         </scene>
+        <!--Ask In App Purschase-->
+        <scene sceneID="sLf-fM-ics">
+            <objects>
+                <viewController id="GPK-XN-cKr" customClass="AskInAppPurschase" customModule="Verbes_forts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SrJ-PN-5fM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aoc-F5-iTV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Voullez-vous apprendre plus de verbe? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYJ-BX-hyh" customClass="BasicLabel" customModule="Verbes_forts" customModuleProvider="target">
+                                        <rect key="frame" x="36" y="45" width="302" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Accédez à tous les verbes du niveau A2 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzg-V3-50I" customClass="BasicLabelBig" customModule="Verbes_forts" customModuleProvider="target">
+                                        <rect key="frame" x="23" y="172" width="328" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Accédez acces à TOUS les verbes de TOUS les niveaux " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZS-wG-xvI" customClass="BasicLabelBig" customModule="Verbes_forts" customModuleProvider="target">
+                                        <rect key="frame" x="-12" y="387" width="418" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwI-lR-YOu" customClass="OrSeparator" customModule="Verbes_forts" customModuleProvider="target">
+                                        <rect key="frame" x="166" y="291" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="aoc-F5-iTV" secondAttribute="trailing" id="NYA-59-13u"/>
+                            <constraint firstItem="aoc-F5-iTV" firstAttribute="top" secondItem="SrJ-PN-5fM" secondAttribute="top" id="Pjn-wa-gWZ"/>
+                            <constraint firstItem="aoc-F5-iTV" firstAttribute="leading" secondItem="SrJ-PN-5fM" secondAttribute="leading" id="Xkt-3l-29F"/>
+                            <constraint firstAttribute="bottom" secondItem="aoc-F5-iTV" secondAttribute="bottom" id="XuS-aw-Lfr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="aoc-F5-iTV" id="qjG-0M-Qgp"/>
+                        <outlet property="explainationBuy1LevelLabel" destination="jzg-V3-50I" id="gPZ-jc-xnM"/>
+                        <outlet property="explainationBuyAllLevelLabel" destination="YZS-wG-xvI" id="Op2-JH-1hn"/>
+                        <outlet property="orLabel" destination="XwI-lR-YOu" id="zIv-hD-rii"/>
+                        <outlet property="titleLabel" destination="VYJ-BX-hyh" id="j49-Lq-NIy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rpl-tf-SfA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2364" y="921.58920539730138"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Note_PNG" width="621" height="717"/>
@@ -656,6 +729,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="tti-z7-aoJ"/>
-        <segue reference="vVI-EL-vLS"/>
+        <segue reference="qTP-7f-b76"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -13,6 +13,12 @@ import AVFoundation
 
 class RevisionVerbes: UIViewController {
     
+    var level: Level!
+    var form: Form?
+    var letter: LetterButton?
+    
+    
+    @IBOutlet weak var askInAppPurschaseView: UIView!
     // Text
 
     var verbes: [Verbe] = []
@@ -74,9 +80,9 @@ class RevisionVerbes: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
 
+        /* If have access  */
+        
         // display the correct sounds button
         if(sounds){ soundButton.title = "🔔"}
         else{ soundButton.title = "🔕"}
@@ -280,10 +286,37 @@ class RevisionVerbes: UIViewController {
         
         return screenWidth * (CGFloat(w)/designWidth)
     }
+
+    // for the container view
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "askInAppPurschaseSegue") {
+            let askInAppPurschase = segue.destination as! AskInAppPurschase
+            
+            askInAppPurschase.upperView = askInAppPurschaseView
+            askInAppPurschase.level = self.level
+            
+            if let form = self.form{
+                askInAppPurschase.form = form
+            }
+            if let letter = self.letter{
+                askInAppPurschase.letter = letter
+            }
+            
+        }
+    }
     
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

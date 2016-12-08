@@ -9,7 +9,7 @@
 import Foundation
 import AVFoundation
 
-enum Form: String { // 11
+public enum Form: String { // 11
     case aiea = "a–ie(i)–a"
     case aua = "a-u-a"
     case eae = "e-a-e"
@@ -26,7 +26,7 @@ enum Form: String { // 11
 }
 
 // c'est pas beau du tout, mais d'un coté ils n'accepte pas
-enum LetterButton: String{
+public enum LetterButton: String{
     case A = "a"
     case B = "b"
     case DE = "d-e"
@@ -46,7 +46,7 @@ enum LetterButton: String{
     static let allValues = [A, B, DE, F, G, HK, LM, NPQ, R, S1, S2, S3, T, UV, WZ]
 }
 
-enum Level: String{
+public enum Level: String{
     case A2 = "A2"
     case B1 = "B1"
     case B2 = "B2"

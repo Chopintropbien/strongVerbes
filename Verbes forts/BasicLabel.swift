@@ -21,3 +21,17 @@ class BasicLabel: UILabel {
     }
     
 }
+
+@IBDesignable
+class BasicLabelBig: UILabel {
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        self.font = UIFont(name: "Avenir-Black", size: 16)
+        self.textColor = UIColor.darkGray
+        self.textAlignment = .center
+        
+    }
+    
+}

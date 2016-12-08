@@ -11,9 +11,15 @@
 		981FFA9C1DBBD2E800B63C07 /* Localisator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981FFA9B1DBBD2E800B63C07 /* Localisator.swift */; };
 		981FFAC91DBBE03B00B63C07 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 981FFAC71DBBE03B00B63C07 /* Localizable.strings */; };
 		981FFAD11DBBE1D600B63C07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 981FFACF1DBBE1D600B63C07 /* InfoPlist.strings */; };
+		9827BD651DE8A23100A4912D /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9827BD641DE8A23100A4912D /* IAPHelper.swift */; };
+		9827BD671DE8A59B00A4912D /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9827BD661DE8A59B00A4912D /* Products.swift */; };
+		9827BD6A1DE9814300A4912D /* BuyLevelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9827BD691DE9814300A4912D /* BuyLevelButton.swift */; };
+		9827BD6E1DE984BA00A4912D /* OrSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9827BD6D1DE984BA00A4912D /* OrSeparator.swift */; };
 		983E2D511D9A514600D26E05 /* ChooseLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983E2D501D9A514600D26E05 /* ChooseLevel.swift */; };
 		983E2D531D9A59B000D26E05 /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983E2D521D9A59B000D26E05 /* GlobalSettings.swift */; };
+		984373C41DE9AA5100B2BF1D /* SelectPlusExplainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984373C31DE9AA5100B2BF1D /* SelectPlusExplainButton.swift */; };
 		98999E871DE32EB400C50B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98999E861DE32EB400C50B56 /* Main.storyboard */; };
+		98999E891DE3338C00C50B56 /* AskInAppPurschase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98999E881DE3338C00C50B56 /* AskInAppPurschase.swift */; };
 		98B391BE1D757353001E1AA1 /* RevisionVerbes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B391BD1D757353001E1AA1 /* RevisionVerbes.swift */; };
 		98B79F981D70AD9300A3F94B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B79F971D70AD9300A3F94B /* AppDelegate.swift */; };
 		98B79F9A1D70AD9300A3F94B /* ChooseVerbes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B79F991D70AD9300A3F94B /* ChooseVerbes.swift */; };
@@ -380,11 +386,17 @@
 		981FFAD31DBBE21400B63C07 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		981FFAD41DBBE25D00B63C07 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		981FFAD51DBBE26600B63C07 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9827BD641DE8A23100A4912D /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
+		9827BD661DE8A59B00A4912D /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		9827BD691DE9814300A4912D /* BuyLevelButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyLevelButton.swift; sourceTree = "<group>"; };
+		9827BD6D1DE984BA00A4912D /* OrSeparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrSeparator.swift; sourceTree = "<group>"; };
 		983E2D501D9A514600D26E05 /* ChooseLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseLevel.swift; sourceTree = "<group>"; };
 		983E2D521D9A59B000D26E05 /* GlobalSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
+		984373C31DE9AA5100B2BF1D /* SelectPlusExplainButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPlusExplainButton.swift; sourceTree = "<group>"; };
 		985EF2231DCA98C100772655 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		985EF2241DCA98C100772655 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		98999E861DE32EB400C50B56 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		98999E881DE3338C00C50B56 /* AskInAppPurschase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AskInAppPurschase.swift; sourceTree = "<group>"; };
 		98B391BD1D757353001E1AA1 /* RevisionVerbes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevisionVerbes.swift; sourceTree = "<group>"; };
 		98B79F941D70AD9300A3F94B /* Verbes forts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Verbes forts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B79F971D70AD9300A3F94B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -754,6 +766,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9827BD681DE9807600A4912D /* CustomViewObjects */ = {
+			isa = PBXGroup;
+			children = (
+				9827BD6C1DE9842B00A4912D /* Label */,
+				9827BD6B1DE9842400A4912D /* Button */,
+			);
+			name = CustomViewObjects;
+			sourceTree = "<group>";
+		};
+		9827BD6B1DE9842400A4912D /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				984373C31DE9AA5100B2BF1D /* SelectPlusExplainButton.swift */,
+				98ED57F41DA51C80003FF40C /* LevelButton.swift */,
+				9827BD691DE9814300A4912D /* BuyLevelButton.swift */,
+				98ED57F61DA8F75E003FF40C /* CategoryVerbeButton.swift */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		9827BD6C1DE9842B00A4912D /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				98ED57FA1DA9289B003FF40C /* BasicLabel.swift */,
+				9827BD6D1DE984BA00A4912D /* OrSeparator.swift */,
+			);
+			name = Label;
+			sourceTree = "<group>";
+		};
 		98B79F8B1D70AD9300A3F94B = {
 			isa = PBXGroup;
 			children = (
@@ -779,6 +820,7 @@
 		98B79F961D70AD9300A3F94B /* Verbes forts */ = {
 			isa = PBXGroup;
 			children = (
+				9827BD681DE9807600A4912D /* CustomViewObjects */,
 				981FFACF1DBBE1D600B63C07 /* InfoPlist.strings */,
 				981FFAC71DBBE03B00B63C07 /* Localizable.strings */,
 				98D4DE331D8B2BCE00F41E87 /* Library */,
@@ -787,6 +829,7 @@
 				98B79F991D70AD9300A3F94B /* ChooseVerbes.swift */,
 				98999E861DE32EB400C50B56 /* Main.storyboard */,
 				98B391BD1D757353001E1AA1 /* RevisionVerbes.swift */,
+				98999E881DE3338C00C50B56 /* AskInAppPurschase.swift */,
 				98E172A51D740C5900131633 /* Verbes.swift */,
 				98B79F9E1D70AD9300A3F94B /* Assets.xcassets */,
 				98B79FA01D70AD9300A3F94B /* LaunchScreen.storyboard */,
@@ -794,9 +837,6 @@
 				98B79F971D70AD9300A3F94B /* AppDelegate.swift */,
 				98D4DE381D8B2C2C00F41E87 /* MyNavigationController.swift */,
 				98D4DE3A1D8B2D5400F41E87 /* ChooseLangMenu.swift */,
-				98ED57F41DA51C80003FF40C /* LevelButton.swift */,
-				98ED57F61DA8F75E003FF40C /* CategoryVerbeButton.swift */,
-				98ED57FA1DA9289B003FF40C /* BasicLabel.swift */,
 			);
 			path = "Verbes forts";
 			sourceTree = "<group>";
@@ -826,6 +866,8 @@
 				98D4DE341D8B2BF300F41E87 /* ENSideMenu.swift */,
 				98D4DE361D8B2C1100F41E87 /* ENSideMenuNavigationController.swift */,
 				981FFA9B1DBBD2E800B63C07 /* Localisator.swift */,
+				9827BD641DE8A23100A4912D /* IAPHelper.swift */,
+				9827BD661DE8A59B00A4912D /* Products.swift */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -1218,6 +1260,10 @@
 		98B79F8C1D70AD9300A3F94B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					dd,
+					qq,
+				);
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Lauriane Mollier";
@@ -1611,18 +1657,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9827BD6E1DE984BA00A4912D /* OrSeparator.swift in Sources */,
 				981FFA9C1DBBD2E800B63C07 /* Localisator.swift in Sources */,
 				98D4DE351D8B2BF300F41E87 /* ENSideMenu.swift in Sources */,
 				983E2D511D9A514600D26E05 /* ChooseLevel.swift in Sources */,
 				98D4DE391D8B2C2C00F41E87 /* MyNavigationController.swift in Sources */,
+				984373C41DE9AA5100B2BF1D /* SelectPlusExplainButton.swift in Sources */,
+				9827BD651DE8A23100A4912D /* IAPHelper.swift in Sources */,
 				98ED57F51DA51C80003FF40C /* LevelButton.swift in Sources */,
+				9827BD671DE8A59B00A4912D /* Products.swift in Sources */,
 				98ED57FB1DA9289B003FF40C /* BasicLabel.swift in Sources */,
 				98ED57F71DA8F75E003FF40C /* CategoryVerbeButton.swift in Sources */,
 				98E172A61D740C5900131633 /* Verbes.swift in Sources */,
 				98D4DE3B1D8B2D5400F41E87 /* ChooseLangMenu.swift in Sources */,
 				98D4DE371D8B2C1100F41E87 /* ENSideMenuNavigationController.swift in Sources */,
 				98B391BE1D757353001E1AA1 /* RevisionVerbes.swift in Sources */,
+				98999E891DE3338C00C50B56 /* AskInAppPurschase.swift in Sources */,
 				98B79F9A1D70AD9300A3F94B /* ChooseVerbes.swift in Sources */,
+				9827BD6A1DE9814300A4912D /* BuyLevelButton.swift in Sources */,
 				983E2D531D9A59B000D26E05 /* GlobalSettings.swift in Sources */,
 				98B79F981D70AD9300A3F94B /* AppDelegate.swift in Sources */,
 			);
@@ -1810,7 +1862,7 @@
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_ON_DEMAND_RESOURCES = YES;
 				INFOPLIST_FILE = "Verbes forts/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Irregular-german-verbs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1832,7 +1884,7 @@
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_ON_DEMAND_RESOURCES = YES;
 				INFOPLIST_FILE = "Verbes forts/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Irregular-german-verbs";
 				PRODUCT_NAME = "$(TARGET_NAME)";

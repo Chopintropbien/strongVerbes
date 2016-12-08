@@ -12,7 +12,7 @@ import UIKit
 
 class ChooseVerbes: UIViewController, ENSideMenuDelegate {
     
-    var level: Level = Level.All
+    var level: Level!
     
 
     @IBOutlet weak var randomOrderButton: UIButton!
@@ -190,13 +190,10 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
         TButton.frame = CGRect(x: column1LetterY + letterbigMarginToBorder, y: row4LetterY, width: letterWidth, height: buttonHeight)
         UVButton.frame = CGRect(x: column2LetterY + letterbigMarginToBorder, y: row4LetterY, width: letterWidth, height: buttonHeight)
         WZButton.frame = CGRect(x: column3LetterY + letterbigMarginToBorder, y: row4LetterY, width: letterWidth, height: buttonHeight)
-        
-        
-        
-        
-        
-        
+
     }
+
+    
     
     
     fileprivate let verbesData = Verbes()
@@ -208,6 +205,7 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
             let headerTextRandom: String = Localization("Try to remember this ") + String(nbVerbeRandom) + Localization(" verbes")
             let unclassable: String =  Localization("unclassifiable")
             let weakIregular: String = Localization("weak-irregular-feminin")
+            rev.level = level
             
             
             func setTextInStringType(_ form: Form){
@@ -225,7 +223,8 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
                         rev.headerText = Localization("Here are german irregular verbs by form: ") + form.rawValue
                     }
                 }
-                
+                // set form
+                rev.form = form
                 setStaticButton()
             }
             
@@ -237,6 +236,8 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
                   rev.headerText = Localization("Here are german irregular verbs who begins by: ") + letter.rawValue.uppercased()
                 }
                 
+                // set letter
+                rev.letter = letter
                 setStaticButton()
             }
             
@@ -246,6 +247,7 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
             }
 
             func setStaticButton(){
+                // set random button
                 rev.nextButtonText = Localization("Next")
                 if(rev.verbes.count == 1){ // if just one verbes, don't dysplay the next button
                     rev.nextButtonHidden = true
@@ -433,6 +435,10 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
             }
         }
     }
+    
+    
+    
+    
     
 
     
