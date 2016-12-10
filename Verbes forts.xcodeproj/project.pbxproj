@@ -18,6 +18,7 @@
 		983E2D511D9A514600D26E05 /* ChooseLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983E2D501D9A514600D26E05 /* ChooseLevel.swift */; };
 		983E2D531D9A59B000D26E05 /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983E2D521D9A59B000D26E05 /* GlobalSettings.swift */; };
 		984373C41DE9AA5100B2BF1D /* SelectPlusExplainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984373C31DE9AA5100B2BF1D /* SelectPlusExplainButton.swift */; };
+		988DC7F91DFC23BD00F28B79 /* BasicLabelBig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988DC7F81DFC23BD00F28B79 /* BasicLabelBig.swift */; };
 		98999E871DE32EB400C50B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98999E861DE32EB400C50B56 /* Main.storyboard */; };
 		98999E891DE3338C00C50B56 /* AskInAppPurschase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98999E881DE3338C00C50B56 /* AskInAppPurschase.swift */; };
 		98B391BE1D757353001E1AA1 /* RevisionVerbes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B391BD1D757353001E1AA1 /* RevisionVerbes.swift */; };
@@ -395,6 +396,7 @@
 		984373C31DE9AA5100B2BF1D /* SelectPlusExplainButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPlusExplainButton.swift; sourceTree = "<group>"; };
 		985EF2231DCA98C100772655 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		985EF2241DCA98C100772655 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		988DC7F81DFC23BD00F28B79 /* BasicLabelBig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicLabelBig.swift; sourceTree = "<group>"; };
 		98999E861DE32EB400C50B56 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		98999E881DE3338C00C50B56 /* AskInAppPurschase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AskInAppPurschase.swift; sourceTree = "<group>"; };
 		98B391BD1D757353001E1AA1 /* RevisionVerbes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevisionVerbes.swift; sourceTree = "<group>"; };
@@ -791,6 +793,7 @@
 			children = (
 				98ED57FA1DA9289B003FF40C /* BasicLabel.swift */,
 				9827BD6D1DE984BA00A4912D /* OrSeparator.swift */,
+				988DC7F81DFC23BD00F28B79 /* BasicLabelBig.swift */,
 			);
 			name = Label;
 			sourceTree = "<group>";
@@ -1673,6 +1676,7 @@
 				98D4DE371D8B2C1100F41E87 /* ENSideMenuNavigationController.swift in Sources */,
 				98B391BE1D757353001E1AA1 /* RevisionVerbes.swift in Sources */,
 				98999E891DE3338C00C50B56 /* AskInAppPurschase.swift in Sources */,
+				988DC7F91DFC23BD00F28B79 /* BasicLabelBig.swift in Sources */,
 				98B79F9A1D70AD9300A3F94B /* ChooseVerbes.swift in Sources */,
 				9827BD6A1DE9814300A4912D /* BuyLevelButton.swift in Sources */,
 				983E2D531D9A59B000D26E05 /* GlobalSettings.swift in Sources */,

@@ -17,16 +17,20 @@ class AskInAppPurschase: UIViewController {
     var upperView: UIView!
     var products = [SKProduct]()
     
+
+    // view if user can not buy (not allowed or no inernet connection)
+    @IBOutlet weak var canNotBuyView: UIView!
+    @IBOutlet weak var canNotBuyLabel: UILabel!
+    @IBOutlet weak var canNotBuyText: UILabel!
+  
+    
+    // view if user can buy
     @IBOutlet weak var containerView: UIView!
-    
     @IBOutlet weak var titleLabel: UILabel!
-    
     @IBOutlet weak var explainationBuy1LevelLabel: UILabel!
-    
-    @IBOutlet weak var orLabel: UILabel!
-    
-    @IBOutlet weak var explainationBuyAllLevelLabel: UILabel!
     let buy1LevelButton =  BuyLevelButton()
+    @IBOutlet weak var orLabel: UILabel!
+    @IBOutlet weak var explainationBuyAllLevelLabel: UILabel!
     let buyAllLevelButton =  BuyLevelButton()
     
     
@@ -35,34 +39,36 @@ class AskInAppPurschase: UIViewController {
     override func viewDidLoad() {
         self.upperView.isHidden = true
         self.containerView.isHidden = true
+        self.canNotBuyView.isHidden = true
         placeElement()
+        
+
+        // if there is no internet connection
+        let delay = 1 * Double(NSEC_PER_SEC)
+        let time = DispatchTime.now() + Double(Int64(delay)) / Double(NSEC_PER_SEC)
+        DispatchQueue.main.asyncAfter(deadline: time) {
+            
+        }
     }
     
     
 
-    func display(){
+    func display(view: UIView){
         self.upperView.isHidden = false
         self.containerView.isHidden = true
-        
-        
-        self.animation()
+        self.canNotBuyView.isHidden = true
+        self.animation(view: view)
 
     }
     
-    private func animation(){
+    private func animation(view: UIView){
         let transitionOptions = UIViewAnimationOptions.transitionCurlDown
-        UIView.transition(with: self.containerView, duration: 3, options: transitionOptions, animations: {
-            self.containerView.isHidden = false
+        UIView.transition(with: view, duration: 3, options: transitionOptions, animations: {
+            view.isHidden = false
         }, completion: nil)
-        
-//        let delay = 1 * Double(NSEC_PER_SEC)
-//        let time = DispatchTime.now() + Double(Int64(delay)) / Double(NSEC_PER_SEC)
-//        DispatchQueue.main.asyncAfter(deadline: time) {
-//            
-//        }
     }
     
-    
+    // place element in containerView
     private func placeElement(){
         let screenHeight = view.bounds.size.height
         let screenWidth = view.bounds.size.width
@@ -152,7 +158,6 @@ class AskInAppPurschase: UIViewController {
             placeSecondProduct()
         }
         
-
     }
     
     
@@ -172,34 +177,49 @@ class AskInAppPurschase: UIViewController {
                 
                 self.buyAllLevelButton.product = self.findProduct(products: self.products, id: Products.productId(level: Level.All))
                 self.buyAllLevelButton.addTarget(self, action: #selector(self.buyButtonTapped(_:)), for: .touchUpInside)
-                
-                self.displayIfNotPurchased(products: self.products)
+                self.displayIfNotPurchased(products: self.products, internetConnection: true)
             }
+            else{
+                self.displayIfNotPurchased(products: self.products, internetConnection: false) // no internet connection
+            }
+
         }
     }
     
     func buyButtonTapped(_ sender: BuyLevelButton) {
-        print("ddddddd")
         Products.store.buyProduct(sender.product!)
-        print("uuuu")
     }
     
-    func displayIfNotPurchased(products: [SKProduct]) {
+    func displayIfNotPurchased(products: [SKProduct], internetConnection: Bool) {
         if((form == Form.aiea || letter == LetterButton.A)){
             // do not display
             self.upperView.isHidden = true
+        }
+        else if(!internetConnection){
+            setTextCanNotBuyViewNoInternetConnection()
+            display(view: self.canNotBuyView)
         }
         else if(level == Level.All && self.isA2B1B2C1ArePurchased(products: products)){
             // do not display
             self.upperView.isHidden = true
         }
         else if(!IAPHelper.canMakePayments()){
-            //TODO
+            setTextCanNotBuyViewCanNotMakePayments()
+            display(view: self.canNotBuyView)
         }
             // display
         else if(!Products.store.isProductPurchased(Products.productId(level: self.level)) && !Products.store.isProductPurchased(Products.productId(level: Level.All))){
-            display()
+            display(view: self.containerView)
         }
+    }
+    
+    func setTextCanNotBuyViewNoInternetConnection(){
+        self.canNotBuyLabel.text = "No internet connection"
+        self.canNotBuyText.text = "This page is only accessible with a connection internet. You did not buy this product before"
+    }
+    func setTextCanNotBuyViewCanNotMakePayments(){
+        self.canNotBuyLabel.text = "Your are not allowed to buy this product"
+        self.canNotBuyText.text = "Our application in accessible by all people form 4+"
     }
     
     

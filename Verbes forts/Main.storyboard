@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -664,6 +665,10 @@
         <scene sceneID="sLf-fM-ics">
             <objects>
                 <viewController id="GPK-XN-cKr" customClass="AskInAppPurschase" customModule="Verbes_forts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PWC-lN-cBY"/>
+                        <viewControllerLayoutGuide type="bottom" id="pvN-n7-SOK"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SrJ-PN-5fM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -678,14 +683,14 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Accédez à tous les verbes du niveau A2 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzg-V3-50I" customClass="BasicLabelBig" customModule="Verbes_forts" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Accédez à tous les verbes du niveau A2 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzg-V3-50I" customClass="BasicLabelGray" customModule="Verbes_forts" customModuleProvider="target">
                                         <rect key="frame" x="23" y="172" width="328" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Accédez acces à TOUS les verbes de TOUS les niveaux " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZS-wG-xvI" customClass="BasicLabelBig" customModule="Verbes_forts" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Accédez acces à TOUS les verbes de TOUS les niveaux " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZS-wG-xvI" customClass="BasicLabelGray" customModule="Verbes_forts" customModuleProvider="target">
                                         <rect key="frame" x="-12" y="387" width="418" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -702,15 +707,48 @@
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UxS-ga-9nL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KM0-sb-HRC" customClass="BasicLabelBig" customModule="Verbes_forts" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="99" width="359" height="30.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ut2-L6-21y">
+                                        <rect key="frame" x="8" y="167.5" width="359" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Ut2-L6-21y" firstAttribute="leading" secondItem="UxS-ga-9nL" secondAttribute="leading" constant="8" id="6di-Xa-SxI"/>
+                                    <constraint firstItem="KM0-sb-HRC" firstAttribute="top" secondItem="UxS-ga-9nL" secondAttribute="top" constant="99" id="BL2-9U-5nS"/>
+                                    <constraint firstAttribute="trailing" secondItem="KM0-sb-HRC" secondAttribute="trailing" constant="8" id="QDQ-6F-hIi"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ut2-L6-21y" secondAttribute="trailing" constant="8" id="ZHe-yd-A7v"/>
+                                    <constraint firstItem="KM0-sb-HRC" firstAttribute="leading" secondItem="UxS-ga-9nL" secondAttribute="leading" constant="8" id="evi-cx-QvG"/>
+                                    <constraint firstItem="Ut2-L6-21y" firstAttribute="top" secondItem="KM0-sb-HRC" secondAttribute="bottom" constant="38" id="y1s-KZ-nhO"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="UxS-ga-9nL" firstAttribute="top" secondItem="PWC-lN-cBY" secondAttribute="bottom" id="4sH-IH-Bcr"/>
                             <constraint firstAttribute="trailing" secondItem="aoc-F5-iTV" secondAttribute="trailing" id="NYA-59-13u"/>
                             <constraint firstItem="aoc-F5-iTV" firstAttribute="top" secondItem="SrJ-PN-5fM" secondAttribute="top" id="Pjn-wa-gWZ"/>
+                            <constraint firstItem="UxS-ga-9nL" firstAttribute="leading" secondItem="SrJ-PN-5fM" secondAttribute="leadingMargin" constant="-16" id="QAH-8a-xXJ"/>
                             <constraint firstItem="aoc-F5-iTV" firstAttribute="leading" secondItem="SrJ-PN-5fM" secondAttribute="leading" id="Xkt-3l-29F"/>
                             <constraint firstAttribute="bottom" secondItem="aoc-F5-iTV" secondAttribute="bottom" id="XuS-aw-Lfr"/>
+                            <constraint firstItem="pvN-n7-SOK" firstAttribute="top" secondItem="UxS-ga-9nL" secondAttribute="bottom" id="lrD-BX-oLT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UxS-ga-9nL" secondAttribute="trailing" constant="-16" id="s1h-Pz-kk6"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="canNotBuyLabel" destination="KM0-sb-HRC" id="6FH-iq-IRR"/>
+                        <outlet property="canNotBuyText" destination="Ut2-L6-21y" id="Ppe-yi-4LB"/>
+                        <outlet property="canNotBuyView" destination="UxS-ga-9nL" id="FuM-u4-X3m"/>
                         <outlet property="containerView" destination="aoc-F5-iTV" id="qjG-0M-Qgp"/>
                         <outlet property="explainationBuy1LevelLabel" destination="jzg-V3-50I" id="gPZ-jc-xnM"/>
                         <outlet property="explainationBuyAllLevelLabel" destination="YZS-wG-xvI" id="Op2-JH-1hn"/>
