@@ -28,13 +28,13 @@ class AskInAppPurschase: UIViewController {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var explainationBuy1LevelLabel: UILabel!
-    let buy1LevelButton =  BuyLevelButton()
+    @IBOutlet weak var buy1LevelButton: BuyLevelButton!
+//    let buy1LevelButton =  BuyLevelButton()
     @IBOutlet weak var orLabel: UILabel!
     @IBOutlet weak var explainationBuyAllLevelLabel: UILabel!
-    let buyAllLevelButton =  BuyLevelButton()
+//    let buyAllLevelButton =  BuyLevelButton()
     
-    
-    
+    @IBOutlet weak var buyAllLevelButton: BuyLevelButton!
     
     override func viewDidLoad() {
         self.upperView.isHidden = true
@@ -42,13 +42,14 @@ class AskInAppPurschase: UIViewController {
         self.canNotBuyView.isHidden = true
         placeElement()
         
-
-        // if there is no internet connection
-        let delay = 1 * Double(NSEC_PER_SEC)
-        let time = DispatchTime.now() + Double(Int64(delay)) / Double(NSEC_PER_SEC)
-        DispatchQueue.main.asyncAfter(deadline: time) {
-            
-        }
+    }
+    
+    func setText(){
+        titleLabel.text = Localization("Do you want to learn even more verbs?")
+        explainationBuy1LevelLabel.text = Localization("Full access to all verbs in ") + self.level.rawValue + Localization(" level")
+        self.buy1LevelButton.setTitle(self.level.rawValue, for: UIControlState())
+        explainationBuyAllLevelLabel.text = Localization("Full access to ALL verbs in ALL level")
+        self.buyAllLevelButton.setTitle(Localization("All"), for: UIControlState())
     }
     
     
@@ -57,7 +58,9 @@ class AskInAppPurschase: UIViewController {
         self.upperView.isHidden = false
         self.containerView.isHidden = true
         self.canNotBuyView.isHidden = true
+        setText()
         self.animation(view: view)
+        
 
     }
     
@@ -87,10 +90,10 @@ class AskInAppPurschase: UIViewController {
         // Button and label dimention
         let buyLevelButtonHeight = height(200)
         let buyLevelButtonWidth = width(500)
-        let titleLabelHeight = height(50)
-        let explainationBuyLevelLabelHeight = height(120)
+        let titleLabelHeight = height(140)
+        let explainationBuyLevelLabelHeight = height(140)
         
-        let explainationBuyLevelLabelMarginTopButtom = height(80)
+        let explainationBuyLevelLabelMarginTopButtom = height(10)
         let explainationBuyLevelLabelMarginRight = height(70)
         let buyLevelButtonMarginTop = height(34)
         
@@ -98,7 +101,7 @@ class AskInAppPurschase: UIViewController {
         
 
         //titleLabel
-        let titleLabelY = height(40)
+        let titleLabelY = height(30)
         titleLabel.layer.frame = CGRect(x: 0, y: titleLabelY, width: screenWidth, height: titleLabelHeight)
         
         /* buy 1 level */
@@ -116,7 +119,6 @@ class AskInAppPurschase: UIViewController {
             
             //buy label
             button.layer.frame = CGRect(x: (screenWidth - buyLevelButtonWidth) / 2, y: buy1LevelButtonY, width: buyLevelButtonWidth, height: buyLevelButtonHeight)
-            button.setTitle(level.rawValue, for: .normal)
             self.containerView.addSubview(button)
         }
         
@@ -152,7 +154,6 @@ class AskInAppPurschase: UIViewController {
                 
                 //buy label
                 buyAllLevelButton.layer.frame = CGRect(x: (screenWidth - buyLevelButtonWidth) / 2, y: buyAllLevelButtonY, width: buyLevelButtonWidth, height: buyLevelButtonHeight)
-                buyAllLevelButton.setTitle(Level.All.rawValue, for: .normal)
                 self.containerView.addSubview(buyAllLevelButton)
             }
             placeSecondProduct()
@@ -214,12 +215,12 @@ class AskInAppPurschase: UIViewController {
     }
     
     func setTextCanNotBuyViewNoInternetConnection(){
-        self.canNotBuyLabel.text = "No internet connection"
-        self.canNotBuyText.text = "This page is only accessible with a connection internet. You did not buy this product before"
+        self.canNotBuyLabel.text = Localization("No internet connection")
+        self.canNotBuyText.text = Localization("This page is only accessible with a connection internet.")
     }
     func setTextCanNotBuyViewCanNotMakePayments(){
-        self.canNotBuyLabel.text = "Your are not allowed to buy this product"
-        self.canNotBuyText.text = "Our application in accessible by all people form 4+"
+        self.canNotBuyLabel.text = Localization("Your are not allowed to buy this product")
+        self.canNotBuyText.text = Localization("Our application in accessible by all people 4+")
     }
     
     

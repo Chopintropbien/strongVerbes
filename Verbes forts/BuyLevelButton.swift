@@ -32,9 +32,9 @@ class BuyLevelButton: SelectPlusExplainButton {
         return formatter
     }()
     
-    
     override func layoutSubviews() {
         super.layoutSubviews()
+        
         
         //        let buttonHeigth = self.bounds.size.height
         let buttonWidth = self.bounds.size.width
@@ -48,7 +48,5 @@ class BuyLevelButton: SelectPlusExplainButton {
         levelExplainLabel.textColor = fontColorLight
         self.addSubview(levelExplainLabel)
     }
-
-
 }
 

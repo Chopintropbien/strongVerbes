@@ -22,18 +22,6 @@
 /* Tous niveaux */
 "Every Level" = "Tutti i livelli";
 
-/* Voici les verbes forts allemand de forme */
-"Here are german irregular verbs by form: unclassifiable" = "Qui ci sono verbi tedeschi irregolari nella forma: inclassificabile";
-
-/* Voici les verbes forts allemand de forme */
-"Here are german irregular verbs by form: weak-irregular" = "Qui ci sono verbi tedeschi irregolari nella forma: debole-irregolare";
-
-/* Voici les verbes forts allemand commençant par */
-"Here are german irregular verbs who begins by: " = "Qui ci sono verbi tedeschi irregolari che cominciano per: ";
-
-/* Voici les verbes forts allemand de forme */
-"Here are german irregular verbs by form: " = "Qui ci sono verbi tedeschi irregolari nella forma: ";
-
 /* Niveau Intermédiare */
 "Intermediate Level" = "Livello Intermedio";
 
@@ -55,6 +43,36 @@
 /* Essayer de vous souvenir de ces */
 "Try to remember this " = "Prova a ricordare questi ";
 
+
+
+/* No internet connection */
+"No internet connection" = "Nessuna connessione a internet";
+
+"This page is only accessible with a connection internet." = "Spiacente, questa parte della applicazione richiede una connessione ad internet per accedere all’AppStore.";
+
+
+/* not allowed to buy this product */
+"Your are not allowed to buy this product" = "Permesso negato";
+
+"Our application in accessible by all people 4+" = "Se stai vedendo questa pagina, per favore contattaci. La nostra applicazione dovrebbe essere accessibile da tutte le persone dai 4 anni in su.";
+
+
+/* buy page */
+"Do you want to learn even more verbs?" = "Vuoi imparare ancora più verbi?";
+
+"Full access to all verbs in " = "Accesso completo a tutti i verbi di livello ";
+" level" = "";
+
+"or" = "oppure";
+
+"Full access to ALL verbs in ALL level" = "Accesso completo a TUTTI i verbi di TUTTI i livelli";
+
+
+
+
+
+/*specific german app*/
+
 /* inclassable button */
 "unclassifiable" = "inclassificabili";
 
@@ -63,4 +81,22 @@
 
 /* faible irrégulier button */
 "weak-irregular-masculin" = "Verbi irregolari";
+
+
+/* Voici les verbes forts allemand de forme */
+"Here are german irregular verbs by form: unclassifiable" = "Qui ci sono verbi tedeschi irregolari nella forma: inclassificabile";
+
+/* Voici les verbes forts allemand de forme */
+"Here are german irregular verbs by form: weak-irregular" = "Qui ci sono verbi tedeschi irregolari nella forma: debole-irregolare";
+
+/* Voici les verbes forts allemand commençant par */
+"Here are german irregular verbs who begins by: " = "Qui ci sono verbi tedeschi irregolari che cominciano per: ";
+
+/* Voici les verbes forts allemand de forme */
+"Here are german irregular verbs by form: " = "Qui ci sono verbi tedeschi irregolari nella forma: ";
+
+
+
+
+
 

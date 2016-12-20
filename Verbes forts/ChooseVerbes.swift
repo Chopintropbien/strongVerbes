@@ -214,7 +214,6 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
                     rev.headerText = Localization("Here are german irregular verbs by form: weak-irregular")
                 case Form.undefine:
                     rev.headerText = Localization("Here are german irregular verbs by form: unclassifiable")
-                    
                 default:
                     if(GetLanguage() == Lang.ar){
                        rev.headerText = form.rawValue + Localization("Here are german irregular verbs by form: ")
@@ -324,8 +323,13 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
 //                    + ","+$0.translation(Lang.fr)
 //                    + "," + $0.translation(Lang.en)
 //                    + "," + $0.translation(Lang.es)
-//                    + ","+$0.translation(Lang.ru) + ",\n"
-//                return a + b
+//                    + ","+$0.translation(Lang.ru)
+//                let c = ","+$0.translation(Lang.it)
+//                    + "," + $0.translation(Lang.zh)
+//                    + "," + $0.translation(Lang.ar)
+//                    + ","+$0.translation(Lang.ja)
+//                    + ",\n"
+//                return a + b + c
 //            }), base: ""))
  
  

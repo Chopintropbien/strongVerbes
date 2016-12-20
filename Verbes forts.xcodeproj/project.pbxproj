@@ -394,8 +394,6 @@
 		983E2D501D9A514600D26E05 /* ChooseLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseLevel.swift; sourceTree = "<group>"; };
 		983E2D521D9A59B000D26E05 /* GlobalSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
 		984373C31DE9AA5100B2BF1D /* SelectPlusExplainButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPlusExplainButton.swift; sourceTree = "<group>"; };
-		985EF2231DCA98C100772655 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		985EF2241DCA98C100772655 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		988DC7F81DFC23BD00F28B79 /* BasicLabelBig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicLabelBig.swift; sourceTree = "<group>"; };
 		98999E861DE32EB400C50B56 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		98999E881DE3338C00C50B56 /* AskInAppPurschase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AskInAppPurschase.swift; sourceTree = "<group>"; };
@@ -1301,7 +1299,6 @@
 				ar,
 				ja,
 				it,
-				"zh-Hans",
 			);
 			mainGroup = 98B79F8B1D70AD9300A3F94B;
 			productRefGroup = 98B79F951D70AD9300A3F94B /* Products */;
@@ -1727,7 +1724,6 @@
 				9800FFFE1DC7D94F00615E70 /* ar */,
 				980000001DC7D97B00615E70 /* ja */,
 				980000021DC7D99300615E70 /* it */,
-				985EF2241DCA98C100772655 /* zh-Hans */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1743,7 +1739,6 @@
 				9800FFFD1DC7D94F00615E70 /* ar */,
 				9800FFFF1DC7D97B00615E70 /* ja */,
 				980000011DC7D99300615E70 /* it */,
-				985EF2231DCA98C100772655 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

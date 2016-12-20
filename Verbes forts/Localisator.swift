@@ -15,7 +15,7 @@ enum Lang: String{
     case en = "en"
     case es = "es"
     case ru = "ru"
-    case zh = "zh-Hans" // chinees trad
+    case zh = "zh-Hant" // chinees trad
     case ar = "ar"
     case it = "it"
     case ja = "ja"

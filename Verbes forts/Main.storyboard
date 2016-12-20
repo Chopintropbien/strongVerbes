@@ -673,10 +673,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UxS-ga-9nL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KM0-sb-HRC" customClass="BasicLabelBig" customModule="Verbes_forts" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="99" width="359" height="30.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ut2-L6-21y">
+                                        <rect key="frame" x="8" y="167.5" width="359" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Ut2-L6-21y" firstAttribute="leading" secondItem="UxS-ga-9nL" secondAttribute="leading" constant="8" id="6di-Xa-SxI"/>
+                                    <constraint firstItem="KM0-sb-HRC" firstAttribute="top" secondItem="UxS-ga-9nL" secondAttribute="top" constant="99" id="BL2-9U-5nS"/>
+                                    <constraint firstAttribute="trailing" secondItem="KM0-sb-HRC" secondAttribute="trailing" constant="8" id="QDQ-6F-hIi"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ut2-L6-21y" secondAttribute="trailing" constant="8" id="ZHe-yd-A7v"/>
+                                    <constraint firstItem="KM0-sb-HRC" firstAttribute="leading" secondItem="UxS-ga-9nL" secondAttribute="leading" constant="8" id="evi-cx-QvG"/>
+                                    <constraint firstItem="Ut2-L6-21y" firstAttribute="top" secondItem="KM0-sb-HRC" secondAttribute="bottom" constant="38" id="y1s-KZ-nhO"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aoc-F5-iTV">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Voullez-vous apprendre plus de verbe? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYJ-BX-hyh" customClass="BasicLabel" customModule="Verbes_forts" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Voullez-vous apprendre plus de verbe? " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYJ-BX-hyh" customClass="BasicLabel" customModule="Verbes_forts" customModuleProvider="target">
                                         <rect key="frame" x="36" y="45" width="302" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -704,34 +730,16 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1R9-mG-eC8" customClass="BuyLevelButton" customModule="Verbes_forts" customModuleProvider="target">
+                                        <rect key="frame" x="126" y="219" width="119" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vph-Wi-7nV" customClass="BuyLevelButton" customModule="Verbes_forts" customModuleProvider="target">
+                                        <rect key="frame" x="123" y="450" width="124" height="82"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UxS-ga-9nL">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KM0-sb-HRC" customClass="BasicLabelBig" customModule="Verbes_forts" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="99" width="359" height="30.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ut2-L6-21y">
-                                        <rect key="frame" x="8" y="167.5" width="359" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="Ut2-L6-21y" firstAttribute="leading" secondItem="UxS-ga-9nL" secondAttribute="leading" constant="8" id="6di-Xa-SxI"/>
-                                    <constraint firstItem="KM0-sb-HRC" firstAttribute="top" secondItem="UxS-ga-9nL" secondAttribute="top" constant="99" id="BL2-9U-5nS"/>
-                                    <constraint firstAttribute="trailing" secondItem="KM0-sb-HRC" secondAttribute="trailing" constant="8" id="QDQ-6F-hIi"/>
-                                    <constraint firstAttribute="trailing" secondItem="Ut2-L6-21y" secondAttribute="trailing" constant="8" id="ZHe-yd-A7v"/>
-                                    <constraint firstItem="KM0-sb-HRC" firstAttribute="leading" secondItem="UxS-ga-9nL" secondAttribute="leading" constant="8" id="evi-cx-QvG"/>
-                                    <constraint firstItem="Ut2-L6-21y" firstAttribute="top" secondItem="KM0-sb-HRC" secondAttribute="bottom" constant="38" id="y1s-KZ-nhO"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <constraints>
@@ -746,6 +754,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buy1LevelButton" destination="1R9-mG-eC8" id="Wsm-5N-M98"/>
+                        <outlet property="buyAllLevelButton" destination="Vph-Wi-7nV" id="kXD-ia-yYm"/>
                         <outlet property="canNotBuyLabel" destination="KM0-sb-HRC" id="6FH-iq-IRR"/>
                         <outlet property="canNotBuyText" destination="Ut2-L6-21y" id="Ppe-yi-4LB"/>
                         <outlet property="canNotBuyView" destination="UxS-ga-9nL" id="FuM-u4-X3m"/>

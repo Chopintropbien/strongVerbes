@@ -1,66 +1,97 @@
 /* verbes */
-" verbes" = " verbes";
+" verbes" = "個を覚えましょう";
 
 /* Niveau avancé */
-"Advanced Level" = "Niveau avancé";
+"Advanced Level" = "上級者";
 
 /* Tous (niveau) */
-"All" = "Tous";
+"All" = "オール";
 
 /* Niveau Elémentaire */
-"Basic Level" = "Niveau Elémentaire";
+"Basic Level" = "初心者";
 
 /* Choisissez votre niveau */
-"Choose your level" = "Choisissez votre niveau";
+"Choose your level" = "お気に入りのレベルお選びください";
 
 /* Classés par ordre alphabétique */
-"Classified by alphabetical order" = "Classés par ordre alphabétique";
+"Classified by alphabetical order" = "ABC順分け";
 
 /* Classés celon la forme: */
-"Classified by form" = "Classés celon la forme:";
+"Classified by form" = "形態分け";
 
 /* Tous niveaux */
-"Every Level" = "Tous niveaux";
-
-/* Voici les verbes forts allemand de forme */
-"Here are german irregular verbs by form: unclassifiable" = "Voici les verbes forts allemand de forme: inclassable";
-
-/* Voici les verbes forts allemand de forme */
-"Here are german irregular verbs by form: weak-irregular" = "Voici les verbes forts allemand de forme: faible irrégulière";
-
-/* Voici les verbes forts allemand commençant par */
-"Here are german irregular verbs who begins by: " = "Voici les verbes forts allemand commençant par: ";
-
-/* Voici les verbes forts allemand de forme */
-"Here are german irregular verbs by form: " = "Voici les verbes forts allemand de forme: ";
+"Every Level" = "レベル分けなし";
 
 /* Niveau Intermédiare */
-"Intermediate Level" = "Niveau Intermédiare";
+"Intermediate Level" = "中級者";
 
 /* Les verbes forts */
-"Irregular verbs" = "Les verbes forts";
+"Irregular verbs" = "不規則動詞";
 
 /* Suivant button */
 "Next" = "Suivant";
 
 /* Aléatoire */
-"Random" = "Aléatoire";
+"Random" = "ランダム";
 
 /* Ordre aléatoire */
-"Random order" = "Ordre aléatoire";
+"Random order" = "ランダム";
 
 /* SELECT (en majuscule) */
-"SELECT" = "SELECT";
+"SELECT" = "選択";
 
 /* Essayer de vous souvenir de ces */
-"Try to remember this " = "Essayer de vous souvenir de ces ";
+"Try to remember this " = "次の";
+
+
+
+
+/* No internet connection */
+"No internet connection" = "インターネット未接続";
+
+"This page is only accessible with a connection internet." = "大変申し訳ございません。この部分はインターネットに接続しないと、アプリストアに入ることができません。";
+
+
+/* not allowed to buy this product */
+"Your are not allowed to buy this product" = "不可";
+
+"Our application in accessible by all people 4+" = "このページに入ると、ご連絡ください。このアプリは四歳以上の方が利用できます。";
+
+
+/* buy page */
+"Do you want to learn even more verbs?" = "もっと動詞を勉強したいですか？";
+
+"Full access to all verbs in " = "";
+" level" = "レベルの動詞の読み込み完了";
+
+"or" = "あるいは";
+
+"Full access to ALL verbs in ALL level" = "全てのレベルの動詞の読み込み完了";
+
+
+
+
+/*specific german app*/
 
 /* inclassable button */
-"unclassifiable" = "inclassable";
+"unclassifiable" = "分けなし";
 
 /* faible irrégulière catégorie */
-"weak-irregular-feminin" = "faible irrégulière";
+"weak-irregular-feminin" = "準不規則動詞";
 
 /* faible irrégulier button */
-"weak-irregular-masculin" = "faible irrégulier";
+"weak-irregular-masculin" = "準不規則動詞";
+
+/* Voici les verbes forts allemand de forme */
+"Here are german irregular verbs by form: unclassifiable" = "ドイツ語の不規則動詞：分けなし";
+
+/* Voici les verbes forts allemand de forme */
+"Here are german irregular verbs by form: weak-irregular" = "ドイツ語の不規則動詞：準不規則動詞";
+
+/* Voici les verbes forts allemand commençant par */
+"Here are german irregular verbs who begins by: " = "ドイツ語の不規則動詞：ABC順分け ";
+
+/* Voici les verbes forts allemand de forme */
+"Here are german irregular verbs by form: " = "ドイツ語の不規則動詞：形態分け ";
+
 

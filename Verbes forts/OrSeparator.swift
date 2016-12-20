@@ -30,7 +30,7 @@ class OrSeparator: UILabel {
         or.font = UIFont(name: "Avenir-Black", size: 16)
         or.textColor = gray
         or.textAlignment = .center
-        or.text = "ou"
+        or.text = Localization("or")
         self.addSubview(or)
         
         //line
