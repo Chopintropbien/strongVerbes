@@ -232,7 +232,7 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
                     rev.headerText = letter.rawValue.uppercased() + Localization("Here are german irregular verbs who begins by: ")
                 }
                 else{
-                  rev.headerText = Localization("Here are german irregular verbs who begins by: ") + letter.rawValue.uppercased()
+                  rev.headerText = Localization("Here are german irregular verbs who begins by: ") + letter.rawValue.uppercased() + Localization("Here are german irregular verbs who begins by: Part2")
                 }
                 
                 // set letter

@@ -89,7 +89,8 @@
 "Here are german irregular verbs by form: weak-irregular" = "ドイツ語の不規則動詞：準不規則動詞";
 
 /* Voici les verbes forts allemand commençant par */
-"Here are german irregular verbs who begins by: " = "ドイツ語の不規則動詞：ABC順分け ";
+"Here are german irregular verbs who begins by: " = "ドイツ語の不規則動詞、冒頭は";
+"Here are german irregular verbs who begins by: Part2" = "です。";
 
 /* Voici les verbes forts allemand de forme */
 "Here are german irregular verbs by form: " = "ドイツ語の不規則動詞：形態分け ";

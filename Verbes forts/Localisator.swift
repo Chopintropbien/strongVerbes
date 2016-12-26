@@ -82,7 +82,6 @@ class Localisator {
     
     // MARK: - Init method
     init() {
-    
         print(NSLocale.current.languageCode!)
         if let languageSaved = userDefaults.object(forKey: kSaveLanguageDefaultKey) as? String {
             if languageSaved != "DeviceLanguage" {
