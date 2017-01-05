@@ -17,24 +17,26 @@ class AskInAppPurschase: UIViewController {
     var upperView: UIView!
     var products = [SKProduct]()
     
-
+    
     // view if user can not buy (not allowed or no inernet connection)
     @IBOutlet weak var canNotBuyView: UIView!
     @IBOutlet weak var canNotBuyLabel: UILabel!
     @IBOutlet weak var canNotBuyText: UILabel!
-  
+    
     
     // view if user can buy
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var explainationBuy1LevelLabel: UILabel!
-    @IBOutlet weak var buy1LevelButton: BuyLevelButton!
-//    let buy1LevelButton =  BuyLevelButton()
+    let buy1LevelButton =  BuyLevelButton()
     @IBOutlet weak var orLabel: UILabel!
     @IBOutlet weak var explainationBuyAllLevelLabel: UILabel!
-//    let buyAllLevelButton =  BuyLevelButton()
+    let buyAllLevelButton =  BuyLevelButton()
     
-    @IBOutlet weak var buyAllLevelButton: BuyLevelButton!
+    let animationDuration: TimeInterval = 3
+    
+    
+    
     
     override func viewDidLoad() {
         self.upperView.isHidden = true
@@ -42,6 +44,14 @@ class AskInAppPurschase: UIViewController {
         self.canNotBuyView.isHidden = true
         placeElement()
         
+        
+        
+        // if there is no internet connection
+        let delay = 1 * Double(NSEC_PER_SEC)
+        let time = DispatchTime.now() + Double(Int64(delay)) / Double(NSEC_PER_SEC)
+        DispatchQueue.main.asyncAfter(deadline: time) {
+            
+        }
     }
     
     func setText(){
@@ -53,21 +63,36 @@ class AskInAppPurschase: UIViewController {
     }
     
     
-
+    
     func display(view: UIView){
         self.upperView.isHidden = false
         self.containerView.isHidden = true
         self.canNotBuyView.isHidden = true
         setText()
-        self.animation(view: view)
+        self.animation(view: view, display: true)
         
-
     }
     
-    private func animation(view: UIView){
-        let transitionOptions = UIViewAnimationOptions.transitionCurlDown
-        UIView.transition(with: view, duration: 3, options: transitionOptions, animations: {
-            view.isHidden = false
+    func hide(){
+        self.animation(view: self.containerView, display: false)
+        DispatchQueue.main.asyncAfter(deadline: .now() + self.animationDuration) {
+            self.upperView.isHidden = true
+            self.canNotBuyView.isHidden = true
+        }
+    }
+    
+    private func animation(view: UIView, display: Bool){
+        let transitionOptions: UIViewAnimationOptions
+        if(display){
+            transitionOptions = UIViewAnimationOptions.transitionCurlDown
+        }
+        else{
+            transitionOptions = UIViewAnimationOptions.transitionCurlUp
+            
+        }
+        
+        UIView.transition(with: view, duration: self.animationDuration, options: transitionOptions, animations: {
+            view.isHidden = !display
         }, completion: nil)
     }
     
@@ -90,18 +115,18 @@ class AskInAppPurschase: UIViewController {
         // Button and label dimention
         let buyLevelButtonHeight = height(200)
         let buyLevelButtonWidth = width(500)
-        let titleLabelHeight = height(140)
-        let explainationBuyLevelLabelHeight = height(140)
+        let titleLabelHeight = height(50)
+        let explainationBuyLevelLabelHeight = height(120)
         
-        let explainationBuyLevelLabelMarginTopButtom = height(10)
+        let explainationBuyLevelLabelMarginTopButtom = height(80)
         let explainationBuyLevelLabelMarginRight = height(70)
         let buyLevelButtonMarginTop = height(34)
         
         let explainationBuyLevelLabelNumberOfLines = 2
         
-
+        
         //titleLabel
-        let titleLabelY = height(30)
+        let titleLabelY = height(40)
         titleLabel.layer.frame = CGRect(x: 0, y: titleLabelY, width: screenWidth, height: titleLabelHeight)
         
         /* buy 1 level */
@@ -131,7 +156,7 @@ class AskInAppPurschase: UIViewController {
         }
         else{
             placeFirstProduct(explaination: explainationBuy1LevelLabel, button: buy1LevelButton)
-
+            
             // or
             let orLabelY = buy1LevelButtonY + buyLevelButtonHeight + explainationBuyLevelLabelMarginTopButtom
             
@@ -169,11 +194,11 @@ class AskInAppPurschase: UIViewController {
         Products.store.requestProducts{success, products in
             if success {
                 self.products = products!
-
+                
                 let id = Products.productId(level: self.level)
                 self.buy1LevelButton.product = self.findProduct(products: self.products, id: id)
                 self.buy1LevelButton.addTarget(self, action: #selector(self.buyButtonTapped(_:)), for: .touchUpInside)
-
+                
                 
                 
                 self.buyAllLevelButton.product = self.findProduct(products: self.products, id: Products.productId(level: Level.All))
@@ -183,7 +208,7 @@ class AskInAppPurschase: UIViewController {
             else{
                 self.displayIfNotPurchased(products: self.products, internetConnection: false) // no internet connection
             }
-
+            
         }
     }
     
@@ -224,7 +249,7 @@ class AskInAppPurschase: UIViewController {
     }
     
     
-
+    
     
     func findProduct(products: [SKProduct], id: String) -> SKProduct{
         return products.filter({$0.productIdentifier == id}).first!

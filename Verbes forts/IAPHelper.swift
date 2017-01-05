@@ -25,6 +25,30 @@ import StoreKit
 public typealias ProductIdentifier = String
 public typealias ProductsRequestCompletionHandler = (_ success: Bool, _ products: [SKProduct]?) -> ()
 
+
+var revisionVerbes: RevisionVerbes? // TODO: HORRIBLE!!!!! A REVOIR
+
+extension UIApplication {
+    
+    
+    class func topViewController(controller: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
+        if let navigationController = controller as? UINavigationController {
+            return topViewController(controller: navigationController.visibleViewController)
+        }
+        if let tabController = controller as? UITabBarController {
+            if let selected = tabController.selectedViewController {
+                return topViewController(controller: selected)
+            }
+        }
+        if let presented = controller?.presentedViewController {
+            return topViewController(controller: presented)
+        }
+        return controller
+    }
+    
+}
+
+
 open class IAPHelper : NSObject  {
     
     static let IAPHelperPurchaseNotification = "IAPHelperPurchaseNotification"
@@ -65,6 +89,8 @@ extension IAPHelper {
     
     public func buyProduct(_ product: SKProduct) {
         print("Buying \(product.productIdentifier)...")
+        
+        displayWait()
         let payment = SKPayment(product: product)
         SKPaymentQueue.default().add(payment)
     }
@@ -80,6 +106,35 @@ extension IAPHelper {
     
     public func restorePurchases() {
         SKPaymentQueue.default().restoreCompletedTransactions()
+    }
+    
+    public func displayWait(){
+        if let topController = UIApplication.topViewController() {
+            
+            if let rv = topController as? RevisionVerbes{
+                revisionVerbes = rv
+            }
+            let alert = UIAlertController(title: nil, message: "Please wait...", preferredStyle: .alert)
+            
+            alert.view.tintColor = UIColor.black
+            let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x:10, y:5, width: 50, height: 50)) as UIActivityIndicatorView
+            loadingIndicator.hidesWhenStopped = true
+            loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+            loadingIndicator.startAnimating();
+            
+            alert.view.addSubview(loadingIndicator)
+            topController.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    public func hideWait(){
+        if let topController = UIApplication.topViewController() {
+            topController.dismiss(animated: false, completion: nil)
+        }
+    }
+    
+    public func hideAskInAppPurschase(){
+        revisionVerbes?.hideAskInAppPurschaseView()
     }
 }
 
@@ -131,8 +186,10 @@ extension IAPHelper: SKPaymentTransactionObserver {
                 restore(transaction: transaction)
                 break
             case .deferred:
+                print("deferred...")
                 break
             case .purchasing:
+                print("purchasing...")
                 break
             }
         }
@@ -142,6 +199,8 @@ extension IAPHelper: SKPaymentTransactionObserver {
         print("complete...")
         deliverPurchaseNotificationFor(identifier: transaction.payment.productIdentifier)
         SKPaymentQueue.default().finishTransaction(transaction)
+        self.hideWait()
+        self.hideAskInAppPurschase()
     }
     
     private func restore(transaction: SKPaymentTransaction) {
@@ -150,13 +209,35 @@ extension IAPHelper: SKPaymentTransactionObserver {
         print("restore... \(productIdentifier)")
         deliverPurchaseNotificationFor(identifier: productIdentifier)
         SKPaymentQueue.default().finishTransaction(transaction)
+        
+        if let topController = UIApplication.topViewController() {
+            
+            let alert = UIAlertController(title: nil, message: "Transaction Error:", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(action:UIAlertAction!) in self.hideWait(); self.hideAskInAppPurschase()
+            }))
+            
+            alert.message = "Purchase retored"
+            topController.present(alert, animated: true, completion: nil)
+        }
+        
     }
     
     private func fail(transaction: SKPaymentTransaction) {
         print("fail...")
+        
         if let transactionError = transaction.error as? NSError {
             if transactionError.code != SKError.paymentCancelled.rawValue {
                 print("Transaction Error: \(transaction.error?.localizedDescription)")
+            }
+            
+            if let topController = UIApplication.topViewController() {
+                
+                let alert = UIAlertController(title: nil, message: "Transaction Error:", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .destructive, handler: {(action:UIAlertAction!) in self.hideWait()
+                }))
+                
+                alert.message = transaction.error?.localizedDescription
+                topController.present(alert, animated: true, completion: nil)
             }
         }
         

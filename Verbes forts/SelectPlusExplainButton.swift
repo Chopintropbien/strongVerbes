@@ -12,7 +12,7 @@ import UIKit
 @IBDesignable
 class SelectPlusExplainButton: UIButton {
     let basicBackgroundColor: UIColor = UIColor.white
-    
+
     override func layoutSubviews() {
         super.layoutSubviews()
         

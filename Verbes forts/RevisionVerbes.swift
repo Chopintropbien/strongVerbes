@@ -19,6 +19,9 @@ class RevisionVerbes: UIViewController {
     
     
     @IBOutlet weak var askInAppPurschaseView: UIView!
+    var askInAppPurschaseVC: AskInAppPurschase?
+    
+    
     // Text
 
     var verbes: [Verbe] = []
@@ -290,21 +293,24 @@ class RevisionVerbes: UIViewController {
     // for the container view
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "askInAppPurschaseSegue") {
-            let askInAppPurschase = segue.destination as! AskInAppPurschase
+            askInAppPurschaseVC = segue.destination as? AskInAppPurschase
             
-            askInAppPurschase.upperView = askInAppPurschaseView
-            askInAppPurschase.level = self.level
+            askInAppPurschaseVC?.upperView = askInAppPurschaseView
+            askInAppPurschaseVC?.level = self.level
             
             if let form = self.form{
-                askInAppPurschase.form = form
+                askInAppPurschaseVC?.form = form
             }
             if let letter = self.letter{
-                askInAppPurschase.letter = letter
+                askInAppPurschaseVC?.letter = letter
             }
             
         }
     }
-    
+    //hide askInAppPurschaseView
+    public func hideAskInAppPurschaseView(){
+        askInAppPurschaseVC?.hide()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

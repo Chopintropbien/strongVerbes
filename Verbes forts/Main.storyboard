@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vDD-2c-dTx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vDD-2c-dTx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -730,14 +730,6 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1R9-mG-eC8" customClass="BuyLevelButton" customModule="Verbes_forts" customModuleProvider="target">
-                                        <rect key="frame" x="126" y="219" width="119" height="64"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vph-Wi-7nV" customClass="BuyLevelButton" customModule="Verbes_forts" customModuleProvider="target">
-                                        <rect key="frame" x="123" y="450" width="124" height="82"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </view>
@@ -754,8 +746,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="buy1LevelButton" destination="1R9-mG-eC8" id="Wsm-5N-M98"/>
-                        <outlet property="buyAllLevelButton" destination="Vph-Wi-7nV" id="kXD-ia-yYm"/>
                         <outlet property="canNotBuyLabel" destination="KM0-sb-HRC" id="6FH-iq-IRR"/>
                         <outlet property="canNotBuyText" destination="Ut2-L6-21y" id="Ppe-yi-4LB"/>
                         <outlet property="canNotBuyView" destination="UxS-ga-9nL" id="FuM-u4-X3m"/>
