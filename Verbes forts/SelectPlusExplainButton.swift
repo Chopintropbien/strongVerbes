@@ -11,10 +11,29 @@ import UIKit
 
 @IBDesignable
 class SelectPlusExplainButton: UIButton {
-    let basicBackgroundColor: UIColor = UIColor.white
-
-    override func layoutSubviews() {
-        super.layoutSubviews()
+    
+    public var level: Level?
+    
+    private let basicBackgroundColor: UIColor = UIColor.white
+    private var levelLabel = UILabel()
+    private var selectedLabel = UILabel()
+    
+    
+    public func setText(){
+        selectedLabel.text = Localization("SELECT")
+        
+        if(level == Level.All){
+            levelLabel.text = Localization("All")
+        }
+        else{
+            levelLabel.text = level?.rawValue
+        }
+    }
+    
+    public func setUp(frame: CGRect){
+        
+        self.frame = frame
+        self.layer.frame = frame
         
         //        let buttonHeigth = self.bounds.size.height
         let buttonWidth = self.bounds.size.width
@@ -34,7 +53,7 @@ class SelectPlusExplainButton: UIButton {
         // Explaination of selection
         let heightLevelLabel = height(43)
         let marginTopLevelLabel = height(30)
-        let levelLabel = UILabel(frame: CGRect(x: 0, y: marginTopLevelLabel, width: buttonWidth, height: heightLevelLabel))
+        levelLabel = UILabel(frame: CGRect(x: 0, y: marginTopLevelLabel, width: buttonWidth, height: heightLevelLabel))
         levelLabel.text = self.titleLabel!.text
         levelLabel.textAlignment = .center
         levelLabel.font = UIFont(name: "Avenir-Black", size: height(44))
@@ -42,12 +61,11 @@ class SelectPlusExplainButton: UIButton {
         self.addSubview(levelLabel)
         self.titleLabel!.text = ""
         
-
-
+        
+        
         // Selected Button
-        let selectedLabel = UILabel(frame: CGRect(x: width(47), y: height(165), width: buttonWidth-2*width(47), height: height(44)))
+        selectedLabel = UILabel(frame: CGRect(x: width(47), y: height(165), width: buttonWidth-2*width(47), height: height(44)))
         selectedLabel.backgroundColor = pink
-        selectedLabel.text = Localization("SELECT")
         selectedLabel.textColor = UIColor.white
         selectedLabel.textAlignment = .center
         selectedLabel.font = UIFont(name: "Avenir-Heavy", size: height(28))
@@ -79,6 +97,6 @@ class SelectPlusExplainButton: UIButton {
         return buttonWidth * (CGFloat(w)/designWidth)
     }
     
-
+    
 }
 

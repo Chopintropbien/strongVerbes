@@ -11,40 +11,51 @@ import UIKit
 
 @IBDesignable
 class LevelButton: SelectPlusExplainButton {
-
-    override func layoutSubviews() {
-        super.layoutSubviews()
+    private var levelExplainLabel = UILabel()
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    override public func setText(){
+        if let l = level {
+            switch l {
+            case Level.A2:
+                levelExplainLabel.text = Localization("Basic Level")
+            case Level.B1:
+                levelExplainLabel.text = Localization("Intermediate Level")
+            case Level.B2:
+                levelExplainLabel.text = Localization("Intermediate Level")
+            case Level.C1:
+                levelExplainLabel.text = Localization("Advanced Level")
+            case Level.All:
+                levelExplainLabel.text = Localization("Every Level")
+            }
+        }
+        super.setText()
+    }
+    
+    public override func setUp(frame: CGRect){
+        super.setUp(frame: frame)
         
-//        let buttonHeigth = self.bounds.size.height
+        //        let buttonHeigth = self.bounds.size.height
         let buttonWidth = self.bounds.size.width
         
-
+        
         // Level explaination
         let heightLevelLabel = height(43)
         let marginTopLevelLabel = height(30)
-        let levelExplainLabel = UILabel(frame: CGRect(x: 0, y: marginTopLevelLabel + heightLevelLabel + height(9), width: buttonWidth, height: height(30)))
-        switch self.titleLabel!.text! {
-        case "A2":
-            levelExplainLabel.text = Localization("Basic Level")
-        case "B1":
-            levelExplainLabel.text = Localization("Intermediate Level")
-        case "B2":
-            levelExplainLabel.text = Localization("Intermediate Level")
-        case "C1":
-            levelExplainLabel.text = Localization("Advanced Level")
-        default:
-            levelExplainLabel.text = Localization("Every Level")
-        }
+        levelExplainLabel = UILabel(frame: CGRect(x: 0, y: marginTopLevelLabel + heightLevelLabel + height(9), width: buttonWidth, height: height(30)))
         levelExplainLabel.font = UIFont(name: "Avenir-Heavy", size: super.height(25))
         levelExplainLabel.textAlignment = .center
         levelExplainLabel.textColor = fontColorLight
         self.addSubview(levelExplainLabel)
-        
-        self.titleLabel!.text = ""
-        
-        
+        self.setText()
     }
     
- 
+    
 
+    
+    
+    
 }

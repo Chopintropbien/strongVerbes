@@ -36,41 +36,54 @@ class AskInAppPurschase: UIViewController {
     let animationDuration: TimeInterval = 3
     
     
-    
-    
     override func viewDidLoad() {
         self.upperView.isHidden = true
         self.containerView.isHidden = true
         self.canNotBuyView.isHidden = true
+        loadProductsAndDisplayIfNotPurchased()
         placeElement()
+        setText()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
-        
-        
-        // if there is no internet connection
-        let delay = 1 * Double(NSEC_PER_SEC)
-        let time = DispatchTime.now() + Double(Int64(delay)) / Double(NSEC_PER_SEC)
-        DispatchQueue.main.asyncAfter(deadline: time) {
+        setText()
+    }
+    
+    
+    //TODO: It is the right way?
+    func loadProductsAndDisplayIfNotPurchased(){
+        products = []
+        Products.store.requestProducts{success, products in
+            if success {
+                self.products = products!
+                
+                let id = Products.productId(level: self.level)
+                self.buy1LevelButton.product = Products.findProduct(products: self.products, id: id)
+                self.buy1LevelButton.addTarget(self, action: #selector(self.buyButtonTapped(_:)), for: .touchUpInside)
+                
+                
+                self.buyAllLevelButton.product = Products.findProduct(products: self.products, id: Products.productId(level: Level.All))
+                self.buyAllLevelButton.addTarget(self, action: #selector(self.buyButtonTapped(_:)), for: .touchUpInside)
+            }
             
+            self.displayUpperScreen(products: self.products, internetConnection: success)
         }
     }
     
-    func setText(){
-        titleLabel.text = Localization("Do you want to learn even more verbs?")
-        explainationBuy1LevelLabel.text = Localization("Full access to all verbs in ") + self.level.rawValue + Localization(" level")
-        self.buy1LevelButton.setTitle(self.level.rawValue, for: UIControlState())
-        explainationBuyAllLevelLabel.text = Localization("Full access to ALL verbs in ALL level")
-        self.buyAllLevelButton.setTitle(Localization("All"), for: UIControlState())
+    func buyButtonTapped(_ sender: BuyLevelButton) {
+        Products.store.buyProduct(sender.product!)
     }
     
     
+    /* display - hide one or more view */
     
     func display(view: UIView){
         self.upperView.isHidden = false
         self.containerView.isHidden = true
         self.canNotBuyView.isHidden = true
-        setText()
         self.animation(view: view, display: true)
-        
     }
     
     func hide(){
@@ -96,7 +109,85 @@ class AskInAppPurschase: UIViewController {
         }, completion: nil)
     }
     
-    // place element in containerView
+    func displayUpperScreen(products: [SKProduct], internetConnection: Bool){
+        if((form == Form.aiea || letter == LetterButton.A)){
+            self.upperView.isHidden = true
+        }
+            // product already bought
+        else if(Products.isLevelPurchased(products: products, level: self.level)){
+            self.upperView.isHidden = true
+        }
+            // no internet connection
+        else if(!internetConnection){
+            displayNoInternetConnection()
+        }
+            // User is not allowed to buy the product
+        else if(!IAPHelper.canMakePayments()){
+            displayCanNotMakePayments()
+        }
+        else{
+            displayIfNotPurcharsed()
+        }
+    }
+    
+    
+    
+    
+    func displayIfNotPurcharsed(){
+        setTextBuyProducts()
+        display(view: self.containerView)
+    }
+    
+    func displayNoInternetConnection(){
+        setTextCanNotBuyViewNoInternetConnection()
+        display(view: self.canNotBuyView)
+    }
+    
+    func displayCanNotMakePayments(){
+        setTextCanNotBuyViewCanNotMakePayments()
+        display(view: self.canNotBuyView)
+    }
+    
+    
+    
+    
+    
+    
+    
+    /* Set tect function */
+    
+    func setText(){
+        setTextBuyProducts()
+        setTextCanNotBuyViewNoInternetConnection()
+        setTextCanNotBuyViewCanNotMakePayments()
+        
+        buy1LevelButton.level = level
+        buyAllLevelButton.level = Level.All
+        
+        buy1LevelButton.setText()
+        buyAllLevelButton.setText()
+    }
+    
+    func setTextBuyProducts(){
+        titleLabel.text = Localization("Do you want to learn even more verbs?")
+        explainationBuy1LevelLabel.text = Localization("Full access to all verbs in ") + self.level.rawValue + Localization(" level")
+        self.buy1LevelButton.setTitle(self.level.rawValue, for: UIControlState())
+        explainationBuyAllLevelLabel.text = Localization("Full access to ALL verbs in ALL level")
+        self.buyAllLevelButton.setTitle(Localization("All"), for: UIControlState())
+    }
+    
+    func setTextCanNotBuyViewNoInternetConnection(){
+        self.canNotBuyLabel.text = Localization("No internet connection")
+        self.canNotBuyText.text = Localization("This page is only accessible with a connection internet.")
+    }
+    func setTextCanNotBuyViewCanNotMakePayments(){
+        self.canNotBuyLabel.text = Localization("Your are not allowed to buy this product")
+        self.canNotBuyText.text = Localization("Our application in accessible by all people 4+")
+    }
+    
+    
+    /* place element in containerView*/
+    
     private func placeElement(){
         let screenHeight = view.bounds.size.height
         let screenWidth = view.bounds.size.width
@@ -115,12 +206,12 @@ class AskInAppPurschase: UIViewController {
         // Button and label dimention
         let buyLevelButtonHeight = height(200)
         let buyLevelButtonWidth = width(500)
-        let titleLabelHeight = height(50)
+        let titleLabelHeight = height(120)
         let explainationBuyLevelLabelHeight = height(120)
         
-        let explainationBuyLevelLabelMarginTopButtom = height(80)
+        let explainationBuyLevelLabelMarginTopButtom = height(38)
         let explainationBuyLevelLabelMarginRight = height(70)
-        let buyLevelButtonMarginTop = height(34)
+        let buyLevelButtonMarginTop = height(23)
         
         let explainationBuyLevelLabelNumberOfLines = 2
         
@@ -143,7 +234,7 @@ class AskInAppPurschase: UIViewController {
             explaination.numberOfLines = explainationBuyLevelLabelNumberOfLines
             
             //buy label
-            button.layer.frame = CGRect(x: (screenWidth - buyLevelButtonWidth) / 2, y: buy1LevelButtonY, width: buyLevelButtonWidth, height: buyLevelButtonHeight)
+            button.setUp(frame: CGRect(x: (screenWidth - buyLevelButtonWidth) / 2, y: buy1LevelButtonY, width: buyLevelButtonWidth, height: buyLevelButtonHeight))
             self.containerView.addSubview(button)
         }
         
@@ -178,7 +269,7 @@ class AskInAppPurschase: UIViewController {
                 explainationBuyAllLevelLabel.numberOfLines = explainationBuyLevelLabelNumberOfLines
                 
                 //buy label
-                buyAllLevelButton.layer.frame = CGRect(x: (screenWidth - buyLevelButtonWidth) / 2, y: buyAllLevelButtonY, width: buyLevelButtonWidth, height: buyLevelButtonHeight)
+                buyAllLevelButton.setUp(frame: CGRect(x: (screenWidth - buyLevelButtonWidth) / 2, y: buyAllLevelButtonY, width: buyLevelButtonWidth, height: buyLevelButtonHeight))
                 self.containerView.addSubview(buyAllLevelButton)
             }
             placeSecondProduct()
@@ -188,93 +279,4 @@ class AskInAppPurschase: UIViewController {
     
     
     
-    //TODO: It is the right way?
-    func loadProducts(){
-        products = []
-        Products.store.requestProducts{success, products in
-            if success {
-                self.products = products!
-                
-                let id = Products.productId(level: self.level)
-                self.buy1LevelButton.product = self.findProduct(products: self.products, id: id)
-                self.buy1LevelButton.addTarget(self, action: #selector(self.buyButtonTapped(_:)), for: .touchUpInside)
-                
-                
-                
-                self.buyAllLevelButton.product = self.findProduct(products: self.products, id: Products.productId(level: Level.All))
-                self.buyAllLevelButton.addTarget(self, action: #selector(self.buyButtonTapped(_:)), for: .touchUpInside)
-                self.displayIfNotPurchased(products: self.products, internetConnection: true)
-            }
-            else{
-                self.displayIfNotPurchased(products: self.products, internetConnection: false) // no internet connection
-            }
-            
-        }
-    }
-    
-    func buyButtonTapped(_ sender: BuyLevelButton) {
-        Products.store.buyProduct(sender.product!)
-    }
-    
-    func displayIfNotPurchased(products: [SKProduct], internetConnection: Bool) {
-        if((form == Form.aiea || letter == LetterButton.A)){
-            // do not display
-            self.upperView.isHidden = true
-        }
-        else if(!internetConnection){
-            setTextCanNotBuyViewNoInternetConnection()
-            display(view: self.canNotBuyView)
-        }
-        else if(level == Level.All && self.isA2B1B2C1ArePurchased(products: products)){
-            // do not display
-            self.upperView.isHidden = true
-        }
-        else if(!IAPHelper.canMakePayments()){
-            setTextCanNotBuyViewCanNotMakePayments()
-            display(view: self.canNotBuyView)
-        }
-            // display
-        else if(!Products.store.isProductPurchased(Products.productId(level: self.level)) && !Products.store.isProductPurchased(Products.productId(level: Level.All))){
-            display(view: self.containerView)
-        }
-    }
-    
-    func setTextCanNotBuyViewNoInternetConnection(){
-        self.canNotBuyLabel.text = Localization("No internet connection")
-        self.canNotBuyText.text = Localization("This page is only accessible with a connection internet.")
-    }
-    func setTextCanNotBuyViewCanNotMakePayments(){
-        self.canNotBuyLabel.text = Localization("Your are not allowed to buy this product")
-        self.canNotBuyText.text = Localization("Our application in accessible by all people 4+")
-    }
-    
-    
-    
-    
-    func findProduct(products: [SKProduct], id: String) -> SKProduct{
-        return products.filter({$0.productIdentifier == id}).first!
-    }
-    
-    func isA2B1B2C1ArePurchased(products: [SKProduct]) -> Bool{
-        var arePurchased = true;
-        for p in products{
-            if(p.productIdentifier != Products.AllProductId){
-                arePurchased = arePurchased && Products.store.isProductPurchased(p.productIdentifier)
-            }
-        }
-        return arePurchased
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        loadProducts()
-    }
-    
-    func foldl<A,B>(acc: A, list: Array<B>, f: (A, B) -> A) -> A {
-        var result = acc
-        for item in list {
-            result = f(result, item)
-        }
-        return result
-    }
 }

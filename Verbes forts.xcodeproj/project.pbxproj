@@ -19,6 +19,17 @@
 		983E2D531D9A59B000D26E05 /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983E2D521D9A59B000D26E05 /* GlobalSettings.swift */; };
 		984373C41DE9AA5100B2BF1D /* SelectPlusExplainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984373C31DE9AA5100B2BF1D /* SelectPlusExplainButton.swift */; };
 		985FD25E1E09A90A00AB5430 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 985FD25D1E09A90A00AB5430 /* StoreKit.framework */; };
+		986061C41E3CFFDC0051D26A /* SettingsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986061C31E3CFFDC0051D26A /* SettingsLabel.swift */; };
+		986061CA1E3D00230051D26A /* SettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986061C91E3D00230051D26A /* SettingsButton.swift */; };
+		986061CE1E3D00500051D26A /* SettingsDirectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986061CD1E3D00500051D26A /* SettingsDirectButton.swift */; };
+		986061D21E3D00750051D26A /* SettingsSegueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986061D11E3D00750051D26A /* SettingsSegueButton.swift */; };
+		986061DA1E3D02C70051D26A /* NetworkActivityIndicatorManagment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986061D91E3D02C70051D26A /* NetworkActivityIndicatorManagment.swift */; };
+		986061DE1E3D046E0051D26A /* SettingsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986061DD1E3D046E0051D26A /* SettingsUIView.swift */; };
+		986061E21E3D05340051D26A /* NumberLecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986061E11E3D05340051D26A /* NumberLecture.swift */; };
+		986061E61E3D05590051D26A /* NumberRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986061E51E3D05590051D26A /* NumberRandom.swift */; };
+		986061EA1E3D057A0051D26A /* Grammar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986061E91E3D057A0051D26A /* Grammar.swift */; };
+		986061EE1E3D05A20051D26A /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986061ED1E3D05A20051D26A /* Help.swift */; };
+		986061F21E3D05C10051D26A /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986061F11E3D05C10051D26A /* SettingsTableViewController.swift */; };
 		988DC7F91DFC23BD00F28B79 /* BasicLabelBig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988DC7F81DFC23BD00F28B79 /* BasicLabelBig.swift */; };
 		98999E871DE32EB400C50B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98999E861DE32EB400C50B56 /* Main.storyboard */; };
 		98999E891DE3338C00C50B56 /* AskInAppPurschase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98999E881DE3338C00C50B56 /* AskInAppPurschase.swift */; };
@@ -396,6 +407,17 @@
 		983E2D521D9A59B000D26E05 /* GlobalSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
 		984373C31DE9AA5100B2BF1D /* SelectPlusExplainButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPlusExplainButton.swift; sourceTree = "<group>"; };
 		985FD25D1E09A90A00AB5430 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		986061C31E3CFFDC0051D26A /* SettingsLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsLabel.swift; sourceTree = "<group>"; };
+		986061C91E3D00230051D26A /* SettingsButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
+		986061CD1E3D00500051D26A /* SettingsDirectButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsDirectButton.swift; sourceTree = "<group>"; };
+		986061D11E3D00750051D26A /* SettingsSegueButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsSegueButton.swift; sourceTree = "<group>"; };
+		986061D91E3D02C70051D26A /* NetworkActivityIndicatorManagment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkActivityIndicatorManagment.swift; sourceTree = "<group>"; };
+		986061DD1E3D046E0051D26A /* SettingsUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsUIView.swift; sourceTree = "<group>"; };
+		986061E11E3D05340051D26A /* NumberLecture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberLecture.swift; sourceTree = "<group>"; };
+		986061E51E3D05590051D26A /* NumberRandom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberRandom.swift; sourceTree = "<group>"; };
+		986061E91E3D057A0051D26A /* Grammar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grammar.swift; sourceTree = "<group>"; };
+		986061ED1E3D05A20051D26A /* Help.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
+		986061F11E3D05C10051D26A /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		988DC7F81DFC23BD00F28B79 /* BasicLabelBig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicLabelBig.swift; sourceTree = "<group>"; };
 		98999E861DE32EB400C50B56 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		98999E881DE3338C00C50B56 /* AskInAppPurschase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AskInAppPurschase.swift; sourceTree = "<group>"; };
@@ -782,6 +804,7 @@
 		9827BD6B1DE9842400A4912D /* Button */ = {
 			isa = PBXGroup;
 			children = (
+				986061C71E3D00070051D26A /* Settings */,
 				984373C31DE9AA5100B2BF1D /* SelectPlusExplainButton.swift */,
 				98ED57F41DA51C80003FF40C /* LevelButton.swift */,
 				9827BD691DE9814300A4912D /* BuyLevelButton.swift */,
@@ -796,8 +819,45 @@
 				98ED57FA1DA9289B003FF40C /* BasicLabel.swift */,
 				9827BD6D1DE984BA00A4912D /* OrSeparator.swift */,
 				988DC7F81DFC23BD00F28B79 /* BasicLabelBig.swift */,
+				986061C31E3CFFDC0051D26A /* SettingsLabel.swift */,
 			);
 			name = Label;
+			sourceTree = "<group>";
+		};
+		986061C71E3D00070051D26A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				986061C91E3D00230051D26A /* SettingsButton.swift */,
+				986061CD1E3D00500051D26A /* SettingsDirectButton.swift */,
+				986061D11E3D00750051D26A /* SettingsSegueButton.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		986061D51E3D01820051D26A /* InAppPurshase */ = {
+			isa = PBXGroup;
+			children = (
+				9827BD661DE8A59B00A4912D /* Products.swift */,
+				98999E881DE3338C00C50B56 /* AskInAppPurschase.swift */,
+				9827BD641DE8A23100A4912D /* IAPHelper.swift */,
+				986061D91E3D02C70051D26A /* NetworkActivityIndicatorManagment.swift */,
+			);
+			name = InAppPurshase;
+			sourceTree = "<group>";
+		};
+		986061D71E3D01960051D26A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				983E2D521D9A59B000D26E05 /* GlobalSettings.swift */,
+				986061DD1E3D046E0051D26A /* SettingsUIView.swift */,
+				98D4DE3A1D8B2D5400F41E87 /* ChooseLangMenu.swift */,
+				986061E11E3D05340051D26A /* NumberLecture.swift */,
+				986061E51E3D05590051D26A /* NumberRandom.swift */,
+				986061E91E3D057A0051D26A /* Grammar.swift */,
+				986061ED1E3D05A20051D26A /* Help.swift */,
+				986061F11E3D05C10051D26A /* SettingsTableViewController.swift */,
+			);
+			name = Settings;
 			sourceTree = "<group>";
 		};
 		98B79F8B1D70AD9300A3F94B = {
@@ -829,19 +889,18 @@
 				981FFACF1DBBE1D600B63C07 /* InfoPlist.strings */,
 				981FFAC71DBBE03B00B63C07 /* Localizable.strings */,
 				98D4DE331D8B2BCE00F41E87 /* Library */,
-				983E2D521D9A59B000D26E05 /* GlobalSettings.swift */,
+				986061D71E3D01960051D26A /* Settings */,
+				986061D51E3D01820051D26A /* InAppPurshase */,
 				983E2D501D9A514600D26E05 /* ChooseLevel.swift */,
 				98B79F991D70AD9300A3F94B /* ChooseVerbes.swift */,
-				98999E861DE32EB400C50B56 /* Main.storyboard */,
 				98B391BD1D757353001E1AA1 /* RevisionVerbes.swift */,
-				98999E881DE3338C00C50B56 /* AskInAppPurschase.swift */,
 				98E172A51D740C5900131633 /* Verbes.swift */,
+				98999E861DE32EB400C50B56 /* Main.storyboard */,
 				98B79F9E1D70AD9300A3F94B /* Assets.xcassets */,
 				98B79FA01D70AD9300A3F94B /* LaunchScreen.storyboard */,
 				98B79FA31D70AD9300A3F94B /* Info.plist */,
 				98B79F971D70AD9300A3F94B /* AppDelegate.swift */,
 				98D4DE381D8B2C2C00F41E87 /* MyNavigationController.swift */,
-				98D4DE3A1D8B2D5400F41E87 /* ChooseLangMenu.swift */,
 			);
 			path = "Verbes forts";
 			sourceTree = "<group>";
@@ -871,8 +930,6 @@
 				98D4DE341D8B2BF300F41E87 /* ENSideMenu.swift */,
 				98D4DE361D8B2C1100F41E87 /* ENSideMenuNavigationController.swift */,
 				981FFA9B1DBBD2E800B63C07 /* Localisator.swift */,
-				9827BD641DE8A23100A4912D /* IAPHelper.swift */,
-				9827BD661DE8A59B00A4912D /* Products.swift */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -1666,11 +1723,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				986061D21E3D00750051D26A /* SettingsSegueButton.swift in Sources */,
 				9827BD6E1DE984BA00A4912D /* OrSeparator.swift in Sources */,
 				981FFA9C1DBBD2E800B63C07 /* Localisator.swift in Sources */,
 				98D4DE351D8B2BF300F41E87 /* ENSideMenu.swift in Sources */,
 				983E2D511D9A514600D26E05 /* ChooseLevel.swift in Sources */,
 				98D4DE391D8B2C2C00F41E87 /* MyNavigationController.swift in Sources */,
+				986061DA1E3D02C70051D26A /* NetworkActivityIndicatorManagment.swift in Sources */,
 				984373C41DE9AA5100B2BF1D /* SelectPlusExplainButton.swift in Sources */,
 				9827BD651DE8A23100A4912D /* IAPHelper.swift in Sources */,
 				98ED57F51DA51C80003FF40C /* LevelButton.swift in Sources */,
@@ -1678,14 +1737,23 @@
 				98ED57FB1DA9289B003FF40C /* BasicLabel.swift in Sources */,
 				98ED57F71DA8F75E003FF40C /* CategoryVerbeButton.swift in Sources */,
 				98E172A61D740C5900131633 /* Verbes.swift in Sources */,
+				986061CA1E3D00230051D26A /* SettingsButton.swift in Sources */,
+				986061DE1E3D046E0051D26A /* SettingsUIView.swift in Sources */,
+				986061CE1E3D00500051D26A /* SettingsDirectButton.swift in Sources */,
 				98D4DE3B1D8B2D5400F41E87 /* ChooseLangMenu.swift in Sources */,
 				98D4DE371D8B2C1100F41E87 /* ENSideMenuNavigationController.swift in Sources */,
+				986061E21E3D05340051D26A /* NumberLecture.swift in Sources */,
 				98B391BE1D757353001E1AA1 /* RevisionVerbes.swift in Sources */,
 				98999E891DE3338C00C50B56 /* AskInAppPurschase.swift in Sources */,
 				988DC7F91DFC23BD00F28B79 /* BasicLabelBig.swift in Sources */,
+				986061EA1E3D057A0051D26A /* Grammar.swift in Sources */,
 				98B79F9A1D70AD9300A3F94B /* ChooseVerbes.swift in Sources */,
 				9827BD6A1DE9814300A4912D /* BuyLevelButton.swift in Sources */,
+				986061C41E3CFFDC0051D26A /* SettingsLabel.swift in Sources */,
+				986061E61E3D05590051D26A /* NumberRandom.swift in Sources */,
+				986061F21E3D05C10051D26A /* SettingsTableViewController.swift in Sources */,
 				983E2D531D9A59B000D26E05 /* GlobalSettings.swift in Sources */,
+				986061EE1E3D05A20051D26A /* Help.swift in Sources */,
 				98B79F981D70AD9300A3F94B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1970,7 +2038,7 @@
 				98B79FBB1D70AD9300A3F94B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		98B79FBC1D70AD9300A3F94B /* Build configuration list for PBXNativeTarget "Verbes forts" */ = {
 			isa = XCConfigurationList;
@@ -1979,7 +2047,7 @@
 				98B79FBE1D70AD9300A3F94B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		98B79FBF1D70AD9300A3F94B /* Build configuration list for PBXNativeTarget "Verbes fortsTests" */ = {
 			isa = XCConfigurationList;
@@ -1988,7 +2056,7 @@
 				98B79FC11D70AD9300A3F94B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		98B79FC21D70AD9300A3F94B /* Build configuration list for PBXNativeTarget "Verbes fortsUITests" */ = {
 			isa = XCConfigurationList;
@@ -1997,7 +2065,7 @@
 				98B79FC41D70AD9300A3F94B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

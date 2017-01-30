@@ -8,19 +8,12 @@
 
 import UIKit
 
-class ChooseLangMenu: UITableViewController {
+class ChooseLangMenu: SettingsTableViewController {
     
-    fileprivate var selectedMenuItem : Int
     
     required init?(coder aDecoder: NSCoder) {
-        selectedMenuItem = 0
         super.init(coder: aDecoder)
-    }
-    override init(style: UITableViewStyle) {
-        selectedMenuItem = 0
-        super.init(style: style)
-    }
-    init(){
+        
         switch GetLanguage() {
         case Lang.en:
             selectedMenuItem = 0
@@ -41,28 +34,64 @@ class ChooseLangMenu: UITableViewController {
         default:
             selectedMenuItem = 0
         }
+        
+    }
+    override init(style: UITableViewStyle) {
+        super.init(style: style)
+        
+        switch GetLanguage() {
+        case Lang.en:
+            selectedMenuItem = 0
+        case Lang.fr:
+            selectedMenuItem = 1
+        case Lang.es:
+            selectedMenuItem = 2
+        case Lang.it:
+            selectedMenuItem = 3
+        case Lang.ru:
+            selectedMenuItem = 4
+        case Lang.zh:
+            selectedMenuItem = 5
+        case Lang.ja:
+            selectedMenuItem = 6
+        case Lang.ar:
+            selectedMenuItem = 7
+        default:
+            selectedMenuItem = 0
+        }
+        
+        
+    }
+    init(){
         super.init(style: UITableViewStyle.plain)
+        
+        switch GetLanguage() {
+        case Lang.en:
+            selectedMenuItem = 0
+        case Lang.fr:
+            selectedMenuItem = 1
+        case Lang.es:
+            selectedMenuItem = 2
+        case Lang.it:
+            selectedMenuItem = 3
+        case Lang.ru:
+            selectedMenuItem = 4
+        case Lang.zh:
+            selectedMenuItem = 5
+        case Lang.ja:
+            selectedMenuItem = 6
+        case Lang.ar:
+            selectedMenuItem = 7
+        default:
+            selectedMenuItem = 0
+        }
+        
     }
     
-    
-    
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Customize apperance of table view
-        tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0) //
-        tableView.separatorStyle = .singleLine
-        tableView.backgroundColor = UIColor.clear
-        tableView.scrollsToTop = false
-        
-        // Preserve selection between presentations
-        self.clearsSelectionOnViewWillAppear = false
-        
-        tableView.selectRow(at: IndexPath(row: selectedMenuItem, section: 0), animated: false, scrollPosition: .middle)
+    override func viewWillAppear(_ animated: Bool) {
+        self.title = Localization("Language")
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -87,12 +116,7 @@ class ChooseLangMenu: UITableViewController {
         var cell = tableView.dequeueReusableCell(withIdentifier: "CELL")
         
         if (cell == nil) {
-            cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "CELL")
-            cell!.backgroundColor = UIColor.clear
-            cell!.textLabel?.textColor = UIColor.darkGray
-            let selectedBackgroundView = UIView(frame: CGRect(x: 0, y: 0, width: cell!.frame.size.width, height: cell!.frame.size.height))
-            selectedBackgroundView.backgroundColor = UIColor.gray.withAlphaComponent(0.2)
-            cell!.selectedBackgroundView = selectedBackgroundView
+            cell = createCell()
         }
         
         
@@ -128,10 +152,6 @@ class ChooseLangMenu: UITableViewController {
         
         selectedMenuItem = (indexPath as NSIndexPath).row
         
-        //Present new view controller
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
-        var destViewController : UIViewController
-        
         switch ((indexPath as NSIndexPath).row) {
         case 0:
             SetLanguage(Lang.en)
@@ -153,9 +173,8 @@ class ChooseLangMenu: UITableViewController {
             SetLanguage(Lang.en)
         }
         
+        super.popSelf()
         
-        destViewController = mainStoryboard.instantiateViewController(withIdentifier: "ChooseLevel")
-        sideMenuController()?.setContentViewController(destViewController)
         
     }
     

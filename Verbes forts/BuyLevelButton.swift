@@ -33,8 +33,8 @@ class BuyLevelButton: SelectPlusExplainButton {
     }()
     
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
+    public override func setUp(frame: CGRect){
+        super.setUp(frame: frame)
         
         //        let buttonHeigth = self.bounds.size.height
         let buttonWidth = self.bounds.size.width
@@ -47,7 +47,7 @@ class BuyLevelButton: SelectPlusExplainButton {
         levelExplainLabel.textAlignment = .center
         levelExplainLabel.textColor = fontColorLight
         self.addSubview(levelExplainLabel)
-        
+        setText()
         
         // add buy action
         self.addTarget(self, action: #selector(buyButtonTapped(_:)), for: .touchUpInside)
@@ -58,6 +58,7 @@ class BuyLevelButton: SelectPlusExplainButton {
     func buyButtonTapped(_ sender: AnyObject) {
         buyButtonHandler?(product!)
     }
+    
     
     
 }

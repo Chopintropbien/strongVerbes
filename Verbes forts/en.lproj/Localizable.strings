@@ -75,7 +75,61 @@
 
 
 
+
+"Finish" = "";
+
+
+/* Settings */
+
+"Settings" = "";
+
+"Grammar and help" = "";
+
+"Grammar" = "";
+
+"Help" = "";
+
+"General" = "";
+
+"Language" = "";
+
+"Number of reading" = "";
+
+"Number of random verb" = "";
+
+"Number of random verb title" = "";
+
+"Service action" = "";
+
+"Restore previus purchases" = "";
+
+
+
+/* inAppPurshase */
+"Internet connection to slow :" = "";
+
+"Ok" = "";
+
+"Unable to get your previous purchases" = "";
+
+"Transaction Error:" = "";
+
+"Action available only with an internet connection" = "";
+
+"Please wait..." = "";
+
+"Transaction successful:" = "";
+
+"Previous purchases restored" = "";
+
+
+
+
+
 /*specific german app*/
+
+"weak-irregular" = "weak-irregular"; //TODO
+"unclassifiable" = "unclassifiable";
 
 /* Voici les verbes forts allemand de forme */
 "Here are german irregular verbs by form: unclassifiable" = "Here are german irregular verbs by form: unclassifiable";

@@ -57,6 +57,9 @@ open class IAPHelper : NSObject  {
     fileprivate var productsRequest: SKProductsRequest?
     fileprivate var productsRequestCompletionHandler: ProductsRequestCompletionHandler?
     
+    fileprivate var isResoreComplete = true
+    
+    
     public init(productIds: Set<ProductIdentifier>) {
         productIdentifiers = productIds
         for productIdentifier in productIds {
@@ -77,6 +80,8 @@ open class IAPHelper : NSObject  {
 // MARK: - StoreKit API
 
 extension IAPHelper {
+    
+    
     
     public func requestProducts(completionHandler: @escaping ProductsRequestCompletionHandler) {
         productsRequest?.cancel()
@@ -105,7 +110,37 @@ extension IAPHelper {
     }
     
     public func restorePurchases() {
-        SKPaymentQueue.default().restoreCompletedTransactions()
+        if(NetworkActivityIndicatorManagment.isInternetAvailable()){
+            isResoreComplete = false
+            displayWait()
+            SKPaymentQueue.default().restoreCompletedTransactions()
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 22) {
+                if(!self.isResoreComplete){
+                    if let topController = UIApplication.topViewController() {
+                        
+                        let alert = UIAlertController(title: Localization("Internet connection to slow :"), message: nil, preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: Localization("Ok"), style: .destructive, handler: {(action:UIAlertAction!) in self.hideWait()
+                        }))
+                        
+                        alert.message = Localization("Unable to get your previous purchases")
+                        topController.present(alert, animated: true, completion: nil)
+                    }
+                }
+            }
+        }
+        else{
+            if let topController = UIApplication.topViewController() {
+                
+                let alert = UIAlertController(title: Localization("Transaction Error:"), message: nil, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: Localization("Ok"), style: .default, handler: {(action:UIAlertAction!) in self.hideWait()
+                }))
+                
+                alert.message = Localization("Action available only with an internet connection")
+                topController.present(alert, animated: true, completion: nil)
+            }
+        }
+        
     }
     
     public func displayWait(){
@@ -114,7 +149,7 @@ extension IAPHelper {
             if let rv = topController as? RevisionVerbes{
                 revisionVerbes = rv
             }
-            let alert = UIAlertController(title: nil, message: "Please wait...", preferredStyle: .alert)
+            let alert = UIAlertController(title: nil, message: Localization("Please wait..."), preferredStyle: .alert)
             
             alert.view.tintColor = UIColor.black
             let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x:10, y:5, width: 50, height: 50)) as UIActivityIndicatorView
@@ -125,6 +160,8 @@ extension IAPHelper {
             alert.view.addSubview(loadingIndicator)
             topController.present(alert, animated: true, completion: nil)
         }
+        
+        
     }
     
     public func hideWait(){
@@ -210,16 +247,32 @@ extension IAPHelper: SKPaymentTransactionObserver {
         deliverPurchaseNotificationFor(identifier: productIdentifier)
         SKPaymentQueue.default().finishTransaction(transaction)
         
-        if let topController = UIApplication.topViewController() {
-            
-            let alert = UIAlertController(title: nil, message: "Transaction Error:", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(action:UIAlertAction!) in self.hideWait(); self.hideAskInAppPurschase()
-            }))
-            
-            alert.message = "Purchase retored"
-            topController.present(alert, animated: true, completion: nil)
+        if let transactionError = transaction.error as? NSError {
+            if transactionError.code != SKError.paymentCancelled.rawValue {
+                print( "Transaction Error:" + " \(transaction.error?.localizedDescription)")
+            }
+            if let topController = UIApplication.topViewController() {
+                
+                let alert = UIAlertController(title: Localization("Transaction Error:"), message: transaction.error?.localizedDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: Localization("Ok"), style: .destructive, handler: {(action:UIAlertAction!) in self.hideWait()
+                }))
+                topController.present(alert, animated: true, completion: nil)
+            }
+        }
+        else{
+            if let topController = UIApplication.topViewController() {
+                
+                let alert = UIAlertController(title: Localization("Transaction successful:"), message: nil, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: Localization("Ok"), style: .default, handler: {(action:UIAlertAction!) in self.hideWait()
+                }))
+                
+                alert.message = Localization("Previous purchases restored")
+                topController.present(alert, animated: true, completion: nil)
+            }
         }
         
+        isResoreComplete = true
+        self.hideWait()
     }
     
     private func fail(transaction: SKPaymentTransaction) {
@@ -232,11 +285,10 @@ extension IAPHelper: SKPaymentTransactionObserver {
             
             if let topController = UIApplication.topViewController() {
                 
-                let alert = UIAlertController(title: nil, message: "Transaction Error:", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "Ok", style: .destructive, handler: {(action:UIAlertAction!) in self.hideWait()
+                let alert = UIAlertController(title: Localization("Transaction Error:"), message: transaction.error?.localizedDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: Localization("Ok"), style: .destructive, handler: {(action:UIAlertAction!) in self.hideWait()
                 }))
                 
-                alert.message = transaction.error?.localizedDescription
                 topController.present(alert, animated: true, completion: nil)
             }
         }

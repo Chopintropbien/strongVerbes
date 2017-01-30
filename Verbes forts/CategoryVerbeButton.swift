@@ -9,6 +9,8 @@
 
 import UIKit
 
+//TODO: refaire avec https://swift.unicorn.tv/articles/creating-custom-animated-buttons
+
 
 @IBDesignable
 class CategoryVerbeButton: UIButton {
@@ -36,7 +38,15 @@ class CategoryVerbeButtonPink: CategoryVerbeButton{
         super.layoutSubviews()
         self.backgroundColor = pink
         self.setTitleColor(UIColor.white, for: UIControlState())
-        
+    }
+}
+
+@IBDesignable
+class CategoryVerbeButtonFree: CategoryVerbeButton {
+    override func layoutSubviews(){
+        super.layoutSubviews()
+        self.backgroundColor = freeColor
+        self.setTitleColor(UIColor.white, for: UIControlState())
     }
 }
 
