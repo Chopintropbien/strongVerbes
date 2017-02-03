@@ -10,18 +10,16 @@ import UIKit
 
 class MyNavigationController: ENSideMenuNavigationController, ENSideMenuDelegate {
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        sideMenu = ENSideMenu(sourceView: self.view, menuViewController: ChooseLangMenu(), menuPosition:.right)
+        //sideMenu = ENSideMenu(sourceView: self.view, menuViewController: ChooseLangMenu(), menuPosition:.right)
         //sideMenu?.delegate = self //optional
 //        sideMenu?.menuWidth = 180.0 // optional, default is 160
 //        sideMenu?.bouncingEnabled = false
-        sideMenu?.allowPanGesture = false
+        //sideMenu?.allowPanGesture = false
         // make navigation bar showing over side menu
-        view.bringSubview(toFront: navigationBar)
+        //view.bringSubview(toFront: navigationBar)
     }
     
     override func didReceiveMemoryWarning() {

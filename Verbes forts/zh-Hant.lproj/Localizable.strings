@@ -93,3 +93,113 @@
 /* Voici les verbes forts allemand de forme */
 "Here are german irregular verbs by form: " = "現在是德文不規則動詞: 含有";
 
+
+
+
+
+
+
+
+
+
+
+"Finish" = "完成";
+
+
+/* Settings */
+
+"Settings" = "設定";
+
+"Grammar and help" = "語法及幫助";
+
+"Grammar" = "語法";
+
+"Help" = "幫助";
+
+"General" = "一般";
+
+"Language" = "語言";
+
+"Number of reading" = "閱讀次數";
+
+"Number of random verb" = "隨機動詞之數量";
+
+"Number of random verb title" = "隨機動詞";
+
+"Service action" = "行動處";
+
+"Restore previus purchases" = "回復之前的購物信息";
+
+
+
+/* inAppPurshase */
+"Internet connection to slow :" = "互聯網連接速度緩慢";
+
+"Ok" = "確定";
+
+"Unable to get your previous purchases" = "無法取得之前的購物信息";
+
+"Transaction Error:" = "交易錯誤";
+
+"Action available only with an internet connection" = "此動作需連接互聯網";
+
+"Please wait..." = "請等待";
+
+"Transaction successful:" = "交易成功";
+
+"Previous purchases restored" = "回復上次的購物信息";
+
+
+
+
+/* grammar */
+
+"intro" = "德文中有三類動詞。每個種類的動詞的過去分詞及過去式都有其特色詞尾。\n\n強變化動詞是「不規則」(儘管不是所有形式)，弱變化動詞是「規則」，「不規則弱變化動詞」是少數以弱變化動詞作詞尾而又是不規則的。";
+
+"titleWeak" = "1. 弱變化[規則]動詞";
+
+"textWeak" = "這些動詞的詞幹沒有發生元音轉變或輔音轉變，它們的過去式以-te作詞尾，過去分詞則以-t作詞尾：";
+
+"titleStrong" = "2. 強變化[不規則]動詞";
+
+"textStrong" = "這些動詞的詞幹在一個或以上的時態發生元音轉變(有機會包括現在式)。在過去式中，它們以同一情態動詞作結 (如第一人稱及第三人稱單數)，過去分詞以-en作結尾：";
+
+"titleIrregularWeak" = "3. 不規則弱變化動詞";
+
+"textIrregularWeak" = "這些動詞以弱變化動詞作結尾 [ 過去式和虛擬式以 -te作結尾，過去分詞以-t作結尾]，但不是規則的，如它們會出現元音改變。下列是8個常見的混合形動詞(及其複合形態)：";
+
+
+
+/* Help */
+
+"introTitle" = "應用程式介紹";
+
+"introText1" = "從我們的應用程式，你可以根據以下圖片學習動詞\n\n首先會顯示不定詞(字框裡)，之後是該動詞的現在式、過去式和過去分詞，全部以第三人稱標示：”er/sie/es”。";
+
+"introText2" = "選取了程度後，你可以從不同方面學習德文的不規則動詞。";
+
+"titleRandomOrder" = "1. 以隨機形式學習";
+
+"textRandomOrder" = "這個方式非常適合重溫動詞。你需要從你所選擇的程度中，牢記若干數量的動詞。(數量可於設定更改)";
+
+"titleClassifiedForm" = "2. 以詞形分類學習";
+
+"textClassifiedForm" = "由三個元音組成，以「i–a–u」為例 ，意指不定詞的字根元音為「i」 ，過去式為「a」，而過去分詞則是「u」";
+
+"titleAlphabetical" = "3. 按字母順序排列";
+
+"textAlphabetical" = "你可以按喜好以字母順序排列學習動詞。";
+
+
+
+
+
+
+
+
+
+
+
+
+
+

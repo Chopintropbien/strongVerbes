@@ -72,6 +72,55 @@
 
 
 
+"Finish" = "Finalizar";
+
+
+/* Settings */
+
+"Settings" = "Ajustes";
+
+"Grammar and help" = "Gramática y ayuda";
+
+"Grammar" = "Gramática";
+
+"Help" = "Ayuda";
+
+"General" = "General";
+
+"Language" = "Idioma";
+
+"Number of reading" = "Número de lecturas";
+
+"Number of random verb" = "Número de verbos aleatorios";
+
+"Number of random verb title" = "verbo aleatorio";
+
+"Service action" = "Acción de servicio";
+
+"Restore previus purchases" = "Restaurar las comprar anteriores";
+
+
+
+/* inAppPurshase */
+"Internet connection to slow :" = "Conexión a internet muy lenta.";
+
+"Ok" = "Ok";
+
+"Unable to get your previous purchases" = "Imposible recibir las compras anteriores.";
+
+"Transaction Error:" = "Error de Transacción:";
+
+"Action available only with an internet connection" = "Acción posible solamente con conexión a internet";
+
+"Please wait..." = "Espere por favor...";
+
+"Transaction successful:" = "La transacción se ha efectuado con éxito";
+
+"Previous purchases restored" = "Las compras anteriores se han restablecido";
+
+
+
+
 
 /*specific german app*/
 
@@ -96,4 +145,55 @@
 
 /* Voici les verbes forts allemand de forme */
 "Here are german irregular verbs by form: " = "Aquí encontraras los verbos irregulares en alemán según su forma: ";
+
+
+
+
+
+
+
+/* grammar */
+
+"intro" = "En Alemán existen 3 tipos de verbos. Cada categoría de verbos adquiere terminaciones características para su participio pasado y sus formas de pasado simple.\nLos verbos fuertes son “irregulares” (no necesariamente en todas sus formas), los débiles son “regulares” y los “verbos débiles irregulares” son una clase de verbos menor que toma las terminaciones de verbo débil, pero se consideran irregulares.";
+
+"titleWeak" = "1. Verbos débiles [regulares]";
+
+"textWeak" = "Son los verbos sin cambios en la vocal temática en ninguno de los tiempos verbales. Toman la terminación -te en Pasado Simple y terminación -t en Participio Pasado.";
+
+"titleStrong" = "2. Verbos fuertes [irregulares]";
+
+"textStrong" = "Son los verbos cuya vocal temática cambia en uno o más tiempos verbales (incluyendo el presente). En el Pasado Simple toman las mismas terminaciones que los verbos modales (en particular sin terminaciones para 1ra y 3ra persona del singular), sus participios pasados acaban en -en:";
+
+"titleIrregularWeak" = "3. Verbos débiles irregulares";
+
+"textIrregularWeak" = "Son los verbos con terminaciones de verbos débiles [terminaciones -te en el Pasado Simple y en el Subjuntivo II, y terminaciones -t en el participio pasado], pero que, sin embargo, NO son regulares ya que sufren cambios de vocal. Los siguientes 8 verbos (y sus compuestos) son muy comunes:";
+
+
+
+/* Help */
+
+"introTitle" = "Presentación de la aplicación";
+
+"introText1" = "En nuestra aplicación, aprenderá el verbo de acuerdo con la siguiente imagen. \n\nPrimero va el infinitivo (rodeado), lo siguen el presente de ese verbo, el pretérito y el participio pasado, todo conjugado en tercera persona del singular.";
+
+"introText2" = "Una vez seleccione el nivel, podrá aprender los verbos irregulares alemanes de varias maneras.";
+
+"titleRandomOrder" = "1. Aprender al azar";
+
+"textRandomOrder" = "Es el método ideal para repasar los verbos. Tendrá que recordar una cierta cantidad de verbos que se mostrarán al azar en su nivel. (La cantidad se puede cambiar en los ajustes).";
+
+"titleClassifiedForm" = "2. Aprender según la forma";
+
+"textClassifiedForm" = "La mayoría de los verbos alemanes siguen ciertos patrones. Con nuestra aplicación es posible estudiarlos seleccionándolos por su forma. \n\n\n Una forma está compuesta por 3 vocales. Por ejemplo “i - a – u”. Eso significa que la vocal de la raíz será “i” para el infinitivo, “a” para el pretérito y “u” para el participio pasado.";
+
+"titleAlphabetical" = "3. Orden alfabético";
+
+"textAlphabetical" = "Si lo prefiere, puede aprender los verbos en orden alfabético.";
+
+
+
+
+
+
+
 

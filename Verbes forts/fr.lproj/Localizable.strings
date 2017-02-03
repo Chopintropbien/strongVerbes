@@ -70,6 +70,56 @@
 "Full access to ALL verbs in ALL level" = "Accédez à TOUS les verbes de TOUS les niveaux";
 
 
+
+
+"Finish" = "Fin";
+
+
+/* Settings */
+
+"Settings" = "Réglages";
+
+"Grammar and help" = "Grammaire et aide";
+
+"Grammar" = "Grammaire";
+
+"Help" = "Aide";
+
+"General" = "Général";
+
+"Language" = "Langues";
+
+"Number of reading" = "Nombre de lecture";
+
+"Number of random verb" = "Nombre de verbe aléatoire";
+
+"Number of random verb title" = "Verbe aléatoire";
+
+"Service action" = "Action de service";
+
+"Restore previus purchases" = "Réstorer les précédents achats";
+
+
+
+/* inAppPurshase */
+"Internet connection to slow :" = "Connection internet trop lente";
+
+"Ok" = "Ok";
+
+"Unable to get your previous purchases" = "Impossible de trouver les informations sur les précédents achats";
+
+"Transaction Error:" = "Erreur de transaction";
+
+"Action available only with an internet connection" = "Une connection internet est requise";
+
+"Please wait..." = "Patientez...";
+
+"Transaction successful:" = "Transaction réussis";
+
+"Previous purchases restored" = "Précédentes transactions retrouvées";
+
+
+
 /*specific german app*/
 
 /* inclassable button */
@@ -93,5 +143,59 @@
 
 /* Voici les verbes forts allemand de forme */
 "Here are german irregular verbs by form: " = "Voici les verbes forts de forme: ";
+
+
+
+
+/* grammar */
+
+"intro" = "Il y a 3 types de verbe en allemand, prenant chacun une terminaison caractéristique pour le passé simple et le participe passé.\n\nLes ”verbes forts” sont irréguliers (pas nécessairement à toute les formes), les ”verbes faibles” sont réguliers et les ”verbes mixes” sont un petit groupe qui prenne les terminaisons des verbes faibles mais tout en étant irrégulier.";
+
+"titleWeak" = "1. Verbes faibles [réguliers]";
+
+"textWeak" = "Ce sont les verbes dont le radical ne change pas et aux quels on ajoute ”-te” au passé simple et ”ge- + -t” pour le participe passé. ";
+
+"titleStrong" = "2. Verbes forts [irréguliers]";
+
+"textStrong" = "Ce sont les verbes dont la voyelle du radical change. Au passé simple, les terminaisons sont les mêmes que les verbes modaux: pas de terminaison pour la 1er et la 3ème personne du singulier. Le participe passé quand à lui est en ”ge- + -en”.";
+
+"titleIrregularWeak" = "3. Verbes mixes [faibles-irréguliers]";
+
+"textIrregularWeak" = "Ce sont les verbes avec les terminaisons faibles - ”-te” au passé simple et ”ge- + -t” pour le participe passé - mais dont la voyelle du radical change. Les 8 verbes mixes suivant sont très commun: ";
+
+
+
+/* Help */
+
+"introTitle" = "Présentation de l’application";
+
+"introText1" = "Avec notre application, vous pouvez apprendre les verbes forts suivant le model de la photo suivante.\n\nEn premier vient l’infinitif (entouré) puis le présent de ce verbe, le prétérit et enfin le participe passé, tous conjugués à la 3ème personne du singulier: ”er/sie/es”";
+
+"introText2" = "Une fois votre niveau sélectionné, vous pouvez apprendre les verbes forts de différentes façons.";
+
+"titleRandomOrder" = "1. Par order aléatoire";
+
+"textRandomOrder" = "Cette méthode est parfaite pour réviser les verbes. Vous avez à vous remémorer un certain nombre de verbe aléatoirement sélectionné dans votre niveau. Ce nombre peut être changé dans les réglages.";
+
+"titleClassifiedForm" = "2. Classé par forme";
+
+"textClassifiedForm" = "La plupart des verbes forts allemands suit un certain modèle. Avec notre application, vous avez la possibilité de les apprendre classés selon ces formes.\n\nUne forme est composé de 3 voyelles. Par exemple ”i-a-u”. Cela signifie que la voyelle de la racine est ”i” à l'infinitif, ”a” au passé simple et ”u” au participe passé.";
+
+"titleAlphabetical" = "3. Classé par ordre alphabétique";
+
+"textAlphabetical" = "Si vous le préférez, vous pouvez tout simplement apprendre les verbes forts classés par ordre alphabétique.";
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

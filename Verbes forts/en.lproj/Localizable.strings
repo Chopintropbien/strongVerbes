@@ -76,60 +76,60 @@
 
 
 
-"Finish" = "";
+"Finish" = "Finish";
 
 
 /* Settings */
 
-"Settings" = "";
+"Settings" = "Settings";
 
-"Grammar and help" = "";
+"Grammar and help" = "Grammar and help";
 
-"Grammar" = "";
+"Grammar" = "Grammar";
 
-"Help" = "";
+"Help" = "Help";
 
-"General" = "";
+"General" = "General";
 
-"Language" = "";
+"Language" = "Language";
 
-"Number of reading" = "";
+"Number of reading" = "Number of readings";
 
-"Number of random verb" = "";
+"Number of random verb" = "Number of random verbs";
 
-"Number of random verb title" = "";
+"Number of random verb title" = "Random verbs";
 
-"Service action" = "";
+"Service action" = "Service action";
 
-"Restore previus purchases" = "";
+"Restore previus purchases" = "Restore previous purchases";
 
 
 
 /* inAppPurshase */
-"Internet connection to slow :" = "";
+"Internet connection to slow :" = "Internet connection too slow";
 
-"Ok" = "";
+"Ok" = "Ok";
 
-"Unable to get your previous purchases" = "";
+"Unable to get your previous purchases" = "Unable to get your previous purchases";
 
-"Transaction Error:" = "";
+"Transaction Error:" = "Transaction Error:";
 
-"Action available only with an internet connection" = "";
+"Action available only with an internet connection" = "Action available only with an internet connection";
 
-"Please wait..." = "";
+"Please wait..." = "Please wait…";
 
-"Transaction successful:" = "";
+"Transaction successful:" = "Transaction successful:";
 
-"Previous purchases restored" = "";
+"Previous purchases restored" = "Previous purchases restored:";
+
+
+
 
 
 
 
 
 /*specific german app*/
-
-"weak-irregular" = "weak-irregular"; //TODO
-"unclassifiable" = "unclassifiable";
 
 /* Voici les verbes forts allemand de forme */
 "Here are german irregular verbs by form: unclassifiable" = "Here are german irregular verbs by form: unclassifiable";
@@ -152,6 +152,53 @@
 
 /* faible irrégulier button */
 "weak-irregular-masculin" = "weak-irregular";
+
+
+
+/* grammar */
+
+"intro" = "There are 3 types of verbs in German.  Each category of verbs takes characteristic endings for its past participles and its simple past forms.\n\nStrong verbs are ”irregular” (though not necessarily in all their forms), weak verbs are ”regular” and ”irregular-weak verbs” are a small class of verbs that take weak verb endings but are, nevertheless, irregular.";
+
+"titleWeak" = "1. Weak [regular] verbs";
+
+"textWeak" = "These are the verbs with no stem-vowel changes in any tense. They take -te endings in Simple Past, and -t endings for their past participles:";
+
+"titleStrong" = "2. Strong [irregular] verbs";
+
+"textStrong" = "These are the verbs that have stem-vowel changes in one or more of the tenses (possibly including the present tense). In the Simple Past, they take the same endings as modal verbs (i.e. in particular, no endings for 1st and 3rd person singular); their past participles end in -en:";
+
+"titleIrregularWeak" = "3. Irregular-weak verbs";
+
+"textIrregularWeak" = "These are verbs with weak verb endings [-te endings in Simple Past and Subjunctive II, and -t endings for their past participles], but which, nevertheless, are NOT regular (i.e. they do have vowel changes). The following 8 mixed verbs (and their compounds) are very common:";
+
+
+
+/* Help */
+
+"introTitle" = "Application Presentation";
+
+"introText1" = "In our application, you will learn verbs according to the following picture.\n\nFirst come the infinitive form (surrounded) and then, the present of this verb, the preterit and the past participle, all conjugated in the third person singular: ”er/sie/es”";
+
+"introText2" = "Once you have selected a level, you can learn German irregular verbs different ways.";
+
+"titleRandomOrder" = "1. Learning with random order";
+
+"textRandomOrder" = "This method is perfect to review verbs. You will have to remember a certain number of verbs randomly selected in your level. (This amount can be changed in the settings)";
+
+"titleClassifiedForm" = "2. Learning classified by form";
+
+"textClassifiedForm" = "Most of the German irregular verbs follow certain patterns. With our App, you have the opportunity to learn them sorted by form.\n\nA form is composed of 3 vowels, for example, ”i - a – u.” This means that the vowel of the root will be ”i” for the infinitive form, ”a” for the preterit and ”u” for the past participle";
+
+"titleAlphabetical" = "3. Alphabetical order";
+
+"textAlphabetical" = "If you prefer, you can learn the verbs simply by sorting in alphabetical order. ";
+
+
+
+
+
+
+
 
 
 

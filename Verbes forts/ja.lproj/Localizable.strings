@@ -96,3 +96,106 @@
 "Here are german irregular verbs by form: " = "ドイツ語の不規則動詞：形態分け ";
 
 
+
+
+
+
+
+
+
+
+"Finish" = "完了";
+
+
+/* Settings */
+
+"Settings" = "設定";
+
+"Grammar and help" = "文法とヘルプ";
+
+"Grammar" = "文法";
+
+"Help" = "ヘルプ";
+
+"General" = "普通";
+
+"Language" = "言語";
+
+"Number of reading" = "閲覧数";
+
+"Number of random verb" = "ランダム動詞の量";
+
+"Number of random verb title" = "ランダム動詞";
+
+"Service action" = "サービス　センター";
+
+"Restore previus purchases" = "前回の取引を回復します";
+
+
+
+/* inAppPurshase */
+"Internet connection to slow :" = "インタネットと連接は不安定です。";
+
+"Ok" = "はい。";
+
+"Unable to get your previous purchases" = "前回の取引は戻りません。";
+
+"Transaction Error:" = "取引失敗";
+
+"Action available only with an internet connection" = "インタネットと連接する必要です";
+
+"Please wait..." = "少々お待ちください";
+
+"Transaction successful:" = "取引成功";
+
+"Previous purchases restored" = "前回の取引が戻ります。";
+
+
+
+
+/* grammar */
+
+"intro" = "ドイツ語は動詞が三つあります。動詞の過去形と過去分詞とも語尾がそれぞれです。\n\n強変化動詞は「不規則」（全部じゃない）です。弱変化動詞は「規則」です。「不規則弱変化動詞」はめったにないです。弱変化動詞が語尾ですが、不規則です。";
+
+"titleWeak" = "1. 弱変化「規則」動詞";
+
+"textWeak" = "これらの動詞は規則です。その過去形は-teが語尾で過去分詞は-tが語尾です。";
+
+"titleStrong" = "2. 強変化「不規則」動詞";
+
+"textStrong" = "これらの動詞は二つ以上現れた場合に、母音が変化します（現在形も含む）。過去形では、語尾が同じ形式です（第一人称と第三人称単数）。過去分詞は-enが語尾です。";
+
+"titleIrregularWeak" = "3. 弱変化「不規則」動詞";
+
+"textIrregularWeak" = "これらの動詞は弱変化動詞が語尾です。過去形と仮定形は-teが語尾です。過去分詞は-tが語尾です。しかし、不規則です。例えば、母音の変化などがあります。以下は８つの混合形動詞の例です（複合形も含む）。";
+
+
+
+/* Help */
+
+"introTitle" = "アプリの紹介";
+
+"introText1" = "このアプリでは以下のカードを通して、動詞を勉強します。\n\nまずは、不定詞（囲まれた字）。そして、その動詞の現在形、過去形、過去分詞です。全部第三人称で表しました。";
+
+"introText2" = "自分に適当なレベルを選んで、以下のようにドイツ語の不規則動詞を勉強します。";
+
+"titleRandomOrder" = "1. ランダムで勉強します";
+
+"textRandomOrder" = "これは動詞を復習するのは一番良い方法です。選んだレベルの中で何らかの動詞を勉強することができます。（設定の中で自由に削減できます）";
+
+"titleClassifiedForm" = "2. 動詞の形式で勉強します";
+
+"textClassifiedForm" = "ドイツ語の不規則動詞はほとんどパターンがあります。このアプリで動詞の形式で勉強することができます。\n\n三つの母音であります。「i－a－u」を例として、「i」は不定詞の母音で、「a」は過去形で、「u」は過去分詞です。";
+
+"titleAlphabetical" = "3. アルファベット順で勉強します";
+
+"textAlphabetical" = "アルファベット順で勉強することが好きな方は、ぜひお使いください。";
+
+
+
+
+
+
+
+
+

@@ -97,14 +97,17 @@ class RevisionVerbes: UIViewController {
                 self.title! += ": " + Localization("unclassifiable")
             }
             else if(form == Form.weak){
-                self.title! += ": " + Localization("weak-irregular")
+                self.title! += ": " + Localization("weak-irregular-masculin")
             }
             else {
                 self.title! += ": " + form!.rawValue
             }
         }
-        else{
+        else if((letter) != nil){
             self.title! += ": " + letter!.rawValue
+        }
+        else{
+            self.title! += ": " + Localization("Random")
         }
         super.viewWillAppear(animated)
     }

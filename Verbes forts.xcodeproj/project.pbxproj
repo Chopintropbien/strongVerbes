@@ -2038,7 +2038,7 @@
 				98B79FBB1D70AD9300A3F94B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		98B79FBC1D70AD9300A3F94B /* Build configuration list for PBXNativeTarget "Verbes forts" */ = {
 			isa = XCConfigurationList;
@@ -2047,7 +2047,7 @@
 				98B79FBE1D70AD9300A3F94B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		98B79FBF1D70AD9300A3F94B /* Build configuration list for PBXNativeTarget "Verbes fortsTests" */ = {
 			isa = XCConfigurationList;
@@ -2056,7 +2056,7 @@
 				98B79FC11D70AD9300A3F94B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		98B79FC21D70AD9300A3F94B /* Build configuration list for PBXNativeTarget "Verbes fortsUITests" */ = {
 			isa = XCConfigurationList;
@@ -2065,7 +2065,7 @@
 				98B79FC41D70AD9300A3F94B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

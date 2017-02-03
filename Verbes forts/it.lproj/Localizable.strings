@@ -101,3 +101,111 @@
 
 
 
+
+
+
+
+
+
+"Finish" = "Fine";
+
+
+/* Settings */
+
+"Settings" = "Impostazioni";
+
+"Grammar and help" = "Grammatica e aiuto";
+
+"Grammar" = "Grammatica";
+
+"Help" = "Assistenza";
+
+"General" = "Generali";
+
+"Language" = "Lingua";
+
+"Number of reading" = "Numero letture";
+
+"Number of random verb" = "Numero di verbi in ordine sparso";
+
+"Number of random verb title" = "Ordine sparso";
+
+"Service action" = "Fasi";
+
+"Restore previus purchases" = "Recupera acquisti precedenti";
+
+
+
+/* inAppPurshase */
+"Internet connection to slow :" = "Connessione internet troppo lenta";
+
+"Ok" = "Ok";
+
+"Unable to get your previous purchases" = "Impossibile ottenere acquisti precedenti";
+
+"Transaction Error:" = "Errore transazione:";
+
+"Action available only with an internet connection" = "Azione disponibile solo con connessione internet";
+
+"Please wait..." = "Attendere prego…";
+
+"Transaction successful:" = "Transazione finalizzata con successo:";
+
+"Previous purchases restored" = "L’acquisto precedente è stato recuperato";
+
+
+
+
+
+
+/* grammar */
+
+"intro" = "In tedesco esistono 3 tipi di verbi. Ogni categoria di verbo ha caratteristiche particolari, definite dalla forma del participio passato e del passato.\n\nI verbi forti sono “irregolari” (sebbene non in tutte le loro forme), i verbi deboli sono “regolari”, e i “verbi deboli irregolari” sono una piccola classe di verbi con le terminazioni dei verbi deboli, ma tuttavia irregolari.";
+
+"titleWeak" = "1. Verbi (regolari) deboli";
+
+"textWeak" = "Questi verbi non presentano nessun cambio vocalico alla radice, in nessun tempo. Prendono la terminazione –te nel Passato e la-t nel participio passato.";
+
+"titleStrong" = "2. Verbi (irregolari) forti";
+
+"textStrong" = "Questi verbi presentano cambi vocalici alla radice in uno o più tempi (talvolta anche al presente). Al Passato, prendono la stessa terminazione die verbi modali (ad esempio, nessuna terminazione per la 1° e la 3° persona singolare), il loro participio passato finisce in –en:";
+
+"titleIrregularWeak" = "3. Verbi irregolari-deboli";
+
+"textIrregularWeak" = "Questi verbi con terminazioni deboli (la terminazione –te del Passato e del Congiuntivo II e la terminazione –t per il participio passato), NON sono tuttavia regolari, ad esempio presentano cambiamenti vocalici. Gli 8 verbi misti di seguito (e i loro composti) sono molti comuni: ";
+
+
+
+/* Help */
+
+"introTitle" = "Presentazione applicazione";
+
+"introText1" = "Nella nostra applicazione, imparerai i verbi attraverso le immagini di seguito\n\nPer prima cosa troverai l’infinito (dentro un circolo) e poi, il presente del verbo, il preterito e il participio passato, tutti coniugati alla terza persona singolare: “er/sie/es”";
+
+"introText2" = "Una volta selezionato il livello, potrai imparare i verbi irregolari tedeschi in diversi modi.";
+
+"titleRandomOrder" = "1. In ordine sparso";
+
+"textRandomOrder" = "Questo metodo è perfetto per ripassare I verbi. Dovrai ricordare una certa quantità di verbi in rodine sparso selezionati per il tuo livello. (La quantità può essere modificata nelle impostazioni) ";
+
+"titleClassifiedForm" = "2. Verbi classificati secondo la forma";
+
+"textClassifiedForm" = "Molti verbi irregolari tedeschi seguono dei modelli fissi. Con la nostra App, hai la possibilità di impararli dividendoli per forma.\n\nOgni forma è composta da 3 vocali. Per esempio, “i-a-u”. Questo significa che la vocale della radice sarà “I” per l’infinito, “a” per il preterito e “u” per il participio passato.";
+
+"titleAlphabetical" = "3. Ordine alfabetico";
+
+"textAlphabetical" = "Se preferisci, puoi imparare I verbi dividendoli in ordine alfabetico.";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
