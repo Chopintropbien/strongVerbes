@@ -11,8 +11,7 @@ import UIKit
 class Help: UIViewController {
     
     @IBOutlet weak var tilteHelp: UILabel!
-    
-    @IBOutlet weak var introTitle: UILabel!
+
     @IBOutlet weak var introText1: UITextView!
     @IBOutlet weak var introText2: UITextView!
     @IBOutlet weak var titleRandomOrder: UILabel!

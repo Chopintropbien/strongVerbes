@@ -47,7 +47,6 @@ class AskInAppPurschase: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
         setText()
     }
     
@@ -91,6 +90,13 @@ class AskInAppPurschase: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + self.animationDuration) {
             self.upperView.isHidden = true
             self.canNotBuyView.isHidden = true
+        }
+    }
+    func hideCanNotBuyView(){
+        self.animation(view: self.canNotBuyView, display: false)
+        DispatchQueue.main.asyncAfter(deadline: .now() + self.animationDuration) {
+            //            self.upperView.isHidden = true
+            //            self.containerView.isHidden = true
         }
     }
     
@@ -158,8 +164,6 @@ class AskInAppPurschase: UIViewController {
     
     func setText(){
         setTextBuyProducts()
-        setTextCanNotBuyViewNoInternetConnection()
-        setTextCanNotBuyViewCanNotMakePayments()
         
         buy1LevelButton.level = level
         buyAllLevelButton.level = Level.All
