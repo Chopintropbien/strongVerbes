@@ -22,6 +22,19 @@ class Verbes_fortsTests: XCTestCase {
     }
     
     func testExample() {
+        for v in Verbes().verbes{
+            
+            var vs = "IrregularVerbToSave(0, \"" + v.infinitf() + "\", \"" + v.present() + "\", \"" + v.preterit() + "\", \"" + v.parfait() + "\", LangToLearn.de, Level."
+            vs = vs + v.level.rawValue + ", FormVerb." + v.form.rawValue + ", (MotherLang.en, \"" + v.translation(Lang.en) + "\") :: "
+            vs = vs + "(MotherLang.es, \"" + v.translation(Lang.es) + "\") :: "
+            vs = vs + "(MotherLang.fr, \"" + v.translation(Lang.fr) + "\") :: "
+            vs = vs + "(MotherLang.ru, \"" + v.translation(Lang.ru) + "\") :: "
+            vs = vs + " Nil) :: \n"
+            print(vs)
+            
+        }
+        
+        
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
