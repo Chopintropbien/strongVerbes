@@ -109,23 +109,42 @@ extension IAPHelper {
         return SKPaymentQueue.canMakePayments()
     }
     
+    
+    
+    
+    
     public func restorePurchases() {
         if(NetworkActivityIndicatorManagment.isInternetAvailable()){
-            isResoreComplete = false
-            displayWait()
-            SKPaymentQueue.default().restoreCompletedTransactions()
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 22) {
-                if(!self.isResoreComplete){
-                    if let topController = UIApplication.topViewController() {
-                        
-                        let alert = UIAlertController(title: Localization("Internet connection to slow :"), message: nil, preferredStyle: .alert)
-                        alert.addAction(UIAlertAction(title: Localization("Ok"), style: .destructive, handler: {(action:UIAlertAction!) in self.hideWait()
-                        }))
-                        
-                        alert.message = Localization("Unable to get your previous purchases")
-                        topController.present(alert, animated: true, completion: nil)
+            if (IAPHelper.canMakePayments()) {
+                isResoreComplete = false
+                displayWait()
+                SKPaymentQueue.default().add(self)
+                SKPaymentQueue.default().restoreCompletedTransactions()
+                
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 180) {
+                    if(!self.isResoreComplete){
+                        if let topController = UIApplication.topViewController() {
+                            
+                            let alert = UIAlertController(title: Localization("Internet connection to slow :"), message: nil, preferredStyle: .alert)
+                            alert.addAction(UIAlertAction(title: Localization("Ok"), style: .destructive, handler: {(action:UIAlertAction!) in self.hideWait()
+                            }))
+                            
+                            alert.message = Localization("Unable to get your previous purchases")
+                            topController.present(alert, animated: true, completion: nil)
+                        }
                     }
+                }
+            }
+            else{
+                if let topController = UIApplication.topViewController() {
+                    
+                    let alert = UIAlertController(title: Localization("Your are not allowed to buy this product"), message: nil, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: Localization("Ok"), style: .destructive, handler: {(action:UIAlertAction!) in self.hideWait()
+                    }))
+                    
+                    alert.message = Localization("Our application in accessible by all people 4+")
+                    topController.present(alert, animated: true, completion: nil)
                 }
             }
         }
@@ -210,16 +229,40 @@ extension IAPHelper: SKProductsRequestDelegate {
 
 extension IAPHelper: SKPaymentTransactionObserver {
     
+    public func paymentQueue(_ queue: SKPaymentQueue, restoreCompletedTransactionsFailedWithError: Error){
+        print("Error: \(restoreCompletedTransactionsFailedWithError.localizedDescription)")
+        
+    
+        if let topController = UIApplication.topViewController() {
+            
+            let alert = UIAlertController(title: Localization("Transaction Error:"), message: nil, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: Localization("Ok"), style: .default, handler: {(action:UIAlertAction!) in self.hideWait()
+            }))
+            
+            alert.message = restoreCompletedTransactionsFailedWithError.localizedDescription
+            topController.present(alert, animated: true, completion: nil)
+        }
+
+    }
+
+    
+
     public func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
+        
+        print("eeeeeeeeeeeeeeeee")
+        
         for transaction in transactions {
             switch (transaction.transactionState) {
             case .purchased:
+                print("purchased...")
                 complete(transaction: transaction)
                 break
             case .failed:
+                print("failed...")
                 fail(transaction: transaction)
                 break
             case .restored:
+                print("restored...")
                 restore(transaction: transaction)
                 break
             case .deferred:
@@ -247,9 +290,9 @@ extension IAPHelper: SKPaymentTransactionObserver {
         deliverPurchaseNotificationFor(identifier: productIdentifier)
         SKPaymentQueue.default().finishTransaction(transaction)
         
-        if let transactionError = transaction.error as? NSError {
+        if let transactionError = transaction.error as NSError? {
             if transactionError.code != SKError.paymentCancelled.rawValue {
-                print( "Transaction Error:" + " \(transaction.error?.localizedDescription)")
+                print( "Transaction Error:" + " \(String(describing: transaction.error?.localizedDescription))")
             }
             if let topController = UIApplication.topViewController() {
                 
@@ -278,9 +321,9 @@ extension IAPHelper: SKPaymentTransactionObserver {
     private func fail(transaction: SKPaymentTransaction) {
         print("fail...")
         
-        if let transactionError = transaction.error as? NSError {
+        if let transactionError = transaction.error as NSError? {
             if transactionError.code != SKError.paymentCancelled.rawValue {
-                print("Transaction Error: \(transaction.error?.localizedDescription)")
+                print("Transaction Error: \(String(describing: transaction.error?.localizedDescription))")
             }
             
             if let topController = UIApplication.topViewController() {

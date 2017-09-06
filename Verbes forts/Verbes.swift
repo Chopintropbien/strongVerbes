@@ -63,7 +63,7 @@ class Verbe{
     let level: Level
     let form: Form
     let verbe: (String, String, String, String)
-    fileprivate let translations = [Lang:String]() // TODO: Qu'il soit immutable: Constutor builder
+    fileprivate var translations = [Lang:String]() // TODO: Qu'il soit immutable: Constutor builder
     
     
     
